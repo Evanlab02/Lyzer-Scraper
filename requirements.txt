@@ -1,0 +1,5 @@
+-i https://pypi.org/simple
+altgraph==0.17.3
+pyinstaller==5.6.2
+pyinstaller-hooks-contrib==2022.11 ; python_version >= '3.7'
+setuptools==65.5.0 ; python_version >= '3.7'
