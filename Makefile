@@ -14,3 +14,5 @@ update-dependencies:
 	@pipenv update
 update-requirements:
 	@pipenv requirements > requirements.txt
+test:
+	@python -m unittest discover -s testing/ -p "test_*.py"
