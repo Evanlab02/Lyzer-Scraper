@@ -13,5 +13,5 @@ def main():
     return 0 # Exit code 0
 
 if __name__ == "__main__":
-    exit_code = main() # Call main function
-    sys.exit(exit_code) # Exit program
+    EXIT_CODE = main() # Call main function
+    sys.exit(EXIT_CODE) # Exit program

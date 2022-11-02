@@ -8,6 +8,8 @@ clean:
 run:
 	@pipenv run python3 Lyzer-Scraper.py
 install:
+	@pip install --upgrade pip
+	@pip install pipenv
 	@pipenv install
 	@pipenv sync
 update-dependencies:
@@ -15,7 +17,7 @@ update-dependencies:
 update-requirements:
 	@pipenv requirements > requirements.txt
 test:
-	@python -m unittest discover -s testing/ -p "test_*.py"
+	@pipenv run python -m unittest discover -s testing/ -p "test_*.py"
 coverage:
-	@coverage run -m unittest discover -s testing/ -p "test_*.py"
-	@coverage report
+	@pipenv run coverage run -m unittest discover -s testing/ -p "test_*.py"
+	@pipenv run coverage report
