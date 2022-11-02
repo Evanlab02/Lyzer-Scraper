@@ -4,9 +4,9 @@ clean:
 	@pipenv clean
 	@rm -r build/
 	@rm -r dist/
-	@rm Lyzer-Scraper.spec
+	@rm lyzer_scraper.spec
 run:
-	@pipenv run python3 Lyzer-Scraper.py
+	@pipenv run python3 lyzer_scraper.py
 install:
 	@pip install --upgrade pip
 	@pip install pipenv
