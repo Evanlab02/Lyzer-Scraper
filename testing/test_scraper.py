@@ -27,4 +27,11 @@ class TestScraper(unittest.TestCase):
         This will test the introduce method.
         """
         self.assertEqual(0, self.scraper.start())
-        self.assertFalse(self.scraper.installer.install_data_directory(".lyzer/"))
+
+    @patch("sys.stdout", StringIO())
+    def test_install(self):
+        """
+        This will test the install method.
+        """
+        self.assertEqual(0, self.scraper.install(".test/"))
+        self.assertTrue(self.scraper.installer.remove_data_directory(".test/"))

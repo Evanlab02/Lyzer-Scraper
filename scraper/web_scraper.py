@@ -22,15 +22,12 @@ class Scraper:
         """
         print("Scraper is running...") # Print to console that scraper is running
         print("Version: " + self.version) # Print version of scraper
-        self.installer.introduce() # Introduce the installer to the user
-        self.installer.install_data_directory(".lyzer/") # Install the data directory
         return 0
 
-    def get_version(self):
+    def install(self, data_directory: str=".lyzer/"):
         """
-        This will get the version of the scraper.
-
-        Returns:
-            (str): The version of the scraper.
+        This will install the scraper.
         """
-        return self.version
+        self.installer.introduce() # Introduce the installer to the user
+        self.installer.install_data_directory(data_directory) # Install the data directory
+        return 0

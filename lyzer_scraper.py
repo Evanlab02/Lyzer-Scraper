@@ -13,6 +13,7 @@ def main():
     """
     scraper = Scraper() # Instance of the scraper class
     scraper.start() # Start the scraper
+    scraper.install() # Install the scraper
     return 0 # Exit code 0
 
 if __name__ == "__main__":
