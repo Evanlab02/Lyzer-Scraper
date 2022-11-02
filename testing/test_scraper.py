@@ -36,3 +36,14 @@ class TestScraper(unittest.TestCase):
         self.assertEqual(0, self.scraper.install(".test/"))
         self.assertTrue(self.scraper.installer.remove_data_file("races.json", ".test/"))
         self.assertTrue(self.scraper.installer.remove_data_directory(".test/"))
+
+    @patch("sys.stdout", StringIO())
+    def test_process_args(self):
+        """
+        This will test the process_args method.
+        """
+        self.assertEqual("", self.scraper.process_args())
+        self.scraper.args = ["", "-l", "https://www.google.com"]
+        self.assertEqual("https://www.google.com", self.scraper.process_args())
+        self.scraper.args = ["", "--link", "https://www.google.com"]
+        self.assertEqual("https://www.google.com", self.scraper.process_args())

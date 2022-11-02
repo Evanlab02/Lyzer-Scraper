@@ -29,7 +29,6 @@ class Installer:
         print("I was created using PyInstaller version " + self.pyinstaller_version)
         print("I am from platform " + self.platform)
         print("I have found your home directory to be " + self.home_directory)
-        print("I am still in development, so I don't do much yet.")
         print()
         return self
 
