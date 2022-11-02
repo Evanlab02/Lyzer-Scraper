@@ -27,4 +27,4 @@ jobs:
         make coverage
     - name: lint
       run: |
-        pylint $(git ls-files '*.py')
+        pipenv run pylint $(git ls-files '*.py')
