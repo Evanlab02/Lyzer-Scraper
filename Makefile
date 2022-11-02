@@ -2,6 +2,11 @@ security-check:
 	@pipenv check
 clean:
 	@pipenv clean
+	@rm -r build/
+	@rm -r dist/
+	@rm Lyzer-Scraper.spec
+run:
+	@pipenv run python3 Lyzer-Scraper.py
 install:
 	@pipenv install
 	@pipenv sync
