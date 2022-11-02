@@ -66,3 +66,40 @@ class Installer:
             print("Removed data directory at " + data_directory)
             return True
         return False
+
+    def install_data_file(self, data_file: str, data_directory: str=".lyzer/"):
+        """
+        This will install the data file.
+
+        Args:
+            data_file (str): The data file to install.
+
+        Returns:
+            (Bool): True if the data file was installed, False otherwise.
+        """
+        data_directory = os.path.join(self.home_directory, data_directory)
+        data_file = os.path.join(data_directory, data_file)
+        if not os.path.exists(data_file):
+            open(data_file, "w").close()
+            print("Created data file at " + data_file)
+            return True
+        return False
+
+    
+    def remove_data_file(self, data_file: str, data_directory: str=".lyzer/"):
+        """
+        This will remove the data file.
+
+        Args:
+            data_file (str): The data file to remove.
+
+        Returns:
+            (Bool): True if the data file was removed, False otherwise.
+        """
+        data_directory = os.path.join(self.home_directory, data_directory)
+        data_file = os.path.join(data_directory, data_file)
+        if os.path.exists(data_file):
+            os.remove(data_file)
+            print("Removed data file at " + data_file)
+            return True
+        return False

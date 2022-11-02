@@ -30,4 +30,6 @@ class Scraper:
         """
         self.installer.introduce() # Introduce the installer to the user
         self.installer.install_data_directory(data_directory) # Install the data directory
+        races_file = "races.json" # The file where in all race data will be stored
+        self.installer.install_data_file(races_file, data_directory)
         return 0

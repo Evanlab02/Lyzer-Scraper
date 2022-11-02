@@ -34,4 +34,5 @@ class TestScraper(unittest.TestCase):
         This will test the install method.
         """
         self.assertEqual(0, self.scraper.install(".test/"))
+        self.assertTrue(self.scraper.installer.remove_data_file("races.json", ".test/"))
         self.assertTrue(self.scraper.installer.remove_data_directory(".test/"))

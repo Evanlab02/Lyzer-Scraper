@@ -37,3 +37,15 @@ class TestInstaller(unittest.TestCase):
         self.assertFalse(self.installer.install_data_directory(".test_data/"))
         self.assertTrue(self.installer.remove_data_directory(".test_data/"))
         self.assertFalse(self.installer.remove_data_directory(".test_data/"))
+
+    @patch("sys.stdout", StringIO())
+    def test_install_and_remove_data_file(self):
+        """
+        This will test the install_data_file method.
+        """
+        self.assertTrue(self.installer.install_data_directory(".test_data/"))
+        self.assertTrue(self.installer.install_data_file("test.txt", ".test_data/"))
+        self.assertFalse(self.installer.install_data_file("test.txt", ".test_data/"))
+        self.assertTrue(self.installer.remove_data_file("test.txt", ".test_data/"))
+        self.assertFalse(self.installer.remove_data_file("test.txt", ".test_data/"))
+        self.assertTrue(self.installer.remove_data_directory(".test_data/"))
