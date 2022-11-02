@@ -16,3 +16,6 @@ update-requirements:
 	@pipenv requirements > requirements.txt
 test:
 	@python -m unittest discover -s testing/ -p "test_*.py"
+coverage:
+	@coverage run -m unittest discover -s testing/ -p "test_*.py"
+	@coverage report
