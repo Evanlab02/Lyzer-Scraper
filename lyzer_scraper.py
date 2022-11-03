@@ -37,7 +37,7 @@ def main(args: list):
 
     print("\nConfiguring scraper for site...")
     print("Data I got from url ->", url_data)
-    scraper.scrape_site(url_data, link) # Scrape the site
+    headers, data_rows = scraper.scrape_site(url_data, link) # Scrape the site
     return 0 # Exit code 0
 
 if __name__ == "__main__":

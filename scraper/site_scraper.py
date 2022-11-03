@@ -97,14 +97,13 @@ class SiteScraper:
 
         return row_data
 
-    def race_season_summary_scrape(self, link: str):
+    def site_scrape(self, link: str):
         """
         This will scrape season race summary pages.
 
         Args:
             link (str): The link to the season race summary page.
         """
-        print("\nI believe the url is a season race summary page.")
         print("Starting scrape...")
         print("Link: " + link)
         print()
