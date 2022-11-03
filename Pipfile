@@ -5,6 +5,14 @@ name = "pypi"
 
 [packages]
 pyinstaller = "*"
+rich = "*"
+coverage = "*"
+pylint = "*"
+selenium = "*"
+webdriver-manager = "*"
+beautifulsoup4 = "*"
+packaging = "*"
+tabulate = "*"
 
 [dev-packages]
 
