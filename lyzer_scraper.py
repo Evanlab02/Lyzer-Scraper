@@ -11,7 +11,7 @@ from scraper.url_scraper import UrlScraper
 from scraper.web_scraper import WebScraper
 
 
-def main():
+def main(args: list):
     """
     This is the main function for our web scraper program.
     """
@@ -26,7 +26,7 @@ def main():
     for data_file in data_files:
         installer.install_data_file(data_file)
 
-    link = get_link(sys.argv) # Get the link passed to the scraper
+    link = get_link(args) # Get the link passed to the scraper
 
     # Example Link -> "https://www.formula1.com/en/results.html/2022/races.html"
     url_scraper = UrlScraper(link) # Instance of the url scraper class
@@ -41,5 +41,5 @@ def main():
     return 0 # Exit code 0
 
 if __name__ == "__main__":
-    EXIT_CODE = main() # Call main function
+    EXIT_CODE = main(sys.argv) # Call main function
     sys.exit(EXIT_CODE) # Exit program
