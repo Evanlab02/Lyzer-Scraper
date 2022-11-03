@@ -10,7 +10,7 @@ from bs4 import BeautifulSoup
 def start_driver(link: str):
     """
     This will start the web driver.
-    
+
     Args:
         link (str): The link to scrape.
 

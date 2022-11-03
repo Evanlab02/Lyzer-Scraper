@@ -12,6 +12,7 @@ selenium = "*"
 webdriver-manager = "*"
 beautifulsoup4 = "*"
 packaging = "*"
+tabulate = "*"
 
 [dev-packages]
 

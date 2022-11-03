@@ -32,7 +32,7 @@ class Installer:
         print()
         return self
 
-    def install_data_directory(self, data_directory: str):
+    def install_data_directory(self, data_directory: str = ".lyzer/"):
         """
         This will install the data directory.
 
@@ -45,7 +45,8 @@ class Installer:
         data_directory = os.path.join(self.home_directory, data_directory)
         if not os.path.exists(data_directory):
             os.makedirs(data_directory)
-            print("Created data directory at " + data_directory)
+            print("Found that data directory did not exist, created data directory at " \
+                + data_directory)
             return True
         return False
 
@@ -79,12 +80,12 @@ class Installer:
         data_directory = os.path.join(self.home_directory, data_directory)
         data_file = os.path.join(data_directory, data_file)
         if not os.path.exists(data_file):
-            open(data_file, "w").close()
-            print("Created data file at " + data_file)
-            return True
+            with open(data_file, "w", encoding="utf-8"):
+                print("Found that data file did not exist, created data file at " + data_file)
+                return True
         return False
 
-    
+
     def remove_data_file(self, data_file: str, data_directory: str=".lyzer/"):
         """
         This will remove the data file.
