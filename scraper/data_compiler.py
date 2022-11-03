@@ -21,7 +21,7 @@ def compile_data(url_data: list, headers: list, data_rows: list, json_data: dict
     """
     json_data = edit_data_with_year(json_data, url_data[1])
     json_data = edit_data_with_location(json_data, url_data[1], url_data[2])
-    json_data[url_data[1]][url_data[2]] = {"Headers": headers, "Data": data_rows}
+    json_data[str(url_data[1])][url_data[2]] = {"Headers": headers, "Data": data_rows}
     return json_data
     
 def edit_data_with_year(data: dict, year: int) -> dict:
@@ -36,8 +36,8 @@ def edit_data_with_year(data: dict, year: int) -> dict:
     Returns:
         dict: The edited data.
     """
-    if year not in data:
-        data[year] = {}
+    if str(year) not in data.keys():
+        data[str(year)] = {}
     else:
         print("The year already exists in the data.")
         if input("Press enter to continue") != "":
@@ -57,9 +57,9 @@ def edit_data_with_location(data: dict, year:int, location: str) -> dict:
     Returns:
         dict: The edited data.
     """
-    json_data = data[year]
-    if location not in json_data:
-        data[year][location] = {}
+    json_data = data[str(year)]
+    if location not in json_data.keys():
+        data[str(year)][location] = {}
     else:
         print("The location already exists in the data.")
         if input("Press enter to continue") != "":
