@@ -12,5 +12,7 @@ def load_json_data(file_path: str) -> dict:
         with open(file_path, "r") as file:
             data = json.load(file)
     except json.JSONDecodeError:
+        print("This json file is empty.")
+        print("Defaulting to {}")
         data = {}
     return data

@@ -3,9 +3,11 @@ This is module acts as the main entry point for our web scraper program.
 """
 
 # System imports
+import os
 import sys
 
 from scraper.cli_parser import get_link
+from scraper.file_parser import load_json_data
 from scraper.installer import Installer
 from scraper.url_scraper import UrlScraper
 from scraper.web_scraper import WebScraper
@@ -38,6 +40,15 @@ def main(args: list):
     print("\nConfiguring scraper for site...")
     print("Data I got from url ->", url_data)
     headers, data_rows = scraper.scrape_site(url_data, link) # Scrape the site
+
+    if url_data[0] != "unknown":
+        home_directory = installer.home_directory
+        data_directory = os.path.join(home_directory, ".lyzer/")
+        data_file = os.path.join(data_directory, url_data[0] + ".json")
+        print("\nLoading data from file ->", data_file)
+        json_data = load_json_data(data_file)
+        print("Data I got from file ->", json_data)
+
     return 0 # Exit code 0
 
 if __name__ == "__main__":
