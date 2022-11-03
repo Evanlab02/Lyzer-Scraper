@@ -8,7 +8,7 @@ import sys
 
 from scraper.cli_parser import get_link
 from scraper.data_compiler import compile_data
-from scraper.file_parser import load_json_data
+from scraper.file_parser import load_json_data, write_json_data
 from scraper.installer import Installer
 from scraper.url_scraper import UrlScraper
 from scraper.web_scraper import WebScraper
@@ -51,8 +51,13 @@ def main(args: list):
         json_data = load_json_data(data_file)
         print("Data I got from file ->", json_data)
 
-        print("\nCompiling data...")
+        print("Compiling data...")
         json_data = compile_data(url_data, headers, data_rows, json_data)
+
+        print("Writing data to file ->", data_file)
+        write_json_data(data_file, json_data)
+        print("Data has been saved to file ->", data_file)
+        print("Scraper shutting down...")
 
     return 0 # Exit code 0
 

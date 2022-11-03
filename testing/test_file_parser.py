@@ -7,7 +7,7 @@ from io import StringIO
 import unittest
 from unittest.mock import patch
 
-from scraper.file_parser import load_json_data
+from scraper.file_parser import load_json_data, write_json_data
 
 class TestFilePaser(unittest.TestCase):
     """
@@ -24,3 +24,13 @@ class TestFilePaser(unittest.TestCase):
             "Basic": "Test",
             "test": "basic"
         }, load_json_data("testing/resources/basic.json"))
+
+    @patch("sys.stdout", StringIO())
+    def test_write_json_data(self):
+        """
+        This will test the write_json_data method.
+        """
+        self.assertEqual({"Basic": "Testing"}, load_json_data("testing/resources/writer.json"))
+        write_json_data("testing/resources/writer.json", {"Basic": "Testing", "unittest": "acceptancetest"})
+        self.assertEqual({"Basic": "Testing", "unittest": "acceptancetest"}, load_json_data("testing/resources/writer.json"))
+        write_json_data("testing/resources/writer.json", {"Basic": "Testing"})
