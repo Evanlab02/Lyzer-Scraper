@@ -7,6 +7,7 @@ import os
 import sys
 
 from scraper.cli_parser import get_link
+from scraper.data_compiler import compile_data
 from scraper.file_parser import load_json_data
 from scraper.installer import Installer
 from scraper.url_scraper import UrlScraper
@@ -45,9 +46,13 @@ def main(args: list):
         home_directory = installer.home_directory
         data_directory = os.path.join(home_directory, ".lyzer/")
         data_file = os.path.join(data_directory, url_data[0] + ".json")
+
         print("\nLoading data from file ->", data_file)
         json_data = load_json_data(data_file)
         print("Data I got from file ->", json_data)
+
+        print("\nCompiling data...")
+        json_data = compile_data(url_data, headers, data_rows, json_data)
 
     return 0 # Exit code 0
 
