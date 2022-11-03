@@ -26,12 +26,3 @@ class TestWebScraper(unittest.TestCase):
         This will test the start method.
         """
         self.assertEqual(0, self.scraper.start())
-
-    @patch("sys.stdout", StringIO())
-    def test_scrape_site_exit(self):
-        """
-        This will test the scrape_site method.
-        """
-        data = ("abcd")
-        with self.assertRaises(SystemExit):
-            self.scraper.scrape_site(data)
