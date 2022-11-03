@@ -49,7 +49,6 @@ def main(args: list):
 
         print("\nLoading data from file ->", data_file)
         json_data = load_json_data(data_file)
-        print("Data I got from file ->", json_data)
 
         print("Compiling data...")
         json_data = compile_data(url_data, headers, data_rows, json_data)
