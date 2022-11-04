@@ -31,6 +31,8 @@ class TestFilePaser(unittest.TestCase):
         This will test the write_json_data method.
         """
         self.assertEqual({"Basic": "Testing"}, load_json_data("testing/resources/writer.json"))
-        write_json_data("testing/resources/writer.json", {"Basic": "Testing", "unittest": "acceptancetest"})
-        self.assertEqual({"Basic": "Testing", "unittest": "acceptancetest"}, load_json_data("testing/resources/writer.json"))
+        write_json_data("testing/resources/writer.json",
+        {"Basic": "Testing", "unittest": "acceptancetest"})
+        self.assertEqual({"Basic": "Testing", "unittest": "acceptancetest"},
+        load_json_data("testing/resources/writer.json"))
         write_json_data("testing/resources/writer.json", {"Basic": "Testing"})

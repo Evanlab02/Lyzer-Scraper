@@ -86,7 +86,11 @@ class TestDataCompiler(unittest.TestCase):
         data_rows = [["data1", "data2"], ["data3", "data4"]]
         json_data = {}
         json_data = compile_data(url_data, headers, data_rows, json_data)
-        self.assertEqual({"2020":{"All":{"Headers":["header1", "header2"], "Data":[["data1", "data2"], ["data3", "data4"]]}}}, json_data)
+        self.assertEqual({
+            "2020":{
+                "All":{
+                    "Headers":["header1", "header2"],
+                    "Data":[["data1", "data2"], ["data3", "data4"]]}}}, json_data)
 
     @patch("sys.stdin", StringIO("\n"))
     @patch("sys.stdout", StringIO())
@@ -99,7 +103,11 @@ class TestDataCompiler(unittest.TestCase):
         data_rows = [["data1", "data2"], ["data3", "data4"]]
         json_data = {"2020":{}}
         json_data = compile_data(url_data, headers, data_rows, json_data)
-        self.assertEqual({"2020":{"All":{"Headers":["header1", "header2"], "Data":[["data1", "data2"], ["data3", "data4"]]}}}, json_data)
+        self.assertEqual({
+            "2020":{
+                "All":{
+                    "Headers":["header1", "header2"],
+                    "Data":[["data1", "data2"], ["data3", "data4"]]}}}, json_data)
 
     @patch("sys.stdin", StringIO("test\n"))
     @patch("sys.stdout", StringIO())
@@ -125,7 +133,10 @@ class TestDataCompiler(unittest.TestCase):
         data_rows = [["data1", "data2"], ["data3", "data4"]]
         json_data = {"2020":{"All":{}}}
         json_data = compile_data(url_data, headers, data_rows, json_data)
-        self.assertEqual({"2020":{"All":{"Headers":["header1", "header2"], "Data":[["data1", "data2"], ["data3", "data4"]]}}}, json_data)
+        self.assertEqual({
+            "2020":{
+                "All":{"Headers":["header1", "header2"],
+                "Data":[["data1", "data2"], ["data3", "data4"]]}}}, json_data)
 
     @patch("sys.stdin", StringIO("\ntest\n"))
     @patch("sys.stdout", StringIO())

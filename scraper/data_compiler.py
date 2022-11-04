@@ -23,7 +23,7 @@ def compile_data(url_data: list, headers: list, data_rows: list, json_data: dict
     json_data = edit_data_with_location(json_data, url_data[1], url_data[2])
     json_data[str(url_data[1])][url_data[2]] = {"Headers": headers, "Data": data_rows}
     return json_data
-    
+
 def edit_data_with_year(data: dict, year: int) -> dict:
     """
     This function will edit the data with the given year.
@@ -32,7 +32,7 @@ def edit_data_with_year(data: dict, year: int) -> dict:
     Args:
         data (dict): The data to edit.
         year (int): The year to edit the data with.
-    
+
     Returns:
         dict: The edited data.
     """
@@ -47,7 +47,7 @@ def edit_data_with_year(data: dict, year: int) -> dict:
 
 def edit_data_with_location(data: dict, year:int, location: str) -> dict:
     """
-    This function will edit the data with the given location. 
+    This function will edit the data with the given location.
 
     Args:
         data (dict): The data to edit.

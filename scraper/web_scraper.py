@@ -2,8 +2,6 @@
 This module will contain a class that will be used to scrape data from the web.
 """
 
-import sys
-
 from datetime import datetime
 
 from scraper.url_scraper import UrlScraper
