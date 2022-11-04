@@ -57,15 +57,3 @@ class TestUrlScraper(unittest.TestCase):
         url_year = url_scraper.get_year_from_url()
         url_data = url_scraper.generate_url_data(url_elements, url_year)
         self.assertEqual(url_data, ("races", 2022, "All"))
-
-    @patch("sys.stdout", StringIO())
-    def test_generate_url_data_invalid(self):
-        """
-        This will test the generate_url_data method.
-        """
-        url = "https://www.formula1.com/en/results.html/2022/index.html"
-        url_scraper = UrlScraper(url)
-        url_elements = url_scraper.start()
-        url_year = url_scraper.get_year_from_url()
-        with self.assertRaises(SystemExit):
-            url_scraper.generate_url_data(url_elements, url_year)

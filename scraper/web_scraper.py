@@ -2,8 +2,6 @@
 This module will contain a class that will be used to scrape data from the web.
 """
 
-import sys
-
 from datetime import datetime
 
 from scraper.url_scraper import UrlScraper
@@ -38,11 +36,15 @@ class WebScraper:
         site_scraper = SiteScraper(data)
         print("Site scraping will start soon...")
 
-        if (data[0] == "races" and
-        data[1] in range(1950, datetime.now().year + 1) and
-        data[2] == "All"):
-            site_scraper.race_season_summary_scrape(link)
+        if not data[1] in range(1950, datetime.now().year + 1):
+            print("There is no data for the year you entered.")
+
+        if (data[0] == "races" and data[2] == "All"):
+            print("\nI believe the url is a season race summary page.")
         else:
-            print("I don't know what to do with this data yet.")
-            sys.exit(1)
-        return 0
+            print("\nI don't what format this url is in.")
+            print("I will try to scrape it anyway.")
+            print("I will not be able to save the data to a file.")
+
+        headers, data_rows = site_scraper.site_scrape(link)
+        return headers, data_rows

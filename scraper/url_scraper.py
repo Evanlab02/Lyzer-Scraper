@@ -67,5 +67,4 @@ class UrlScraper:
             print("Location ->", location)
             return "races", year, location
 
-        print("I don't know what to do with this link yet.")
-        sys.exit(1)
+        return "unknown", year, "unknown"
