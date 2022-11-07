@@ -87,7 +87,9 @@ class SiteScraper:
             data_span = data_entry.find_all('span')
 
             if len(data_span) == 3:
-                data_entry = f"{data_span[0].text} {data_span[1].text}"
+                name = data_span[0].text.replace("\u00e4", "a").replace("\u00f6", "o")
+                surname = data_span[1].text.replace("\u00e4", "a").replace("\u00f6", "o")
+                data_entry = f"{name} {surname}"
             else:
                 data_entry = data_entry.text.strip()
                 data_entry = data_entry.replace("\n", "")

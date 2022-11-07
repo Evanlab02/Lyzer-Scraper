@@ -66,5 +66,10 @@ class UrlScraper:
             location = "All"
             print("Location ->", location)
             return "races", year, location
+        elif "races" in url_elements[1] and len(url_elements) == 5 and url_elements[4] == "race-result.html":
+            print("Year ->", year)
+            location = url_elements[3]
+            print("Location ->", location)
+            return "races", year, location.capitalize()
 
         return "unknown", year, "unknown"

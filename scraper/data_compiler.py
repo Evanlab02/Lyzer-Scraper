@@ -39,9 +39,7 @@ def edit_data_with_year(data: dict, year: int) -> dict:
     if str(year) not in data.keys():
         data[str(year)] = {}
     else:
-        print("The year already exists in the data.")
-        if input("Press enter to continue") != "":
-            sys.exit(0)
+        print("[INFO] The year already exists in the data.")
 
     return data
 
