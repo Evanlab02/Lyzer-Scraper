@@ -60,7 +60,7 @@ def edit_data_with_location(data: dict, year:int, location: str) -> dict:
         data[str(year)][location] = {}
     else:
         print("The location already exists in the data.")
-        if (input("Press enter to continue or type 'exit' to exit: ") != "exit"):
+        if input("Press enter to continue or type 'exit' to exit: ") != "exit":
             data, location = edit_data_with_location(data, year, location + "I")
         else:
             sys.exit(2)
