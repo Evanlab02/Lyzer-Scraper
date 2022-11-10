@@ -45,8 +45,10 @@ class WebScraper:
             print("\nI believe the url is a race result page.")
         elif (data[0] == "fastest_laps" and data[2] != "All"):
             print("\nI believe the url is a fastest lap page.")
+        elif (data[0] == "pit_stop_summary" and data[2] != "All"):
+            print("\nI believe the url is a pit stop summary page.")
         else:
-            print("\nI don't what format this url is in.")
+            print("\nI don't know what format this url is in.")
             print("I will try to scrape it anyway.")
             print("I will not be able to save the data to a file.")
 

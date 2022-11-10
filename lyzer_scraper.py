@@ -25,7 +25,12 @@ def main(args: list):
     installer.install_data_directory() # Install the data directory
 
     # Installs the data files for the scraper
-    data_files = ["races.json", "fastest_laps.json"]
+    data_files = [
+        "races.json",
+        "fastest_laps.json",
+        "pit_stop_summary.json"
+    ]
+
     for data_file in data_files:
         installer.install_data_file(data_file)
 
