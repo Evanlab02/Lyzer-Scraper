@@ -20,8 +20,8 @@ def compile_data(url_data: list, headers: list, data_rows: list, json_data: dict
         dict: The compiled data.
     """
     json_data = edit_data_with_year(json_data, url_data[1])
-    json_data = edit_data_with_location(json_data, url_data[1], url_data[2])
-    json_data[str(url_data[1])][url_data[2]] = {"Headers": headers, "Data": data_rows}
+    json_data, location = edit_data_with_location(json_data, url_data[1], url_data[2])
+    json_data[str(url_data[1])][location] = {"Headers": headers, "Data": data_rows}
     return json_data
 
 def edit_data_with_year(data: dict, year: int) -> dict:
@@ -60,7 +60,9 @@ def edit_data_with_location(data: dict, year:int, location: str) -> dict:
         data[str(year)][location] = {}
     else:
         print("The location already exists in the data.")
-        if input("Press enter to continue") != "":
-            sys.exit(0)
+        if (input("Press enter to continue or type 'exit' to exit: ") != "exit"):
+            data, location = edit_data_with_location(data, year, location + "I")
+        else:
+            sys.exit(2)
 
-    return data
+    return data, location
