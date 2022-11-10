@@ -87,4 +87,14 @@ class UrlScraper:
             print("Location ->", location)
             return "fastest_laps", year, location.capitalize()
 
+        if (
+            "races" in url_elements[1]
+            and len(url_elements) == 5
+            and url_elements[4] == "pit-stop-summary.html"
+            ):
+            print("Year ->", year)
+            location = url_elements[3]
+            print("Location ->", location)
+            return "pit_stop_summary", year, location.capitalize()
+
         return "unknown", year, "unknown"
