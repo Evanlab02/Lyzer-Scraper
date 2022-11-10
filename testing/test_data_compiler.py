@@ -43,7 +43,7 @@ class TestDataCompiler(unittest.TestCase):
         This will test the edit_data_with_location method.
         """
         data = {"2020":{}}
-        data = edit_data_with_location(data, 2020, "all")
+        data = edit_data_with_location(data, 2020, "all")[0]
         self.assertEqual({"2020":{"all":{}}}, data)
 
     @patch("sys.stdin", StringIO("\n"))
@@ -53,10 +53,10 @@ class TestDataCompiler(unittest.TestCase):
         This will test the edit_data_with_location method with an existing location.
         """
         data = {"2020":{"all":{}}}
-        data = edit_data_with_location(data, 2020, "all")
-        self.assertEqual({"2020":{"all":{}}}, data)
+        data = edit_data_with_location(data, 2020, "all")[0]
+        self.assertEqual({"2020":{"all":{}, "allI":{}}}, data)
 
-    @patch("sys.stdin", StringIO("test\n"))
+    @patch("sys.stdin", StringIO("exit\n"))
     @patch("sys.stdout", StringIO())
     def test_edit_data_with_location_with_existing_location_and_input(self):
         """
@@ -99,7 +99,7 @@ class TestDataCompiler(unittest.TestCase):
                     "Headers":["header1", "header2"],
                     "Data":[["data1", "data2"], ["data3", "data4"]]}}}, json_data)
 
-    @patch("sys.stdin", StringIO("\n\n"))
+    @patch("sys.stdin", StringIO("\n"))
     @patch("sys.stdout", StringIO())
     def test_compile_data_with_existing_location(self):
         """
@@ -112,5 +112,6 @@ class TestDataCompiler(unittest.TestCase):
         json_data = compile_data(url_data, headers, data_rows, json_data)
         self.assertEqual({
             "2020":{
-                "All":{"Headers":["header1", "header2"],
+                "All":{},
+                "AllI":{"Headers":["header1", "header2"],
                 "Data":[["data1", "data2"], ["data3", "data4"]]}}}, json_data)
