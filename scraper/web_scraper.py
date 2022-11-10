@@ -37,10 +37,12 @@ class WebScraper:
         print("Site scraping will start soon...")
 
         if not data[1] in range(1950, datetime.now().year + 1):
-            print("There is no data for the year you entered.")
+            print("There is no data for this year.")
 
         if (data[0] == "races" and data[2] == "All"):
             print("\nI believe the url is a season race summary page.")
+        elif (data[0] == "races" and data[2] != "All"):
+            print("\nI believe the url is a race result page.")
         else:
             print("\nI don't what format this url is in.")
             print("I will try to scrape it anyway.")
