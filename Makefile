@@ -2,6 +2,7 @@ security-check:
 	@pipenv check
 clean:
 	@pipenv clean
+	@rm -r .coverage
 	@rm -r build/
 	@rm -r dist/
 	@rm lyzer_scraper.spec
@@ -21,3 +22,5 @@ test:
 coverage:
 	@pipenv run coverage run -m unittest discover -s testing/ -p "test_*.py"
 	@pipenv run coverage report
+build:
+	@pipenv run pyinstaller --onefile lyzer_scraper.py

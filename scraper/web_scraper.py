@@ -16,7 +16,7 @@ class WebScraper:
         """
         This is the constructor for the scraper class.
         """
-        self.version = "0.1.0" # Version of the scraper class
+        self.version = "0.2.0" # Version of the scraper class
         self.url_scraper = UrlScraper() # Instance of the url scraper class
         self.link = "" # List of links to scrape
         self.file = "" # File to store data in
