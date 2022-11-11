@@ -39,7 +39,8 @@ class UrlScraper:
                 raise IndexError
         except IndexError as index_error:
             print("\nThe url is not supported.")
-            print("Please use a url from the following website: https://www.formula1.com/en/results.html")
+            print("Please use a url from the following website: "\
+                + "https://www.formula1.com/en/results.html")
             print("Goodbye.\n")
             raise index_error
 
