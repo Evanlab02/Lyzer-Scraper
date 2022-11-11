@@ -28,11 +28,20 @@ class UrlScraper:
         """
         self.url_elements = self.url.split("/")
 
-        self.url_elements.pop(0) # Remove the first element
-        self.url_elements.pop(0) # Remove the second element
-        self.url_elements.pop(0) # Remove the third element
-        self.url_elements.pop(0) # Remove the fourth element
-        self.url_elements.pop(0) # Remove the fifth element
+        try:
+            self.url_elements.pop(0) # Remove the first element
+            self.url_elements.pop(0) # Remove the second element
+            self.url_elements.pop(0) # Remove the third element
+            self.url_elements.pop(0) # Remove the fourth element
+            self.url_elements.pop(0) # Remove the fifth element
+
+            if len(self.url_elements) < 2:
+                raise IndexError
+        except IndexError as index_error:
+            print("\nThe url is not supported.")
+            print("Please use a url from the following website: https://www.formula1.com/en/results.html")
+            print("Goodbye.\n")
+            raise index_error
 
         print("Link elements ->", self.url_elements)
 
