@@ -36,12 +36,15 @@ def main(args: list):
 
     link = get_link(args) # Get the link passed to the scraper
 
-    # Example Link -> "https://www.formula1.com/en/results.html/2022/races.html"
-    url_scraper = UrlScraper(link) # Instance of the url scraper class
-    url_elements = url_scraper.start()
-    url_year = url_scraper.get_year_from_url()
-    url_data = url_scraper.generate_url_data(url_elements, url_year)
-    print("Type of Link ->", url_data[0])
+    try:
+        # Example Link -> "https://www.formula1.com/en/results.html/2022/races.html"
+        url_scraper = UrlScraper(link) # Instance of the url scraper class
+        url_elements = url_scraper.start()
+        url_year = url_scraper.get_year_from_url()
+        url_data = url_scraper.generate_url_data(url_elements, url_year)
+        print("Type of Link ->", url_data[0])
+    except IndexError:
+        sys.exit(3)
 
     print("\nConfiguring scraper for site...")
     print("Data I got from url ->", url_data)
