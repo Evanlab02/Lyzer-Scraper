@@ -18,7 +18,11 @@ def start_driver(link: str):
         webdriver: The web driver.
         BeautifulSoup: The BeautifulSoup object.
     """
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+    options = webdriver.ChromeOptions()
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
+    options.add_argument("--headless")
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
     driver.maximize_window()
     driver.get(link)
 

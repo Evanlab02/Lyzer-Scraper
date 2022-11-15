@@ -7,25 +7,19 @@ from io import StringIO
 import unittest
 from unittest.mock import patch
 
-from scraper.installer import Installer
+from src.installer import Installer
 
 class TestInstaller(unittest.TestCase):
     """
     This class contains the tests to test the Installer.
     """
 
+    @patch("sys.stdout", StringIO())
     def setUp(self):
         """
         This will run before each test.
         """
         self.installer = Installer()
-
-    @patch("sys.stdout", StringIO())
-    def test_introduce(self):
-        """
-        This will test the introduce method.
-        """
-        self.assertEqual(self.installer, self.installer.introduce())
 
     @patch("sys.stdout", StringIO())
     def test_install_data_directory(self):

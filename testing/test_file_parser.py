@@ -1,38 +1,36 @@
 """
-This module will be used to test the file parser.
+This will test the file parser module.
 """
 
 from io import StringIO
-
 import unittest
 from unittest.mock import patch
 
-from scraper.file_parser import load_json_data, write_json_data
+from src.file_parser import load_json_data, write_json_data
 
-class TestFilePaser(unittest.TestCase):
+class TestFileParser(unittest.TestCase):
     """
-    This class will test the file parser.
+    This will test the file parser module.
     """
-
     @patch("sys.stdout", StringIO())
     def test_load_json_data(self):
         """
-        This will test the load_json_data method.
+        This will test the load_json_data function.
         """
-        self.assertEqual({}, load_json_data("testing/resources/empty.json"))
-        self.assertEqual({
-            "Basic": "Test",
-            "test": "basic"
-        }, load_json_data("testing/resources/basic.json"))
+        json_data = load_json_data("testing/resources/basic.json")
+        self.assertEqual(json_data, {"Basic": "Test","test": "basic"})
+        self.assertEqual(load_json_data("testing/resources/empty.json"), {})
+        self.assertEqual(load_json_data("testing/resources/invalid.json"), {})
 
     @patch("sys.stdout", StringIO())
     def test_write_json_data(self):
         """
-        This will test the write_json_data method.
+        This will test the write_json_data function.
         """
-        self.assertEqual({"Basic": "Testing"}, load_json_data("testing/resources/writer.json"))
-        write_json_data("testing/resources/writer.json",
-        {"Basic": "Testing", "unittest": "acceptancetest"})
-        self.assertEqual({"Basic": "Testing", "unittest": "acceptancetest"},
-        load_json_data("testing/resources/writer.json"))
-        write_json_data("testing/resources/writer.json", {"Basic": "Testing"})
+        json_data = {"Basic": "Test","test": "basic"}
+        write_json_data("testing/resources/writer.json", json_data)
+        self.assertEqual(load_json_data("testing/resources/writer.json"), json_data)
+        json_data = {"Basic": "Testing"}
+        write_json_data("testing/resources/writer.json", json_data)
+        self.assertEqual(load_json_data("testing/resources/writer.json"), json_data)
+        

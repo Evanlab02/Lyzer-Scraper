@@ -3,28 +3,82 @@ This is module acts as the main entry point for our web scraper program.
 """
 
 # System imports
-import os
 import sys
 
-from scraper.cli_parser import get_link
-from scraper.data_compiler import compile_data
-from scraper.file_parser import load_json_data, write_json_data
-from scraper.installer import Installer
-from scraper.url_scraper import UrlScraper
-from scraper.web_scraper import WebScraper
+from rich import print as rich_print
+
+from src.cli_parser import get_link
+from src.installer import Installer
+from src.url_scraper import UrlScraper
+from src.web_scraper import WebScraper
 
 
 def main(args: list):
     """
     This is the main function for our web scraper program.
+
+    Args:
+        args (list): List of arguments passed to the program.
+
+    Returns:
+        int: Returns 0 if the program runs successfully.
+    """
+    rich_print("\n[bold cyan]Scraper is starting..[/bold cyan]")
+    rich_print("[green]Version: [/green] 0.2.2") # Print version of scraper
+    try:
+        home_directory = install_self()
+        exit_code = 0
+        link = get_link(args) # Get the link passed to the scraper
+        if link == "Unexpected Error 2":
+            exit_code = 2
+        elif link == "No link passed.":
+            exit_code = 3
+        elif link == "":
+            rich_print("[red]No link passed.[/red]")
+            exit_code = 4
+
+        if exit_code == 0:
+            rich_print(f"[cyan]Link ->[/cyan] {link}")
+            url_data = scrape_link(link) # Scrape the link passed to the scraper
+
+            if url_data[0] == 5:
+                exit_code = 5
+            elif url_data[0] == 6:
+                exit_code = 6
+            else:
+                rich_print(f"Type of Link -> {url_data[0]}")
+
+                try:
+                    web_scraper = start_web_scraper()
+                    headers, data_rows = web_scraper.scrape_site(url_data, link)
+                    web_scraper.compile_and_save_data(headers, data_rows, url_data, home_directory)
+                except RuntimeError as error:
+                    rich_print(f"[red]RuntimeError: {error}[/red]")
+                    exit_code = 7
+        return exit_code
+    except KeyboardInterrupt:
+        return 1
+
+
+def start_web_scraper() -> WebScraper:
+    """
+    This function will create the web scraper object.
+
+    Returns:
+        WebScraper: Returns the web scraper object.
     """
     scraper = WebScraper() # Instance of the scraper class
-    installer = Installer() # Instance of the installer class
-    scraper.start() # Start the scraper
-    installer.introduce() # Introduce the installer to the user
-    installer.install_data_directory() # Install the data directory
+    return scraper
 
-    # Installs the data files for the scraper
+
+def install_self():
+    """
+    This function will install the program.
+    """
+    installer = Installer() # Instance of the installer class
+    installed_data_dir = installer.install_data_directory() # Install the data directory
+    rich_print(f"Installed Data Directory: {installed_data_dir}") # Install the data directory
+
     data_files = [
         "races.json",
         "fastest_laps.json",
@@ -32,41 +86,35 @@ def main(args: list):
     ]
 
     for data_file in data_files:
-        installer.install_data_file(data_file)
+        installed_file = installer.install_data_file(data_file)
+        rich_print(f"Installed {data_file}: {installed_file}")
 
-    link = get_link(args) # Get the link passed to the scraper
+    return installer.home_directory
 
+
+def scrape_link(link: str) -> tuple:
+    """
+    This function will scrape the link passed to the program.
+
+    Args:
+        link (str): The link to scrape.
+
+    Returns:
+        tuple: Returns a tuple containing the scraped data and the scraped link.
+    """
     try:
-        # Example Link -> "https://www.formula1.com/en/results.html/2022/races.html"
-        url_scraper = UrlScraper(link) # Instance of the url scraper class
-        url_elements = url_scraper.start()
-        url_year = url_scraper.get_year_from_url()
-        url_data = url_scraper.generate_url_data(url_elements, url_year)
-        print("Type of Link ->", url_data[0])
+        rich_print("\nAttempting to scrape link...")
+        scraper = UrlScraper(link) # Instance of the scraper class
+        url_elements = scraper.start()
+        url_year = scraper.get_year_from_url()
+        url_data = scraper.generate_url_data(url_elements, url_year)
+        return url_data
     except IndexError:
-        sys.exit(3)
+        rich_print("[red]Invalid Link.[/red]")
+        return (5, 5, 5)
+    except ValueError:
+        return (6, 6, 6)
 
-    print("\nConfiguring scraper for site...")
-    print("Data I got from url ->", url_data)
-    headers, data_rows = scraper.scrape_site(url_data, link) # Scrape the site
-
-    if url_data[0] != "unknown":
-        home_directory = installer.home_directory
-        data_directory = os.path.join(home_directory, ".lyzer/")
-        data_file = os.path.join(data_directory, url_data[0] + ".json")
-
-        print("\nLoading data from file ->", data_file)
-        json_data = load_json_data(data_file)
-
-        print("Compiling data...")
-        json_data = compile_data(url_data, headers, data_rows, json_data)
-
-        print("Writing data to file ->", data_file)
-        write_json_data(data_file, json_data)
-        print("Data has been saved to file ->", data_file)
-        print("Scraper shutting down...")
-
-    return 0 # Exit code 0
 
 if __name__ == "__main__":
     EXIT_CODE = main(sys.argv) # Call main function

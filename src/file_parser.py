@@ -4,6 +4,8 @@ This module will contain the logic to load and write data from and to a json fil
 
 import json
 
+from rich import print as rich_print
+
 def load_json_data(file_path: str) -> dict:
     """
     This function will load the json data from the given file path.
@@ -12,8 +14,12 @@ def load_json_data(file_path: str) -> dict:
         with open(file_path, "r", encoding="utf-8") as file:
             data = json.load(file)
     except json.JSONDecodeError:
-        print("This json file is empty.")
-        print("Defaulting to {}")
+        rich_print("This json file is empty.")
+        rich_print("Defaulting to {}")
+        data = {}
+    except FileNotFoundError:
+        rich_print("This file does not exist.")
+        rich_print("Defaulting to {}")
         data = {}
     return data
 

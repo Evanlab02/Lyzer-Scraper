@@ -2,8 +2,9 @@
 This will contain all the logic to scrape race data from the web.
 """
 from tabulate import tabulate
+from rich import print as rich_print
 
-from scraper.web_driver import start_driver, stop_driver
+from src.web_driver import start_driver, stop_driver
 
 class SiteScraper:
     """
@@ -16,7 +17,7 @@ class SiteScraper:
         """
         self.data = data
 
-    def get_table_head_and_body(self, soup):
+    def get_table_head_and_body(self, soup) -> tuple:
         """
         This will get the table head and body.
 
@@ -27,6 +28,8 @@ class SiteScraper:
             list: The table headers.
             list: The table rows.
         """
+        table_headers = []
+        table_rows = []
         for table in soup.findAll('table', attrs={'class':'resultsarchive-table'}):
             table_head = table.find('thead')
             table_headers = table_head.find_all('th')
@@ -106,9 +109,8 @@ class SiteScraper:
         Args:
             link (str): The link to the season race summary page.
         """
-        print("Starting scrape...")
-        print("Link: " + link)
-        print()
+        rich_print("Starting scrape...")
+        rich_print()
 
         # Get the content from the link.
         driver, soup = start_driver(link)

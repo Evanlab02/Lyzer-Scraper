@@ -5,7 +5,7 @@ from the scraped site with the loaded data into a single map.
 
 import sys
 
-def compile_data(url_data: list, headers: list, data_rows: list, json_data: dict) -> dict:
+def compile_data(url_data: tuple, headers: list, data_rows: list, json_data: dict) -> dict:
     """
     This function will compile all the data from the scraped site
     with the loaded data into a single map.
@@ -43,7 +43,7 @@ def edit_data_with_year(data: dict, year: int) -> dict:
 
     return data
 
-def edit_data_with_location(data: dict, year:int, location: str) -> dict:
+def edit_data_with_location(data: dict, year:int, location: str) -> tuple:
     """
     This function will edit the data with the given location.
 
@@ -60,7 +60,7 @@ def edit_data_with_location(data: dict, year:int, location: str) -> dict:
         data[str(year)][location] = {}
     else:
         print("The location already exists in the data.")
-        if input("Press enter to continue or type 'exit' to exit: ") != "exit":
+        if input("Press enter to continue or type 'exit' to exit: ").lower() != "exit":
             data, location = edit_data_with_location(data, year, location + "I")
         else:
             sys.exit(2)
