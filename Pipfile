@@ -12,6 +12,8 @@ webdriver-manager = "*"
 beautifulsoup4 = "*"
 packaging = "*"
 tabulate = "*"
+rich = "*"
+pytest = "*"
 
 [dev-packages]
 

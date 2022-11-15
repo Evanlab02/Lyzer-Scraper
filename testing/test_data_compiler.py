@@ -1,17 +1,12 @@
 """
-This module will contain the tests for the data compiler module.
+This will test the data compiler module.
 """
 
 from io import StringIO
-
 import unittest
 from unittest.mock import patch
 
-from scraper.data_compiler import (
-    edit_data_with_year,
-    edit_data_with_location,
-    compile_data
-)
+from src.data_compiler import compile_data, edit_data_with_year, edit_data_with_location
 
 class TestDataCompiler(unittest.TestCase):
     """
@@ -21,97 +16,51 @@ class TestDataCompiler(unittest.TestCase):
     @patch("sys.stdout", StringIO())
     def test_edit_data_with_year(self):
         """
-        This will test the edit_data_with_year method.
+        This will test the edit_data_with_year function.
         """
-        data = {}
-        data = edit_data_with_year(data, 2020)
-        self.assertEqual({"2020":{}}, data)
-
-    @patch("sys.stdin", StringIO("\n"))
-    @patch("sys.stdout", StringIO())
-    def test_edit_data_with_year_with_existing_year(self):
-        """
-        This will test the edit_data_with_year method with an existing year.
-        """
-        data = {"2020":{}}
-        data = edit_data_with_year(data, 2020)
-        self.assertEqual({"2020":{}}, data)
+        data = {"2019": {}}
+        self.assertEqual(edit_data_with_year(data, 2019), data)
+        self.assertEqual(edit_data_with_year(data, 2020), {"2019": {}, "2020": {}})
 
     @patch("sys.stdout", StringIO())
     def test_edit_data_with_location(self):
         """
-        This will test the edit_data_with_location method.
+        This will test the edit_data_with_location function.
         """
-        data = {"2020":{}}
-        data = edit_data_with_location(data, 2020, "all")[0]
-        self.assertEqual({"2020":{"all":{}}}, data)
+        data = {"2019": {}}
+        data, location = edit_data_with_location(data, 2019, "Location")
+        self.assertEqual(data, {"2019": {"Location": {}}})
+        self.assertEqual(location, "Location")
 
     @patch("sys.stdin", StringIO("\n"))
     @patch("sys.stdout", StringIO())
-    def test_edit_data_with_location_with_existing_location(self):
+    def test_edit_data_with_location_duplicate(self):
         """
-        This will test the edit_data_with_location method with an existing location.
+        This will test the edit_data_with_location function with a duplicate location.
         """
-        data = {"2020":{"all":{}}}
-        data = edit_data_with_location(data, 2020, "all")[0]
-        self.assertEqual({"2020":{"all":{}, "allI":{}}}, data)
+        data = {"2019": {"Location": {}}}
+        data, location = edit_data_with_location(data, 2019, "Location")
+        self.assertEqual(data, {"2019": {"Location": {}, "LocationI": {}}})
+        self.assertEqual(location, "LocationI")
 
     @patch("sys.stdin", StringIO("exit\n"))
     @patch("sys.stdout", StringIO())
-    def test_edit_data_with_location_with_existing_location_and_input(self):
+    def test_edit_data_with_location_duplicate_exit(self):
         """
-        This will test the edit_data_with_location method with an existing location and input.
+        This will test the edit_data_with_location function with a duplicate location and exit.
         """
-        data = {"2020":{"all":{}}}
         with self.assertRaises(SystemExit):
-            data = edit_data_with_location(data, 2020, "all")
+            data = {"2019": {"Location": {}}}
+            edit_data_with_location(data, 2019, "Location")
 
     @patch("sys.stdout", StringIO())
     def test_compile_data(self):
         """
-        This will test the compile_data method.
+        This will test the compile_data function.
         """
-        url_data = ["races", 2020, "All"]
-        headers = ["header1", "header2"]
-        data_rows = [["data1", "data2"], ["data3", "data4"]]
+        url_data = ("races", 2019, "Location")
+        headers = ["Header"]
+        data_rows = [["Data"]]
         json_data = {}
-        json_data = compile_data(url_data, headers, data_rows, json_data)
-        self.assertEqual({
-            "2020":{
-                "All":{
-                    "Headers":["header1", "header2"],
-                    "Data":[["data1", "data2"], ["data3", "data4"]]}}}, json_data)
-
-    @patch("sys.stdin", StringIO("\n"))
-    @patch("sys.stdout", StringIO())
-    def test_compile_data_with_existing_data(self):
-        """
-        This will test the compile_data method with existing data.
-        """
-        url_data = ["races", 2020, "All"]
-        headers = ["header1", "header2"]
-        data_rows = [["data1", "data2"], ["data3", "data4"]]
-        json_data = {"2020":{}}
-        json_data = compile_data(url_data, headers, data_rows, json_data)
-        self.assertEqual({
-            "2020":{
-                "All":{
-                    "Headers":["header1", "header2"],
-                    "Data":[["data1", "data2"], ["data3", "data4"]]}}}, json_data)
-
-    @patch("sys.stdin", StringIO("\n"))
-    @patch("sys.stdout", StringIO())
-    def test_compile_data_with_existing_location(self):
-        """
-        This will test the compile_data method with existing data and input.
-        """
-        url_data = ["races", 2020, "All"]
-        headers = ["header1", "header2"]
-        data_rows = [["data1", "data2"], ["data3", "data4"]]
-        json_data = {"2020":{"All":{}}}
-        json_data = compile_data(url_data, headers, data_rows, json_data)
-        self.assertEqual({
-            "2020":{
-                "All":{},
-                "AllI":{"Headers":["header1", "header2"],
-                "Data":[["data1", "data2"], ["data3", "data4"]]}}}, json_data)
+        self.assertEqual(compile_data(url_data, headers, data_rows, json_data),
+        {"2019": {"Location": {"Headers": ["Header"], "Data": [["Data"]]}}})

@@ -2,7 +2,9 @@
 This module will contain the class that will be used to scrape data from the given url.
 """
 
-import sys
+from datetime import datetime
+
+from rich import print as rich_print
 
 class UrlScraper:
     """
@@ -37,30 +39,38 @@ class UrlScraper:
 
             if len(self.url_elements) < 2:
                 raise IndexError
+            if self.url_elements[1] == "":
+                raise IndexError
         except IndexError as index_error:
-            print("\nThe url is not supported.")
-            print("Please use a url from the following website: "\
+            rich_print("[red]\nThe url is not supported.[/red]")
+            rich_print("[red]Please use a url from the following website: [/red]"\
                 + "https://www.formula1.com/en/results.html")
-            print("Goodbye.\n")
+            rich_print("[red]Goodbye.\n[/red]")
             raise index_error
 
-        print("Link elements ->", self.url_elements)
+        rich_print(f"Link elements -> {self.url_elements}")
 
         return self.url_elements
 
-    def get_year_from_url(self):
+    def get_year_from_url(self) -> int:
         """
         This will get the year from the url.
 
         Returns:
             int: The year from the url.
         """
-        year = self.url_elements[0]
         try:
+            year = self.url_elements[0]
             year = int(year)
-        except ValueError:
-            print("The year is not a valid integer.")
-            sys.exit(2)
+        except ValueError as value_error:
+            rich_print("[red]The year is not a valid integer.[/red]")
+            raise value_error
+        except IndexError as index_error:
+            rich_print("[red]URL Scraper is not started[/red]")
+            rich_print("[red]Please start the URL Scraper[/red]")
+            rich_print("[red]This is most likely not due to a invalid link.[/red]")
+            rich_print("[red]Goodbye.[/red]")
+            raise index_error
         return year
 
     def generate_url_data(self, url_elements: list, year: int):
@@ -71,20 +81,27 @@ class UrlScraper:
             url_elements (list): The elements of the url.
             year (int): The year from the url.
         """
-        if "races" in url_elements[1] and len(url_elements) == 2:
-            print("Year ->", year)
+        if year > datetime.now().year:
+            rich_print("[red]The year is in the future.[/red]")
+            raise ValueError
+
+        if (
+            "races" in url_elements[1]
+            and len(url_elements) == 2
+            ):
+            rich_print("\nYear ->", year)
             location = "All"
-            print("Location ->", location)
-            return "races", year, location
+            rich_print("Location ->", location)
+            return "races", year, location.capitalize()
 
         if (
             "races" in url_elements[1]
             and len(url_elements) == 5
             and url_elements[4] == "race-result.html"
             ):
-            print("Year ->", year)
+            rich_print("\nYear ->", year)
             location = url_elements[3]
-            print("Location ->", location)
+            rich_print("Location ->", location)
             return "races", year, location.capitalize()
 
         if (
@@ -92,9 +109,9 @@ class UrlScraper:
             and len(url_elements) == 5
             and url_elements[4] == "fastest-laps.html"
             ):
-            print("Year ->", year)
+            rich_print("\nYear ->", year)
             location = url_elements[3]
-            print("Location ->", location)
+            rich_print("Location ->", location)
             return "fastest_laps", year, location.capitalize()
 
         if (
@@ -102,9 +119,9 @@ class UrlScraper:
             and len(url_elements) == 5
             and url_elements[4] == "pit-stop-summary.html"
             ):
-            print("Year ->", year)
+            rich_print("\nYear ->", year)
             location = url_elements[3]
-            print("Location ->", location)
+            rich_print("Location ->", location)
             return "pit_stop_summary", year, location.capitalize()
 
         return "unknown", year, "unknown"
