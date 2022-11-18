@@ -2,10 +2,10 @@ security-check:
 	@pipenv check
 clean:
 	@pipenv clean
-	@rm -r .coverage
-	@rm -r build/
-	@rm -r dist/
-	@rm lyzer_scraper.spec
+	@rm -rf .coverage
+	@rm -rf build/
+	@rm -rf dist/
+	@rm -rf lyzer_scraper.spec
 run:
 	@pipenv run python3 lyzer_scraper.py
 install:
