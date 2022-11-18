@@ -24,7 +24,7 @@ def main(args: list):
         int: Returns 0 if the program runs successfully.
     """
     rich_print("\n[bold cyan]Scraper is starting..[/bold cyan]")
-    rich_print("[green]Version: [/green] 0.2.2") # Print version of scraper
+    rich_print("[green]Version: [/green] 0.3.0") # Print version of scraper
     try:
         home_directory = install_self()
         exit_code = 0
