@@ -53,6 +53,17 @@ class TestDataCompiler(unittest.TestCase):
             data = {"2019": {"Location": {}}}
             edit_data_with_location(data, 2019, "Location")
 
+    @patch("sys.stdin", StringIO("override\n"))
+    @patch("sys.stdout", StringIO())
+    def test_edit_data_with_location_duplicate_override(self):
+        """
+        This will test the edit_data_with_location function with a duplicate location and override.
+        """
+        data = {"2019": {"Location": {"headers": [], "data": []}}}
+        data, location = edit_data_with_location(data, 2019, "Location")
+        self.assertEqual(data, {"2019": {"Location": {}}})
+        self.assertEqual(location, "Location")
+
     @patch("sys.stdout", StringIO())
     def test_compile_data(self):
         """
