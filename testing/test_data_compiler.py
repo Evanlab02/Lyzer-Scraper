@@ -66,6 +66,9 @@ class TestDataCompiler(unittest.TestCase):
 
     @patch("sys.stdout", StringIO())
     def test_edit_data_with_location_web_argument(self):
+        """
+        This will test the edit_data_with_location function with the web argument.
+        """
         sys.argv.append("--web")
         data = {"2019": {"Location": {}}}
         data, location = edit_data_with_location(data, 2019, "Location")

@@ -145,12 +145,12 @@ def start_web_server():
                 exit_code = main(["web-app", "--link", link])
                 codes.append(exit_code)
             return {"exit_codes": codes}
-        else:
-            return {"error": "Invalid Content-Type"}
+
+        return {"error": "Invalid Content-Type"}
 
     rich_print("Server hosted at http://localhost:8080")
     serve(app, host="0.0.0.0", port=8080)
-    
+
 
 if __name__ == "__main__":
     if "--web" in sys.argv:
