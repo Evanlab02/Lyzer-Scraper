@@ -16,13 +16,6 @@ class WebScraper:
     This class will be used to scrape data from the web.
     """
 
-    def __init__(self):
-        """
-        This is the constructor for the scraper class.
-        """
-        self.link = "" # List of links to scrape
-        self.file = "" # File to store data in
-
     def scrape_site(self, data: tuple, link: str=""):
         """
         This will get the data from the link we are adding to the scraper.
@@ -60,8 +53,7 @@ class WebScraper:
         headers, data_rows = site_scraper.site_scrape(link)
         return headers, data_rows
 
-    def compile_and_save_data(self, headers: list, data_rows: list,
-    url_data: tuple, home_directory: str):
+    def compile_and_save_data(self, bundled_data: dict):
         """
         This function will compile the data and save it to a file.
 
@@ -70,6 +62,11 @@ class WebScraper:
             data_rows (list): List of data rows.
             url_data (tuple): Tuple containing the data from the link.
         """
+        headers = bundled_data["headers"]
+        data_rows = bundled_data["data_rows"]
+        url_data = bundled_data["url_data"]
+        home_directory = bundled_data["home_directory"]
+        link = bundled_data["link"]
         if url_data[0] != "unknown":
             data_directory = os.path.join(home_directory, ".lyzer/")
             data_file = os.path.join(data_directory, url_data[0] + ".json")
@@ -81,4 +78,13 @@ class WebScraper:
             rich_print("Writing data to file ->", data_file)
             write_json_data(data_file, json_data)
             rich_print("Data has been saved to file ->", data_file)
+
+            data_file = os.path.join(data_directory, "links.json")
+            json_data = load_json_data(data_file)
+            if isinstance(json_data, dict):
+                json_data = []
+            if link not in json_data:
+                json_data.append(link)
+            write_json_data(data_file, json_data)
+            rich_print("Link has been saved to file ->", data_file)
             rich_print("Scraper shutting down...")

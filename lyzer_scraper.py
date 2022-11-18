@@ -24,7 +24,7 @@ def main(args: list):
         int: Returns 0 if the program runs successfully.
     """
     rich_print("\n[bold cyan]Scraper is starting..[/bold cyan]")
-    rich_print("[green]Version: [/green] 0.2.2") # Print version of scraper
+    rich_print("[green]Version: [/green] 0.3.0") # Print version of scraper
     try:
         home_directory = install_self()
         exit_code = 0
@@ -51,7 +51,14 @@ def main(args: list):
                 try:
                     web_scraper = start_web_scraper()
                     headers, data_rows = web_scraper.scrape_site(url_data, link)
-                    web_scraper.compile_and_save_data(headers, data_rows, url_data, home_directory)
+                    bundled_data = {
+                        "headers": headers,
+                        "data_rows": data_rows,
+                        "url_data": url_data,
+                        "home_directory": home_directory,
+                        "link": link
+                    }
+                    web_scraper.compile_and_save_data(bundled_data)
                 except RuntimeError as error:
                     rich_print(f"[red]RuntimeError: {error}[/red]")
                     exit_code = 7
@@ -82,7 +89,8 @@ def install_self():
     data_files = [
         "races.json",
         "fastest_laps.json",
-        "pit_stop_summary.json"
+        "pit_stop_summary.json",
+        "links.json"
     ]
 
     for data_file in data_files:

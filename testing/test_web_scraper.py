@@ -249,17 +249,25 @@ class TestWebScraper(unittest.TestCase):
         os.mkdir("testing/resources/.lyzer/")
         os.system("touch testing/resources/.lyzer/testing.json")
 
-        self.web_scraper.compile_and_save_data(
-            ["header"],
-            [["data"]],
-            ("testing", 2021, "Barcelona"),
-            "testing/resources/"
-        )
+        self.web_scraper.compile_and_save_data({
+            "headers": ["header"],
+            "data_rows": [["data"]],
+            "url_data": ("testing", 2021, "Barcelona"),
+            "home_directory": "testing/resources",
+            "link": "https://www.formula1.com/en/results.html/2021/races.html"
+        })
         self.assertTrue(os.path.exists("testing/resources/.lyzer/testing.json"))
         with open("testing/resources/.lyzer/testing.json", "r", encoding="utf-8") as file:
             data = json.load(file)
             self.assertEqual(data,
             {'2021': {"Barcelona": {"Headers": ["header"], "Data": [["data"]]}}})
 
+        self.assertTrue(os.path.exists("testing/resources/.lyzer/links.json"))
+        with open("testing/resources/.lyzer/links.json", "r", encoding="utf-8") as file:
+            data = json.load(file)
+            self.assertEqual(data,
+            ["https://www.formula1.com/en/results.html/2021/races.html"])
+
         os.remove("testing/resources/.lyzer/testing.json")
+        os.remove("testing/resources/.lyzer/links.json")
         os.rmdir("testing/resources/.lyzer/")
