@@ -51,7 +51,14 @@ def main(args: list):
                 try:
                     web_scraper = start_web_scraper()
                     headers, data_rows = web_scraper.scrape_site(url_data, link)
-                    web_scraper.compile_and_save_data(headers, data_rows, url_data, home_directory, link)
+                    bundled_data = {
+                        "headers": headers,
+                        "data_rows": data_rows,
+                        "url_data": url_data,
+                        "home_directory": home_directory,
+                        "link": link
+                    }
+                    web_scraper.compile_and_save_data(bundled_data)
                 except RuntimeError as error:
                     rich_print(f"[red]RuntimeError: {error}[/red]")
                     exit_code = 7

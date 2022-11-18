@@ -53,8 +53,7 @@ class WebScraper:
         headers, data_rows = site_scraper.site_scrape(link)
         return headers, data_rows
 
-    def compile_and_save_data(self, headers: list, data_rows: list,
-    url_data: tuple, home_directory: str, link: str):
+    def compile_and_save_data(self, bundled_data: dict):
         """
         This function will compile the data and save it to a file.
 
@@ -63,6 +62,11 @@ class WebScraper:
             data_rows (list): List of data rows.
             url_data (tuple): Tuple containing the data from the link.
         """
+        headers = bundled_data["headers"]
+        data_rows = bundled_data["data_rows"]
+        url_data = bundled_data["url_data"]
+        home_directory = bundled_data["home_directory"]
+        link = bundled_data["link"]
         if url_data[0] != "unknown":
             data_directory = os.path.join(home_directory, ".lyzer/")
             data_file = os.path.join(data_directory, url_data[0] + ".json")
