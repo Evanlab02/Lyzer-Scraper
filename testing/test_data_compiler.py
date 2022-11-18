@@ -72,8 +72,8 @@ class TestDataCompiler(unittest.TestCase):
         sys.argv.append("--web")
         data = {"2019": {"Location": {}}}
         data, location = edit_data_with_location(data, 2019, "Location")
-        self.assertEqual(location, "Location(WEBDuplicate)")
-        self.assertEqual(data, {"2019": {"Location": {}, "Location(WEBDuplicate)": {}}})
+        self.assertEqual(location, "LocationI")
+        self.assertEqual(data, {"2019": {"Location": {}, "LocationI": {}}})
 
     @patch("sys.stdout", StringIO())
     def test_compile_data(self):

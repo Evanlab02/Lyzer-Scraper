@@ -60,7 +60,7 @@ def edit_data_with_location(data: dict, year:int, location: str) -> tuple:
         data[str(year)][location] = {}
     elif "--web" in sys.argv:
         print("[INFO] The location already exists in the data.")
-        data, location = edit_data_with_location(data, year, location + "(WEBDuplicate)")
+        data, location = edit_data_with_location(data, year, location + "I")
     else:
         print("The location already exists in the data.")
         user_input = input("Press enter to continue or type 'exit' to exit"\
