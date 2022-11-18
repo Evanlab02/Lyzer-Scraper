@@ -6,7 +6,7 @@ import json
 
 from rich import print as rich_print
 
-def load_json_data(file_path: str) -> dict:
+def load_json_data(file_path: str):
     """
     This function will load the json data from the given file path.
     """
@@ -23,7 +23,7 @@ def load_json_data(file_path: str) -> dict:
         data = {}
     return data
 
-def write_json_data(file_path: str, data: dict):
+def write_json_data(file_path: str, data):
     """
     This function will write the json data to the given file path.
     """
