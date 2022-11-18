@@ -60,7 +60,8 @@ def edit_data_with_location(data: dict, year:int, location: str) -> tuple:
         data[str(year)][location] = {}
     else:
         print("The location already exists in the data.")
-        user_input = input("Press enter to continue or type 'exit' to exit or type 'override' to override: ").lower()
+        user_input = input("Press enter to continue or type 'exit' to exit"\
+            + " or type 'override' to override: ").lower()
         if user_input == "override":
             data[str(year)][location] = {}
         elif  user_input != "exit":
