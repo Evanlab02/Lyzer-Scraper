@@ -58,11 +58,14 @@ def edit_data_with_location(data: dict, year:int, location: str) -> tuple:
     json_data = data[str(year)]
     if location not in json_data.keys():
         data[str(year)][location] = {}
+    elif "--web" in sys.argv:
+        print("[INFO] The location already exists in the data.")
+        data, location = edit_data_with_location(data, year, location + "(WEBDuplicate)")
     else:
         print("The location already exists in the data.")
         user_input = input("Press enter to continue or type 'exit' to exit"\
-            + " or type 'override' to override: ").lower()
-        if user_input == "override":
+            + " or type 'overwrite' to overwrite: ").lower()
+        if user_input == "overwrite":
             data[str(year)][location] = {}
         elif  user_input != "exit":
             data, location = edit_data_with_location(data, year, location + "I")

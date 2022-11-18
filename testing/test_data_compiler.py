@@ -1,7 +1,7 @@
 """
 This will test the data compiler module.
 """
-
+import sys
 from io import StringIO
 import unittest
 from unittest.mock import patch
@@ -53,7 +53,7 @@ class TestDataCompiler(unittest.TestCase):
             data = {"2019": {"Location": {}}}
             edit_data_with_location(data, 2019, "Location")
 
-    @patch("sys.stdin", StringIO("override\n"))
+    @patch("sys.stdin", StringIO("overwrite\n"))
     @patch("sys.stdout", StringIO())
     def test_edit_data_with_location_duplicate_override(self):
         """
@@ -63,6 +63,17 @@ class TestDataCompiler(unittest.TestCase):
         data, location = edit_data_with_location(data, 2019, "Location")
         self.assertEqual(data, {"2019": {"Location": {}}})
         self.assertEqual(location, "Location")
+
+    @patch("sys.stdout", StringIO())
+    def test_edit_data_with_location_web_argument(self):
+        """
+        This will test the edit_data_with_location function with the web argument.
+        """
+        sys.argv.append("--web")
+        data = {"2019": {"Location": {}}}
+        data, location = edit_data_with_location(data, 2019, "Location")
+        self.assertEqual(location, "Location(WEBDuplicate)")
+        self.assertEqual(data, {"2019": {"Location": {}, "Location(WEBDuplicate)": {}}})
 
     @patch("sys.stdout", StringIO())
     def test_compile_data(self):

@@ -5,7 +5,9 @@ This is module acts as the main entry point for our web scraper program.
 # System imports
 import sys
 
+from flask import Flask, request
 from rich import print as rich_print
+from waitress import serve
 
 from src.cli_parser import get_link
 from src.installer import Installer
@@ -123,7 +125,36 @@ def scrape_link(link: str) -> tuple:
     except ValueError:
         return (6, 6, 6)
 
+def start_web_server():
+    """
+    This function will start the web server.
+    """
+    app = Flask(__name__)
+
+    @app.route("/links", methods=["POST"])
+    def links():
+        """
+        This function will handle the links endpoint.
+        """
+        content_type = request.headers["Content-Type"]
+        if content_type == "application/json":
+            links = request.json
+            rich_print(f"Link -> {links}")
+            codes = []
+            for link in links:
+                exit_code = main(["web-app", "--link", link])
+                codes.append(exit_code)
+            return {"exit_codes": codes}
+
+        return {"error": "Invalid Content-Type"}
+
+    rich_print("Server hosted at http://localhost:8080")
+    serve(app, host="0.0.0.0", port=8080)
+
 
 if __name__ == "__main__":
-    EXIT_CODE = main(sys.argv) # Call main function
-    sys.exit(EXIT_CODE) # Exit program
+    if "--web" in sys.argv:
+        start_web_server()
+    else:
+        EXIT_CODE = main(sys.argv) # Call main function
+        sys.exit(EXIT_CODE) # Exit program
