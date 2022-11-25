@@ -3,14 +3,13 @@ This is module acts as the main entry point for our web scraper program.
 """
 
 # System imports
-import sys
-
 from flask import Flask, request
 from rich import print as rich_print
 from waitress import serve
 
 from src.cli_parser import get_link
 from src.installer import Installer
+from src.file_parser import load_json_data
 from src.url_scraper import UrlScraper
 from src.web_scraper import WebScraper
 
@@ -20,28 +19,52 @@ def start_lyzer_scraper(version: str) -> str:
     return home_directory
 
 
-def start_web_server(home_directory: str):
+def create_web_app(home_directory: str):
     """
-    This function will start the web server.
+    This function will create the web app.
     """
     app = Flask(__name__)
 
-    @app.route("/links", methods=["POST"])
+    @app.route("/links", methods=["POST", "GET"])
     def links():
         """
         This function will handle the links endpoint.
         """
         content_type = request.headers["Content-Type"]
-        if content_type == "application/json":
+        if content_type == "application/json" and request.method == "POST":
             links = request.json
             codes = []
             for link in links:
                 exit_code = full_scrape(["web-app", "--link", link], home_directory)
                 codes.append(exit_code)
             return {"exit_codes": codes}
+        
+        if request.method == "GET":
+            links = load_json_data(f"{home_directory}/.lyzer/links.json")
+            return links
 
         return {"error": "Invalid Content-Type"}
 
+    @app.route("/file/<file>", methods=["GET"])
+    def file(file: str):
+        """
+        This function will handle the file endpoint.
+        """
+        file_name = f"{home_directory}/.lyzer/{file}.json"
+        file_data = load_json_data(file_name)
+        if file_data == {}:
+            return {"error": f"file not found -> {file_name}"}
+        else:
+            return file_data
+
+    return app
+
+
+def start_web_server(home_directory: str):
+    """
+    This function will start the web server.
+    """
+    app = create_web_app(home_directory)
     rich_print("Server hosted at http://localhost:8080")
     serve(app, host="0.0.0.0", port=8080)
 
