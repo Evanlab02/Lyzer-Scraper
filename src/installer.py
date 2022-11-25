@@ -19,11 +19,7 @@ class Installer:
         self.pyinstaller_version = PyInstaller.__version__ # Version of PyInstaller
         self.platform = PyInstaller.PLATFORM # Platform that PyInstaller is running on4
         self.home_directory = os.path.expanduser("~") # Home directory
-        rich_print("\nHello, I am the installer for the scraper.")
-        rich_print("I was created using PyInstaller version " + self.pyinstaller_version)
-        rich_print("I am from platform " + self.platform)
-        rich_print("I have found your home directory to be " + self.home_directory)
-        rich_print()
+        rich_print(f"I have found your storage directory to be {self.home_directory}/.lyzer")
 
     def install_data_directory(self, data_directory: str = ".lyzer/"):
         """

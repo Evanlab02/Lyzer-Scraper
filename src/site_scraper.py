@@ -109,9 +109,6 @@ class SiteScraper:
         Args:
             link (str): The link to the season race summary page.
         """
-        rich_print("Starting scrape...")
-        rich_print()
-
         # Get the content from the link.
         driver, soup = start_driver(link)
 
@@ -121,6 +118,6 @@ class SiteScraper:
 
         stop_driver(driver)
 
-        table = tabulate(data_rows, headers=headers, tablefmt="grid")
-        print(table)
+        # table = tabulate(data_rows, headers=headers, tablefmt="grid")
+        # print(table)
         return headers, data_rows

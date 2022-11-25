@@ -48,8 +48,6 @@ class UrlScraper:
             rich_print("[red]Goodbye.\n[/red]")
             raise index_error
 
-        rich_print(f"Link elements -> {self.url_elements}")
-
         return self.url_elements
 
     def get_year_from_url(self) -> int:
@@ -89,9 +87,7 @@ class UrlScraper:
             "races" in url_elements[1]
             and len(url_elements) == 2
             ):
-            rich_print("\nYear ->", year)
             location = "All"
-            rich_print("Location ->", location)
             return "races", year, location.capitalize()
 
         if (
@@ -99,9 +95,7 @@ class UrlScraper:
             and len(url_elements) == 5
             and url_elements[4] == "race-result.html"
             ):
-            rich_print("\nYear ->", year)
             location = url_elements[3]
-            rich_print("Location ->", location)
             return "races", year, location.capitalize()
 
         if (
@@ -109,9 +103,7 @@ class UrlScraper:
             and len(url_elements) == 5
             and url_elements[4] == "fastest-laps.html"
             ):
-            rich_print("\nYear ->", year)
             location = url_elements[3]
-            rich_print("Location ->", location)
             return "fastest_laps", year, location.capitalize()
 
         if (
@@ -119,9 +111,7 @@ class UrlScraper:
             and len(url_elements) == 5
             and url_elements[4] == "pit-stop-summary.html"
             ):
-            rich_print("\nYear ->", year)
             location = url_elements[3]
-            rich_print("Location ->", location)
             return "pit_stop_summary", year, location.capitalize()
 
         return "unknown", year, "unknown"

@@ -14,8 +14,6 @@ def get_link(args: list[str]) -> str:
     Returns:
         str: The link that was passed to the program.
     """
-    rich_print("\nParsing arguments...")
-
     if remove_first_item(args) != 0:
         return "Unexpected Error 2"
 
