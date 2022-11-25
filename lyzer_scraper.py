@@ -14,6 +14,15 @@ from src.url_scraper import UrlScraper
 from src.web_scraper import WebScraper
 
 def start_lyzer_scraper(version: str) -> str:
+    """
+    This function will start the lyzer scraper program.
+
+    Args:
+        version (str): The version of the program.
+
+    Returns:
+        str: The home directory of the program.
+    """
     rich_print(f"[green]Version: [/green] {version}") # Print version of scraper
     home_directory = install_self()
     return home_directory
@@ -38,7 +47,7 @@ def create_web_app(home_directory: str):
                 exit_code = full_scrape(["web-app", "--link", link], home_directory)
                 codes.append(exit_code)
             return {"exit_codes": codes}
-        
+
         if request.method == "GET":
             links = load_json_data(f"{home_directory}/.lyzer/links.json")
             return links
@@ -54,8 +63,7 @@ def create_web_app(home_directory: str):
         file_data = load_json_data(file_name)
         if file_data == {}:
             return {"error": f"file not found -> {file_name}"}
-        else:
-            return file_data
+        return file_data
 
     return app
 
@@ -79,7 +87,7 @@ def full_scrape(args: list, home_directory: str):
     Returns:
         int: Returns 0 if the program runs successfully.
     """
-    
+
     try:
         exit_code = 0
         link = get_link(args) # Get the link passed to the scraper

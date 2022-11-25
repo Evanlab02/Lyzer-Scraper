@@ -1,9 +1,6 @@
 """
 This will contain all the logic to scrape race data from the web.
 """
-from tabulate import tabulate
-from rich import print as rich_print
-
 from src.web_driver import start_driver, stop_driver
 
 class SiteScraper:

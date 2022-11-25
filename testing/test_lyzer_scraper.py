@@ -78,17 +78,17 @@ class TestLyzerScraper(unittest.TestCase):
         with app.app_context():
             with app.test_client() as client:
                 response = client.post("/links", json=[
-                    "https://www.formula1.com/en/results.html/2021/races.html",
-                    "https://www.formula1.com/en/results.html/2022/races.html"
+                "https://www.formula1.com/en/results.html/2021/races.html",
+                "https://www.formula1.com/en/results.html/2022/races.html"
                 ])
                 self.assertEqual(response.status_code, 200)
                 self.assertEqual(response.json, {"exit_codes":[0, 0]})
-                
+
                 response = client.get("/links", content_type="application/json")
                 self.assertEqual(response.status_code, 200)
                 self.assertEqual(response.json, [
-                    "https://www.formula1.com/en/results.html/2021/races.html",
-                    "https://www.formula1.com/en/results.html/2022/races.html"
+                "https://www.formula1.com/en/results.html/2021/races.html",
+                "https://www.formula1.com/en/results.html/2022/races.html"
                 ])
 
                 write_json_data("testing/resources/advanced/.lyzer/links.json", [])
@@ -99,14 +99,13 @@ class TestLyzerScraper(unittest.TestCase):
         """
         This function will test the file (races.json) endpoint.
         """
-        self.maxDiff = None
         app = create_web_app("testing/resources/advanced")
         app.config["TESTING"] = True
         with app.app_context():
             with app.test_client() as client:
                 response = client.post("/links", json=[
-                    "https://www.formula1.com/en/results.html/2021/races.html",
-                    "https://www.formula1.com/en/results.html/2021/races/1064/bahrain/race-result.html"
+            "https://www.formula1.com/en/results.html/2021/races.html",
+            "https://www.formula1.com/en/results.html/2021/races/1064/bahrain/race-result.html"
                 ])
                 self.assertEqual(response.status_code, 200)
                 self.assertEqual(response.json, {"exit_codes":[0, 0]})
@@ -123,20 +122,20 @@ class TestLyzerScraper(unittest.TestCase):
         """
         This function will test the file (races.json) endpoint.
         """
-        self.maxDiff = None
         app = create_web_app("testing/resources/advanced")
         app.config["TESTING"] = True
         with app.app_context():
             with app.test_client() as client:
                 response = client.post("/links", json=[
-                    "https://www.formula1.com/en/results.html/2021/races/1064/bahrain/fastest-laps.html"
+            "https://www.formula1.com/en/results.html/2021/races/1064/bahrain/fastest-laps.html"
                 ])
                 self.assertEqual(response.status_code, 200)
                 self.assertEqual(response.json, {"exit_codes":[0]})
 
                 response = client.get("/file/fastest_laps", content_type="application/json")
                 self.assertEqual(response.status_code, 200)
-                self.assertEqual(response.json, load_json_data("testing/resources/fastest_laps.json"))
+                self.assertEqual(response.json,
+                load_json_data("testing/resources/fastest_laps.json"))
 
                 write_json_data("testing/resources/advanced/.lyzer/links.json", [])
                 write_json_data("testing/resources/advanced/.lyzer/fastest_laps.json", {})
@@ -146,20 +145,20 @@ class TestLyzerScraper(unittest.TestCase):
         """
         This function will test the file (races.json) endpoint.
         """
-        self.maxDiff = None
         app = create_web_app("testing/resources/advanced")
         app.config["TESTING"] = True
         with app.app_context():
             with app.test_client() as client:
                 response = client.post("/links", json=[
-                    "https://www.formula1.com/en/results.html/2021/races/1064/bahrain/pit-stop-summary.html"
+        "https://www.formula1.com/en/results.html/2021/races/1064/bahrain/pit-stop-summary.html"
                 ])
                 self.assertEqual(response.status_code, 200)
                 self.assertEqual(response.json, {"exit_codes":[0]})
 
                 response = client.get("/file/pit_stop_summary", content_type="application/json")
                 self.assertEqual(response.status_code, 200)
-                self.assertEqual(response.json, load_json_data("testing/resources/pit_stop_summary.json"))
+                self.assertEqual(response.json,
+                load_json_data("testing/resources/pit_stop_summary.json"))
 
                 write_json_data("testing/resources/advanced/.lyzer/links.json", [])
                 write_json_data("testing/resources/advanced/.lyzer/pit_stop_summary.json", {})
@@ -174,14 +173,15 @@ class TestLyzerScraper(unittest.TestCase):
         with app.app_context():
             with app.test_client() as client:
                 response = client.post("/links", json=[
-                    "https://www.formula1.com/en/results.html/2022/races/1124/bahrain/starting-grid.html"
+            "https://www.formula1.com/en/results.html/2022/races/1124/bahrain/starting-grid.html"
                 ])
                 self.assertEqual(response.status_code, 200)
                 self.assertEqual(response.json, {"exit_codes":[0]})
 
                 response = client.get("/file/starting_grid", content_type="application/json")
                 self.assertEqual(response.status_code, 200)
-                self.assertEqual(response.json, load_json_data("testing/resources/starting_grid.json"))
+                self.assertEqual(response.json,
+                load_json_data("testing/resources/starting_grid.json"))
 
                 write_json_data("testing/resources/advanced/.lyzer/links.json", [])
                 write_json_data("testing/resources/advanced/.lyzer/starting_grid.json", {})
