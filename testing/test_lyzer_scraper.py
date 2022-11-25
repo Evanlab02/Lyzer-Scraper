@@ -163,3 +163,25 @@ class TestLyzerScraper(unittest.TestCase):
 
                 write_json_data("testing/resources/advanced/.lyzer/links.json", [])
                 write_json_data("testing/resources/advanced/.lyzer/pit_stop_summary.json", {})
+
+    @patch("sys.stdout", StringIO())
+    def test_file_starting_grid_endpoint(self):
+        """
+        This function will test the file (races.json) endpoint.
+        """
+        app = create_web_app("testing/resources/advanced")
+        app.config["TESTING"] = True
+        with app.app_context():
+            with app.test_client() as client:
+                response = client.post("/links", json=[
+                    "https://www.formula1.com/en/results.html/2022/races/1124/bahrain/starting-grid.html"
+                ])
+                self.assertEqual(response.status_code, 200)
+                self.assertEqual(response.json, {"exit_codes":[0]})
+
+                response = client.get("/file/starting_grid", content_type="application/json")
+                self.assertEqual(response.status_code, 200)
+                self.assertEqual(response.json, load_json_data("testing/resources/starting_grid.json"))
+
+                write_json_data("testing/resources/advanced/.lyzer/links.json", [])
+                write_json_data("testing/resources/advanced/.lyzer/starting_grid.json", {})

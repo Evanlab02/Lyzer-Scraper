@@ -114,4 +114,12 @@ class UrlScraper:
             location = url_elements[3]
             return "pit_stop_summary", year, location.capitalize()
 
+        if (
+            "races" in url_elements[1]
+            and len(url_elements) == 5
+            and url_elements[4] == "starting-grid.html"
+            ):
+            location = url_elements[3]
+            return "starting_grid", year, location.capitalize()
+
         return "unknown", year, "unknown"

@@ -141,7 +141,8 @@ def install_self():
         "races.json",
         "fastest_laps.json",
         "pit_stop_summary.json",
-        "links.json"
+        "links.json",
+        "starting_grid.json"
     ]
 
     for data_file in data_files:

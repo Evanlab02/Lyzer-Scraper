@@ -216,6 +216,24 @@ class TestUrlScraper(unittest.TestCase):
                 self.assertEqual(url_data[2], location.capitalize())
 
     @patch("sys.stdout", StringIO())
+    def test_generate_url_data_starting_grid(self):
+        """
+        This will test the generate_url_data method.
+        """
+        # https://www.formula1.com/en/results.html/2022/races/1124/bahrain/starting-grid.html
+        for year in range(1950, 2023):
+            for location in self.locations:
+                url = f"https://www.formula1.com/en/results.html/{year}/races/"+\
+                    f"1124/{location}/starting-grid.html"
+                url_scraper = UrlScraper(url)
+                url_elements = url_scraper.start()
+                url_year = url_scraper.get_year_from_url()
+                url_data = url_scraper.generate_url_data(url_elements, url_year)
+                self.assertEqual(url_data[0], "starting_grid")
+                self.assertEqual(url_data[1], year)
+                self.assertEqual(url_data[2], location.capitalize())
+
+    @patch("sys.stdout", StringIO())
     def test_generate_url_data_unknown_summary(self):
         """
         This will test the generate_url_data method.
