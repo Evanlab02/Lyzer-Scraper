@@ -1,5 +1,7 @@
 """
 This is module acts as the main entry point for our web scraper program.
+
+File: lyzer_scraper.py
 """
 
 # System imports
