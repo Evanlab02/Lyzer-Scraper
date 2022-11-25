@@ -41,8 +41,7 @@ def create_web_app(home_directory: str):
         """
         This function will handle the links endpoint.
         """
-        content_type = request.headers["Content-Type"]
-        if content_type == "application/json" and request.method == "POST":
+        if request.method == "POST":
             links = request.json
             codes = []
             for link in links:
