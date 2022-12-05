@@ -16,7 +16,7 @@ update-dependencies:
 update-requirements:
 	@pipenv requirements > requirements.txt
 test:
-	@pipenv run pytest testing
+	@pipenv run pytest testing --cov
 coverage:
 	@pipenv run coverage run -m unittest discover -s testing/ -p "test_*.py"
 	@pipenv run coverage report
