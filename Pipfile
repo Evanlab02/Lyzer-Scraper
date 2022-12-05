@@ -18,6 +18,7 @@ flask = "*"
 waitress = "*"
 requests = "*"
 pytest-cov = "*"
+wheel = "*"
 
 [dev-packages]
 

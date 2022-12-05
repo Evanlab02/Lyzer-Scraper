@@ -7,8 +7,9 @@ from io import StringIO
 import unittest
 from unittest.mock import patch
 
-from lyzer_scraper import start_web_scraper, scrape_link, create_web_app
+from lyzer_scraper import create_web_app
 from src.file_parser import write_json_data, load_json_data
+from src.scraper_helper import start_web_scraper, scrape_link
 from src.web_scraper import WebScraper
 
 class TestLyzerScraper(unittest.TestCase):
