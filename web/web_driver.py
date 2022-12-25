@@ -7,13 +7,11 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup
 
-def start_driver(link: str):
+def start_driver(url_data: dict):
     """
     This will start the web driver.
-
     Args:
         link (str): The link to scrape.
-
     Returns:
         webdriver: The web driver.
         BeautifulSoup: The BeautifulSoup object.
@@ -24,7 +22,7 @@ def start_driver(link: str):
     options.add_argument("--headless")
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
     driver.maximize_window()
-    driver.get(link)
+    driver.get(url_data["url"])
 
     content = driver.page_source
     soup = BeautifulSoup(content, features="html.parser")
@@ -32,9 +30,8 @@ def start_driver(link: str):
 
 def stop_driver(driver):
     """
-    Stops the web driver.
-
+    This will stop the web driver.
     Args:
-        driver (webdriver): The web driver to stop.
+        driver (webdriver): The web driver.
     """
     driver.quit()

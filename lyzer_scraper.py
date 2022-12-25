@@ -1,61 +1,61 @@
 """
-This is module acts as the main entry point for our web scraper program.
-
-File: lyzer_scraper.py
+This module is the entry point for the lyzer scraper program.
 """
+import os
+import sys
 
-# System imports
-from rich import print as rich_print
-from waitress import serve
+from api.api_factory import get_version, assign_endpoints
+from logs.console_logger import log_to_console
+from logs.file_logger import create_log
+from source.file_parser import create_data_directory, create_text_file, create_json_file
+from web.flask_web_app import create_app, host_app
 
-from src.installer import Installer
-from src.web_app_factory import create_web_app
+def main():
+    """The main function of the lyzer scraper program."""
+    program_version = get_version()["version"]
+    log_to_console(f"Lyzer {program_version}")
+    create_data_directory("logs")
+    if not create_text_file("logs/logs.txt"):
+        log_to_console("There is an issue with the logs file.", "WARNING")
 
-def start_lyzer_scraper(version: str) -> str:
-    """
-    This function will start the lyzer scraper program.
+    create_log("Lyzer Scraper started.")
 
-    Args:
-        version (str): The version of the program.
+    if create_data_directory("data"):
+        create_log("Data directory created.")
 
-    Returns:
-        str: The home directory of the program.
-    """
-    rich_print(f"[green]Version: [/green] {version}") # Print version of scraper
-    home_directory = install_self()
-    return home_directory
+    if create_json_file("data/links.json", []):
+        create_log("Links data file created.")
 
+    if create_json_file("data/backlog.json", []):
+        create_log("Backlog data file created.")
 
-def start_web_server(home_directory: str):
-    """
-    This function will start the web server.
-    """
-    app = create_web_app(home_directory)
-    rich_print("Server hosted at http://localhost:8080")
-    serve(app, host="0.0.0.0", port=8080)
+    if create_json_file("data/season_summaries.json"):
+        create_log("Season summary data file created.")
 
-
-def install_self():
-    """
-    This function will install the program.
-    """
-    installer = Installer() # Instance of the installer class
-    installer.install_data_directory() # Install the data directory
-
-    data_files = [
-        "races.json",
-        "fastest_laps.json",
-        "pit_stop_summary.json",
-        "links.json",
-        "starting_grid.json"
-    ]
-
-    for data_file in data_files:
-        installer.install_data_file(data_file)
-
-    return installer.home_directory
+    if create_json_file("data/races.json"):
+        create_log("Races data file created.")
+        
+    if len(sys.argv) > 1 and sys.argv[1] == "--uninstall":
+        try:
+            log_to_console("Uninstalling Lyzer Scraper.", "WARNING")
+            os.remove("data/links.json")
+            os.remove("data/backlog.json")
+            os.remove("data/season_summaries.json")
+            os.remove("data/races.json")
+            os.remove("logs/logs.txt")
+            os.rmdir("data")
+            log_to_console("Lyzer Scraper uninstalled.", "SUCCESS")
+        except OSError as error:
+            log_to_console("Lyzer Scraper uninstall failed.", "ERROR")
+            log_to_console(error, "ERROR")
+    else:
+        app = create_app()
+        assign_endpoints(app)
+        log_to_console("Hosting web app.")
+        log_to_console("localhost:8080", "LINK")
+        log_to_console("Ctrl-C to Shutdown")
+        host_app(app)
 
 
 if __name__ == "__main__":
-    home_dir = start_lyzer_scraper("0.5.0")
-    start_web_server(home_dir)
+    main()

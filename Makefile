@@ -7,7 +7,7 @@ update:
 	@pipenv update
 	@pipenv requirements > requirements.txt
 build:
-	@pipenv run pyinstaller --onefile lyzer_scraper.py
+	@pipenv run pyinstaller lyzer_scraper.py --name Lyzer-Scraper -i images/Lyzer-Scraper.PNG
 clean:
 	@pipenv clean
 	@rm -rf .coverage
