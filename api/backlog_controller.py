@@ -6,7 +6,10 @@ from flask import request
 
 from logs.console_logger import log_to_console
 from logs.file_logger import create_log
-from source.file_parser import read_json_file, write_json_file
+from source.data_compiler import compile_data
+from source.file_parser import read_json_file
+from source.site_scraper import parse_site
+from source.url_parser import parse_url
 
 def queue_endpoint():
     """Contains the logic for the backlog endpoint."""
@@ -49,3 +52,37 @@ def add_to_queue():
             "result": "failure",
             "message": "Internal server error: backlog file not found."
         }
+
+def priority_queue():
+    """Immediately process the item given."""
+    request_data = request.json
+    url = request_data["url"]
+    return scrape(url)
+
+def scrape(url: str):
+    """Scrape the url given."""
+    links = read_json_file("data/links.json")
+    if url in links:
+        create_log("Url already scraped.")
+        log_to_console("Url already scraped, ignoring link.", "WARNING")
+        log_to_console("Skipped.")
+        return {
+            "result": "ignored",
+            "message": "Url already scraped."
+        }
+
+    log_to_console("Processing following url immediately.", "WARNING")
+    create_log(f"Processing following url immediately: {url}")
+    site_data = parse_url(url)
+
+    if not site_data["file"]:
+        create_log("Invalid url received.")
+        return {
+            "result": "failure",
+            "message": "Invalid url: url is not supported."
+        }
+
+    parse_site(site_data)
+    compile_data(site_data)
+    log_to_console("Processed url.", "SUCCESS")
+    return {"result": "success"}
