@@ -71,6 +71,8 @@ def determine_file(url: str) -> str:
         "sprint-grid.html": "sprint_grids.json",
         "drivers.html": "drivers.json",
         "team.html": "teams.json",
+        "team": "teams.json",
+        "drivers": "drivers.json"
     }
 
     # Split the URL into elements
@@ -78,6 +80,8 @@ def determine_file(url: str) -> str:
 
     # Check if url_elements[-1] is in the dictionary
     file = file_mapping.get(url_elements[-1], "")
+    if not file:
+        file = file_mapping.get(url_elements[6], "")
 
     # If file is an empty string, it means the value of url_elements[-1]
     # was not found in the dictionary
@@ -85,3 +89,4 @@ def determine_file(url: str) -> str:
         log_to_console(f"Invalid url: {url}", "ERROR")
         create_log(f"Invalid url: {url}")
         return file
+    return file
