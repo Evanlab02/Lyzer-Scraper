@@ -56,35 +56,32 @@ def determine_file(url: str) -> str:
     Returns:
         str: The file to write to.
     """
+    # Create a dictionary to map values of url_elements[-1] to values of file
+    file_mapping = {
+        "races.html": "season_summaries.json",
+        "race-result.html": "races.json",
+        "fastest-laps.html": "fastest_laps.json",
+        "pit-stop-summary.html": "pit_stop_data.json",
+        "starting-grid.html": "starting_grids.json",
+        "qualifying.html": "qualifying.json",
+        "practice-3.html": "practice3.json",
+        "practice-2.html": "practice2.json",
+        "practice-1.html": "practice1.json",
+        "sprint-results.html": "sprints.json",
+        "sprint-grid.html": "sprint_grids.json",
+        "drivers.html": "drivers.json",
+        "team.html": "teams.json",
+    }
+
+    # Split the URL into elements
     url_elements = url.split("/")
-    if url_elements[-1] == "races.html":
-        file = "season_summaries.json"
-    elif url_elements[-1] == "race-result.html":
-        file = "races.json"
-    elif url_elements[-1] == "fastest-laps.html":
-        file = "fastest_laps.json"
-    elif url_elements[-1] == "pit-stop-summary.html":
-        file = "pit_stop_data.json"
-    elif url_elements[-1] == "starting-grid.html":
-        file = "starting_grids.json"
-    elif url_elements[-1] == "qualifying.html":
-        file = "qualifying.json"
-    elif url_elements[-1] == "practice-3.html":
-        file = "practice3.json"
-    elif url_elements[-1] == "practice-2.html":
-        file = "practice2.json"
-    elif url_elements[-1] == "practice-1.html":
-        file = "practice1.json"
-    elif url_elements[-1] == "sprint-results.html":
-        file = "sprints.json"
-    elif url_elements[-1] == "sprint-grid.html":
-        file = "sprint_grids.json"
-    elif url_elements[-1] == "drivers.html" or url_elements[6] == "drivers":
-        file = "drivers.json"
-    elif url_elements[-1] == "team.html" or url_elements[6] == "team":
-        file = "teams.json"
-    else:
-        file = ""
+
+    # Check if url_elements[-1] is in the dictionary
+    file = file_mapping.get(url_elements[-1], "")
+
+    # If file is an empty string, it means the value of url_elements[-1]
+    # was not found in the dictionary
+    if not file:
         log_to_console(f"Invalid url: {url}", "ERROR")
         create_log(f"Invalid url: {url}")
-    return file
+        return file

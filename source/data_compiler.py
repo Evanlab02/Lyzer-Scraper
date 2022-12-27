@@ -63,6 +63,7 @@ def compile_season_summary_data(site_data: dict, data: dict):
         "rows": rows
     }
     data[year] = sub_data
+    return data
 
 def compile_race_data(site_data: dict, data: dict):
     """
@@ -99,6 +100,7 @@ def compile_race_data(site_data: dict, data: dict):
 
     year_data[location] = sub_data
     data[year] = year_data
+    return data
 
 def compile_driver_data(site_data: dict, data: dict):
     """
@@ -135,6 +137,7 @@ def compile_driver_data(site_data: dict, data: dict):
 
     year_data[driver] = sub_data
     data[year] = year_data
+    return data
 
 def compile_team_data(site_data: dict, data: dict):
     """
@@ -171,3 +174,4 @@ def compile_team_data(site_data: dict, data: dict):
 
     year_data[team] = sub_data
     data[year] = year_data
+    return data
