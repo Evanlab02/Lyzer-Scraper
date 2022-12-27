@@ -5,6 +5,7 @@ import unittest
 
 from api.api_factory import assign_endpoints, get_version
 from source.installer import install_lyzer_data_files, uninstall_lyzer_data_files
+from source.file_parser import read_json_file
 from web.flask_web_app import create_app
 
 class TestApiFactory(unittest.TestCase):
@@ -228,3 +229,11 @@ class TestApiFactory(unittest.TestCase):
     def test_get_version(self):
         """Test the get version function."""
         self.assertEqual(get_version(), {"version": "0.5.0"})
+
+    def test_get_seasons_endpoint(self):
+        """Test the get seasons endpoint."""
+        expected = read_json_file("data/season_summaries.json")
+        client = self.app.test_client()
+        response = client.get("/seasons")
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json, expected)

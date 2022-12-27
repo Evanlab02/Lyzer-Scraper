@@ -7,7 +7,7 @@ from flask import request
 from logs.console_logger import log_to_console
 from logs.file_logger import create_log
 from source.data_compiler import compile_data
-from source.file_parser import read_json_file
+from source.file_parser import read_json_file, write_json_file
 from source.site_scraper import parse_site
 from source.url_parser import parse_url
 

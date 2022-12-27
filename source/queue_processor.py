@@ -2,7 +2,7 @@
 This module is responsible for processing the queue and clearing the queue.
 """
 
-from api.api_factory import scrape
+from api.backlog_controller import scrape
 from logs.file_logger import create_log
 from source.file_parser import read_json_file, write_json_file
 
