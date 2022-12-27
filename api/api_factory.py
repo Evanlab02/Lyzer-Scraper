@@ -4,7 +4,7 @@ This module will contain the logic for the flask web app.
 
 from flask import Flask, request
 
-from api.backlog_api import queue_endpoint
+from api.backlog_controller import queue_endpoint
 from logs.console_logger import log_to_console
 from logs.file_logger import create_log
 from source.data_compiler import compile_data
