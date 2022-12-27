@@ -1,88 +1,185 @@
 """
-This will test the data compiler module.
+This module will contain the logic to test the data compiler module.
 """
-import sys
-from io import StringIO
-import unittest
-from unittest.mock import patch
 
-from src.data_compiler import compile_data, edit_data_with_year, edit_data_with_location
+import unittest
+
+from source.data_compiler import (
+    compile_team_data,
+    compile_driver_data,
+    compile_race_data
+)
 
 class TestDataCompiler(unittest.TestCase):
-    """
-    This class will test the data compiler module.
-    """
+    """Tests the data compiler module."""
 
-    @patch("sys.stdout", StringIO())
-    def test_edit_data_with_year(self):
-        """
-        This will test the edit_data_with_year function.
-        """
-        data = {"2019": {}}
-        self.assertEqual(edit_data_with_year(data, 2019), data)
-        self.assertEqual(edit_data_with_year(data, 2020), {"2019": {}, "2020": {}})
+    def test_compile_team_data_with_new_year(self):
+        """Test the compile team data function."""
+        site_data = {
+            "url": "https://www.formula1.com/en/results.html/2022/team/alfa_romeo_ferrari.html",
+            "year": "2022",
+            "team": "Alfa Romeo Ferrari",
+            "headers": ["These", "are", "the", "headers"],
+            "rows": [["These", "are", "the", "rows"], ["These", "are", "the", "rows"]]
+        }
+        data = {}
+        compile_team_data(site_data, data)
+        expected = {
+            "2022": {
+                "Alfa Romeo Ferrari": {
+                    "url":
+                    "https://www.formula1.com/en/results.html/2022/team/alfa_romeo_ferrari.html",
+                    "headers": ["These", "are", "the", "headers"],
+                    "rows": [["These", "are", "the", "rows"], ["These", "are", "the", "rows"]]
+                }
+            }
+        }
+        self.assertEqual(data, expected)
 
-    @patch("sys.stdout", StringIO())
-    def test_edit_data_with_location(self):
-        """
-        This will test the edit_data_with_location function.
-        """
-        data = {"2019": {}}
-        data, location = edit_data_with_location(data, 2019, "Location")
-        self.assertEqual(data, {"2019": {"Location": {}}})
-        self.assertEqual(location, "Location")
+    def test_compile_team_data_with_existing_team(self):
+        """Test the compile team data function."""
+        site_data = {
+            "url": "https://www.formula1.com/en/results.html/2022/team/alfa_romeo_ferrari.html",
+            "year": "2022",
+            "team": "Alfa Romeo Ferrari",
+            "headers": ["These", "are", "the", "headers"],
+            "rows": [["These", "are", "the", "rows"], ["These", "are", "the", "rows"]]
+        }
+        data = {
+            "2022": {
+                "Alfa Romeo Ferrari": {
+                    "url":
+                    "https://www.formula1.com/en/results.html/2022/team/alfa_romeo_ferrari.html",
+                    "headers": ["These", "are", "the", "headers"],
+                    "rows": [["These", "are", "the", "rows"], ["These", "are", "the", "rows"]]
+                }
+            }
+        }
+        compile_team_data(site_data, data)
+        expected = {
+            "2022": {
+                "Alfa Romeo Ferrari": {
+                    "url":
+                    "https://www.formula1.com/en/results.html/2022/team/alfa_romeo_ferrari.html",
+                    "headers": ["These", "are", "the", "headers"],
+                    "rows": [["These", "are", "the", "rows"], ["These", "are", "the", "rows"]]
+                }
+            }
+        }
+        self.assertEqual(data, expected)
 
-    @patch("sys.stdin", StringIO("\n"))
-    @patch("sys.stdout", StringIO())
-    def test_edit_data_with_location_duplicate(self):
-        """
-        This will test the edit_data_with_location function with a duplicate location.
-        """
-        data = {"2019": {"Location": {}}}
-        data, location = edit_data_with_location(data, 2019, "Location")
-        self.assertEqual(data, {"2019": {"Location": {}, "LocationI": {}}})
-        self.assertEqual(location, "LocationI")
+    def test_compile_driver_data_with_new_year(self):
+        """Test the compile driver data function."""
+        site_data = {
+            "url": "https://www.formula1.com/en/results.html/2022/drivers/lewis_hamilton.html",
+            "year": "2022",
+            "driver": "Lewis Hamilton",
+            "headers": ["These", "are", "the", "headers"],
+            "rows": [["These", "are", "the", "rows"], ["These", "are", "the", "rows"]]
+        }
+        data = {}
+        compile_driver_data(site_data, data)
+        expected = {
+            "2022": {
+                "Lewis Hamilton": {
+                    "url":
+                    "https://www.formula1.com/en/results.html/2022/drivers/lewis_hamilton.html",
+                    "headers": ["These", "are", "the", "headers"],
+                    "rows": [["These", "are", "the", "rows"], ["These", "are", "the", "rows"]]
+                }
+            }
+        }
+        self.assertEqual(data, expected)
 
-    @patch("sys.stdin", StringIO("exit\n"))
-    @patch("sys.stdout", StringIO())
-    def test_edit_data_with_location_duplicate_exit(self):
-        """
-        This will test the edit_data_with_location function with a duplicate location and exit.
-        """
-        with self.assertRaises(SystemExit):
-            data = {"2019": {"Location": {}}}
-            edit_data_with_location(data, 2019, "Location")
+    def test_compile_driver_data_with_existing_driver(self):
+        """Test the compile driver data function."""
+        site_data = {
+            "url": "https://www.formula1.com/en/results.html/2022/drivers/lewis_hamilton.html",
+            "year": "2022",
+            "driver": "Lewis Hamilton",
+            "headers": ["These", "are", "the", "headers"],
+            "rows": [["These", "are", "the", "rows"], ["These", "are", "the", "rows"]]
+        }
+        data = {
+            "2022": {
+                "Lewis Hamilton": {
+                    "url":
+                    "https://www.formula1.com/en/results.html/2022/drivers/lewis_hamilton.html",
+                    "headers": ["These", "are", "the", "headers"],
+                    "rows": [["These", "are", "the", "rows"], ["These", "are", "the", "rows"]]
+                }
+            }
+        }
+        compile_driver_data(site_data, data)
+        expected = {
+            "2022": {
+                "Lewis Hamilton": {
+                    "url":
+                    "https://www.formula1.com/en/results.html/2022/drivers/lewis_hamilton.html",
+                    "headers": ["These", "are", "the", "headers"],
+                    "rows": [["These", "are", "the", "rows"], ["These", "are", "the", "rows"]]
+                }
+            }
+        }
+        self.assertEqual(data, expected)
 
-    @patch("sys.stdin", StringIO("overwrite\n"))
-    @patch("sys.stdout", StringIO())
-    def test_edit_data_with_location_duplicate_override(self):
-        """
-        This will test the edit_data_with_location function with a duplicate location and override.
-        """
-        data = {"2019": {"Location": {"headers": [], "data": []}}}
-        data, location = edit_data_with_location(data, 2019, "Location")
-        self.assertEqual(data, {"2019": {"Location": {}}})
-        self.assertEqual(location, "Location")
+    def test_compile_race_data_with_new_year(self):
+        """Test the compile race data function."""
+        site_data = {
+            "url":
+            "https://www.formula1.com/en/results.html/2022/races/1124/bahrain/race-result.html",
+            "year": "2022",
+            "location": "Bahrain",
+            "headers": ["This", "is", "a", "header"],
+            "rows": [["This", "is", "a", "row"], ["This", "is", "a", "row"]]
+        }
+        data = {}
+        compile_race_data(site_data, data)
+        expected = {
+            "2022": {
+                "Bahrain": {
+                "url":
+                "https://www.formula1.com/en/results.html/2022/races/1124/bahrain/race-result.html",
+                "headers": ["This", "is", "a", "header"],
+                "rows": [["This", "is", "a", "row"], ["This", "is", "a", "row"]]
+                }
+            }
+        }
 
-    @patch("sys.stdout", StringIO())
-    def test_edit_data_with_location_web_argument(self):
-        """
-        This will test the edit_data_with_location function with the web argument.
-        """
-        sys.argv.append("--web")
-        data = {"2019": {"Location": {}}}
-        data, location = edit_data_with_location(data, 2019, "Location")
-        self.assertEqual(location, "LocationI")
-        self.assertEqual(data, {"2019": {"Location": {}, "LocationI": {}}})
+        self.assertEqual(data, expected)
 
-    @patch("sys.stdout", StringIO())
-    def test_compile_data(self):
+    def test_compile_race_data_with_existing_location(self):
         """
-        This will test the compile_data function.
+        This test is to make sure that the compile race data function is
+        working as expected.
         """
-        url_data = ("races", 2019, "Location")
-        headers = ["Header"]
-        data_rows = [["Data"]]
-        json_data = {}
-        self.assertEqual(compile_data(url_data, headers, data_rows, json_data),
-        {"2019": {"Location": {"Headers": ["Header"], "Data": [["Data"]]}}})
+        site_data = {
+            "url":
+            "https://www.formula1.com/en/results.html/2022/races/1124/bahrain/race-result.html",
+            "year": "2022",
+            "location": "Bahrain",
+            "headers": ["This", "is", "a", "header"],
+            "rows": [["This", "is", "a", "row"], ["This", "is", "a", "row"]]
+        }
+        data = {
+            "2022": {
+                "Bahrain": {
+                "url":
+                "https://www.formula1.com/en/results.html/2022/races/1124/bahrain/race-result.html",
+                "headers": ["This", "is", "a", "header"],
+                "rows": [["This", "is", "a", "row"], ["This", "is", "a", "row"]]
+                }
+            }
+        }
+        compile_race_data(site_data, data)
+        expected = {
+            "2022": {
+                "Bahrain": {
+                "url":
+                "https://www.formula1.com/en/results.html/2022/races/1124/bahrain/race-result.html",
+                "headers": ["This", "is", "a", "header"],
+                "rows": [["This", "is", "a", "row"], ["This", "is", "a", "row"]]
+                }
+            }
+        }
+        self.assertEqual(data, expected)
