@@ -14,6 +14,6 @@ def create_log(message: str, file_path: str="logs/logs.txt") -> str:
         str: The message that was logged.
     """
     message = f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')} - {message}"
-    with open(file_path, "a") as file:
+    with open(file_path, "a", encoding="utf-8") as file:
         file.write(f"{message}\n")
     return message

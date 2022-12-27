@@ -22,7 +22,7 @@ class TestFileParser(unittest.TestCase):
         if os.path.exists("testing/test"):
             os.rmdir("testing/test")
         if not os.path.exists("testing/test.json"):
-            create_json_file("testing/test.json")
+            create_json_file("testing/test.json", {})
         return super().setUp()
 
     def test_create_text_file_invalid_file(self):
@@ -36,17 +36,17 @@ class TestFileParser(unittest.TestCase):
 
     def test_create_json_file_invalid_file(self):
         """Test the create_json_file function."""
-        self.assertFalse(create_json_file("testing/test.txt"))
+        self.assertFalse(create_json_file("testing/test.txt", {}))
 
     def test_create_json_file_valid_file(self):
         """Test the create_json_file function."""
         os.remove("testing/test.json")
-        self.assertTrue(create_json_file("testing/test.json"))
+        self.assertTrue(create_json_file("testing/test.json", {}))
         self.assertTrue(os.path.exists("testing/test.json"))
 
     def test_create_json_file_existing_file(self):
         """Test the create_json_file function."""
-        self.assertFalse(create_json_file("testing/test.json"))
+        self.assertFalse(create_json_file("testing/test.json", {}))
         self.assertTrue(os.path.exists("testing/test.json"))
 
     def test_create_data_directory_invalid_directory(self):

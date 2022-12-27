@@ -39,28 +39,50 @@ class TestConsoleLogger(unittest.TestCase):
 
     def test_log_to_console_error(self):
         """Test the log_to_console function with the error type of log."""
-        self.assertEqual(log_to_console("This is an error.", "error"), "<[bold red]ERROR[/bold red]> This is an error.")
+        self.assertEqual(log_to_console(
+            "This is an error.",
+            "error"),
+            "<[bold red]ERROR[/bold red]> This is an error.")
 
     def test_log_to_console_warning(self):
         """Test the log_to_console function with the warning type of log."""
-        self.assertEqual(log_to_console("This is a warning.", "warning"), "<[bold yellow]WARNING[/bold yellow]> This is a warning.")
+        self.assertEqual(log_to_console(
+            "This is a warning.",
+            "warning"),
+            "<[bold yellow]WARNING[/bold yellow]> This is a warning.")
 
     def test_log_to_console_success(self):
         """Test the log_to_console function with the success type of log."""
-        self.assertEqual(log_to_console("This is a success.", "success"), "<[bold green]SUCCESS[/bold green]> This is a success.")
+        self.assertEqual(log_to_console(
+            "This is a success.",
+            "success"),
+            "<[bold green]SUCCESS[/bold green]> This is a success.")
 
     def test_log_to_console_link(self):
         """Test the log_to_console function with the link type of log."""
-        self.assertEqual(log_to_console("This is a link.", "link"), "<[bold blue]LINK[/bold blue]> This is a link.")
-    
+        self.assertEqual(log_to_console(
+            "This is a link.",
+            "link"),
+            "<[bold blue]LINK[/bold blue]> This is a link.")
+
     def test_log_to_console_message(self):
         """Test the log_to_console function with the message type of log."""
-        self.assertEqual(log_to_console("This is a message.", "message"), "<[bold magenta]MESSAGE[/bold magenta]> This is a message.")
+        self.assertEqual(log_to_console(
+            "This is a message.",
+            "message"),
+            "<[bold magenta]MESSAGE[/bold magenta]> This is a message.")
 
     def test_log_to_console_info(self):
         """Test the log_to_console function with the info type of log."""
-        self.assertEqual(log_to_console("This is an info message.", "info"), "<[bold cyan]INFO[/bold cyan]> This is an info message.")
+        self.assertEqual(log_to_console(
+            "This is an info message.",
+            "info"),
+            "<[bold cyan]INFO[/bold cyan]> This is an info message.")
 
     def test_log_to_console_should_default_to_info(self):
         """Test the log_to_console function with a type of log that doesn't exist."""
-        self.assertEqual(log_to_console("This is an info message.", "not_a_type_of_log"), "<[bold cyan]INFO[/bold cyan]> This is an info message.")
+        self.assertEqual(
+            log_to_console(
+                "This is an info message.",
+                "not_a_type_of_log"),
+                "<[bold cyan]INFO[/bold cyan]> This is an info message.")

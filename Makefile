@@ -13,7 +13,7 @@ clean:
 	@rm -rf .coverage
 	@rm -rf build/
 	@rm -rf dist/
-	@rm -rf lyzer_scraper.spec
+	@rm -rf Lyzer-Scraper.spec
 	@rm -rf .pytest_cache
 coverage:
 	@pipenv run coverage run -m unittest discover -s testing/ -p "test_*.py"

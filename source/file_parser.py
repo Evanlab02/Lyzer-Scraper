@@ -4,7 +4,6 @@ This module will contain the functions that will parse the data files.
 
 import json
 import os
-import sys
 
 from logs.console_logger import log_to_console
 
@@ -37,11 +36,11 @@ def create_text_file(file_path: str) -> bool:
     if not file_path.endswith(".txt"):
         return False
 
-    with open(file_path, "w") as file:
+    with open(file_path, "w", encoding="utf-8") as file:
         file.write("")
     return True
 
-def create_json_file(file_path: str, starting_value = {}) -> bool:
+def create_json_file(file_path: str, starting_value) -> bool:
     """
     Create a json file.
 
@@ -58,7 +57,7 @@ def create_json_file(file_path: str, starting_value = {}) -> bool:
     if os.path.exists(file_path):
         return False
 
-    with open(file_path, "w") as file:
+    with open(file_path, "w", encoding="utf-8") as file:
         json.dump(starting_value, file)
     return True
 
@@ -73,7 +72,7 @@ def read_json_file(file_path: str):
         The data from the json file.
     """
     try:
-        with open(file_path, "r") as file:
+        with open(file_path, "r", encoding="utf-8") as file:
             return json.load(file)
     except FileNotFoundError as error:
         log_to_console(f"The file {file_path} does not exist.", "ERROR")
@@ -87,5 +86,5 @@ def write_json_file(file_path: str, data):
         file_path (str): The path to the file.
         data (dict): The data to write to the file.
     """
-    with open(file_path, "w") as file:
+    with open(file_path, "w", encoding="utf-8") as file:
         json.dump(data, file, indent=4)

@@ -19,5 +19,5 @@ class TestFileLogger(unittest.TestCase):
         """Test the create_log function."""
         self.assertTrue(create_log("Test").endswith("- Test"))
         self.assertTrue(os.path.exists("logs/logs.txt"))
-        with open("logs/logs.txt", "r") as file:
+        with open("logs/logs.txt", "r", encoding="utf-8") as file:
             file.readlines()[0].endswith("- Test")

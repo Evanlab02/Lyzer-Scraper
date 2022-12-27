@@ -10,10 +10,15 @@ from source.file_parser import read_json_file, write_json_file
 
 def queue_endpoint():
     """Contains the logic for the backlog endpoint."""
+    message = {
+        "result": "failure",
+        "message": "invalid request method"
+    }
     if request.method == "GET":
-        return get_queue()
+        message = get_queue()
     if request.method == "POST":
-        return add_to_queue()
+        message = add_to_queue()
+    return message
 
 def get_queue():
     """Return the backlog queue."""

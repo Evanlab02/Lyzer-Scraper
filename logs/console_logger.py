@@ -26,7 +26,7 @@ def create_prefix(type_of_log: str) -> str:
         case "MESSAGE":
             return "<[bold magenta]MESSAGE[/bold magenta]> "
         case _:
-            return "<[bold cyan]INFO[/bold cyan]> " 
+            return "<[bold cyan]INFO[/bold cyan]> "
 
 def log_to_console(message: str, type_of_log: str = "INFO"):
     """Log a message to the console.
