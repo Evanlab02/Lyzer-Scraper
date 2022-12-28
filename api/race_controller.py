@@ -3,8 +3,6 @@ This module will contain the logic to get the race data from the data files and
 return to the client.
 """
 
-from flask import request
-
 from logs.console_logger import log_to_console
 from logs.file_logger import create_log
 from source.file_parser import read_json_file
@@ -68,5 +66,5 @@ def get_races_from_year(year: str):
             "result": "failure",
             "message": f"Internal server error: year {year} not found."
         },500
-
+    log_to_console(f"Sent - Race data for {year}", "MESSAGE")
     return year_race_data
