@@ -67,4 +67,34 @@ def get_races_from_year(year: str):
             "message": f"Internal server error: year {year} not found."
         },500
     log_to_console(f"Sent - Race data for {year}", "MESSAGE")
-    return year_race_data
+    return year_race_data, 200
+
+def get_races_from_year_and_location(year: str, location: str):
+    """
+    Gets all the races from the data files for the selected year and location and returns 
+    it to the client.
+
+    Args:
+        year (str): The year
+        location (str): The location
+
+    Returns:
+        (dict): A dictionary with all the race data for the selected year and location.
+    """
+    location = location.replace("_", " ")
+    year_race_data, status_code = get_races_from_year(year)
+    if status_code == 500:
+        return year_race_data, status_code
+
+    try:
+        location_race_data = year_race_data[location]
+    except KeyError as error:
+        create_log(f"Internal server error: location {location} not found.")
+        create_log(f"Error: {error}")
+        log_to_console(f"Internal server error: location {location} not found.", "WARNING")
+        log_to_console("Sent - Internal server error", "MESSAGE")
+        return {
+            "result": "failure",
+            "message": f"Internal server error: location {location} not found."
+        }, 500
+    return location_race_data, 200

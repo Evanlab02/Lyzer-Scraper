@@ -312,3 +312,79 @@ class TestApiFactory(unittest.TestCase):
         response = client.get("/races/2022")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, expected)
+
+    def test_get_races_year_and_location_missing_file(self):
+        """Test the get races year and location endpoint."""
+        uninstall_lyzer_data_files()
+        expected = {
+            "result": "failure",
+            "message": "Internal server error: race file not found."
+        }
+
+        client = self.app.test_client()
+        response = client.get("/race/2022/australia")
+        install_lyzer_data_files()
+        self.assertEqual(response.status_code, 500)
+        self.assertEqual(response.json, expected)
+
+    def test_get_races_year_and_location_invalid_year(self):
+        """Test the get races year and location endpoint."""
+        write_json_file("data/races.json", {"2022": {
+            "bahrain": {
+                "headers": [
+                    "Round", "Name", "Date", "Circuit", "Location", "Country",
+                    "Laps", "Distance", "Pole Position", "Fastest Lap"
+                ]
+            }
+        }})
+        expected = {
+            "result": "failure",
+            "message": "Internal server error: year 1949 not found."
+        }
+
+        client = self.app.test_client()
+        response = client.get("/race/1949/bahrain")
+        self.assertEqual(response.status_code, 500)
+        self.assertEqual(response.json, expected)
+
+    def test_get_races_year_and_location_invalid_location(self):
+        """Test the get races year and location endpoint."""
+        write_json_file("data/races.json", {"2022": {
+            "bahrain": {
+                "headers": [
+                    "Round", "Name", "Date", "Circuit", "Location", "Country",
+                    "Laps", "Distance", "Pole Position", "Fastest Lap"
+                ]
+            }
+        }})
+        expected = {
+            "result": "failure",
+            "message": "Internal server error: location australia not found."
+        }
+
+        client = self.app.test_client()
+        response = client.get("/race/2022/australia")
+        self.assertEqual(response.status_code, 500)
+        self.assertEqual(response.json, expected)
+
+    def test_get_races_year_and_location_endpoint_valid(self):
+        """Test the get races year and location endpoint."""
+        write_json_file("data/races.json", {"2022": {
+            "bahrain": {
+                "headers": [
+                    "Round", "Name", "Date", "Circuit", "Location", "Country",
+                    "Laps", "Distance", "Pole Position", "Fastest Lap"
+                ]
+            }
+        }})
+        expected = {
+            "headers": [
+                "Round", "Name", "Date", "Circuit", "Location", "Country",
+                "Laps", "Distance", "Pole Position", "Fastest Lap"
+            ]
+        }
+
+        client = self.app.test_client()
+        response = client.get("/race/2022/bahrain")
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json, expected)
