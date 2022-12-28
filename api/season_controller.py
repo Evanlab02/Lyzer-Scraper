@@ -18,7 +18,6 @@ def get_season(season_year: str) -> dict:
     seasons = read_json_file("data/season_summaries.json")
     season = {"message": "The season you requested was not found."}
     try:
-        log_to_console(f"Season {season_year} found.", "MESSAGE")
         season = seasons[season_year]
     except KeyError as error:
         log_to_console(f"Season {season_year} not found.", "WARNING")

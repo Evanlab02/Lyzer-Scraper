@@ -1,0 +1,4272 @@
+{
+    "2022": {
+        "Bahrain": {
+            "url": "https://www.formula1.com/en/results.html/2022/races/1124/bahrain/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "57",
+                    "1:37:33.584",
+                    "26"
+                ],
+                [
+                    "2",
+                    "55",
+                    "Carlos Sainz",
+                    "Ferrari",
+                    "57",
+                    "+5.598s",
+                    "18"
+                ],
+                [
+                    "3",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "57",
+                    "+9.675s",
+                    "15"
+                ],
+                [
+                    "4",
+                    "63",
+                    "George Russell",
+                    "Mercedes",
+                    "57",
+                    "+11.211s",
+                    "12"
+                ],
+                [
+                    "5",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "57",
+                    "+14.754s",
+                    "10"
+                ],
+                [
+                    "6",
+                    "77",
+                    "Valtteri Bottas",
+                    "Alfa Romeo Ferrari",
+                    "57",
+                    "+16.119s",
+                    "8"
+                ],
+                [
+                    "7",
+                    "31",
+                    "Esteban Ocon",
+                    "Alpine Renault",
+                    "57",
+                    "+19.423s",
+                    "6"
+                ],
+                [
+                    "8",
+                    "22",
+                    "Yuki Tsunoda",
+                    "AlphaTauri RBPT",
+                    "57",
+                    "+20.386s",
+                    "4"
+                ],
+                [
+                    "9",
+                    "14",
+                    "Fernando Alonso",
+                    "Alpine Renault",
+                    "57",
+                    "+22.390s",
+                    "2"
+                ],
+                [
+                    "10",
+                    "24",
+                    "Zhou Guanyu",
+                    "Alfa Romeo Ferrari",
+                    "57",
+                    "+23.064s",
+                    "1"
+                ],
+                [
+                    "11",
+                    "47",
+                    "Mick Schumacher",
+                    "Haas Ferrari",
+                    "57",
+                    "+32.574s",
+                    "0"
+                ],
+                [
+                    "12",
+                    "18",
+                    "Lance Stroll",
+                    "Aston Martin Aramco Mercedes",
+                    "57",
+                    "+45.873s",
+                    "0"
+                ],
+                [
+                    "13",
+                    "23",
+                    "Alexander Albon",
+                    "Williams Mercedes",
+                    "57",
+                    "+53.932s",
+                    "0"
+                ],
+                [
+                    "14",
+                    "3",
+                    "Daniel Ricciardo",
+                    "McLaren Mercedes",
+                    "57",
+                    "+54.975s",
+                    "0"
+                ],
+                [
+                    "15",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Mercedes",
+                    "57",
+                    "+56.335s",
+                    "0"
+                ],
+                [
+                    "16",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "57",
+                    "+61.795s",
+                    "0"
+                ],
+                [
+                    "17",
+                    "27",
+                    "Nico Hulkenberg",
+                    "Aston Martin Aramco Mercedes",
+                    "57",
+                    "+63.829s",
+                    "0"
+                ],
+                [
+                    "18",
+                    "11",
+                    "Sergio Perez",
+                    "Red Bull Racing RBPT",
+                    "56",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "19",
+                    "1",
+                    "Max Verstappen",
+                    "Red Bull Racing RBPT",
+                    "54",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri RBPT",
+                    "44",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "Saudi Arabia": {
+            "url": "https://www.formula1.com/en/results.html/2022/races/1125/saudi-arabia/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "1",
+                    "Max Verstappen",
+                    "Red Bull Racing RBPT",
+                    "50",
+                    "1:24:19.293",
+                    "25"
+                ],
+                [
+                    "2",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "50",
+                    "+0.549s",
+                    "19"
+                ],
+                [
+                    "3",
+                    "55",
+                    "Carlos Sainz",
+                    "Ferrari",
+                    "50",
+                    "+8.097s",
+                    "15"
+                ],
+                [
+                    "4",
+                    "11",
+                    "Sergio Perez",
+                    "Red Bull Racing RBPT",
+                    "50",
+                    "+10.800s",
+                    "12"
+                ],
+                [
+                    "5",
+                    "63",
+                    "George Russell",
+                    "Mercedes",
+                    "50",
+                    "+32.732s",
+                    "10"
+                ],
+                [
+                    "6",
+                    "31",
+                    "Esteban Ocon",
+                    "Alpine Renault",
+                    "50",
+                    "+56.017s",
+                    "8"
+                ],
+                [
+                    "7",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Mercedes",
+                    "50",
+                    "+56.124s",
+                    "6"
+                ],
+                [
+                    "8",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri RBPT",
+                    "50",
+                    "+62.946s",
+                    "4"
+                ],
+                [
+                    "9",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "50",
+                    "+64.308s",
+                    "2"
+                ],
+                [
+                    "10",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "50",
+                    "+73.948s",
+                    "1"
+                ],
+                [
+                    "11",
+                    "24",
+                    "Zhou Guanyu",
+                    "Alfa Romeo Ferrari",
+                    "50",
+                    "+82.215s",
+                    "0"
+                ],
+                [
+                    "12",
+                    "27",
+                    "Nico Hulkenberg",
+                    "Aston Martin Aramco Mercedes",
+                    "50",
+                    "+91.742s",
+                    "0"
+                ],
+                [
+                    "13",
+                    "18",
+                    "Lance Stroll",
+                    "Aston Martin Aramco Mercedes",
+                    "49",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "14",
+                    "23",
+                    "Alexander Albon",
+                    "Williams Mercedes",
+                    "47",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "77",
+                    "Valtteri Bottas",
+                    "Alfa Romeo Ferrari",
+                    "36",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "14",
+                    "Fernando Alonso",
+                    "Alpine Renault",
+                    "35",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "3",
+                    "Daniel Ricciardo",
+                    "McLaren Mercedes",
+                    "35",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "14",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "22",
+                    "Yuki Tsunoda",
+                    "AlphaTauri RBPT",
+                    "0",
+                    "DNS",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "47",
+                    "Mick Schumacher",
+                    "Haas Ferrari",
+                    "0",
+                    "DNS",
+                    "0"
+                ]
+            ]
+        },
+        "Australia": {
+            "url": "https://www.formula1.com/en/results.html/2022/races/1108/australia/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "58",
+                    "1:27:46.548",
+                    "26"
+                ],
+                [
+                    "2",
+                    "11",
+                    "Sergio Perez",
+                    "Red Bull Racing RBPT",
+                    "58",
+                    "+20.524s",
+                    "18"
+                ],
+                [
+                    "3",
+                    "63",
+                    "George Russell",
+                    "Mercedes",
+                    "58",
+                    "+25.593s",
+                    "15"
+                ],
+                [
+                    "4",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "58",
+                    "+28.543s",
+                    "12"
+                ],
+                [
+                    "5",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Mercedes",
+                    "58",
+                    "+53.303s",
+                    "10"
+                ],
+                [
+                    "6",
+                    "3",
+                    "Daniel Ricciardo",
+                    "McLaren Mercedes",
+                    "58",
+                    "+53.737s",
+                    "8"
+                ],
+                [
+                    "7",
+                    "31",
+                    "Esteban Ocon",
+                    "Alpine Renault",
+                    "58",
+                    "+61.683s",
+                    "6"
+                ],
+                [
+                    "8",
+                    "77",
+                    "Valtteri Bottas",
+                    "Alfa Romeo Ferrari",
+                    "58",
+                    "+68.439s",
+                    "4"
+                ],
+                [
+                    "9",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri RBPT",
+                    "58",
+                    "+76.221s",
+                    "2"
+                ],
+                [
+                    "10",
+                    "23",
+                    "Alexander Albon",
+                    "Williams Mercedes",
+                    "58",
+                    "+79.382s",
+                    "1"
+                ],
+                [
+                    "11",
+                    "24",
+                    "Zhou Guanyu",
+                    "Alfa Romeo Ferrari",
+                    "58",
+                    "+81.695s",
+                    "0"
+                ],
+                [
+                    "12",
+                    "18",
+                    "Lance Stroll",
+                    "Aston Martin Aramco Mercedes",
+                    "58",
+                    "+88.598s",
+                    "0"
+                ],
+                [
+                    "13",
+                    "47",
+                    "Mick Schumacher",
+                    "Haas Ferrari",
+                    "57",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "14",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "57",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "15",
+                    "22",
+                    "Yuki Tsunoda",
+                    "AlphaTauri RBPT",
+                    "57",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "16",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "57",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "17",
+                    "14",
+                    "Fernando Alonso",
+                    "Alpine Renault",
+                    "57",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "1",
+                    "Max Verstappen",
+                    "Red Bull Racing RBPT",
+                    "38",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "5",
+                    "Sebastian Vettel",
+                    "Aston Martin Aramco Mercedes",
+                    "22",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "55",
+                    "Carlos Sainz",
+                    "Ferrari",
+                    "1",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "Emilia Romagna": {
+            "url": "https://www.formula1.com/en/results.html/2022/races/1109/italy/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "1",
+                    "Max Verstappen",
+                    "Red Bull Racing RBPT",
+                    "63",
+                    "1:32:07.986",
+                    "26"
+                ],
+                [
+                    "2",
+                    "11",
+                    "Sergio Perez",
+                    "Red Bull Racing RBPT",
+                    "63",
+                    "+16.527s",
+                    "18"
+                ],
+                [
+                    "3",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Mercedes",
+                    "63",
+                    "+34.834s",
+                    "15"
+                ],
+                [
+                    "4",
+                    "63",
+                    "George Russell",
+                    "Mercedes",
+                    "63",
+                    "+42.506s",
+                    "12"
+                ],
+                [
+                    "5",
+                    "77",
+                    "Valtteri Bottas",
+                    "Alfa Romeo Ferrari",
+                    "63",
+                    "+43.181s",
+                    "10"
+                ],
+                [
+                    "6",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "63",
+                    "+56.072s",
+                    "8"
+                ],
+                [
+                    "7",
+                    "22",
+                    "Yuki Tsunoda",
+                    "AlphaTauri RBPT",
+                    "63",
+                    "+61.110s",
+                    "6"
+                ],
+                [
+                    "8",
+                    "5",
+                    "Sebastian Vettel",
+                    "Aston Martin Aramco Mercedes",
+                    "63",
+                    "+70.892s",
+                    "4"
+                ],
+                [
+                    "9",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "63",
+                    "+75.260s",
+                    "2"
+                ],
+                [
+                    "10",
+                    "18",
+                    "Lance Stroll",
+                    "Aston Martin Aramco Mercedes",
+                    "62",
+                    "+1 lap",
+                    "1"
+                ],
+                [
+                    "11",
+                    "23",
+                    "Alexander Albon",
+                    "Williams Mercedes",
+                    "62",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "12",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri RBPT",
+                    "62",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "13",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "62",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "14",
+                    "31",
+                    "Esteban Ocon",
+                    "Alpine Renault",
+                    "62",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "15",
+                    "24",
+                    "Zhou Guanyu",
+                    "Alfa Romeo Ferrari",
+                    "62",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "16",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "62",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "17",
+                    "47",
+                    "Mick Schumacher",
+                    "Haas Ferrari",
+                    "62",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "18",
+                    "3",
+                    "Daniel Ricciardo",
+                    "McLaren Mercedes",
+                    "62",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "14",
+                    "Fernando Alonso",
+                    "Alpine Renault",
+                    "6",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "55",
+                    "Carlos Sainz",
+                    "Ferrari",
+                    "0",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "Miami ": {
+            "url": "https://www.formula1.com/en/results.html/2022/races/1110/miami/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "1",
+                    "Max Verstappen",
+                    "Red Bull Racing RBPT",
+                    "57",
+                    "1:34:24.258",
+                    "26"
+                ],
+                [
+                    "2",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "57",
+                    "+3.786s",
+                    "18"
+                ],
+                [
+                    "3",
+                    "55",
+                    "Carlos Sainz",
+                    "Ferrari",
+                    "57",
+                    "+8.229s",
+                    "15"
+                ],
+                [
+                    "4",
+                    "11",
+                    "Sergio Perez",
+                    "Red Bull Racing RBPT",
+                    "57",
+                    "+10.638s",
+                    "12"
+                ],
+                [
+                    "5",
+                    "63",
+                    "George Russell",
+                    "Mercedes",
+                    "57",
+                    "+18.582s",
+                    "10"
+                ],
+                [
+                    "6",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "57",
+                    "+21.368s",
+                    "8"
+                ],
+                [
+                    "7",
+                    "77",
+                    "Valtteri Bottas",
+                    "Alfa Romeo Ferrari",
+                    "57",
+                    "+25.073s",
+                    "6"
+                ],
+                [
+                    "8",
+                    "31",
+                    "Esteban Ocon",
+                    "Alpine Renault",
+                    "57",
+                    "+28.386s",
+                    "4"
+                ],
+                [
+                    "9",
+                    "23",
+                    "Alexander Albon",
+                    "Williams Mercedes",
+                    "57",
+                    "+32.365s",
+                    "2"
+                ],
+                [
+                    "10",
+                    "18",
+                    "Lance Stroll",
+                    "Aston Martin Aramco Mercedes",
+                    "57",
+                    "+37.026s",
+                    "1"
+                ],
+                [
+                    "11",
+                    "14",
+                    "Fernando Alonso",
+                    "Alpine Renault",
+                    "57",
+                    "+37.128s",
+                    "0"
+                ],
+                [
+                    "12",
+                    "22",
+                    "Yuki Tsunoda",
+                    "AlphaTauri RBPT",
+                    "57",
+                    "+40.146s",
+                    "0"
+                ],
+                [
+                    "13",
+                    "3",
+                    "Daniel Ricciardo",
+                    "McLaren Mercedes",
+                    "57",
+                    "+40.902s",
+                    "0"
+                ],
+                [
+                    "14",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "57",
+                    "+49.936s",
+                    "0"
+                ],
+                [
+                    "15",
+                    "47",
+                    "Mick Schumacher",
+                    "Haas Ferrari",
+                    "57",
+                    "+73.305s",
+                    "0"
+                ],
+                [
+                    "16",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "56",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "17",
+                    "5",
+                    "Sebastian Vettel",
+                    "Aston Martin Aramco Mercedes",
+                    "54",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri RBPT",
+                    "45",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Mercedes",
+                    "39",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "24",
+                    "Zhou Guanyu",
+                    "Alfa Romeo Ferrari",
+                    "6",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "Spain": {
+            "url": "https://www.formula1.com/en/results.html/2022/races/1111/spain/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "1",
+                    "Max Verstappen",
+                    "Red Bull Racing RBPT",
+                    "66",
+                    "1:37:20.475",
+                    "25"
+                ],
+                [
+                    "2",
+                    "11",
+                    "Sergio Perez",
+                    "Red Bull Racing RBPT",
+                    "66",
+                    "+13.072s",
+                    "19"
+                ],
+                [
+                    "3",
+                    "63",
+                    "George Russell",
+                    "Mercedes",
+                    "66",
+                    "+32.927s",
+                    "15"
+                ],
+                [
+                    "4",
+                    "55",
+                    "Carlos Sainz",
+                    "Ferrari",
+                    "66",
+                    "+45.208s",
+                    "12"
+                ],
+                [
+                    "5",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "66",
+                    "+54.534s",
+                    "10"
+                ],
+                [
+                    "6",
+                    "77",
+                    "Valtteri Bottas",
+                    "Alfa Romeo Ferrari",
+                    "66",
+                    "+59.976s",
+                    "8"
+                ],
+                [
+                    "7",
+                    "31",
+                    "Esteban Ocon",
+                    "Alpine Renault",
+                    "66",
+                    "+75.397s",
+                    "6"
+                ],
+                [
+                    "8",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Mercedes",
+                    "66",
+                    "+83.235s",
+                    "4"
+                ],
+                [
+                    "9",
+                    "14",
+                    "Fernando Alonso",
+                    "Alpine Renault",
+                    "65",
+                    "+1 lap",
+                    "2"
+                ],
+                [
+                    "10",
+                    "22",
+                    "Yuki Tsunoda",
+                    "AlphaTauri RBPT",
+                    "65",
+                    "+1 lap",
+                    "1"
+                ],
+                [
+                    "11",
+                    "5",
+                    "Sebastian Vettel",
+                    "Aston Martin Aramco Mercedes",
+                    "65",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "12",
+                    "3",
+                    "Daniel Ricciardo",
+                    "McLaren Mercedes",
+                    "65",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "13",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri RBPT",
+                    "65",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "14",
+                    "47",
+                    "Mick Schumacher",
+                    "Haas Ferrari",
+                    "65",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "15",
+                    "18",
+                    "Lance Stroll",
+                    "Aston Martin Aramco Mercedes",
+                    "65",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "16",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "64",
+                    "+2 laps",
+                    "0"
+                ],
+                [
+                    "17",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "64",
+                    "+2 laps",
+                    "0"
+                ],
+                [
+                    "18",
+                    "23",
+                    "Alexander Albon",
+                    "Williams Mercedes",
+                    "64",
+                    "+2 laps",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "24",
+                    "Zhou Guanyu",
+                    "Alfa Romeo Ferrari",
+                    "28",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "27",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "Monaco": {
+            "url": "https://www.formula1.com/en/results.html/2022/races/1112/monaco/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "11",
+                    "Sergio Perez",
+                    "Red Bull Racing RBPT",
+                    "64",
+                    "1:56:30.265",
+                    "25"
+                ],
+                [
+                    "2",
+                    "55",
+                    "Carlos Sainz",
+                    "Ferrari",
+                    "64",
+                    "+1.154s",
+                    "18"
+                ],
+                [
+                    "3",
+                    "1",
+                    "Max Verstappen",
+                    "Red Bull Racing RBPT",
+                    "64",
+                    "+1.491s",
+                    "15"
+                ],
+                [
+                    "4",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "64",
+                    "+2.922s",
+                    "12"
+                ],
+                [
+                    "5",
+                    "63",
+                    "George Russell",
+                    "Mercedes",
+                    "64",
+                    "+11.968s",
+                    "10"
+                ],
+                [
+                    "6",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Mercedes",
+                    "64",
+                    "+12.231s",
+                    "9"
+                ],
+                [
+                    "7",
+                    "14",
+                    "Fernando Alonso",
+                    "Alpine Renault",
+                    "64",
+                    "+46.358s",
+                    "6"
+                ],
+                [
+                    "8",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "64",
+                    "+50.388s",
+                    "4"
+                ],
+                [
+                    "9",
+                    "77",
+                    "Valtteri Bottas",
+                    "Alfa Romeo Ferrari",
+                    "64",
+                    "+52.525s",
+                    "2"
+                ],
+                [
+                    "10",
+                    "5",
+                    "Sebastian Vettel",
+                    "Aston Martin Aramco Mercedes",
+                    "64",
+                    "+53.536s",
+                    "1"
+                ],
+                [
+                    "11",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri RBPT",
+                    "64",
+                    "+54.289s",
+                    "0"
+                ],
+                [
+                    "12",
+                    "31",
+                    "Esteban Ocon",
+                    "Alpine Renault",
+                    "64",
+                    "+55.644s",
+                    "0"
+                ],
+                [
+                    "13",
+                    "3",
+                    "Daniel Ricciardo",
+                    "McLaren Mercedes",
+                    "64",
+                    "+57.635s",
+                    "0"
+                ],
+                [
+                    "14",
+                    "18",
+                    "Lance Stroll",
+                    "Aston Martin Aramco Mercedes",
+                    "64",
+                    "+60.802s",
+                    "0"
+                ],
+                [
+                    "15",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "63",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "16",
+                    "24",
+                    "Zhou Guanyu",
+                    "Alfa Romeo Ferrari",
+                    "63",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "17",
+                    "22",
+                    "Yuki Tsunoda",
+                    "AlphaTauri RBPT",
+                    "63",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "23",
+                    "Alexander Albon",
+                    "Williams Mercedes",
+                    "48",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "47",
+                    "Mick Schumacher",
+                    "Haas Ferrari",
+                    "24",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "19",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "Azerbaijan": {
+            "url": "https://www.formula1.com/en/results.html/2022/races/1126/azerbaijan/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "1",
+                    "Max Verstappen",
+                    "Red Bull Racing RBPT",
+                    "51",
+                    "1:34:05.941",
+                    "25"
+                ],
+                [
+                    "2",
+                    "11",
+                    "Sergio Perez",
+                    "Red Bull Racing RBPT",
+                    "51",
+                    "+20.823s",
+                    "19"
+                ],
+                [
+                    "3",
+                    "63",
+                    "George Russell",
+                    "Mercedes",
+                    "51",
+                    "+45.995s",
+                    "15"
+                ],
+                [
+                    "4",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "51",
+                    "+71.679s",
+                    "12"
+                ],
+                [
+                    "5",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri RBPT",
+                    "51",
+                    "+77.299s",
+                    "10"
+                ],
+                [
+                    "6",
+                    "5",
+                    "Sebastian Vettel",
+                    "Aston Martin Aramco Mercedes",
+                    "51",
+                    "+84.099s",
+                    "8"
+                ],
+                [
+                    "7",
+                    "14",
+                    "Fernando Alonso",
+                    "Alpine Renault",
+                    "51",
+                    "+88.596s",
+                    "6"
+                ],
+                [
+                    "8",
+                    "3",
+                    "Daniel Ricciardo",
+                    "McLaren Mercedes",
+                    "51",
+                    "+92.207s",
+                    "4"
+                ],
+                [
+                    "9",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Mercedes",
+                    "51",
+                    "+92.556s",
+                    "2"
+                ],
+                [
+                    "10",
+                    "31",
+                    "Esteban Ocon",
+                    "Alpine Renault",
+                    "51",
+                    "+108.184s",
+                    "1"
+                ],
+                [
+                    "11",
+                    "77",
+                    "Valtteri Bottas",
+                    "Alfa Romeo Ferrari",
+                    "50",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "12",
+                    "23",
+                    "Alexander Albon",
+                    "Williams Mercedes",
+                    "50",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "13",
+                    "22",
+                    "Yuki Tsunoda",
+                    "AlphaTauri RBPT",
+                    "50",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "14",
+                    "47",
+                    "Mick Schumacher",
+                    "Haas Ferrari",
+                    "50",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "15",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "50",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "16",
+                    "18",
+                    "Lance Stroll",
+                    "Aston Martin Aramco Mercedes",
+                    "46",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "31",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "24",
+                    "Zhou Guanyu",
+                    "Alfa Romeo Ferrari",
+                    "23",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "21",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "55",
+                    "Carlos Sainz",
+                    "Ferrari",
+                    "8",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "Canada": {
+            "url": "https://www.formula1.com/en/results.html/2022/races/1113/canada/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "1",
+                    "Max Verstappen",
+                    "Red Bull Racing RBPT",
+                    "70",
+                    "1:36:21.757",
+                    "25"
+                ],
+                [
+                    "2",
+                    "55",
+                    "Carlos Sainz",
+                    "Ferrari",
+                    "70",
+                    "+0.993s",
+                    "19"
+                ],
+                [
+                    "3",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "70",
+                    "+7.006s",
+                    "15"
+                ],
+                [
+                    "4",
+                    "63",
+                    "George Russell",
+                    "Mercedes",
+                    "70",
+                    "+12.313s",
+                    "12"
+                ],
+                [
+                    "5",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "70",
+                    "+15.168s",
+                    "10"
+                ],
+                [
+                    "6",
+                    "31",
+                    "Esteban Ocon",
+                    "Alpine Renault",
+                    "70",
+                    "+23.890s",
+                    "8"
+                ],
+                [
+                    "7",
+                    "77",
+                    "Valtteri Bottas",
+                    "Alfa Romeo Ferrari",
+                    "70",
+                    "+25.247s",
+                    "6"
+                ],
+                [
+                    "8",
+                    "24",
+                    "Zhou Guanyu",
+                    "Alfa Romeo Ferrari",
+                    "70",
+                    "+26.952s",
+                    "4"
+                ],
+                [
+                    "9",
+                    "14",
+                    "Fernando Alonso",
+                    "Alpine Renault",
+                    "70",
+                    "+29.945s",
+                    "2"
+                ],
+                [
+                    "10",
+                    "18",
+                    "Lance Stroll",
+                    "Aston Martin Aramco Mercedes",
+                    "70",
+                    "+38.222s",
+                    "1"
+                ],
+                [
+                    "11",
+                    "3",
+                    "Daniel Ricciardo",
+                    "McLaren Mercedes",
+                    "70",
+                    "+43.047s",
+                    "0"
+                ],
+                [
+                    "12",
+                    "5",
+                    "Sebastian Vettel",
+                    "Aston Martin Aramco Mercedes",
+                    "70",
+                    "+44.245s",
+                    "0"
+                ],
+                [
+                    "13",
+                    "23",
+                    "Alexander Albon",
+                    "Williams Mercedes",
+                    "70",
+                    "+44.893s",
+                    "0"
+                ],
+                [
+                    "14",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri RBPT",
+                    "70",
+                    "+45.183s",
+                    "0"
+                ],
+                [
+                    "15",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Mercedes",
+                    "70",
+                    "+52.145s",
+                    "0"
+                ],
+                [
+                    "16",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "70",
+                    "+59.978s",
+                    "0"
+                ],
+                [
+                    "17",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "70",
+                    "+68.180s",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "22",
+                    "Yuki Tsunoda",
+                    "AlphaTauri RBPT",
+                    "47",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "47",
+                    "Mick Schumacher",
+                    "Haas Ferrari",
+                    "18",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "11",
+                    "Sergio Perez",
+                    "Red Bull Racing RBPT",
+                    "7",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "Great Britain": {
+            "url": "https://www.formula1.com/en/results.html/2022/races/1114/great-britain/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "55",
+                    "Carlos Sainz",
+                    "Ferrari",
+                    "52",
+                    "2:17:50.311",
+                    "25"
+                ],
+                [
+                    "2",
+                    "11",
+                    "Sergio Perez",
+                    "Red Bull Racing RBPT",
+                    "52",
+                    "+3.779s",
+                    "18"
+                ],
+                [
+                    "3",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "52",
+                    "+6.225s",
+                    "16"
+                ],
+                [
+                    "4",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "52",
+                    "+8.546s",
+                    "12"
+                ],
+                [
+                    "5",
+                    "14",
+                    "Fernando Alonso",
+                    "Alpine Renault",
+                    "52",
+                    "+9.571s",
+                    "10"
+                ],
+                [
+                    "6",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Mercedes",
+                    "52",
+                    "+11.943s",
+                    "8"
+                ],
+                [
+                    "7",
+                    "1",
+                    "Max Verstappen",
+                    "Red Bull Racing RBPT",
+                    "52",
+                    "+18.777s",
+                    "6"
+                ],
+                [
+                    "8",
+                    "47",
+                    "Mick Schumacher",
+                    "Haas Ferrari",
+                    "52",
+                    "+18.995s",
+                    "4"
+                ],
+                [
+                    "9",
+                    "5",
+                    "Sebastian Vettel",
+                    "Aston Martin Aramco Mercedes",
+                    "52",
+                    "+22.356s",
+                    "2"
+                ],
+                [
+                    "10",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "52",
+                    "+24.590s",
+                    "1"
+                ],
+                [
+                    "11",
+                    "18",
+                    "Lance Stroll",
+                    "Aston Martin Aramco Mercedes",
+                    "52",
+                    "+26.147s",
+                    "0"
+                ],
+                [
+                    "12",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "52",
+                    "+32.511s",
+                    "0"
+                ],
+                [
+                    "13",
+                    "3",
+                    "Daniel Ricciardo",
+                    "McLaren Mercedes",
+                    "52",
+                    "+32.817s",
+                    "0"
+                ],
+                [
+                    "14",
+                    "22",
+                    "Yuki Tsunoda",
+                    "AlphaTauri RBPT",
+                    "52",
+                    "+40.910s",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "31",
+                    "Esteban Ocon",
+                    "Alpine Renault",
+                    "37",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri RBPT",
+                    "26",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "77",
+                    "Valtteri Bottas",
+                    "Alfa Romeo Ferrari",
+                    "20",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "63",
+                    "George Russell",
+                    "Mercedes",
+                    "0",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "24",
+                    "Zhou Guanyu",
+                    "Alfa Romeo Ferrari",
+                    "0",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "23",
+                    "Alexander Albon",
+                    "Williams Mercedes",
+                    "0",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "Austria": {
+            "url": "https://www.formula1.com/en/results.html/2022/races/1115/austria/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "71",
+                    "1:24:24.312",
+                    "25"
+                ],
+                [
+                    "2",
+                    "1",
+                    "Max Verstappen",
+                    "Red Bull Racing RBPT",
+                    "71",
+                    "+1.532s",
+                    "19"
+                ],
+                [
+                    "3",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "71",
+                    "+41.217s",
+                    "15"
+                ],
+                [
+                    "4",
+                    "63",
+                    "George Russell",
+                    "Mercedes",
+                    "71",
+                    "+58.972s",
+                    "12"
+                ],
+                [
+                    "5",
+                    "31",
+                    "Esteban Ocon",
+                    "Alpine Renault",
+                    "71",
+                    "+68.436s",
+                    "10"
+                ],
+                [
+                    "6",
+                    "47",
+                    "Mick Schumacher",
+                    "Haas Ferrari",
+                    "70",
+                    "+1 lap",
+                    "8"
+                ],
+                [
+                    "7",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Mercedes",
+                    "70",
+                    "+1 lap",
+                    "6"
+                ],
+                [
+                    "8",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "70",
+                    "+1 lap",
+                    "4"
+                ],
+                [
+                    "9",
+                    "3",
+                    "Daniel Ricciardo",
+                    "McLaren Mercedes",
+                    "70",
+                    "+1 lap",
+                    "2"
+                ],
+                [
+                    "10",
+                    "14",
+                    "Fernando Alonso",
+                    "Alpine Renault",
+                    "70",
+                    "+1 lap",
+                    "1"
+                ],
+                [
+                    "11",
+                    "77",
+                    "Valtteri Bottas",
+                    "Alfa Romeo Ferrari",
+                    "70",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "12",
+                    "23",
+                    "Alexander Albon",
+                    "Williams Mercedes",
+                    "70",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "13",
+                    "18",
+                    "Lance Stroll",
+                    "Aston Martin Aramco Mercedes",
+                    "70",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "14",
+                    "24",
+                    "Zhou Guanyu",
+                    "Alfa Romeo Ferrari",
+                    "70",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "15",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri RBPT",
+                    "70",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "16",
+                    "22",
+                    "Yuki Tsunoda",
+                    "AlphaTauri RBPT",
+                    "70",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "17",
+                    "5",
+                    "Sebastian Vettel",
+                    "Aston Martin Aramco Mercedes",
+                    "70",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "55",
+                    "Carlos Sainz",
+                    "Ferrari",
+                    "56",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "48",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "11",
+                    "Sergio Perez",
+                    "Red Bull Racing RBPT",
+                    "24",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "France": {
+            "url": "https://www.formula1.com/en/results.html/2022/races/1116/france/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "1",
+                    "Max Verstappen",
+                    "Red Bull Racing RBPT",
+                    "53",
+                    "1:30:02.112",
+                    "25"
+                ],
+                [
+                    "2",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "53",
+                    "+10.587s",
+                    "18"
+                ],
+                [
+                    "3",
+                    "63",
+                    "George Russell",
+                    "Mercedes",
+                    "53",
+                    "+16.495s",
+                    "15"
+                ],
+                [
+                    "4",
+                    "11",
+                    "Sergio Perez",
+                    "Red Bull Racing RBPT",
+                    "53",
+                    "+17.310s",
+                    "12"
+                ],
+                [
+                    "5",
+                    "55",
+                    "Carlos Sainz",
+                    "Ferrari",
+                    "53",
+                    "+28.872s",
+                    "11"
+                ],
+                [
+                    "6",
+                    "14",
+                    "Fernando Alonso",
+                    "Alpine Renault",
+                    "53",
+                    "+42.879s",
+                    "8"
+                ],
+                [
+                    "7",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Mercedes",
+                    "53",
+                    "+52.026s",
+                    "6"
+                ],
+                [
+                    "8",
+                    "31",
+                    "Esteban Ocon",
+                    "Alpine Renault",
+                    "53",
+                    "+56.959s",
+                    "4"
+                ],
+                [
+                    "9",
+                    "3",
+                    "Daniel Ricciardo",
+                    "McLaren Mercedes",
+                    "53",
+                    "+60.372s",
+                    "2"
+                ],
+                [
+                    "10",
+                    "18",
+                    "Lance Stroll",
+                    "Aston Martin Aramco Mercedes",
+                    "53",
+                    "+62.549s",
+                    "1"
+                ],
+                [
+                    "11",
+                    "5",
+                    "Sebastian Vettel",
+                    "Aston Martin Aramco Mercedes",
+                    "53",
+                    "+64.494s",
+                    "0"
+                ],
+                [
+                    "12",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri RBPT",
+                    "53",
+                    "+65.448s",
+                    "0"
+                ],
+                [
+                    "13",
+                    "23",
+                    "Alexander Albon",
+                    "Williams Mercedes",
+                    "53",
+                    "+68.565s",
+                    "0"
+                ],
+                [
+                    "14",
+                    "77",
+                    "Valtteri Bottas",
+                    "Alfa Romeo Ferrari",
+                    "53",
+                    "+76.666s",
+                    "0"
+                ],
+                [
+                    "15",
+                    "47",
+                    "Mick Schumacher",
+                    "Haas Ferrari",
+                    "53",
+                    "+80.394s",
+                    "0"
+                ],
+                [
+                    "16",
+                    "24",
+                    "Zhou Guanyu",
+                    "Alfa Romeo Ferrari",
+                    "47",
+                    "+6 laps",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "40",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "37",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "17",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "22",
+                    "Yuki Tsunoda",
+                    "AlphaTauri RBPT",
+                    "17",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "Hungary": {
+            "url": "https://www.formula1.com/en/results.html/2022/races/1117/hungary/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "1",
+                    "Max Verstappen",
+                    "Red Bull Racing RBPT",
+                    "70",
+                    "1:39:35.912",
+                    "25"
+                ],
+                [
+                    "2",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "70",
+                    "+7.834s",
+                    "19"
+                ],
+                [
+                    "3",
+                    "63",
+                    "George Russell",
+                    "Mercedes",
+                    "70",
+                    "+12.337s",
+                    "15"
+                ],
+                [
+                    "4",
+                    "55",
+                    "Carlos Sainz",
+                    "Ferrari",
+                    "70",
+                    "+14.579s",
+                    "12"
+                ],
+                [
+                    "5",
+                    "11",
+                    "Sergio Perez",
+                    "Red Bull Racing RBPT",
+                    "70",
+                    "+15.688s",
+                    "10"
+                ],
+                [
+                    "6",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "70",
+                    "+16.047s",
+                    "8"
+                ],
+                [
+                    "7",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Mercedes",
+                    "70",
+                    "+78.300s",
+                    "6"
+                ],
+                [
+                    "8",
+                    "14",
+                    "Fernando Alonso",
+                    "Alpine Renault",
+                    "69",
+                    "+1 lap",
+                    "4"
+                ],
+                [
+                    "9",
+                    "31",
+                    "Esteban Ocon",
+                    "Alpine Renault",
+                    "69",
+                    "+1 lap",
+                    "2"
+                ],
+                [
+                    "10",
+                    "5",
+                    "Sebastian Vettel",
+                    "Aston Martin Aramco Mercedes",
+                    "69",
+                    "+1 lap",
+                    "1"
+                ],
+                [
+                    "11",
+                    "18",
+                    "Lance Stroll",
+                    "Aston Martin Aramco Mercedes",
+                    "69",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "12",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri RBPT",
+                    "69",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "13",
+                    "24",
+                    "Zhou Guanyu",
+                    "Alfa Romeo Ferrari",
+                    "69",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "14",
+                    "47",
+                    "Mick Schumacher",
+                    "Haas Ferrari",
+                    "69",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "15",
+                    "3",
+                    "Daniel Ricciardo",
+                    "McLaren Mercedes",
+                    "69",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "16",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "69",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "17",
+                    "23",
+                    "Alexander Albon",
+                    "Williams Mercedes",
+                    "69",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "18",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "69",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "19",
+                    "22",
+                    "Yuki Tsunoda",
+                    "AlphaTauri RBPT",
+                    "68",
+                    "+2 laps",
+                    "0"
+                ],
+                [
+                    "20",
+                    "77",
+                    "Valtteri Bottas",
+                    "Alfa Romeo Ferrari",
+                    "65",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "Belgium": {
+            "url": "https://www.formula1.com/en/results.html/2022/races/1118/belgium/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "1",
+                    "Max Verstappen",
+                    "Red Bull Racing RBPT",
+                    "44",
+                    "1:25:52.894",
+                    "26"
+                ],
+                [
+                    "2",
+                    "11",
+                    "Sergio Perez",
+                    "Red Bull Racing RBPT",
+                    "44",
+                    "+17.841s",
+                    "18"
+                ],
+                [
+                    "3",
+                    "55",
+                    "Carlos Sainz",
+                    "Ferrari",
+                    "44",
+                    "+26.886s",
+                    "15"
+                ],
+                [
+                    "4",
+                    "63",
+                    "George Russell",
+                    "Mercedes",
+                    "44",
+                    "+29.140s",
+                    "12"
+                ],
+                [
+                    "5",
+                    "14",
+                    "Fernando Alonso",
+                    "Alpine Renault",
+                    "44",
+                    "+73.256s",
+                    "10"
+                ],
+                [
+                    "6",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "44",
+                    "+74.936s",
+                    "8"
+                ],
+                [
+                    "7",
+                    "31",
+                    "Esteban Ocon",
+                    "Alpine Renault",
+                    "44",
+                    "+75.640s",
+                    "6"
+                ],
+                [
+                    "8",
+                    "5",
+                    "Sebastian Vettel",
+                    "Aston Martin Aramco Mercedes",
+                    "44",
+                    "+78.107s",
+                    "4"
+                ],
+                [
+                    "9",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri RBPT",
+                    "44",
+                    "+92.181s",
+                    "2"
+                ],
+                [
+                    "10",
+                    "23",
+                    "Alexander Albon",
+                    "Williams Mercedes",
+                    "44",
+                    "+101.900s",
+                    "1"
+                ],
+                [
+                    "11",
+                    "18",
+                    "Lance Stroll",
+                    "Aston Martin Aramco Mercedes",
+                    "44",
+                    "+103.078s",
+                    "0"
+                ],
+                [
+                    "12",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Mercedes",
+                    "44",
+                    "+104.739s",
+                    "0"
+                ],
+                [
+                    "13",
+                    "22",
+                    "Yuki Tsunoda",
+                    "AlphaTauri RBPT",
+                    "44",
+                    "+105.217s",
+                    "0"
+                ],
+                [
+                    "14",
+                    "24",
+                    "Zhou Guanyu",
+                    "Alfa Romeo Ferrari",
+                    "44",
+                    "+106.252s",
+                    "0"
+                ],
+                [
+                    "15",
+                    "3",
+                    "Daniel Ricciardo",
+                    "McLaren Mercedes",
+                    "44",
+                    "+107.163s",
+                    "0"
+                ],
+                [
+                    "16",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "43",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "17",
+                    "47",
+                    "Mick Schumacher",
+                    "Haas Ferrari",
+                    "43",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "18",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "43",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "77",
+                    "Valtteri Bottas",
+                    "Alfa Romeo Ferrari",
+                    "1",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "0",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "Netherlands": {
+            "url": "https://www.formula1.com/en/results.html/2022/races/1119/netherlands/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "1",
+                    "Max Verstappen",
+                    "Red Bull Racing RBPT",
+                    "72",
+                    "1:36:42.773",
+                    "26"
+                ],
+                [
+                    "2",
+                    "63",
+                    "George Russell",
+                    "Mercedes",
+                    "72",
+                    "+4.071s",
+                    "18"
+                ],
+                [
+                    "3",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "72",
+                    "+10.929s",
+                    "15"
+                ],
+                [
+                    "4",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "72",
+                    "+13.016s",
+                    "12"
+                ],
+                [
+                    "5",
+                    "11",
+                    "Sergio Perez",
+                    "Red Bull Racing RBPT",
+                    "72",
+                    "+18.168s",
+                    "10"
+                ],
+                [
+                    "6",
+                    "14",
+                    "Fernando Alonso",
+                    "Alpine Renault",
+                    "72",
+                    "+18.754s",
+                    "8"
+                ],
+                [
+                    "7",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Mercedes",
+                    "72",
+                    "+19.306s",
+                    "6"
+                ],
+                [
+                    "8",
+                    "55",
+                    "Carlos Sainz",
+                    "Ferrari",
+                    "72",
+                    "+20.916s",
+                    "4"
+                ],
+                [
+                    "9",
+                    "31",
+                    "Esteban Ocon",
+                    "Alpine Renault",
+                    "72",
+                    "+21.117s",
+                    "2"
+                ],
+                [
+                    "10",
+                    "18",
+                    "Lance Stroll",
+                    "Aston Martin Aramco Mercedes",
+                    "72",
+                    "+22.459s",
+                    "1"
+                ],
+                [
+                    "11",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri RBPT",
+                    "72",
+                    "+27.009s",
+                    "0"
+                ],
+                [
+                    "12",
+                    "23",
+                    "Alexander Albon",
+                    "Williams Mercedes",
+                    "72",
+                    "+30.390s",
+                    "0"
+                ],
+                [
+                    "13",
+                    "47",
+                    "Mick Schumacher",
+                    "Haas Ferrari",
+                    "72",
+                    "+32.995s",
+                    "0"
+                ],
+                [
+                    "14",
+                    "5",
+                    "Sebastian Vettel",
+                    "Aston Martin Aramco Mercedes",
+                    "72",
+                    "+36.007s",
+                    "0"
+                ],
+                [
+                    "15",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "72",
+                    "+36.869s",
+                    "0"
+                ],
+                [
+                    "16",
+                    "24",
+                    "Zhou Guanyu",
+                    "Alfa Romeo Ferrari",
+                    "72",
+                    "+37.320s",
+                    "0"
+                ],
+                [
+                    "17",
+                    "3",
+                    "Daniel Ricciardo",
+                    "McLaren Mercedes",
+                    "72",
+                    "+37.764s",
+                    "0"
+                ],
+                [
+                    "18",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "71",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "77",
+                    "Valtteri Bottas",
+                    "Alfa Romeo Ferrari",
+                    "53",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "22",
+                    "Yuki Tsunoda",
+                    "AlphaTauri RBPT",
+                    "43",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "Italy": {
+            "url": "https://www.formula1.com/en/results.html/2022/races/1120/italy/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "1",
+                    "Max Verstappen",
+                    "Red Bull Racing RBPT",
+                    "53",
+                    "1:20:27.511",
+                    "25"
+                ],
+                [
+                    "2",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "53",
+                    "+2.446s",
+                    "18"
+                ],
+                [
+                    "3",
+                    "63",
+                    "George Russell",
+                    "Mercedes",
+                    "53",
+                    "+3.405s",
+                    "15"
+                ],
+                [
+                    "4",
+                    "55",
+                    "Carlos Sainz",
+                    "Ferrari",
+                    "53",
+                    "+5.061s",
+                    "12"
+                ],
+                [
+                    "5",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "53",
+                    "+5.380s",
+                    "10"
+                ],
+                [
+                    "6",
+                    "11",
+                    "Sergio Perez",
+                    "Red Bull Racing RBPT",
+                    "53",
+                    "+6.091s",
+                    "9"
+                ],
+                [
+                    "7",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Mercedes",
+                    "53",
+                    "+6.207s",
+                    "6"
+                ],
+                [
+                    "8",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri RBPT",
+                    "53",
+                    "+6.396s",
+                    "4"
+                ],
+                [
+                    "9",
+                    "45",
+                    "Nyck De Vries",
+                    "Williams Mercedes",
+                    "53",
+                    "+7.122s",
+                    "2"
+                ],
+                [
+                    "10",
+                    "24",
+                    "Zhou Guanyu",
+                    "Alfa Romeo Ferrari",
+                    "53",
+                    "+7.910s",
+                    "1"
+                ],
+                [
+                    "11",
+                    "31",
+                    "Esteban Ocon",
+                    "Alpine Renault",
+                    "53",
+                    "+8.323s",
+                    "0"
+                ],
+                [
+                    "12",
+                    "47",
+                    "Mick Schumacher",
+                    "Haas Ferrari",
+                    "53",
+                    "+8.549s",
+                    "0"
+                ],
+                [
+                    "13",
+                    "77",
+                    "Valtteri Bottas",
+                    "Alfa Romeo Ferrari",
+                    "52",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "14",
+                    "22",
+                    "Yuki Tsunoda",
+                    "AlphaTauri RBPT",
+                    "52",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "15",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "52",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "16",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "52",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "3",
+                    "Daniel Ricciardo",
+                    "McLaren Mercedes",
+                    "45",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "18",
+                    "Lance Stroll",
+                    "Aston Martin Aramco Mercedes",
+                    "39",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "14",
+                    "Fernando Alonso",
+                    "Alpine Renault",
+                    "31",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "5",
+                    "Sebastian Vettel",
+                    "Aston Martin Aramco Mercedes",
+                    "10",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "Singapore": {
+            "url": "https://www.formula1.com/en/results.html/2022/races/1133/singapore/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "11",
+                    "Sergio Perez",
+                    "Red Bull Racing RBPT",
+                    "59",
+                    "2:02:20.238",
+                    "25"
+                ],
+                [
+                    "2",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "59",
+                    "+2.595s",
+                    "18"
+                ],
+                [
+                    "3",
+                    "55",
+                    "Carlos Sainz",
+                    "Ferrari",
+                    "59",
+                    "+10.305s",
+                    "15"
+                ],
+                [
+                    "4",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Mercedes",
+                    "59",
+                    "+21.133s",
+                    "12"
+                ],
+                [
+                    "5",
+                    "3",
+                    "Daniel Ricciardo",
+                    "McLaren Mercedes",
+                    "59",
+                    "+53.282s",
+                    "10"
+                ],
+                [
+                    "6",
+                    "18",
+                    "Lance Stroll",
+                    "Aston Martin Aramco Mercedes",
+                    "59",
+                    "+56.330s",
+                    "8"
+                ],
+                [
+                    "7",
+                    "1",
+                    "Max Verstappen",
+                    "Red Bull Racing RBPT",
+                    "59",
+                    "+58.825s",
+                    "6"
+                ],
+                [
+                    "8",
+                    "5",
+                    "Sebastian Vettel",
+                    "Aston Martin Aramco Mercedes",
+                    "59",
+                    "+60.032s",
+                    "4"
+                ],
+                [
+                    "9",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "59",
+                    "+61.515s",
+                    "2"
+                ],
+                [
+                    "10",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri RBPT",
+                    "59",
+                    "+69.576s",
+                    "1"
+                ],
+                [
+                    "11",
+                    "77",
+                    "Valtteri Bottas",
+                    "Alfa Romeo Ferrari",
+                    "59",
+                    "+88.844s",
+                    "0"
+                ],
+                [
+                    "12",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "59",
+                    "+92.610s",
+                    "0"
+                ],
+                [
+                    "13",
+                    "47",
+                    "Mick Schumacher",
+                    "Haas Ferrari",
+                    "58",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "14",
+                    "63",
+                    "George Russell",
+                    "Mercedes",
+                    "57",
+                    "+2 laps",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "22",
+                    "Yuki Tsunoda",
+                    "AlphaTauri RBPT",
+                    "34",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "31",
+                    "Esteban Ocon",
+                    "Alpine Renault",
+                    "26",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "23",
+                    "Alexander Albon",
+                    "Williams Mercedes",
+                    "25",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "14",
+                    "Fernando Alonso",
+                    "Alpine Renault",
+                    "20",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "7",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "24",
+                    "Zhou Guanyu",
+                    "Alfa Romeo Ferrari",
+                    "6",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "Japan": {
+            "url": "https://www.formula1.com/en/results.html/2022/races/1134/japan/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "1",
+                    "Max Verstappen",
+                    "Red Bull Racing RBPT",
+                    "28",
+                    "3:01:44.004",
+                    "25"
+                ],
+                [
+                    "2",
+                    "11",
+                    "Sergio Perez",
+                    "Red Bull Racing RBPT",
+                    "28",
+                    "+27.066s",
+                    "18"
+                ],
+                [
+                    "3",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "28",
+                    "+31.763s",
+                    "15"
+                ],
+                [
+                    "4",
+                    "31",
+                    "Esteban Ocon",
+                    "Alpine Renault",
+                    "28",
+                    "+39.685s",
+                    "12"
+                ],
+                [
+                    "5",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "28",
+                    "+40.326s",
+                    "10"
+                ],
+                [
+                    "6",
+                    "5",
+                    "Sebastian Vettel",
+                    "Aston Martin Aramco Mercedes",
+                    "28",
+                    "+46.358s",
+                    "8"
+                ],
+                [
+                    "7",
+                    "14",
+                    "Fernando Alonso",
+                    "Alpine Renault",
+                    "28",
+                    "+46.369s",
+                    "6"
+                ],
+                [
+                    "8",
+                    "63",
+                    "George Russell",
+                    "Mercedes",
+                    "28",
+                    "+47.661s",
+                    "4"
+                ],
+                [
+                    "9",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "28",
+                    "+70.143s",
+                    "2"
+                ],
+                [
+                    "10",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Mercedes",
+                    "28",
+                    "+70.782s",
+                    "1"
+                ],
+                [
+                    "11",
+                    "3",
+                    "Daniel Ricciardo",
+                    "McLaren Mercedes",
+                    "28",
+                    "+72.877s",
+                    "0"
+                ],
+                [
+                    "12",
+                    "18",
+                    "Lance Stroll",
+                    "Aston Martin Aramco Mercedes",
+                    "28",
+                    "+73.904s",
+                    "0"
+                ],
+                [
+                    "13",
+                    "22",
+                    "Yuki Tsunoda",
+                    "AlphaTauri RBPT",
+                    "28",
+                    "+75.599s",
+                    "0"
+                ],
+                [
+                    "14",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "28",
+                    "+86.016s",
+                    "0"
+                ],
+                [
+                    "15",
+                    "77",
+                    "Valtteri Bottas",
+                    "Alfa Romeo Ferrari",
+                    "28",
+                    "+86.496s",
+                    "0"
+                ],
+                [
+                    "16",
+                    "24",
+                    "Zhou Guanyu",
+                    "Alfa Romeo Ferrari",
+                    "28",
+                    "+87.043s",
+                    "0"
+                ],
+                [
+                    "17",
+                    "47",
+                    "Mick Schumacher",
+                    "Haas Ferrari",
+                    "28",
+                    "+92.523s",
+                    "0"
+                ],
+                [
+                    "18",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri RBPT",
+                    "28",
+                    "+108.091s",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "55",
+                    "Carlos Sainz",
+                    "Ferrari",
+                    "0",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "23",
+                    "Alexander Albon",
+                    "Williams Mercedes",
+                    "0",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "United States ": {
+            "url": "https://www.formula1.com/en/results.html/2022/races/1135/united-states/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "1",
+                    "Max Verstappen",
+                    "Red Bull Racing RBPT",
+                    "56",
+                    "1:42:11.687",
+                    "25"
+                ],
+                [
+                    "2",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "56",
+                    "+5.023s",
+                    "18"
+                ],
+                [
+                    "3",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "56",
+                    "+7.501s",
+                    "15"
+                ],
+                [
+                    "4",
+                    "11",
+                    "Sergio Perez",
+                    "Red Bull Racing RBPT",
+                    "56",
+                    "+8.293s",
+                    "12"
+                ],
+                [
+                    "5",
+                    "63",
+                    "George Russell",
+                    "Mercedes",
+                    "56",
+                    "+44.815s",
+                    "11"
+                ],
+                [
+                    "6",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Mercedes",
+                    "56",
+                    "+53.785s",
+                    "8"
+                ],
+                [
+                    "7",
+                    "14",
+                    "Fernando Alonso",
+                    "Alpine Renault",
+                    "56",
+                    "+55.078s",
+                    "6"
+                ],
+                [
+                    "8",
+                    "5",
+                    "Sebastian Vettel",
+                    "Aston Martin Aramco Mercedes",
+                    "56",
+                    "+65.354s",
+                    "4"
+                ],
+                [
+                    "9",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "56",
+                    "+65.834s",
+                    "2"
+                ],
+                [
+                    "10",
+                    "22",
+                    "Yuki Tsunoda",
+                    "AlphaTauri RBPT",
+                    "56",
+                    "+70.919s",
+                    "1"
+                ],
+                [
+                    "11",
+                    "31",
+                    "Esteban Ocon",
+                    "Alpine Renault",
+                    "56",
+                    "+72.875s",
+                    "0"
+                ],
+                [
+                    "12",
+                    "24",
+                    "Zhou Guanyu",
+                    "Alfa Romeo Ferrari",
+                    "56",
+                    "+76.164s",
+                    "0"
+                ],
+                [
+                    "13",
+                    "23",
+                    "Alexander Albon",
+                    "Williams Mercedes",
+                    "56",
+                    "+80.057s",
+                    "0"
+                ],
+                [
+                    "14",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri RBPT",
+                    "56",
+                    "+81.763s",
+                    "0"
+                ],
+                [
+                    "15",
+                    "47",
+                    "Mick Schumacher",
+                    "Haas Ferrari",
+                    "56",
+                    "+84.490s",
+                    "0"
+                ],
+                [
+                    "16",
+                    "3",
+                    "Daniel Ricciardo",
+                    "McLaren Mercedes",
+                    "56",
+                    "+90.487s",
+                    "0"
+                ],
+                [
+                    "17",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "56",
+                    "+103.588s",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "18",
+                    "Lance Stroll",
+                    "Aston Martin Aramco Mercedes",
+                    "21",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "77",
+                    "Valtteri Bottas",
+                    "Alfa Romeo Ferrari",
+                    "16",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "55",
+                    "Carlos Sainz",
+                    "Ferrari",
+                    "1",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "Mexico": {
+            "url": "https://www.formula1.com/en/results.html/2022/races/1136/mexico/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "1",
+                    "Max Verstappen",
+                    "Red Bull Racing RBPT",
+                    "71",
+                    "1:38:36.729",
+                    "25"
+                ],
+                [
+                    "2",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "71",
+                    "+15.186s",
+                    "18"
+                ],
+                [
+                    "3",
+                    "11",
+                    "Sergio Perez",
+                    "Red Bull Racing RBPT",
+                    "71",
+                    "+18.097s",
+                    "15"
+                ],
+                [
+                    "4",
+                    "63",
+                    "George Russell",
+                    "Mercedes",
+                    "71",
+                    "+49.431s",
+                    "13"
+                ],
+                [
+                    "5",
+                    "55",
+                    "Carlos Sainz",
+                    "Ferrari",
+                    "71",
+                    "+58.123s",
+                    "10"
+                ],
+                [
+                    "6",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "71",
+                    "+68.774s",
+                    "8"
+                ],
+                [
+                    "7",
+                    "3",
+                    "Daniel Ricciardo",
+                    "McLaren Mercedes",
+                    "70",
+                    "+1 lap",
+                    "6"
+                ],
+                [
+                    "8",
+                    "31",
+                    "Esteban Ocon",
+                    "Alpine Renault",
+                    "70",
+                    "+1 lap",
+                    "4"
+                ],
+                [
+                    "9",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Mercedes",
+                    "70",
+                    "+1 lap",
+                    "2"
+                ],
+                [
+                    "10",
+                    "77",
+                    "Valtteri Bottas",
+                    "Alfa Romeo Ferrari",
+                    "70",
+                    "+1 lap",
+                    "1"
+                ],
+                [
+                    "11",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri RBPT",
+                    "70",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "12",
+                    "23",
+                    "Alexander Albon",
+                    "Williams Mercedes",
+                    "70",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "13",
+                    "24",
+                    "Zhou Guanyu",
+                    "Alfa Romeo Ferrari",
+                    "70",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "14",
+                    "5",
+                    "Sebastian Vettel",
+                    "Aston Martin Aramco Mercedes",
+                    "70",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "15",
+                    "18",
+                    "Lance Stroll",
+                    "Aston Martin Aramco Mercedes",
+                    "70",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "16",
+                    "47",
+                    "Mick Schumacher",
+                    "Haas Ferrari",
+                    "70",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "17",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "70",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "18",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "69",
+                    "+2 laps",
+                    "0"
+                ],
+                [
+                    "19",
+                    "14",
+                    "Fernando Alonso",
+                    "Alpine Renault",
+                    "63",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "22",
+                    "Yuki Tsunoda",
+                    "AlphaTauri RBPT",
+                    "50",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "Brazil": {
+            "url": "https://www.formula1.com/en/results.html/2022/races/1137/brazil/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "63",
+                    "George Russell",
+                    "Mercedes",
+                    "71",
+                    "1:38:34.044",
+                    "26"
+                ],
+                [
+                    "2",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "71",
+                    "+1.529s",
+                    "18"
+                ],
+                [
+                    "3",
+                    "55",
+                    "Carlos Sainz",
+                    "Ferrari",
+                    "71",
+                    "+4.051s",
+                    "15"
+                ],
+                [
+                    "4",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "71",
+                    "+8.441s",
+                    "12"
+                ],
+                [
+                    "5",
+                    "14",
+                    "Fernando Alonso",
+                    "Alpine Renault",
+                    "71",
+                    "+9.561s",
+                    "10"
+                ],
+                [
+                    "6",
+                    "1",
+                    "Max Verstappen",
+                    "Red Bull Racing RBPT",
+                    "71",
+                    "+10.056s",
+                    "8"
+                ],
+                [
+                    "7",
+                    "11",
+                    "Sergio Perez",
+                    "Red Bull Racing RBPT",
+                    "71",
+                    "+14.080s",
+                    "6"
+                ],
+                [
+                    "8",
+                    "31",
+                    "Esteban Ocon",
+                    "Alpine Renault",
+                    "71",
+                    "+18.690s",
+                    "4"
+                ],
+                [
+                    "9",
+                    "77",
+                    "Valtteri Bottas",
+                    "Alfa Romeo Ferrari",
+                    "71",
+                    "+22.552s",
+                    "2"
+                ],
+                [
+                    "10",
+                    "18",
+                    "Lance Stroll",
+                    "Aston Martin Aramco Mercedes",
+                    "71",
+                    "+23.552s",
+                    "1"
+                ],
+                [
+                    "11",
+                    "5",
+                    "Sebastian Vettel",
+                    "Aston Martin Aramco Mercedes",
+                    "71",
+                    "+26.183s",
+                    "0"
+                ],
+                [
+                    "12",
+                    "24",
+                    "Zhou Guanyu",
+                    "Alfa Romeo Ferrari",
+                    "71",
+                    "+29.325s",
+                    "0"
+                ],
+                [
+                    "13",
+                    "47",
+                    "Mick Schumacher",
+                    "Haas Ferrari",
+                    "71",
+                    "+29.899s",
+                    "0"
+                ],
+                [
+                    "14",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri RBPT",
+                    "71",
+                    "+31.867s",
+                    "0"
+                ],
+                [
+                    "15",
+                    "23",
+                    "Alexander Albon",
+                    "Williams Mercedes",
+                    "71",
+                    "+36.016s",
+                    "0"
+                ],
+                [
+                    "16",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "71",
+                    "+37.038s",
+                    "0"
+                ],
+                [
+                    "17",
+                    "22",
+                    "Yuki Tsunoda",
+                    "AlphaTauri RBPT",
+                    "70",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Mercedes",
+                    "50",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "0",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "3",
+                    "Daniel Ricciardo",
+                    "McLaren Mercedes",
+                    "0",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "Abu Dhabi": {
+            "url": "https://www.formula1.com/en/results.html/2022/races/1138/abu-dhabi/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "1",
+                    "Max Verstappen",
+                    "Red Bull Racing RBPT",
+                    "58",
+                    "1:27:45.914",
+                    "25"
+                ],
+                [
+                    "2",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "58",
+                    "+8.771s",
+                    "18"
+                ],
+                [
+                    "3",
+                    "11",
+                    "Sergio Perez",
+                    "Red Bull Racing RBPT",
+                    "58",
+                    "+10.093s",
+                    "15"
+                ],
+                [
+                    "4",
+                    "55",
+                    "Carlos Sainz",
+                    "Ferrari",
+                    "58",
+                    "+24.892s",
+                    "12"
+                ],
+                [
+                    "5",
+                    "63",
+                    "George Russell",
+                    "Mercedes",
+                    "58",
+                    "+35.888s",
+                    "10"
+                ],
+                [
+                    "6",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Mercedes",
+                    "58",
+                    "+56.234s",
+                    "9"
+                ],
+                [
+                    "7",
+                    "31",
+                    "Esteban Ocon",
+                    "Alpine Renault",
+                    "58",
+                    "+57.240s",
+                    "6"
+                ],
+                [
+                    "8",
+                    "18",
+                    "Lance Stroll",
+                    "Aston Martin Aramco Mercedes",
+                    "58",
+                    "+76.931s",
+                    "4"
+                ],
+                [
+                    "9",
+                    "3",
+                    "Daniel Ricciardo",
+                    "McLaren Mercedes",
+                    "58",
+                    "+83.268s",
+                    "2"
+                ],
+                [
+                    "10",
+                    "5",
+                    "Sebastian Vettel",
+                    "Aston Martin Aramco Mercedes",
+                    "58",
+                    "+83.898s",
+                    "1"
+                ],
+                [
+                    "11",
+                    "22",
+                    "Yuki Tsunoda",
+                    "AlphaTauri RBPT",
+                    "58",
+                    "+89.371s",
+                    "0"
+                ],
+                [
+                    "12",
+                    "24",
+                    "Zhou Guanyu",
+                    "Alfa Romeo Ferrari",
+                    "57",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "13",
+                    "23",
+                    "Alexander Albon",
+                    "Williams Mercedes",
+                    "57",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "14",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri RBPT",
+                    "57",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "15",
+                    "77",
+                    "Valtteri Bottas",
+                    "Alfa Romeo Ferrari",
+                    "57",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "16",
+                    "47",
+                    "Mick Schumacher",
+                    "Haas Ferrari",
+                    "57",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "17",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "57",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "18",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "55",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "19",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "55",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "14",
+                    "Fernando Alonso",
+                    "Alpine Renault",
+                    "27",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        }
+    }
+}
