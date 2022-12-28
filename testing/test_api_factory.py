@@ -266,3 +266,49 @@ class TestApiFactory(unittest.TestCase):
         response = client.get("/races")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, expected)
+
+    def test_get_races_year_missing_file_endpoint(self):
+        """Test the get races year endpoint."""
+        uninstall_lyzer_data_files()
+        expected = {
+            "result": "failure",
+            "message": "Internal server error: race file not found."
+        }
+        client = self.app.test_client()
+        response = client.get("/races/2022")
+        install_lyzer_data_files()
+        self.assertEqual(response.status_code, 500)
+        self.assertEqual(response.json, expected)
+
+    def test_get_races_invalid_year(self):
+        """"Test the get races year endpoint"""
+        expected = {
+            "result": "failure",
+            "message": "Internal server error: year 1949 not found."
+        }
+
+        client = self.app.test_client()
+        response = client.get("/races/1949")
+        self.assertEqual(response.status_code, 500)
+        self.assertEqual(response.json, expected)
+
+    def test_get_races_valid_year(self):
+        """Test the get races year endpoint"""
+        write_json_file("data/races.json", {"2022": {
+            "headers": [
+                "Round", "Name", "Date", "Circuit", "Location", "Country",
+                "Laps", "Distance", "Pole Position", "Fastest Lap"
+            ]
+        }})
+
+        expected = {
+            "headers": [
+                "Round", "Name", "Date", "Circuit", "Location", "Country",
+                "Laps", "Distance", "Pole Position", "Fastest Lap"
+            ]
+        }
+
+        client = self.app.test_client()
+        response = client.get("/races/2022")
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json, expected)
