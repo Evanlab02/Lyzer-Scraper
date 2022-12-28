@@ -4,7 +4,7 @@ This module will contain the logic to test the backlog api module.
 
 import unittest
 
-from api.backlog_api import get_queue, add_to_queue
+from api.backlog_controller import get_queue, add_to_queue
 from source.installer import uninstall_lyzer_data_files
 
 class TestBacklogApi(unittest.TestCase):

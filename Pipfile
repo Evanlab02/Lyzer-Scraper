@@ -55,8 +55,8 @@ webdriver-manager = "*"
 werkzeug = "*"
 wrapt = "*"
 wsproto = "*"
-pyinstaller = "*"
 pillow = "*"
+pyinstaller = "*"
 
 [dev-packages]
 
