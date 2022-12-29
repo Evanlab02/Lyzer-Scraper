@@ -71,7 +71,7 @@ def get_races_from_year(year: str):
 
 def get_races_from_year_and_location(year: str, location: str):
     """
-    Gets all the races from the data files for the selected year and location and returns 
+    Gets all the races from the data files for the selected year and location and returns
     it to the client.
 
     Args:

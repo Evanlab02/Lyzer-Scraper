@@ -8,11 +8,9 @@ from source.installer import install_lyzer_data_files, uninstall_lyzer_data_file
 from source.file_parser import read_json_file, write_json_file
 from web.flask_web_app import create_app
 
-class TestApiFactory(unittest.TestCase):
-    """Test the api factory module."""
+class TestPriorityQueue(unittest.TestCase):
+    """Test the priority queue functionality."""
     def __init__(self, methodName: str = ...) -> None:
-        uninstall_lyzer_data_files()
-        install_lyzer_data_files()
         self.app = create_app()
         assign_endpoints(self.app)
         self.app.config['TESTING'] = True
@@ -24,32 +22,6 @@ class TestApiFactory(unittest.TestCase):
             with self.app.test_client() as client:
                 yield client
         return super().setUp()
-
-    def test_version_endpoint(self):
-        """Test the assign endpoints function."""
-        client = self.app.test_client()
-        response = client.get("/")
-        self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.json, {"version": "0.5.0"})
-
-    def test_queue_endpoint(self):
-        """Test the queue endpoint get method."""
-        client = self.app.test_client()
-        client.post("/queue", json=[
-            "https://www.youtube.com/watch?v=QH2-TGUlwu4",
-            "https://www.youtube.com/watch?v=QH2-TGUlwu4",
-            "https://www.youtube.com/watch?v=QH2-TGUlwu4"
-            ]
-        )
-        response = client.get("/queue")
-        self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.json, [
-            [
-            "https://www.youtube.com/watch?v=QH2-TGUlwu4",
-            "https://www.youtube.com/watch?v=QH2-TGUlwu4",
-            "https://www.youtube.com/watch?v=QH2-TGUlwu4"
-            ]
-        ])
 
     def test_priority_queue_endpoint_race_summary(self):
         """Test the priority queue endpoint post method."""
@@ -225,6 +197,50 @@ class TestApiFactory(unittest.TestCase):
         })
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, expected)
+
+
+class TestApiEndpointsV1(unittest.TestCase):
+    """Test the api factory module."""
+    def __init__(self, methodName: str = ...) -> None:
+        uninstall_lyzer_data_files()
+        install_lyzer_data_files()
+        self.app = create_app()
+        assign_endpoints(self.app)
+        self.app.config['TESTING'] = True
+        super().__init__(methodName)
+
+    def setUp(self) -> None:
+        """Set up the test client."""
+        with self.app.app_context():
+            with self.app.test_client() as client:
+                yield client
+        return super().setUp()
+
+    def test_version_endpoint(self):
+        """Test the assign endpoints function."""
+        client = self.app.test_client()
+        response = client.get("/")
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json, {"version": "0.5.0"})
+
+    def test_queue_endpoint(self):
+        """Test the queue endpoint get method."""
+        client = self.app.test_client()
+        client.post("/queue", json=[
+            "https://www.youtube.com/watch?v=QH2-TGUlwu4",
+            "https://www.youtube.com/watch?v=QH2-TGUlwu4",
+            "https://www.youtube.com/watch?v=QH2-TGUlwu4"
+            ]
+        )
+        response = client.get("/queue")
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json, [
+            [
+            "https://www.youtube.com/watch?v=QH2-TGUlwu4",
+            "https://www.youtube.com/watch?v=QH2-TGUlwu4",
+            "https://www.youtube.com/watch?v=QH2-TGUlwu4"
+            ]
+        ])
 
     def test_get_version(self):
         """Test the get version function."""
