@@ -405,3 +405,25 @@ class TestApiEndpointsV1(unittest.TestCase):
         response = client.get("/race/2022/bahrain")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, expected)
+
+    def test_get_fastest_laps_endpoint_missing_file(self):
+        """Test the get fastest laps endpoint."""
+        uninstall_lyzer_data_files()
+        expected = {
+            "result": "failure",
+            "message": "Internal server error: fastest laps file not found."
+        }
+        client = self.app.test_client()
+        response = client.get("/races/fastest_laps")
+        install_lyzer_data_files()
+        self.assertEqual(response.status_code, 500)
+        self.assertEqual(response.json, expected)
+
+    def test_get_fastest_laps_endpoint(self):
+        """Test the get fastest laps endpoint."""
+        write_json_file("data/fastest_laps.json", {"Testing": "Testing"})
+        expected = read_json_file("data/fastest_laps.json")
+        client = self.app.test_client()
+        response = client.get("/races/fastest_laps")
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json, expected)
