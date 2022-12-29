@@ -11,6 +11,7 @@ from web.flask_web_app import create_app
 class TestPriorityQueue(unittest.TestCase):
     """Test the priority queue functionality."""
     def __init__(self, methodName: str = ...) -> None:
+        install_lyzer_data_files()
         self.app = create_app()
         assign_endpoints(self.app)
         self.app.config['TESTING'] = True
