@@ -22,5 +22,6 @@ def clear_queue():
         if item in links:
             final_queue.remove(item)
 
-    final_queue = [].append(final_queue)
-    write_json_file("data/backlog.json", final_queue)
+    data = []
+    data.append(final_queue)
+    write_json_file("data/backlog.json", data)
