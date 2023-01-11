@@ -3,8 +3,6 @@ This module will contain the logic to get the fastest laps from the data files a
 return to the client.
 """
 
-from datetime import datetime
-
 from logs.console_logger import log_to_console
 from logs.file_logger import create_log
 from source.file_parser import read_json_file
