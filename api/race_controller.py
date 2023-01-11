@@ -14,6 +14,7 @@ def get_races():
     Returns:
         (dict): A dictionary with all the races data.
     """
+    status_code = 500
     race_data = {
         "result": "failure",
         "message": "Internal server error: race file not found."
@@ -24,10 +25,11 @@ def get_races():
         race_data = read_json_file("data/races.json")
         create_log("Sending race data to client.")
         log_to_console("Sent - All race data.")
+        status_code = 200
     except FileNotFoundError:
         create_log("Internal server error: race file not found.")
         log_to_console("Internal server error: race file not found.", "ERROR")
-    return race_data
+    return race_data, status_code
 
 def get_races_from_year(year: str):
     """

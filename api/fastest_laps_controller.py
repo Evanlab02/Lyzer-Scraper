@@ -43,7 +43,6 @@ def get_fastest_laps_from_year(year: str):
     Returns:
         (dict): A dictionary with all the fastest laps.
     """
-    query_start = datetime.now()
     create_log(f"Client requested fastest laps data from {year}.")
     log_to_console(f"Client requested fastest laps data for {year}")
 
@@ -73,5 +72,4 @@ def get_fastest_laps_from_year(year: str):
 
     create_log(f"Sending response to client: {response['message']}")
     log_to_console(f"Sent - {response['message']}")
-    response["query time"] = (datetime.now() - query_start).total_seconds()
     return response, response["status"]
