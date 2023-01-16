@@ -33,12 +33,18 @@ class TestApiEndpointsV1(unittest.TestCase):
     def test_queue_endpoint(self):
         """Test the queue endpoint get method."""
         client = self.app.test_client()
-        client.post("/queue", json=[
+        response = client.post("/queue", json=[
             "https://www.youtube.com/watch?v=QH2-TGUlwu4",
             "https://www.youtube.com/watch?v=QH2-TGUlwu4",
             "https://www.youtube.com/watch?v=QH2-TGUlwu4"
             ]
         )
+        self.assertEqual(response.status_code, 200)
+        json_data = response.json
+        result = json_data["result"]
+        message = json_data["message"]
+        self.assertEqual(result, "success")
+        self.assertEqual(message, "Item added to backlog successfully.")
         response = client.get("/queue")
         self.assertEqual(response.status_code, 200)
         json_data = response.json

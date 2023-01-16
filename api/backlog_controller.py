@@ -51,24 +51,29 @@ def get_queue():
         create_log("Sending backlog to client.")
     except FileNotFoundError:
         create_log("Internal server error: backlog file not found.")
+        log_to_console("Internal server error: backlog file not found.", "ERROR")
         backlog = backlog_file_not_found()
     return backlog, backlog["status"]
 
 def add_to_queue():
     """Add a new item to the queue."""
+    response = backlog_file_not_found()
+
+    create_log("Client requested to add new item to backlog.")
+    log_to_console("Client requested to add new item to backlog.")
     try:
         backlog = read_json_file("data/backlog.json")
         backlog.append(request.json)
         write_json_file("data/backlog.json", backlog)
         log_to_console("Added new item to backlog.")
         create_log("Added new item to backlog.")
-        return {"result": "success"}
+        response["status"] = 200
+        response["result"] = "success"
+        response["message"] = "Item added to backlog successfully."
     except FileNotFoundError:
         create_log("Internal server error: backlog file not found.")
-        return {
-            "result": "failure",
-            "message": "Internal server error: backlog file not found."
-        }
+        log_to_console("Internal server error: backlog file not found.", "ERROR")
+    return response, response["status"]
 
 def priority_queue():
     """Immediately process the item given."""
