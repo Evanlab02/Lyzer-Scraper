@@ -23,7 +23,12 @@ class TestApiEndpointsV1(unittest.TestCase):
         client = self.app.test_client()
         response = client.get("/")
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.json, {"version": "0.6.0-beta"})
+        self.assertEqual(response.json, {
+        "status": 200,
+        "result": "success",
+        "message": "Version for Lyzer Scraper",
+        "version": "0.6.1-beta"
+        })
 
     def test_queue_endpoint(self):
         """Test the queue endpoint get method."""
@@ -46,7 +51,12 @@ class TestApiEndpointsV1(unittest.TestCase):
 
     def test_get_version(self):
         """Test the get version function."""
-        self.assertEqual(get_version(), {"version": "0.6.0-beta"})
+        self.assertEqual(get_version(), ({
+        "status": 200,
+        "result": "success",
+        "message": "Version for Lyzer Scraper",
+        "version": "0.6.1-beta"
+        }, 200))
 
     def test_get_seasons_endpoint(self):
         """Test the get seasons endpoint."""

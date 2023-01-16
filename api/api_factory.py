@@ -27,4 +27,9 @@ def assign_endpoints(app: Flask):
 
 def get_version():
     """Return the version of the lyzer scraper program."""
-    return {"version": "0.6.0-beta"}
+    return {
+        "status": 200,
+        "result": "success",
+        "message": "Version for Lyzer Scraper",
+        "version": "0.6.1-beta"
+        }, 200
