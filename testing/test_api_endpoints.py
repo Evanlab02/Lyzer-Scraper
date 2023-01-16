@@ -41,7 +41,13 @@ class TestApiEndpointsV1(unittest.TestCase):
         )
         response = client.get("/queue")
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.json, [
+        json_data = response.json
+        result = json_data["result"]
+        message = json_data["message"]
+        queue = json_data["queue"]
+        self.assertEqual(result, "success")
+        self.assertEqual(message, "Backlog retrieved successfully.")
+        self.assertEqual(queue, [
             [
             "https://www.youtube.com/watch?v=QH2-TGUlwu4",
             "https://www.youtube.com/watch?v=QH2-TGUlwu4",

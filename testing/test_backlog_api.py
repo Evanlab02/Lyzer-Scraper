@@ -13,10 +13,11 @@ class TestBacklogApi(unittest.TestCase):
         """Test the get queue function."""
         uninstall_lyzer_data_files()
         expected = {
+            "status": 500,
             "result": "failure",
-            "message": "Internal server error: backlog file not found."
+            "message": "Internal Server Error: Backlog file not found."
         }
-        self.assertEqual(get_queue(), expected)
+        self.assertEqual(get_queue()[0], expected)
 
     def test_add_to_queue_with_no_queue_file(self):
         """Test the add to queue function."""
