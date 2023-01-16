@@ -89,9 +89,10 @@ def scrape(url: str):
         log_to_console("Url already scraped, ignoring link.", "WARNING")
         log_to_console("Skipped.")
         return {
+            "status": 200,
             "result": "ignored",
             "message": "Url already scraped."
-        }
+        }, 200
 
     log_to_console("Processing following url immediately.", "WARNING")
     create_log(f"Processing following url immediately: {url}")
@@ -100,11 +101,16 @@ def scrape(url: str):
     if not site_data["file"]:
         create_log("Invalid url received.")
         return {
+            "status": 400,
             "result": "failure",
             "message": "Invalid url: url is not supported."
-        }
+        }, 400
 
     parse_site(site_data)
     compile_data(site_data)
     log_to_console("Processed url.", "SUCCESS")
-    return {"result": "success"}
+    return {
+            "status": 200,
+            "result": "success",
+            "message": "Url processed successfully."
+        } , 200
