@@ -11,12 +11,25 @@ from source.file_parser import read_json_file, write_json_file
 from source.site_scraper import parse_site
 from source.url_parser import parse_url
 
+def invalid_method():
+    """Return an error for an invalid method."""
+    return {
+        "status": 500,
+        "result": "failure",
+        "message": "Internal Server Error: Invalid method."
+    }
+
+def backlog_file_not_found():
+    """Return an error for a missing backlog file."""
+    return {
+        "status": 500,
+        "result": "failure",
+        "message": "Internal Server Error: Backlog file not found."
+    }
+
 def queue_endpoint():
     """Contains the logic for the backlog endpoint."""
-    message = {
-        "result": "failure",
-        "message": "invalid request method"
-    }
+    message = invalid_method()
     if request.method == "GET":
         message = get_queue()
     if request.method == "POST":
@@ -25,17 +38,21 @@ def queue_endpoint():
 
 def get_queue():
     """Return the backlog queue."""
+    create_log("Client requested backlog.")
+    log_to_console("Client requested backlog.")
+
     try:
         backlog = read_json_file("data/backlog.json")
-        log_to_console("Sent backlog to client.")
-        create_log("Sent backlog to client.")
-        return backlog
+        backlog = {"queue": backlog}
+        backlog["status"] = 200
+        backlog["result"] = "success"
+        backlog["message"] = "Backlog retrieved successfully."
+        log_to_console("Sending backlog to client.")
+        create_log("Sending backlog to client.")
     except FileNotFoundError:
         create_log("Internal server error: backlog file not found.")
-        return {
-            "result": "failure",
-            "message": "Internal server error: backlog file not found."
-        }
+        backlog = backlog_file_not_found()
+    return backlog, backlog["status"]
 
 def add_to_queue():
     """Add a new item to the queue."""
