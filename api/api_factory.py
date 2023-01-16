@@ -15,13 +15,15 @@ def assign_endpoints(app: Flask):
     app.route("/")(get_version)
     app.route("/queue", methods=["GET", "POST"])(queue_endpoint)
     app.route("/queue/priority", methods=["POST"])(priority_queue)
-    app.route("/seasons", methods=["GET"])(get_seasons)
-    app.route("/season/<season_year>", methods=["GET"])(get_season)
+
     app.route("/races", methods=["GET"])(get_races)
     app.route("/races/fastest_laps", methods=["GET"])(get_fastest_laps)
     app.route("/races/fastest_laps/<year>", methods=["GET"])(get_fastest_laps_from_year)
     app.route("/races/<year>", methods=["GET"])(get_races_from_year)
     app.route("/race/<year>/<location>", methods=["GET"])(get_races_from_year_and_location)
+
+    app.route("/seasons", methods=["GET"])(get_seasons)
+    app.route("/season/<season_year>", methods=["GET"])(get_season)
 
 def get_version():
     """Return the version of the lyzer scraper program."""
