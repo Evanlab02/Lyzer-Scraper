@@ -8,198 +8,6 @@ from source.installer import install_lyzer_data_files, uninstall_lyzer_data_file
 from source.file_parser import read_json_file, write_json_file
 from web.flask_web_app import create_app
 
-class TestPriorityQueue(unittest.TestCase):
-    """Test the priority queue functionality."""
-    def __init__(self, methodName: str = ...) -> None:
-        install_lyzer_data_files()
-        self.app = create_app()
-        assign_endpoints(self.app)
-        self.app.config['TESTING'] = True
-        super().__init__(methodName)
-
-    def setUp(self) -> None:
-        """Set up the test client."""
-        with self.app.app_context():
-            with self.app.test_client() as client:
-                yield client
-        return super().setUp()
-
-    def test_priority_queue_endpoint_race_summary(self):
-        """Test the priority queue endpoint post method."""
-        expected = {
-            "result": "success"
-        }
-        client = self.app.test_client()
-        response = client.post("/queue/priority", json={
-            "url": "https://www.formula1.com/en/results.html/2022/races.html"
-        })
-        self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.json, expected)
-
-    def test_priority_queue_endpoint_race_results(self):
-        """Test the priority queue endpoint post method."""
-        expected = {
-            "result": "success"
-        }
-        client = self.app.test_client()
-        response = client.post("/queue/priority", json={
-            "url":
-            "https://www.formula1.com/en/results.html/2022/races/1124/bahrain/race-result.html"
-        })
-
-        self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.json, expected)
-
-    def test_priority_queue_endpoint_qualifying_results(self):
-        """Test the priority queue endpoint post method."""
-        expected = {
-            "result": "success"
-        }
-        client = self.app.test_client()
-        response = client.post("/queue/priority", json={
-            "url":
-            "https://www.formula1.com/en/results.html/2022/races/1124/bahrain/qualifying.html"
-        })
-        self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.json, expected)
-
-    def test_priority_queue_endpoint_practice1_results(self):
-        """Test the priority queue endpoint post method."""
-        expected = {
-            "result": "success"
-        }
-        client = self.app.test_client()
-        response = client.post("/queue/priority", json={
-            "url":
-            "https://www.formula1.com/en/results.html/2022/races/1124/bahrain/practice-1.html"
-        })
-        self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.json, expected)
-
-    def test_priority_queue_endpoint_practice2_results(self):
-        """Test the priority queue endpoint post method."""
-        expected = {
-            "result": "success"
-        }
-        client = self.app.test_client()
-        response = client.post("/queue/priority", json={
-            "url":
-            "https://www.formula1.com/en/results.html/2022/races/1124/bahrain/practice-2.html"
-        })
-        self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.json, expected)
-
-    def test_priority_queue_endpoint_practice3_results(self):
-        """Test the priority queue endpoint post method."""
-        expected = {
-            "result": "success"
-        }
-        client = self.app.test_client()
-        response = client.post("/queue/priority", json={
-            "url":
-            "https://www.formula1.com/en/results.html/2022/races/1124/bahrain/practice-3.html"
-        })
-        self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.json, expected)
-
-    def test_priority_queue_endpoint_starting_grid(self):
-        """Test the priority queue endpoint post method."""
-        expected = {
-            "result": "success"
-        }
-        client = self.app.test_client()
-        response = client.post("/queue/priority", json={
-            "url":
-            "https://www.formula1.com/en/results.html/2022/races/1124/bahrain/starting-grid.html"
-        })
-        self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.json, expected)
-
-    def test_priority_queue_endpoint_pitstops(self):
-        """Test the priority queue endpoint post method."""
-        expected = {
-            "result": "success"
-        }
-        client = self.app.test_client()
-        response = client.post("/queue/priority", json={
-        "url":
-        "https://www.formula1.com/en/results.html/2022/races/1124/bahrain/pit-stop-summary.html"
-        })
-        self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.json, expected)
-
-    def test_priority_queue_endpoint_fastest_laps(self):
-        """Test the priority queue endpoint post method."""
-        expected = {
-            "result": "success"
-        }
-        client = self.app.test_client()
-        response = client.post("/queue/priority", json={
-            "url":
-            "https://www.formula1.com/en/results.html/2022/races/1124/bahrain/fastest-laps.html"
-        })
-        self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.json, expected)
-
-    def test_priority_queue_endpoint_drivers(self):
-        """Test the priority queue endpoint post method."""
-        expected = {
-            "result": "success"
-        }
-        client = self.app.test_client()
-        response = client.post("/queue/priority", json={
-            "url":
-            "https://www.formula1.com/en/results.html/2022/drivers.html"
-        })
-        self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.json, expected)
-
-    def test_priority_queue_endpoint_teams(self):
-        """Test the priority queue endpoint post method."""
-        expected = {
-            "result": "success"
-        }
-        client = self.app.test_client()
-        response = client.post("/queue/priority", json={
-            "url":
-            "https://www.formula1.com/en/results.html/2021/team/alphatauri_honda.html"
-        })
-        self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.json, expected)
-
-    def test_priority_queue_endpoint_scraped_url(self):
-        """Test the priority queue endpoint post method."""
-        expected = {
-            "result": "ignored",
-            "message": "Url already scraped."
-        }
-        client = self.app.test_client()
-        response = client.post("/queue/priority", json={
-            "url":
-            "https://www.formula1.com/en/results.html/2022/races.html"
-        })
-        response = client.post("/queue/priority", json={
-            "url":
-            "https://www.formula1.com/en/results.html/2022/races.html"
-        })
-        self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.json, expected)
-
-    def test_priority_queue_endpoint_invalid_url(self):
-        """Test the priority queue endpoint post method."""
-        expected = {
-            "result": "failure",
-            "message": "Invalid url: url is not supported."
-        }
-        client = self.app.test_client()
-        response = client.post("/queue/priority", json={
-            "url":
-            "https://www.formula1.com/"
-        })
-        self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.json, expected)
-
-
 class TestApiEndpointsV1(unittest.TestCase):
     """Test the api factory module."""
     def __init__(self, methodName: str = ...) -> None:
@@ -210,19 +18,12 @@ class TestApiEndpointsV1(unittest.TestCase):
         self.app.config['TESTING'] = True
         super().__init__(methodName)
 
-    def setUp(self) -> None:
-        """Set up the test client."""
-        with self.app.app_context():
-            with self.app.test_client() as client:
-                yield client
-        return super().setUp()
-
     def test_version_endpoint(self):
         """Test the assign endpoints function."""
         client = self.app.test_client()
         response = client.get("/")
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.json, {"version": "0.5.0"})
+        self.assertEqual(response.json, {"version": "0.6.0-beta"})
 
     def test_queue_endpoint(self):
         """Test the queue endpoint get method."""
@@ -245,7 +46,7 @@ class TestApiEndpointsV1(unittest.TestCase):
 
     def test_get_version(self):
         """Test the get version function."""
-        self.assertEqual(get_version(), {"version": "0.5.0"})
+        self.assertEqual(get_version(), {"version": "0.6.0-beta"})
 
     def test_get_seasons_endpoint(self):
         """Test the get seasons endpoint."""
@@ -282,6 +83,19 @@ class TestApiEndpointsV1(unittest.TestCase):
         client = self.app.test_client()
         response = client.get("/races")
         self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json, expected)
+
+    def test_get_races_missing_file_endpoint(self):
+        """Test the get races year endpoint."""
+        uninstall_lyzer_data_files()
+        expected = {
+            "result": "failure",
+            "message": "Internal server error: race file not found."
+        }
+        client = self.app.test_client()
+        response = client.get("/races")
+        install_lyzer_data_files()
+        self.assertEqual(response.status_code, 500)
         self.assertEqual(response.json, expected)
 
     def test_get_races_year_missing_file_endpoint(self):
@@ -403,5 +217,68 @@ class TestApiEndpointsV1(unittest.TestCase):
 
         client = self.app.test_client()
         response = client.get("/race/2022/bahrain")
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json, expected)
+
+    def test_get_fastest_laps_endpoint_missing_file(self):
+        """Test the get fastest laps endpoint."""
+        uninstall_lyzer_data_files()
+        expected = {
+            "result": "failure",
+            "message": "Internal server error: fastest laps file not found."
+        }
+        client = self.app.test_client()
+        response = client.get("/races/fastest_laps")
+        install_lyzer_data_files()
+        self.assertEqual(response.status_code, 500)
+        self.assertEqual(response.json, expected)
+
+    def test_get_fastest_laps_endpoint(self):
+        """Test the get fastest laps endpoint."""
+        write_json_file("data/fastest_laps.json", {"Testing": "Testing"})
+        expected = read_json_file("data/fastest_laps.json")
+        client = self.app.test_client()
+        response = client.get("/races/fastest_laps")
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json, expected)
+
+    def test_get_fastest_laps_endpoint_year_missing_file(self):
+        """Test the get fastest laps endpoint."""
+        uninstall_lyzer_data_files()
+        expected = {
+            "status": 500,
+            "result": "failure",
+            "message": "Internal server error: fastest laps file not found."
+        }
+        client = self.app.test_client()
+        response = client.get("/races/fastest_laps/2021")
+        install_lyzer_data_files()
+        self.assertEqual(response.status_code, 500)
+        self.assertEqual(response.json, expected)
+
+    def test_get_fastest_laps_endpoint_year_invalid_year(self):
+        """Test the get fastest laps endpoint."""
+        write_json_file("data/fastest_laps.json", {"2022": {"Testing": "Testing"}})
+        expected = {
+            "status": 404,
+            "result": "failure",
+            "message": "Data not found for year: 2021"
+        }
+        client = self.app.test_client()
+        response = client.get("/races/fastest_laps/2021")
+        self.assertEqual(response.status_code, 404)
+        self.assertEqual(response.json, expected)
+
+    def test_get_fatest_laps_endpoint_year_2021(self):
+        """Test the get fastest laps endpoint."""
+        write_json_file("data/fastest_laps.json", {"2021": {"Testing": "Testing"}})
+        expected = {
+            "Testing": "Testing",
+            "message": "Fastest laps data for year: 2021",
+            "result": "success",
+            "status": 200
+            }
+        client = self.app.test_client()
+        response = client.get("/races/fastest_laps/2021")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, expected)
