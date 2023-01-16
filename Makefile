@@ -1,13 +1,15 @@
-requirements:
-	@pipenv requirements > requirements.txt
+all:
+	@make install
+	@make test
+	@make build
 install:
 	@pipenv install
-	@pipenv sync
-update:
-	@pipenv update
-	@pipenv requirements > requirements.txt
+test:
+	@pipenv run pytest testing --cov
 build:
-	@pipenv run pyinstaller lyzer_scraper.py --name Lyzer-Scraper -i images/Lyzer-Scraper.PNG
+	@pipenv run pyinstaller lyzer_scraper.py --name Lyzer-Scraper --add-data backup/:data/
+build-windows:
+	@pipenv run pyinstaller lyzer_scraper.py --name Lyzer-Scraper -i images/Lyzer-Scraper.PNG --add-data backup/;data/
 clean:
 	@pipenv clean
 	@rm -rf .coverage
@@ -16,15 +18,16 @@ clean:
 	@rm -rf Lyzer-Scraper.spec
 	@rm -rf .pytest_cache
 	@rm -rf data/
-coverage:
-	@pipenv run coverage run -m unittest discover -s testing/ -p "test_*.py"
-	@pipenv run coverage report
+refresh:
+	@pipenv sync
 run:
 	@pipenv run python3 lyzer_scraper.py
+run-ubuntu: build
+	@cd dist/Lyzer-Scraper/ && ./Lyzer-Scraper
+run-windows: build-windows
+	@cd dist/Lyzer-Scraper/ && ./Lyzer-Scraper.exe
+update:
+	@pipenv update
+	@pipenv requirements > requirements.txt
 security-check:
 	@pipenv check
-test:
-	@pipenv run pytest testing --cov
-ubuntu-install: build
-	@chmod +x dist/lyzer_scraper
-	@sudo cp dist/lyzer_scraper /usr/local/bin/

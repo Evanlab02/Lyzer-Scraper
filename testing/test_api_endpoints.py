@@ -88,8 +88,8 @@ class TestApiEndpointsV1(unittest.TestCase):
 
     def test_get_seasons_endpoint_valid_year(self):
         """Test the get seasons endpoint."""
-        write_json_file("data/season_summaries.json", {"2022": "test"})
-        expected = "test"
+        write_json_file("data/season_summaries.json", {"2022": {"url": "test"}})
+        expected = {"url": "test"}
         app = create_app()
         assign_endpoints(app)
         app.config['TESTING'] = True
@@ -97,20 +97,27 @@ class TestApiEndpointsV1(unittest.TestCase):
         season_year = "2022"
         response = client.get(f"/season/{season_year}")
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.text, expected)
+        self.assertEqual(response.json, expected)
 
     def test_get_races_endpoint(self):
         """Test the get races endpoint."""
-        expected = read_json_file("data/races.json")
+        expected_data = read_json_file("data/races.json")
+        expected_response = {
+            "status": 200,
+            "result": "success",
+            "message": "Races - All time",
+            "data": expected_data
+        }
         client = self.app.test_client()
         response = client.get("/races")
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.json, expected)
+        self.assertEqual(response.json, expected_response)
 
     def test_get_races_missing_file_endpoint(self):
         """Test the get races year endpoint."""
         uninstall_lyzer_data_files()
         expected = {
+            "status": 500,
             "result": "failure",
             "message": "Internal server error: race file not found."
         }
