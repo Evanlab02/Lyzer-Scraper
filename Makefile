@@ -15,6 +15,7 @@ clean:
 	@rm -rf dist/
 	@rm -rf Lyzer-Scraper.spec
 	@rm -rf .pytest_cache
+	@rm -rf data/
 coverage:
 	@pipenv run coverage run -m unittest discover -s testing/ -p "test_*.py"
 	@pipenv run coverage report
