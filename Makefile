@@ -7,9 +7,9 @@ install:
 test:
 	@pipenv run pytest testing --cov
 build:
-	@pipenv run pyinstaller lyzer_scraper.py --name Lyzer-Scraper --add-data backup/:data/
+	@pipenv run pyinstaller --name Lyzer-Scraper --add-data backup/:data/ lyzer_scraper.py
 build-windows:
-	@pipenv run pyinstaller lyzer_scraper.py --name Lyzer-Scraper -i images/Lyzer-Scraper.PNG --add-data backup/;data/
+	@pipenv run pyinstaller --name Lyzer-Scraper -i images/Lyzer-Scraper.PNG --add-data backup/";"data/ lyzer_scraper.py
 clean:
 	@pipenv clean
 	@rm -rf .coverage
