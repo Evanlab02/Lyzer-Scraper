@@ -58,8 +58,8 @@ def year_not_found():
 
 def location_not_found():
     """"
-    This function will return the default response for when the data for the given location cannot be
-    found.
+    This function will return the default response for when the data for the given location
+    cannot be found.
 
     Returns:
         (dict): A dictionary with the default response for when the data cannot be found.
