@@ -57,6 +57,7 @@ wrapt = "*"
 wsproto = "*"
 pillow = "*"
 pyinstaller = "*"
+pywin32-ctypes = "*"
 
 [dev-packages]
 
