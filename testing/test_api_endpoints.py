@@ -131,6 +131,7 @@ class TestApiEndpointsV1(unittest.TestCase):
         """Test the get races year endpoint."""
         uninstall_lyzer_data_files()
         expected = {
+            "status": 500,
             "result": "failure",
             "message": "Internal server error: race file not found."
         }
@@ -143,13 +144,14 @@ class TestApiEndpointsV1(unittest.TestCase):
     def test_get_races_invalid_year(self):
         """"Test the get races year endpoint"""
         expected = {
-            "result": "failure",
-            "message": "Internal server error: year 1949 not found."
+        "status": 404,
+        "result": "failure",
+        "message": "BAD REQUEST: Year not found."
         }
 
         client = self.app.test_client()
         response = client.get("/races/1949")
-        self.assertEqual(response.status_code, 500)
+        self.assertEqual(response.status_code, 404)
         self.assertEqual(response.json, expected)
 
     def test_get_races_valid_year(self):
@@ -162,10 +164,15 @@ class TestApiEndpointsV1(unittest.TestCase):
         }})
 
         expected = {
-            "headers": [
-                "Round", "Name", "Date", "Circuit", "Location", "Country",
-                "Laps", "Distance", "Pole Position", "Fastest Lap"
-            ]
+            "status": 200,
+            "result": "success",
+            "message": "Races for year 2022",
+            "data": {
+                "headers": [
+                    "Round", "Name", "Date", "Circuit", "Location", "Country",
+                    "Laps", "Distance", "Pole Position", "Fastest Lap"
+                ]
+            }
         }
 
         client = self.app.test_client()
@@ -177,6 +184,7 @@ class TestApiEndpointsV1(unittest.TestCase):
         """Test the get races year and location endpoint."""
         uninstall_lyzer_data_files()
         expected = {
+            "status": 500,
             "result": "failure",
             "message": "Internal server error: race file not found."
         }
@@ -198,13 +206,14 @@ class TestApiEndpointsV1(unittest.TestCase):
             }
         }})
         expected = {
-            "result": "failure",
-            "message": "Internal server error: year 1949 not found."
+        "status": 404,
+        "result": "failure",
+        "message": "BAD REQUEST: Year not found."
         }
 
         client = self.app.test_client()
         response = client.get("/race/1949/bahrain")
-        self.assertEqual(response.status_code, 500)
+        self.assertEqual(response.status_code, 404)
         self.assertEqual(response.json, expected)
 
     def test_get_races_year_and_location_invalid_location(self):
@@ -218,13 +227,14 @@ class TestApiEndpointsV1(unittest.TestCase):
             }
         }})
         expected = {
-            "result": "failure",
-            "message": "Internal server error: location australia not found."
+        "status": 404,
+        "result": "failure",
+        "message": "BAD REQUEST: Location not found."
         }
 
         client = self.app.test_client()
         response = client.get("/race/2022/australia")
-        self.assertEqual(response.status_code, 500)
+        self.assertEqual(response.status_code, 404)
         self.assertEqual(response.json, expected)
 
     def test_get_races_year_and_location_endpoint_valid(self):
@@ -238,10 +248,15 @@ class TestApiEndpointsV1(unittest.TestCase):
             }
         }})
         expected = {
-            "headers": [
-                "Round", "Name", "Date", "Circuit", "Location", "Country",
-                "Laps", "Distance", "Pole Position", "Fastest Lap"
-            ]
+            "data": {
+                "headers": [
+                    "Round", "Name", "Date", "Circuit", "Location", "Country",
+                    "Laps", "Distance", "Pole Position", "Fastest Lap"
+                ]
+            },
+            "result": "success",
+            "status": 200,
+            "message": "Races for year 2022 and location bahrain"
         }
 
         client = self.app.test_client()
