@@ -14,6 +14,6 @@ RUN nala install python-is-python3 -y
 RUN pip install pipenv
 RUN pipenv install
 RUN pipenv run pytest testing --cov
-RUN pipenv run pyinstaller lyzer_scraper.py --name Lyzer-Scraper --add-data backup/:data/
+RUN pipenv run pyinstaller lyzer_scraper.py --name Lyzer-Scraper --add-data backup/:data/ -y
 
 CMD ["make", "run-ubuntu"]
