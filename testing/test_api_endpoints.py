@@ -268,6 +268,7 @@ class TestApiEndpointsV1(unittest.TestCase):
         """Test the get fastest laps endpoint."""
         uninstall_lyzer_data_files()
         expected = {
+            "status": 500,
             "result": "failure",
             "message": "Internal server error: fastest laps file not found."
         }
@@ -280,7 +281,12 @@ class TestApiEndpointsV1(unittest.TestCase):
     def test_get_fastest_laps_endpoint(self):
         """Test the get fastest laps endpoint."""
         write_json_file("data/fastest_laps.json", {"Testing": "Testing"})
-        expected = read_json_file("data/fastest_laps.json")
+        expected = {
+            "status": 200,
+            "result": "success",
+            "message": "Fastest laps - All",
+            "data": {"Testing": "Testing"}
+        }
         client = self.app.test_client()
         response = client.get("/races/fastest_laps")
         self.assertEqual(response.status_code, 200)

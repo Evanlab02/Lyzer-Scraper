@@ -14,22 +14,30 @@ def get_fastest_laps():
     Returns:
         (dict): A dictionary with all the fastest laps.
     """
-    status_code = 500
-    fastest_laps = {
-        "result": "failure",
-        "message": "Internal server error: fastest laps file not found."
-    }
+    log_to_console("Client requested all fastest laps data.")
+    create_log("Client requested all fastest laps data.")
 
     try:
-        create_log("Client requested all fastest laps data.")
+        create_log("Attempting to read fastest laps data now.")
         fastest_laps = read_json_file("data/fastest_laps.json")
-        create_log("Sending fastest laps data to client.")
-        status_code = 200
-        log_to_console("Sent - All fastest laps data.", "MESSAGE")
+        create_log("Fastest laps data read successfully.")
+        response = {
+            "status": 200,
+            "result": "success",
+            "message": "Fastest laps - All",
+            "data": fastest_laps
+            }
+        create_log("Sending response to client: Fastest laps - All")
+        log_to_console("Sent - Fastest laps - All")
     except FileNotFoundError:
         create_log("Internal server error: fastest laps file not found.")
         log_to_console("Internal server error: fastest laps file not found.", "ERROR")
-    return fastest_laps, status_code
+        response = {
+            "status": 500,
+            "result": "failure",
+            "message": "Internal server error: fastest laps file not found."
+        }
+    return response, response["status"]
 
 def get_fastest_laps_from_year(year: str):
     """
