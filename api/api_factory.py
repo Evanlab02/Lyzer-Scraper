@@ -22,7 +22,8 @@ def assign_endpoints(app: Flask):
 
     app.route("/fastest_laps", methods=["GET"])(get_fastest_laps)
     app.route("/fastest_laps/<year>", methods=["GET"])(get_fastest_laps_from_year)
-    app.route("/fastest_laps/<year>/<location>", methods=["GET"])(get_fastest_laps_year_and_location)
+    app.route("/fastest_laps/<year>/<location>", methods=["GET"])\
+        (get_fastest_laps_year_and_location)
 
     app.route("/races", methods=["GET"])(get_races)
     app.route("/races/<year>", methods=["GET"])(get_races_from_year)
