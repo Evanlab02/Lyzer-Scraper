@@ -81,3 +81,50 @@ def get_fastest_laps_from_year(year: str):
     create_log(f"Sending response to client: {response['message']}")
     log_to_console(f"Sent - {response['message']}")
     return response, response["status"]
+
+
+def get_fastest_laps_year_and_location(year, location):
+    """
+    Get all the fastest laps from the data files for a specific year and location and
+    return to the client.
+
+    Args:
+        year (str): The year of the event.
+        location (str): The location of the event.
+
+    Returns:
+        (dict): A dictionary with all the fastest laps for an event.
+    """
+    location = location.replace("_", " ")
+    create_log(f"Client requested fastest laps data from {year} at {location}.")
+    log_to_console(f"Client requested fastest laps data for {year} at {location}")
+    try:
+        create_log("Reading data file (fastest_laps.json) now.")
+        fastest_laps = read_json_file("data/fastest_laps.json")
+        create_log("Compiling response now.")
+        fastest_laps = fastest_laps[year][location]
+        response = {
+            "data": fastest_laps,
+            "status": 200,
+            "result": "success",
+            "message": f"Fastest laps data for year: {year} at {location}"
+        }
+        create_log(f"Sending response to client: {response['message']}")
+        log_to_console(f"Sent - {response['message']}")
+    except FileNotFoundError:
+        create_log("Internal server error: fastest laps file not found.")
+        log_to_console("Internal server error: fastest laps file not found.", "ERROR")
+        response = {
+            "status": 500,
+            "result": "failure",
+            "message": "Internal server error: fastest laps file not found."
+        }
+    except KeyError:
+        create_log(f"Data not found for year: {year} at {location}")
+        log_to_console(f"Data not found for year: {year} at {location}", "ERROR")
+        response = {
+            "status": 404,
+            "result": "failure",
+            "message": f"Data not found for year: {year} at {location}"
+        }
+    return response, response["status"]
