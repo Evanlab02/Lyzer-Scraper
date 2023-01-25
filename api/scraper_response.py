@@ -1,5 +1,5 @@
 """
-TODO: Add file docstring.
+This file contains the ScraperResponse class.
 """
 
 from dataclasses import dataclass
@@ -7,7 +7,16 @@ from dataclasses import dataclass
 @dataclass
 class ScraperResponse:
     """
-    TODO: Add class docstring.
+    This class will be used to generate responses from the API.
+
+    Attributes:
+        result (str): The result of the API call.
+        status (int): The status code of the API call.
+        message (str): The message of the API call.
+        data (dict): The data of the API call.
+
+    Methods:
+        convert_to_json: Converts the ScraperResponse object to a JSON object.
     """
     result: str
     status: int
@@ -16,7 +25,10 @@ class ScraperResponse:
 
     def convert_to_json(self):
         """
-        TODO: Add method docstring.
+        This method will be used to convert the ScraperResponse object to a JSON object.
+
+        Returns:
+            dict: The ScraperResponse object converted to a JSON object.
         """
         response = {
             "result": self.result,

@@ -1,5 +1,5 @@
 """
-TODO: Add docstring
+This file contains the unit tests for the ScraperResponse class.
 """
 
 import unittest
@@ -8,12 +8,12 @@ from api.scraper_response import ScraperResponse
 
 class TestScraperResponse(unittest.TestCase):
     """
-    TODO: Add docstring
+    This class contains the unit tests for the ScraperResponse class.
     """
 
     def test_scraper_response_no_data(self):
         """
-        TODO: Add Docstring
+        This method tests the ScraperResponse class with no data key.
         """
         response = ScraperResponse("success", 200, "OK")
         self.assertEqual(
@@ -27,7 +27,7 @@ class TestScraperResponse(unittest.TestCase):
 
     def test_scraper_response_with_data(self):
         """
-        TODO: Add Docstring
+        This method tests the ScraperResponse class with a data key.
         """
         response = ScraperResponse("success", 200, "OK", {"test": "test"})
         self.assertEqual(
