@@ -5,7 +5,11 @@ This module will contain the logic for the flask web app.
 from flask import Flask
 
 from api.backlog_controller import queue_endpoint, priority_queue
-from api.fastest_laps_controller import get_fastest_laps, get_fastest_laps_from_year
+from api.fastest_laps_controller import (
+    get_fastest_laps,
+    get_fastest_laps_from_year,
+    get_fastest_laps_year_and_location
+)
 from api.race_controller import get_races, get_races_from_year, get_races_from_year_and_location
 from api.season_controller import get_seasons, get_season
 from logs.console_logger import log_to_console
@@ -16,9 +20,12 @@ def assign_endpoints(app: Flask):
     app.route("/queue", methods=["GET", "POST"])(queue_endpoint)
     app.route("/queue/priority", methods=["POST"])(priority_queue)
 
+    app.route("/fastest_laps", methods=["GET"])(get_fastest_laps)
+    app.route("/fastest_laps/<year>", methods=["GET"])(get_fastest_laps_from_year)
+    app.route("/fastest_laps/<year>/<location>", methods=["GET"])\
+        (get_fastest_laps_year_and_location)
+
     app.route("/races", methods=["GET"])(get_races)
-    app.route("/races/fastest_laps", methods=["GET"])(get_fastest_laps)
-    app.route("/races/fastest_laps/<year>", methods=["GET"])(get_fastest_laps_from_year)
     app.route("/races/<year>", methods=["GET"])(get_races_from_year)
     app.route("/race/<year>/<location>", methods=["GET"])(get_races_from_year_and_location)
 

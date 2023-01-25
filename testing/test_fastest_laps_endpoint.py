@@ -18,7 +18,7 @@ class TestFastestLapsEndpoints(TestApiEndpointsV1):
         }
         uninstall_lyzer_data_files()
         client = self.app.test_client()
-        response = client.get("/races/fastest_laps")
+        response = client.get("/fastest_laps")
         install_lyzer_data_files()
         self.assertEqual(response.status_code, 500)
         self.assertEqual(response.json, expected)
@@ -33,7 +33,7 @@ class TestFastestLapsEndpoints(TestApiEndpointsV1):
             "data": {"Testing": "Testing"}
         }
         client = self.app.test_client()
-        response = client.get("/races/fastest_laps")
+        response = client.get("/fastest_laps")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, expected)
 
@@ -46,7 +46,7 @@ class TestFastestLapsEndpoints(TestApiEndpointsV1):
         }
         uninstall_lyzer_data_files()
         client = self.app.test_client()
-        response = client.get("/races/fastest_laps/2021")
+        response = client.get("/fastest_laps/2021")
         install_lyzer_data_files()
         self.assertEqual(response.status_code, 500)
         self.assertEqual(response.json, expected)
@@ -60,7 +60,7 @@ class TestFastestLapsEndpoints(TestApiEndpointsV1):
             "message": "Data not found for year: 2021"
         }
         client = self.app.test_client()
-        response = client.get("/races/fastest_laps/2021")
+        response = client.get("/fastest_laps/2021")
         self.assertEqual(response.status_code, 404)
         self.assertEqual(response.json, expected)
 
@@ -74,6 +74,60 @@ class TestFastestLapsEndpoints(TestApiEndpointsV1):
             "status": 200
             }
         client = self.app.test_client()
-        response = client.get("/races/fastest_laps/2021")
+        response = client.get("/fastest_laps/2021")
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json, expected)
+
+    def test_get_fastest_laps_endpoint_year_location_missing_file(self):
+        """Test the get fastest laps endpoint."""
+        expected = {
+            "result": "failure",
+            "message": "Internal server error: fastest laps file not found.",
+            "status": 500
+        }
+        uninstall_lyzer_data_files()
+        client = self.app.test_client()
+        response = client.get("/fastest_laps/2021/bahrain")
+        install_lyzer_data_files()
+        self.assertEqual(response.status_code, 500)
+        self.assertEqual(response.json, expected)
+
+    def test_get_fastest_laps_endpoint_year_location_invalid_year(self):
+        """Test the get fastest laps endpoint."""
+        write_json_file("data/fastest_laps.json", {"2022": {"bahrain": {"Testing": "Testing"}}})
+        expected = {
+            "status": 404,
+            "result": "failure",
+            "message": "Data not found for year: 2021 at bahrain"
+        }
+        client = self.app.test_client()
+        response = client.get("/fastest_laps/2021/bahrain")
+        self.assertEqual(response.status_code, 404)
+        self.assertEqual(response.json, expected)
+
+    def test_get_fastest_laps_endpoint_year_location_invalid_location(self):
+        """Test the get fastest laps endpoint."""
+        write_json_file("data/fastest_laps.json", {"2021": {"bahrain": {"Testing": "Testing"}}})
+        expected = {
+            "status": 404,
+            "result": "failure",
+            "message": "Data not found for year: 2021 at testing"
+        }
+        client = self.app.test_client()
+        response = client.get("/fastest_laps/2021/testing")
+        self.assertEqual(response.status_code, 404)
+        self.assertEqual(response.json, expected)
+
+    def test_get_fastest_laps_endpoint_year_location_2021_bahrain(self):
+        """Test the get fastest laps endpoint."""
+        write_json_file("data/fastest_laps.json", {"2021": {"bahrain": {"Testing": "Testing"}}})
+        expected = {
+            "data": {"Testing": "Testing"},
+            "message": "Fastest laps data for year: 2021 at bahrain",
+            "result": "success",
+            "status": 200
+            }
+        client = self.app.test_client()
+        response = client.get("/fastest_laps/2021/bahrain")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, expected)
