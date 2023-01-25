@@ -323,7 +323,7 @@ class TestApiEndpointsV1(unittest.TestCase):
         """Test the get fastest laps endpoint."""
         write_json_file("data/fastest_laps.json", {"2021": {"Testing": "Testing"}})
         expected = {
-            "Testing": "Testing",
+            "data": {"Testing": "Testing"},
             "message": "Fastest laps data for year: 2021",
             "result": "success",
             "status": 200

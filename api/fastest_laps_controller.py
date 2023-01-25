@@ -63,10 +63,12 @@ def get_fastest_laps_from_year(year: str):
         create_log(f"Attempting to read fastest laps data for year({year}) now.")
         fastest_laps = read_json_file("data/fastest_laps.json")
         fastest_laps = fastest_laps[year]
-        response.update(fastest_laps)
-        response["status"] = 200
-        response["result"] = "success"
-        response["message"] = f"Fastest laps data for year: {year}"
+        response = {
+            "data": fastest_laps,
+            "status": 200,
+            "result": "success",
+            "message": f"Fastest laps data for year: {year}"
+        }
     except FileNotFoundError:
         create_log("Internal server error: fastest laps file not found.")
         log_to_console("Internal server error: fastest laps file not found.", "ERROR")
