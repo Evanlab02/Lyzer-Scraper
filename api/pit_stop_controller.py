@@ -26,7 +26,7 @@ def read_pitstops_file() -> ScraperResponse | dict:
         return ScraperResponse("failure", 500, "Internal server error: pit stops file not found.")
 
 
-def get_all_pitstops() -> ScraperResponse:
+def get_all_pitstops() -> tuple[dict[str, any], int]:
     """
     This function will return all the pit stop data that is stored in the file.
 
@@ -36,9 +36,14 @@ def get_all_pitstops() -> ScraperResponse:
     create_log("Retrieving pit stop data.")
     log_to_console("Retrieving pit stop data.", "INFO")
     result = read_pitstops_file()
+
     if isinstance(result, ScraperResponse):
-        return result
+        json_result = result.convert_to_json()
+        return json_result, result.status
+
     result = ScraperResponse("success", 200, "Pit stop data retrieved successfully.", result)
+    json_result = result.convert_to_json()
     create_log("Pit stop data retrieved successfully.")
     log_to_console("Pit stop data retrieved successfully.", "INFO")
-    return result
+    print("Check here ->",json_result)
+    return json_result, result.status

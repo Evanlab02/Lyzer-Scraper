@@ -37,10 +37,10 @@ class TestPitStopController(unittest.TestCase):
         This method will test the get all pit stops method when there is no file.
         """
         uninstall_lyzer_data_files()
-        response = get_all_pitstops()
-        self.assertEqual(response.result, "failure")
-        self.assertEqual(response.status, 500)
-        self.assertEqual(response.message, "Internal server error: pit stops file not found.")
+        response = get_all_pitstops()[0]
+        self.assertEqual(response["result"], "failure")
+        self.assertEqual(response["status"], 500)
+        self.assertEqual(response["message"], "Internal server error: pit stops file not found.")
         install_lyzer_data_files()
 
     def test_get_all_pitstops_file(self):
@@ -49,8 +49,8 @@ class TestPitStopController(unittest.TestCase):
         """
         install_lyzer_data_files()
         write_json_file("data/pit_stop_data.json", {"test": "test"})
-        response = get_all_pitstops()
-        self.assertEqual(response.result, "success")
-        self.assertEqual(response.status, 200)
-        self.assertEqual(response.message, "Pit stop data retrieved successfully.")
-        self.assertEqual(response.data, {"test": "test"})
+        response = get_all_pitstops()[0]
+        self.assertEqual(response["result"], "success")
+        self.assertEqual(response["status"], 200)
+        self.assertEqual(response["message"], "Pit stop data retrieved successfully.")
+        self.assertEqual(response["data"], {"test": "test"})
