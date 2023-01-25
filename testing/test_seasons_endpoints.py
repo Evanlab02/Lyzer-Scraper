@@ -1,0 +1,79 @@
+"""
+This module will contain the logic to test the api seasons endpoints.
+"""
+
+from source.installer import install_lyzer_data_files, uninstall_lyzer_data_files
+from source.file_parser import write_json_file
+from testing.test_version_queue_endpoints import TestApiEndpointsV1
+
+class TestSeasonsEndpointsV1(TestApiEndpointsV1):
+    """Test the seasons endpoints."""
+    def test_get_seasons_endpoint_missing_file(self):
+        """Test the get seasons endpoint."""
+        uninstall_lyzer_data_files()
+        expected = {
+            "status": 500,
+            "result": "failure",
+            "message": "Internal server error: seasons file not found."
+        }
+        client = self.app.test_client()
+        response = client.get("/seasons")
+        install_lyzer_data_files()
+        self.assertEqual(response.status_code, 500)
+        self.assertEqual(response.json, expected)
+
+    def test_get_seasons_endpoint(self):
+        """Test the get seasons endpoint."""
+        write_json_file("data/season_summaries.json", {"2022": {"url": "test"}})
+        expected = {
+            "status": 200,
+            "result": "success",
+            "message": "All Seasons Data",
+            "data": {"2022": {"url": "test"}}
+        }
+        client = self.app.test_client()
+        response = client.get("/seasons")
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json, expected)
+
+    def test_get_seasons_endpoint_year_missing_file(self):
+        """Test the get seasons year endpoint."""
+        uninstall_lyzer_data_files()
+        expected = {
+            "status": 500,
+            "result": "failure",
+            "message": "Internal server error: seasons file not found."
+        }
+        client = self.app.test_client()
+        response = client.get("/season/2022")
+        install_lyzer_data_files()
+        self.assertEqual(response.status_code, 500)
+        self.assertEqual(response.json, expected)
+
+    def test_get_seasons_endpoint_invalid_year(self):
+        """Test the get seasons endpoint."""
+        write_json_file("data/season_summaries.json", {"2022": {"url": "test"}})
+        expected = {
+            "status": 404,
+            "result": "failure",
+            "message": "Season 2023 not found."
+        }
+        client = self.app.test_client()
+        response = client.get("/season/2023")
+        self.assertEqual(response.status_code, 404)
+        self.assertEqual(response.json, expected)
+
+    def test_get_seasons_endpoint_valid_year(self):
+        """Test the get seasons endpoint."""
+        write_json_file("data/season_summaries.json", {"2022": {"url": "test"}})
+        expected = {
+            "status": 200,
+            "result": "success",
+            "message": "Season 2022 Data",
+            "data": {"url": "test"}
+        }
+        season_year = "2022"
+        client = self.app.test_client()
+        response = client.get(f"/season/{season_year}")
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json, expected)

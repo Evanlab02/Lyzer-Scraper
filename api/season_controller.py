@@ -35,13 +35,34 @@ def get_seasons():
 
 def get_season(season_year: str) -> dict:
     """Get the season data from the data files and return to the client."""
-    seasons = read_json_file("data/season_summaries.json")
-    season = {"message": "The season you requested was not found."}
+    log_to_console(f"Client requested seasons data for {season_year}.")
+    create_log(f"Client requested seasons data for {season_year}.")
     try:
-        season = seasons[season_year]
-    except KeyError as error:
-        log_to_console(f"Season {season_year} not found.", "WARNING")
-        log_to_console(error, "WARNING")
-        create_log(f"Season {season_year} not found: {error}")
-    log_to_console(f"Sent - Season {season_year} Data", "MESSAGE")
-    return season
+        create_log("Reading season data from file.")
+        seasons = read_json_file("data/season_summaries.json")
+        create_log("Seasons data read successfully.")
+        response = {
+            "status": 200,
+            "result": "success",
+            "message": f"Season {season_year} Data",
+            "data": seasons[season_year]
+        }
+        create_log(f"Season {season_year} data compiled and ready to send.")
+        log_to_console(f"Season {season_year} data compiled and ready to send.", "SUCCESS")
+    except FileNotFoundError:
+        create_log("Internal server error: seasons file not found.")
+        log_to_console("Internal server error: seasons file not found.", "ERROR")
+        response = {
+            "status": 500,
+            "result": "failure",
+            "message": "Internal server error: seasons file not found."
+        }
+    except KeyError:
+        create_log(f"Season {season_year} not found.")
+        log_to_console(f"Season {season_year} not found.", "ERROR")
+        response = {
+            "status": 404,
+            "result": "failure",
+            "message": f"Season {season_year} not found."
+        }
+    return response, response["status"]
