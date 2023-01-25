@@ -70,9 +70,29 @@ class TestApiEndpointsV1(unittest.TestCase):
         "version": "0.6.1-beta"
         }, 200))
 
+    def test_get_seasons_endpoint_missing_file(self):
+        """Test the get seasons endpoint."""
+        uninstall_lyzer_data_files()
+        expected = {
+            "status": 500,
+            "result": "failure",
+            "message": "Internal server error: seasons file not found."
+        }
+        client = self.app.test_client()
+        response = client.get("/seasons")
+        install_lyzer_data_files()
+        self.assertEqual(response.status_code, 500)
+        self.assertEqual(response.json, expected)
+
     def test_get_seasons_endpoint(self):
         """Test the get seasons endpoint."""
-        expected = read_json_file("data/season_summaries.json")
+        write_json_file("data/season_summaries.json", {"2022": {"url": "test"}})
+        expected = {
+            "status": 200,
+            "result": "success",
+            "message": "All Seasons Data",
+            "data": {"2022": {"url": "test"}}
+        }
         client = self.app.test_client()
         response = client.get("/seasons")
         self.assertEqual(response.status_code, 200)
