@@ -42,3 +42,34 @@ class TestPitstopsEndpoints(TestApiEndpointsV1):
         response = client.get("/pitstops")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, expected)
+
+    def test_get_pitstops_year_endpoint_invalid_year(self):
+        """
+        This method will test the pit stops endpoint when the year is invalid.
+        """
+        write_json_file("data/pit_stop_data.json", {"2022": {"Testing":"Testing"}})
+        expected = {
+            "status": 404,
+            "result": "failure",
+            "message": "Pit stop data not found for 1949."
+        }
+        client = self.app.test_client()
+        response = client.get("/pitstops/1949")
+        self.assertEqual(response.status_code, 404)
+        self.assertEqual(response.json, expected)
+
+    def test_get_pitstops_year_endpoint_valid(self):
+        """
+        This method will test the pit stops endpoint when the year is valid.
+        """
+        write_json_file("data/pit_stop_data.json", {"2022": {"Testing":"Testing"}})
+        expected = {
+            "status": 200,
+            "result": "success",
+            "message": "Pit stop data retrieved successfully.",
+            "data": {"Testing": "Testing"}
+        }
+        client = self.app.test_client()
+        response = client.get("/pitstops/2022")
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json, expected)
