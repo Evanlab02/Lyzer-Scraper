@@ -12,7 +12,6 @@ from api.fastest_laps_controller import (
 )
 from api.pit_stop_controller import get_all_pitstops
 from api.race_controller import get_races, get_races_from_year, get_races_from_year_and_location
-from api.scraper_response import ScraperResponse
 from api.season_controller import get_seasons, get_season
 from logs.console_logger import log_to_console
 
