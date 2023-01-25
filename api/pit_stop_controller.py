@@ -46,3 +46,41 @@ def get_all_pitstops() -> tuple[dict[str, any], int]:
     create_log("Pit stop data retrieved successfully.")
     log_to_console("Pit stop data retrieved successfully.", "INFO")
     return json_result, result.status
+
+
+def get_key_value(data: dict, key: str) -> ScraperResponse:
+    """
+    This function will return a new ScraperResponse object with the data for the given key.
+    If the key is not found, it will return a ScraperResponse object with the error message.
+
+    Args:
+        data (dict): The dictionary to search for the key.
+        key (str): The key to search for in the dictionary.
+
+    Returns:
+        (ScraperResponse): A ScraperResponse object with error data or pit stop data.
+    """
+    if key in data.keys():
+        create_log(f"Pit stop data retrieved successfully for {key}.")
+        log_to_console(f"Pit stop data retrieved successfully for {key}.", "INFO")
+        return ScraperResponse("success", 200, "Pit stop data retrieved successfully.", data[key])
+    create_log(f"Pit stop data not found for {key}.")
+    log_to_console(f"Pit stop data not found for {key}.", "ERROR")
+    return ScraperResponse("failure", 404, f"Pit stop data not found for {key}.")
+
+
+def get_pitstops_for_year(year):
+    """
+    This function will return the pit stop data for the given year.
+
+    Args:
+        year (str): The year to get the pit stop data for.
+
+    Returns:
+        (tuple[dict[str, any], int]): A tuple containing the response and the status code.
+    """
+    result, status = get_all_pitstops()
+    if status != 200:
+        return result, status
+    result = get_key_value(result["data"], year)
+    return result.convert_to_json(), result.status
