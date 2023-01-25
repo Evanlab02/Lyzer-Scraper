@@ -6,17 +6,17 @@ from source.installer import install_lyzer_data_files, uninstall_lyzer_data_file
 from source.file_parser import write_json_file
 from testing.test_version_queue_endpoints import TestApiEndpointsV1
 
-class TestSeasonsEndpointsV1(TestApiEndpointsV1):
+class TestFastestLapsEndpoints(TestApiEndpointsV1):
     """Test the fastest laps endpoints."""
 
     def test_get_fastest_laps_endpoint_missing_file(self):
         """Test the get fastest laps endpoint."""
-        uninstall_lyzer_data_files()
         expected = {
             "status": 500,
             "result": "failure",
             "message": "Internal server error: fastest laps file not found."
         }
+        uninstall_lyzer_data_files()
         client = self.app.test_client()
         response = client.get("/races/fastest_laps")
         install_lyzer_data_files()
@@ -39,12 +39,12 @@ class TestSeasonsEndpointsV1(TestApiEndpointsV1):
 
     def test_get_fastest_laps_endpoint_year_missing_file(self):
         """Test the get fastest laps endpoint."""
-        uninstall_lyzer_data_files()
         expected = {
-            "status": 500,
             "result": "failure",
-            "message": "Internal server error: fastest laps file not found."
+            "message": "Internal server error: fastest laps file not found.",
+            "status": 500
         }
+        uninstall_lyzer_data_files()
         client = self.app.test_client()
         response = client.get("/races/fastest_laps/2021")
         install_lyzer_data_files()

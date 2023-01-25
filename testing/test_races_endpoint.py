@@ -38,12 +38,12 @@ class TestRacesEndpoints(TestApiEndpointsV1):
 
     def test_get_races_year_missing_file_endpoint(self):
         """Test the get races year endpoint."""
-        uninstall_lyzer_data_files()
         expected = {
             "status": 500,
             "result": "failure",
             "message": "Internal server error: race file not found."
         }
+        uninstall_lyzer_data_files()
         client = self.app.test_client()
         response = client.get("/races/2022")
         install_lyzer_data_files()
@@ -91,12 +91,12 @@ class TestRacesEndpoints(TestApiEndpointsV1):
 
     def test_get_races_year_and_location_missing_file(self):
         """Test the get races year and location endpoint."""
-        uninstall_lyzer_data_files()
         expected = {
             "status": 500,
             "result": "failure",
             "message": "Internal server error: race file not found."
         }
+        uninstall_lyzer_data_files()
 
         client = self.app.test_client()
         response = client.get("/race/2022/australia")
@@ -172,4 +172,3 @@ class TestRacesEndpoints(TestApiEndpointsV1):
         response = client.get("/race/2022/bahrain")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, expected)
-

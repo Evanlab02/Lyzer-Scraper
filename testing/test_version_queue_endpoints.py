@@ -5,7 +5,6 @@ import unittest
 
 from api.api_factory import assign_endpoints, get_version
 from source.installer import install_lyzer_data_files, uninstall_lyzer_data_files
-from source.file_parser import read_json_file, write_json_file
 from web.flask_web_app import create_app
 
 class TestApiEndpointsV1(unittest.TestCase):
