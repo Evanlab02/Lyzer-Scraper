@@ -10,6 +10,7 @@ from api.fastest_laps_controller import (
     get_fastest_laps_from_year,
     get_fastest_laps_year_and_location
 )
+from api.pit_stop_controller import get_all_pitstops
 from api.race_controller import get_races, get_races_from_year, get_races_from_year_and_location
 from api.season_controller import get_seasons, get_season
 from logs.console_logger import log_to_console
@@ -24,6 +25,8 @@ def assign_endpoints(app: Flask):
     app.route("/fastest_laps/<year>", methods=["GET"])(get_fastest_laps_from_year)
     app.route("/fastest_laps/<year>/<location>", methods=["GET"])\
         (get_fastest_laps_year_and_location)
+
+    app.route("/pitstops", methods=["GET"])(get_all_pitstops)
 
     app.route("/races", methods=["GET"])(get_races)
     app.route("/races/<year>", methods=["GET"])(get_races_from_year)
@@ -47,6 +50,7 @@ def display_response(response):
     """Display the response to the server user."""
     response_data = response.json
     response_data = response_data.copy()
+
     for key in response_data.keys():
         value = response_data[key]
         if len(str(value)) > 45:
