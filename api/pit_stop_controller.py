@@ -45,5 +45,4 @@ def get_all_pitstops() -> tuple[dict[str, any], int]:
     json_result = result.convert_to_json()
     create_log("Pit stop data retrieved successfully.")
     log_to_console("Pit stop data retrieved successfully.", "INFO")
-    print("Check here ->",json_result)
     return json_result, result.status

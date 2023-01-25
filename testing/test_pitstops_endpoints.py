@@ -1,5 +1,5 @@
 """
-TODO: File Docstring
+This file contains the class to test all the pit stop endpoints.
 """
 
 from source.installer import install_lyzer_data_files, uninstall_lyzer_data_files
@@ -8,12 +8,12 @@ from testing.test_version_queue_endpoints import TestApiEndpointsV1
 
 class TestPitstopsEndpoints(TestApiEndpointsV1):
     """
-    TODO: Class Docstring
+    This class contains all the tests for the pit stop endpoints.
     """
 
     def test_get_pitstops_endpoint_missing_file(self):
         """
-        TODO: Method Docstring
+        This method will test the get pit stops endpoint when the file is missing.
         """
         expected = {
             "status": 500,
@@ -29,7 +29,7 @@ class TestPitstopsEndpoints(TestApiEndpointsV1):
 
     def test_get_pitstops_endpoint(self):
         """
-        TODO: Method Docstring
+        This method will test the pit stops endpoint when the file is present.
         """
         write_json_file("data/pit_stop_data.json", {"Testing": "Testing"})
         expected = {
