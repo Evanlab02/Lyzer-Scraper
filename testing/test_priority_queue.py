@@ -19,7 +19,9 @@ class TestPriorityQueue(unittest.TestCase):
     def test_priority_queue_endpoint_race_summary(self):
         """Test the priority queue endpoint post method."""
         expected = {
-            "result": "success"
+            "status": 200,
+            "result": "success",
+            "message": "Url processed successfully."
         }
         client = self.app.test_client()
         response = client.post("/queue/priority", json={
@@ -31,7 +33,9 @@ class TestPriorityQueue(unittest.TestCase):
     def test_priority_queue_endpoint_race_results(self):
         """Test the priority queue endpoint post method."""
         expected = {
-            "result": "success"
+            "status": 200,
+            "result": "success",
+            "message": "Url processed successfully."
         }
         client = self.app.test_client()
         response = client.post("/queue/priority", json={
@@ -45,7 +49,9 @@ class TestPriorityQueue(unittest.TestCase):
     def test_priority_queue_endpoint_qualifying_results(self):
         """Test the priority queue endpoint post method."""
         expected = {
-            "result": "success"
+            "status": 200,
+            "result": "success",
+            "message": "Url processed successfully."
         }
         client = self.app.test_client()
         response = client.post("/queue/priority", json={
@@ -58,7 +64,9 @@ class TestPriorityQueue(unittest.TestCase):
     def test_priority_queue_endpoint_practice1_results(self):
         """Test the priority queue endpoint post method."""
         expected = {
-            "result": "success"
+            "status": 200,
+            "result": "success",
+            "message": "Url processed successfully."
         }
         client = self.app.test_client()
         response = client.post("/queue/priority", json={
@@ -71,7 +79,9 @@ class TestPriorityQueue(unittest.TestCase):
     def test_priority_queue_endpoint_practice2_results(self):
         """Test the priority queue endpoint post method."""
         expected = {
-            "result": "success"
+            "status": 200,
+            "result": "success",
+            "message": "Url processed successfully."
         }
         client = self.app.test_client()
         response = client.post("/queue/priority", json={
@@ -84,7 +94,9 @@ class TestPriorityQueue(unittest.TestCase):
     def test_priority_queue_endpoint_practice3_results(self):
         """Test the priority queue endpoint post method."""
         expected = {
-            "result": "success"
+            "status": 200,
+            "result": "success",
+            "message": "Url processed successfully."
         }
         client = self.app.test_client()
         response = client.post("/queue/priority", json={
@@ -97,7 +109,9 @@ class TestPriorityQueue(unittest.TestCase):
     def test_priority_queue_endpoint_starting_grid(self):
         """Test the priority queue endpoint post method."""
         expected = {
-            "result": "success"
+            "status": 200,
+            "result": "success",
+            "message": "Url processed successfully."
         }
         client = self.app.test_client()
         response = client.post("/queue/priority", json={
@@ -110,7 +124,9 @@ class TestPriorityQueue(unittest.TestCase):
     def test_priority_queue_endpoint_pitstops(self):
         """Test the priority queue endpoint post method."""
         expected = {
-            "result": "success"
+            "status": 200,
+            "result": "success",
+            "message": "Url processed successfully."
         }
         client = self.app.test_client()
         response = client.post("/queue/priority", json={
@@ -123,7 +139,9 @@ class TestPriorityQueue(unittest.TestCase):
     def test_priority_queue_endpoint_fastest_laps(self):
         """Test the priority queue endpoint post method."""
         expected = {
-            "result": "success"
+            "status": 200,
+            "result": "success",
+            "message": "Url processed successfully."
         }
         client = self.app.test_client()
         response = client.post("/queue/priority", json={
@@ -136,7 +154,9 @@ class TestPriorityQueue(unittest.TestCase):
     def test_priority_queue_endpoint_drivers(self):
         """Test the priority queue endpoint post method."""
         expected = {
-            "result": "success"
+            "status": 200,
+            "result": "success",
+            "message": "Url processed successfully."
         }
         client = self.app.test_client()
         response = client.post("/queue/priority", json={
@@ -149,7 +169,9 @@ class TestPriorityQueue(unittest.TestCase):
     def test_priority_queue_endpoint_teams(self):
         """Test the priority queue endpoint post method."""
         expected = {
-            "result": "success"
+            "status": 200,
+            "result": "success",
+            "message": "Url processed successfully."
         }
         client = self.app.test_client()
         response = client.post("/queue/priority", json={
@@ -162,6 +184,7 @@ class TestPriorityQueue(unittest.TestCase):
     def test_priority_queue_endpoint_scraped_url(self):
         """Test the priority queue endpoint post method."""
         expected = {
+            "status": 200,
             "result": "ignored",
             "message": "Url already scraped."
         }
@@ -180,6 +203,7 @@ class TestPriorityQueue(unittest.TestCase):
     def test_priority_queue_endpoint_invalid_url(self):
         """Test the priority queue endpoint post method."""
         expected = {
+            "status": 400,
             "result": "failure",
             "message": "Invalid url: url is not supported."
         }
@@ -188,5 +212,5 @@ class TestPriorityQueue(unittest.TestCase):
             "url":
             "https://www.formula1.com/"
         })
-        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.status_code, 400)
         self.assertEqual(response.json, expected)

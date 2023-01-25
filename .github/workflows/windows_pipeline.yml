@@ -32,4 +32,4 @@ jobs:
         pipenv run pylint $(git ls-files '*.py')
     - name: Create Executable
       run: |
-        make build
+        make build-windows
