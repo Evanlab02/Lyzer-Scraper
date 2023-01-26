@@ -43,10 +43,10 @@ def get_queue():
 
     try:
         backlog = read_json_file("data/backlog.json")
-        backlog = {"queue": backlog}
+        backlog = {"data": backlog}
         backlog["status"] = 200
         backlog["result"] = "success"
-        backlog["message"] = "Backlog retrieved successfully."
+        backlog["message"] = "Data retrieved successfully."
         log_to_console("Sending backlog to client.")
         create_log("Sending backlog to client.")
     except FileNotFoundError:

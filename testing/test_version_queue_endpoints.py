@@ -25,8 +25,8 @@ class TestApiEndpointsV1(unittest.TestCase):
         self.assertEqual(response.json, {
         "status": 200,
         "result": "success",
-        "message": "Version for Lyzer Scraper",
-        "version": "0.6.1-beta"
+        "message": "Data retrieved successfully.",
+        "data": "0.6.1-beta"
         })
 
     def test_queue_endpoint(self):
@@ -49,9 +49,9 @@ class TestApiEndpointsV1(unittest.TestCase):
         json_data = response.json
         result = json_data["result"]
         message = json_data["message"]
-        queue = json_data["queue"]
+        queue = json_data["data"]
         self.assertEqual(result, "success")
-        self.assertEqual(message, "Backlog retrieved successfully.")
+        self.assertEqual(message, "Data retrieved successfully.")
         self.assertEqual(queue, [
             [
             "https://www.youtube.com/watch?v=QH2-TGUlwu4",
@@ -65,6 +65,6 @@ class TestApiEndpointsV1(unittest.TestCase):
         self.assertEqual(get_version(), ({
         "status": 200,
         "result": "success",
-        "message": "Version for Lyzer Scraper",
-        "version": "0.6.1-beta"
+        "message": "Data retrieved successfully.",
+        "data": "0.6.1-beta"
         }, 200))
