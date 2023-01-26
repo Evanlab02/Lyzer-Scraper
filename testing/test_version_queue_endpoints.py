@@ -15,6 +15,7 @@ class TestApiEndpointsV1(unittest.TestCase):
         self.app = create_app()
         assign_endpoints(self.app)
         self.app.config['TESTING'] = True
+        self.client = self.app.test_client()
         super().__init__(methodName)
 
     def test_version_endpoint(self):

@@ -35,3 +35,19 @@ def get_pitstops_for_year(year) -> tuple[dict[str, any], int]:
     log_to_console(f"Retrieving pit stop data for {year}.", "INFO")
     result = get_data("data/pit_stop_data.json", year)
     return result.convert_to_json(), result.status
+
+def get_pitstops_for_year_and_location(year, location) -> tuple[dict[str, any], int]:
+    """
+    This function will return the pit stop data for the given year and location.
+
+    Args:
+        year (str): The year to get the pit stop data for.
+        location (str): The location to get the pit stop data for.
+
+    Returns:
+        (tuple[dict[str, any], int]): A tuple containing the response and the status code.
+    """
+    create_log(f"Retrieving pit stop data for {year} at {location}.")
+    log_to_console(f"Retrieving pit stop data for {year} at {location}.", "INFO")
+    result = get_data("data/pit_stop_data.json", year, location)
+    return result.convert_to_json(), result.status

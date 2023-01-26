@@ -1,15 +1,19 @@
 """
 This file contains the class to test all the pit stop endpoints.
 """
+import threading
 
+from api.api_factory import assign_endpoints
 from source.installer import install_lyzer_data_files, uninstall_lyzer_data_files
 from source.file_parser import write_json_file
 from testing.helper import (
     generate_500_response_missing_file,
     generate_404_response_missing_year,
+    generate_404_response_missing_location,
     generate_200_response
 )
 from testing.test_version_queue_endpoints import TestApiEndpointsV1
+from web.flask_web_app import create_app
 
 class TestPitstopsEndpoints(TestApiEndpointsV1):
     """
@@ -58,5 +62,25 @@ class TestPitstopsEndpoints(TestApiEndpointsV1):
         expected = generate_200_response({"Testing":"Testing"})
         client = self.app.test_client()
         response = client.get("/pitstops/2022")
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json, expected)
+
+    def test_get_pitstops_year_and_location_invalid_location(self):
+        """
+        This method will test the pit stops endpoint when the location is invalid.
+        """
+        write_json_file("data/pit_stop_data.json", {"2022": {"Testing":"Testing"}})
+        expected = generate_404_response_missing_location("Bahrain")
+        response = self.client.get("/pitstops/2022/Bahrain")
+        self.assertEqual(response.status_code, 404)
+        self.assertEqual(response.json, expected)
+
+    def test_get_pitstops_year_and_location_valid(self):
+        """
+        This method will test the pit stops endpoint when the location is valid.
+        """
+        write_json_file("data/pit_stop_data.json", {"2022": {"Testing":{"Testing":"Testing"}}})
+        expected = generate_200_response({"Testing":"Testing"})
+        response = self.client.get("/pitstops/2022/Testing")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, expected)
