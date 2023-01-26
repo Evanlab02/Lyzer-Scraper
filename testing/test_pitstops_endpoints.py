@@ -1,9 +1,7 @@
 """
 This file contains the class to test all the pit stop endpoints.
 """
-import threading
 
-from api.api_factory import assign_endpoints
 from source.installer import install_lyzer_data_files, uninstall_lyzer_data_files
 from source.file_parser import write_json_file
 from testing.helper import (
@@ -13,7 +11,6 @@ from testing.helper import (
     generate_200_response
 )
 from testing.test_version_queue_endpoints import TestApiEndpointsV1
-from web.flask_web_app import create_app
 
 class TestPitstopsEndpoints(TestApiEndpointsV1):
     """
