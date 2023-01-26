@@ -31,3 +31,11 @@ update:
 	@pipenv requirements > requirements.txt
 security-check:
 	@pipenv check
+pipeline:
+	pip install --upgrade pip
+	pip install pipenv
+	make install
+	make test
+	make build
+	docker build -t lyzer-scraper .
+	docker run -p 8080:8080 lyzer-scraper make test

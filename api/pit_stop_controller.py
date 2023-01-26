@@ -3,27 +3,9 @@ This file contains the controller for the pit stop data.
 """
 
 # File Imports
-from api.scraper_response import ScraperResponse
+from api.api_controller import get_data
 from logs.console_logger import log_to_console
 from logs.file_logger import create_log
-from source.file_parser import read_json_file
-
-def read_pitstops_file() -> ScraperResponse | dict:
-    """
-    This function will read the pit stops data from the file and return it.
-    If the file cannot be found, it will return a ScraperResponse object with the error message.
-
-    Returns:
-        (ScraperResponse | dict): A ScraperResponse object with error data or a dictionary
-        with all the pit stop data.
-    """
-    try:
-        pit_stop_data = read_json_file("data/pit_stop_data.json")
-        return pit_stop_data
-    except FileNotFoundError:
-        create_log("Internal server error: pit stops file not found.")
-        log_to_console("Internal server error: pit stops file not found.", "ERROR")
-        return ScraperResponse("failure", 500, "Internal server error: pit stops file not found.")
 
 
 def get_all_pitstops() -> tuple[dict[str, any], int]:
@@ -35,14 +17,37 @@ def get_all_pitstops() -> tuple[dict[str, any], int]:
     """
     create_log("Retrieving pit stop data.")
     log_to_console("Retrieving pit stop data.", "INFO")
-    result = read_pitstops_file()
+    result = get_data("data/pit_stop_data.json")
+    return result.convert_to_json(), result.status
 
-    if isinstance(result, ScraperResponse):
-        json_result = result.convert_to_json()
-        return json_result, result.status
 
-    result = ScraperResponse("success", 200, "Pit stop data retrieved successfully.", result)
-    json_result = result.convert_to_json()
-    create_log("Pit stop data retrieved successfully.")
-    log_to_console("Pit stop data retrieved successfully.", "INFO")
-    return json_result, result.status
+def get_pitstops_for_year(year) -> tuple[dict[str, any], int]:
+    """
+    This function will return the pit stop data for the given year.
+
+    Args:
+        year (str): The year to get the pit stop data for.
+
+    Returns:
+        (tuple[dict[str, any], int]): A tuple containing the response and the status code.
+    """
+    create_log(f"Retrieving pit stop data for {year}.")
+    log_to_console(f"Retrieving pit stop data for {year}.", "INFO")
+    result = get_data("data/pit_stop_data.json", year)
+    return result.convert_to_json(), result.status
+
+def get_pitstops_for_year_and_location(year, location) -> tuple[dict[str, any], int]:
+    """
+    This function will return the pit stop data for the given year and location.
+
+    Args:
+        year (str): The year to get the pit stop data for.
+        location (str): The location to get the pit stop data for.
+
+    Returns:
+        (tuple[dict[str, any], int]): A tuple containing the response and the status code.
+    """
+    create_log(f"Retrieving pit stop data for {year} at {location}.")
+    log_to_console(f"Retrieving pit stop data for {year} at {location}.", "INFO")
+    result = get_data("data/pit_stop_data.json", year, location)
+    return result.convert_to_json(), result.status

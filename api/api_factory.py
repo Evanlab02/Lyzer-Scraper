@@ -10,7 +10,11 @@ from api.fastest_laps_controller import (
     get_fastest_laps_from_year,
     get_fastest_laps_year_and_location
 )
-from api.pit_stop_controller import get_all_pitstops
+from api.pit_stop_controller import (
+    get_all_pitstops,
+    get_pitstops_for_year,
+    get_pitstops_for_year_and_location
+)
 from api.race_controller import get_races, get_races_from_year, get_races_from_year_and_location
 from api.season_controller import get_seasons, get_season
 from logs.console_logger import log_to_console
@@ -27,6 +31,8 @@ def assign_endpoints(app: Flask):
         (get_fastest_laps_year_and_location)
 
     app.route("/pitstops", methods=["GET"])(get_all_pitstops)
+    app.route("/pitstops/<year>", methods=["GET"])(get_pitstops_for_year)
+    app.route("/pitstops/<year>/<location>", methods=["GET"])(get_pitstops_for_year_and_location)
 
     app.route("/races", methods=["GET"])(get_races)
     app.route("/races/<year>", methods=["GET"])(get_races_from_year)
@@ -42,15 +48,15 @@ def get_version():
     return {
         "status": 200,
         "result": "success",
-        "message": "Version for Lyzer Scraper",
-        "version": "0.6.1-beta"
+        "message": "Data retrieved successfully.",
+        "data": "0.6.1-beta"
         }, 200
 
 def display_response(response):
     """Display the response to the server user."""
     response_data = response.json
     response_data = response_data.copy()
-
+    log_to_console("Sending following response to client")
     for key in response_data.keys():
         value = response_data[key]
         if len(str(value)) > 45:

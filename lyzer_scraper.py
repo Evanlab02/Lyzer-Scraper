@@ -11,7 +11,7 @@ from web.flask_web_app import create_app, host_app
 
 def main():
     """The main function of the lyzer scraper program."""
-    program_version = get_version()[0]["version"]
+    program_version = get_version()[0]["data"]
     log_to_console(f"Lyzer {program_version}")
     install_lyzer_data_files()
 
