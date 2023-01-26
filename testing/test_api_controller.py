@@ -24,7 +24,7 @@ class TestApiController(unittest.TestCase):
         """
         uninstall_lyzer_data_files()
         expected = generate_500_response_missing_file()
-        actual = get_data("data/")
+        actual = get_data("data/invalid.json")
         self.assertEqual(actual.convert_to_json(), expected)
 
     def test_get_data_with_file(self):
