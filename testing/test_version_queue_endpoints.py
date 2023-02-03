@@ -27,7 +27,7 @@ class TestApiEndpointsV1(unittest.TestCase):
         "status": 200,
         "result": "success",
         "message": "Data retrieved successfully.",
-        "data": "0.6.1-beta"
+        "data": "0.6.1"
         })
 
     def test_queue_endpoint(self):
@@ -67,5 +67,5 @@ class TestApiEndpointsV1(unittest.TestCase):
         "status": 200,
         "result": "success",
         "message": "Data retrieved successfully.",
-        "data": "0.6.1-beta"
+        "data": "0.6.1"
         }, 200))
