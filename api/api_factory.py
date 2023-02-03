@@ -6,7 +6,6 @@ from flask import Flask
 
 from api.api_controller import data_endpoint
 from api.backlog_controller import queue_endpoint, priority_queue
-from logs.console_logger import log_to_console
 
 def assign_endpoints(app: Flask):
     """Assign endpoints to the flask app."""
@@ -26,4 +25,3 @@ def get_version():
         "message": "Data retrieved successfully.",
         "data": "0.6.1-beta"
         }, 200
-

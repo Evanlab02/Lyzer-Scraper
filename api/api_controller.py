@@ -75,17 +75,23 @@ def get_file_name(data_type: str) -> str:
     Returns:
         (str): The file name.
     """
+    file_name: str
     match data_type:
         case "seasons":
-            return "season_summaries.json"
+            file_name = "season_summaries.json"
         case "races":
-            return "races.json"
+            file_name = "races.json"
         case "pitstops":
-            return "pit_stop_data.json"
+            file_name = "pit_stop_data.json"
         case "fastest_laps":
-            return "fastest_laps.json"
+            file_name = "fastest_laps.json"
+        case "starting_grids":
+            file_name = "starting_grids.json"
+        case "qualifying":
+            file_name = "qualifying.json"
         case _:
-            return ""
+            file_name = ""
+    return file_name
 
 def display_response(response):
     """Display the response to the server user."""
