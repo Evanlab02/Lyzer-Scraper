@@ -14,4 +14,4 @@ def host_app(app: Flask):
     """
     Host the flask app.
     """
-    serve(app, port=8080)
+    serve(app, port=8000)
