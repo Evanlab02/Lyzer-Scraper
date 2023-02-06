@@ -39,3 +39,5 @@ pipeline:
 	make build
 	docker build -t lyzer-scraper .
 	docker run -p 8080:8080 lyzer-scraper make test
+debug:
+	@pipenv run python3 lyzer_scraper.py --debug

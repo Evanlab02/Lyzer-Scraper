@@ -15,3 +15,9 @@ def host_app(app: Flask, selected_port: int = 8000):
     Host the flask app.
     """
     serve(app, port=selected_port)
+
+def debug_app(app: Flask):
+    """
+    Debug the flask app.
+    """
+    app.run(debug=True)
