@@ -10,8 +10,8 @@ def create_app():
     app = Flask(__name__)
     return app
 
-def host_app(app: Flask):
+def host_app(app: Flask, selected_port: int = 8000):
     """
     Host the flask app.
     """
-    serve(app, port=8000)
+    serve(app, port=selected_port)

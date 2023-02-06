@@ -24,6 +24,13 @@ def main():
     elif len(sys.argv) > 1 and sys.argv[1] == "--clear-backlog":
         log_to_console("Clearing backlog.", "WARNING")
         clear_queue()
+    elif len(sys.argv) == 3 and sys.argv[1] == "--port":
+        app = create_app()
+        assign_endpoints(app)
+        log_to_console("Hosting web app.")
+        log_to_console(f"localhost:{sys.argv[2]}", "LINK")
+        log_to_console("Ctrl-C to Shutdown")
+        host_app(app, int(sys.argv[2]))
     else:
         app = create_app()
         assign_endpoints(app)
