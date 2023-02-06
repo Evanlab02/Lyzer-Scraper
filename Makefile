@@ -37,3 +37,5 @@ pipeline:
 	make install
 	make test
 	make build
+debug:
+	@pipenv run python3 lyzer_scraper.py --debug
