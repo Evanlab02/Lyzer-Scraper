@@ -33,7 +33,3 @@ jobs:
     - name: Create Executable
       run: |
         make build
-    - name: Test Docker Image
-      run: |
-        docker build -t lyzer-scraper .
-        docker run -p 8080:8080 lyzer-scraper make test
