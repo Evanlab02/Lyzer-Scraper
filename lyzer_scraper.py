@@ -28,7 +28,7 @@ def main():
         app = create_app()
         assign_endpoints(app)
         log_to_console("Hosting web app.")
-        log_to_console("localhost:8080", "LINK")
+        log_to_console("localhost:8000", "LINK")
         log_to_console("Ctrl-C to Shutdown")
         host_app(app)
 
