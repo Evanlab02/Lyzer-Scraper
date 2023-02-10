@@ -31,12 +31,6 @@ def main():
         log_to_console(f"localhost:{sys.argv[2]}", "LINK")
         log_to_console("Ctrl-C to Shutdown")
         host_app(app, int(sys.argv[2]))
-    elif len(sys.argv) > 1 and sys.argv[1] == "--debug":
-        app = create_app()
-        assign_endpoints(app)
-        log_to_console("Debugging web app.")
-        log_to_console("Ctrl-C to Shutdown")
-        app.run(debug=True)
     else:
         app = create_app()
         assign_endpoints(app)
