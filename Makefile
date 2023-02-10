@@ -1,31 +1,32 @@
-all:
-	@make install
-	@make test
-	@make build
 install:
 	@pipenv install
+clean:
+	@echo "<CLEAN> Unused Dependencies"
+	@pipenv clean
+	@echo "<CLEAN> Coverage File"
+	@rm -rf .coverage
+	@echo "<CLEAN> Build Folder"
+	@rm -rf build/
+	@echo "<CLEAN> Dist Folder"
+	@rm -rf dist/
+	@echo "<CLEAN> Spec File"
+	@rm -rf Lyzer-Scraper.spec
+	@echo "<CLEAN> Pytest Cache"
+	@rm -rf .pytest_cache
+	@echo "<CLEAN> Data Folder"
+	@rm -rf data/
 test:
+	@echo "<TEST> Running Tests"
 	@pipenv run pytest testing --cov
+	@echo "<TEST> Tests Complete"
 build:
 	@pipenv run pyinstaller --name Lyzer-Scraper --add-data backup/:data/ lyzer_scraper.py
-build-windows:
-	@pipenv run pyinstaller --name Lyzer-Scraper -i images/Lyzer-Scraper.PNG --add-data backup/";"data/ lyzer_scraper.py
-clean:
-	@pipenv clean
-	@rm -rf .coverage
-	@rm -rf build/
-	@rm -rf dist/
-	@rm -rf Lyzer-Scraper.spec
-	@rm -rf .pytest_cache
-	@rm -rf data/
-refresh:
-	@pipenv sync
 run:
 	@pipenv run python3 lyzer_scraper.py
 run-ubuntu: build
 	@cd dist/Lyzer-Scraper/ && ./Lyzer-Scraper
-run-windows: build-windows
-	@cd dist/Lyzer-Scraper/ && ./Lyzer-Scraper.exe
+refresh:
+	@pipenv sync
 update:
 	@pipenv update
 	@pipenv requirements > requirements.txt
@@ -37,5 +38,3 @@ pipeline:
 	make install
 	make test
 	make build
-debug:
-	@pipenv run python3 lyzer_scraper.py --debug
