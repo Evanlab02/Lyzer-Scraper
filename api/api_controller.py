@@ -91,6 +91,10 @@ def get_file_name(data_type: str) -> str:
             file_name = "qualifying.json"
         case "firstPractice":
             file_name = "practice1.json"
+        case "secondPractice":
+            file_name = "practice2.json"
+        case "thirdPractice":
+            file_name = "practice3.json"
         case _:
             file_name = ""
     return file_name
