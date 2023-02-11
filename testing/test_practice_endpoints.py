@@ -19,8 +19,8 @@ class TestPracticeEndpoints(TestApiEndpointsV1):
         """This function tests the get practice endpoint when the file is missing."""
         uninstall_lyzer_data_files()
         expected = generate_500_response_missing_file()
-        client = self.app.test_client()
-        response = client.get("/data/firstPractice")
+
+        response = self.client.get("/data/firstPractice")
         install_lyzer_data_files()
         self.assertEqual(response.status_code, 500)
         self.assertEqual(response.json, expected)
@@ -29,8 +29,8 @@ class TestPracticeEndpoints(TestApiEndpointsV1):
         """This function tests the get practice endpoint."""
         write_json_file("data/practice1.json", {"Testing": "Testing"})
         expected = generate_200_response({"Testing": "Testing"})
-        client = self.app.test_client()
-        response = client.get("/data/firstPractice")
+
+        response = self.client.get("/data/firstPractice")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, expected)
 
@@ -38,8 +38,8 @@ class TestPracticeEndpoints(TestApiEndpointsV1):
         """This function tests the get practice endpoint when the year is invalid."""
         write_json_file("data/practice1.json", {"2022": {"Testing": "Testing"}})
         expected = generate_404_response_missing_year("2021")
-        client = self.app.test_client()
-        response = client.get("/data/firstPractice/2021")
+
+        response = self.client.get("/data/firstPractice/2021")
         self.assertEqual(response.status_code, 404)
         self.assertEqual(response.json, expected)
 
@@ -47,8 +47,8 @@ class TestPracticeEndpoints(TestApiEndpointsV1):
         """This function tests the get practice endpoint when the year is 2022."""
         write_json_file("data/practice1.json", {"2022": {"Testing": "Testing"}})
         expected = generate_200_response({"Testing": "Testing"})
-        client = self.app.test_client()
-        response = client.get("/data/firstPractice/2022")
+
+        response = self.client.get("/data/firstPractice/2022")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, expected)
 
@@ -56,8 +56,8 @@ class TestPracticeEndpoints(TestApiEndpointsV1):
         """This function tests the get practice endpoint when the location is invalid."""
         write_json_file("data/practice1.json", {"2022": {"Testing": "Testing"}})
         expected = generate_404_response_missing_location("Invalid")
-        client = self.app.test_client()
-        response = client.get("/data/firstPractice/2022/Invalid")
+
+        response = self.client.get("/data/firstPractice/2022/Invalid")
         self.assertEqual(response.status_code, 404)
         self.assertEqual(response.json, expected)
 
@@ -65,17 +65,17 @@ class TestPracticeEndpoints(TestApiEndpointsV1):
         """This function tests the get practice endpoint when the location is Testing."""
         write_json_file("data/practice1.json", {"2022": {"Testing": "Testing"}})
         expected = generate_200_response("Testing")
-        client = self.app.test_client()
-        response = client.get("/data/firstPractice/2022/Testing")
+
+        response = self.client.get("/data/firstPractice/2022/Testing")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, expected)
 
     def test_get_second_practice_endpoint_missing_file(self):
         """This function tests the get practice endpoint when the file is missing."""
-        uninstall_lyzer_data_files()
         expected = generate_500_response_missing_file()
-        client = self.app.test_client()
-        response = client.get("/data/firstPractice")
+        uninstall_lyzer_data_files()
+
+        response = self.client.get("/data/firstPractice")
         install_lyzer_data_files()
         self.assertEqual(response.status_code, 500)
         self.assertEqual(response.json, expected)
@@ -84,17 +84,17 @@ class TestPracticeEndpoints(TestApiEndpointsV1):
         """This function tests the get practice endpoint."""
         write_json_file("data/practice1.json", {"Testing": "Testing"})
         expected = generate_200_response({"Testing": "Testing"})
-        client = self.app.test_client()
-        response = client.get("/data/firstPractice")
+
+        response = self.client.get("/data/firstPractice")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, expected)
 
     def test_get_second_practice_endpoint_year_invalid_year(self):
         """This function tests the get practice endpoint when the year is invalid."""
-        write_json_file("data/practice1.json", {"2022": {"Testing": "Testing"}})
         expected = generate_404_response_missing_year("2021")
-        client = self.app.test_client()
-        response = client.get("/data/firstPractice/2021")
+        write_json_file("data/practice1.json", {"2022": {"Testing": "Testing"}})
+
+        response = self.client.get("/data/firstPractice/2021")
         self.assertEqual(response.status_code, 404)
         self.assertEqual(response.json, expected)
 
@@ -102,8 +102,8 @@ class TestPracticeEndpoints(TestApiEndpointsV1):
         """This function tests the get practice endpoint when the year is 2022."""
         write_json_file("data/practice1.json", {"2022": {"Testing": "Testing"}})
         expected = generate_200_response({"Testing": "Testing"})
-        client = self.app.test_client()
-        response = client.get("/data/firstPractice/2022")
+
+        response = self.client.get("/data/firstPractice/2022")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, expected)
 
@@ -111,8 +111,8 @@ class TestPracticeEndpoints(TestApiEndpointsV1):
         """This function tests the get practice endpoint when the location is invalid."""
         write_json_file("data/practice1.json", {"2022": {"Testing": "Testing"}})
         expected = generate_404_response_missing_location("Invalid")
-        client = self.app.test_client()
-        response = client.get("/data/firstPractice/2022/Invalid")
+
+        response = self.client.get("/data/firstPractice/2022/Invalid")
         self.assertEqual(response.status_code, 404)
         self.assertEqual(response.json, expected)
 
@@ -120,8 +120,8 @@ class TestPracticeEndpoints(TestApiEndpointsV1):
         """This function tests the get practice endpoint when the location is Testing."""
         write_json_file("data/practice1.json", {"2022": {"Testing": "Testing"}})
         expected = generate_200_response("Testing")
-        client = self.app.test_client()
-        response = client.get("/data/firstPractice/2022/Testing")
+
+        response = self.client.get("/data/firstPractice/2022/Testing")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, expected)
 
@@ -129,8 +129,8 @@ class TestPracticeEndpoints(TestApiEndpointsV1):
         """This function tests the get practice endpoint when the file is missing."""
         uninstall_lyzer_data_files()
         expected = generate_500_response_missing_file()
-        client = self.app.test_client()
-        response = client.get("/data/firstPractice")
+
+        response = self.client.get("/data/firstPractice")
         install_lyzer_data_files()
         self.assertEqual(response.status_code, 500)
         self.assertEqual(response.json, expected)
@@ -139,8 +139,8 @@ class TestPracticeEndpoints(TestApiEndpointsV1):
         """This function tests the get practice endpoint."""
         write_json_file("data/practice1.json", {"Testing": "Testing"})
         expected = generate_200_response({"Testing": "Testing"})
-        client = self.app.test_client()
-        response = client.get("/data/firstPractice")
+
+        response = self.client.get("/data/firstPractice")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, expected)
 
@@ -148,8 +148,8 @@ class TestPracticeEndpoints(TestApiEndpointsV1):
         """This function tests the get practice endpoint when the year is invalid."""
         write_json_file("data/practice1.json", {"2022": {"Testing": "Testing"}})
         expected = generate_404_response_missing_year("2021")
-        client = self.app.test_client()
-        response = client.get("/data/firstPractice/2021")
+
+        response = self.client.get("/data/firstPractice/2021")
         self.assertEqual(response.status_code, 404)
         self.assertEqual(response.json, expected)
 
@@ -157,8 +157,8 @@ class TestPracticeEndpoints(TestApiEndpointsV1):
         """This function tests the get practice endpoint when the year is 2022."""
         write_json_file("data/practice1.json", {"2022": {"Testing": "Testing"}})
         expected = generate_200_response({"Testing": "Testing"})
-        client = self.app.test_client()
-        response = client.get("/data/firstPractice/2022")
+
+        response = self.client.get("/data/firstPractice/2022")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, expected)
 
@@ -166,8 +166,8 @@ class TestPracticeEndpoints(TestApiEndpointsV1):
         """This function tests the get practice endpoint when the location is invalid."""
         write_json_file("data/practice1.json", {"2022": {"Testing": "Testing"}})
         expected = generate_404_response_missing_location("Invalid")
-        client = self.app.test_client()
-        response = client.get("/data/firstPractice/2022/Invalid")
+
+        response = self.client.get("/data/firstPractice/2022/Invalid")
         self.assertEqual(response.status_code, 404)
         self.assertEqual(response.json, expected)
 
@@ -175,7 +175,7 @@ class TestPracticeEndpoints(TestApiEndpointsV1):
         """This function tests the get practice endpoint when the location is Testing."""
         write_json_file("data/practice1.json", {"2022": {"Testing": "Testing"}})
         expected = generate_200_response("Testing")
-        client = self.app.test_client()
-        response = client.get("/data/firstPractice/2022/Testing")
+
+        response = self.client.get("/data/firstPractice/2022/Testing")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, expected)
