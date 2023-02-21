@@ -2,9 +2,9 @@ name: Ubuntu Scraper Testing
 
 on:
   push:
-    branches: [ release ]
+    branches: [ dev,release ]
   pull_request:
-    branches: [ release ]
+    branches: [ dev,release ]
 
 permissions:
   contents: read
