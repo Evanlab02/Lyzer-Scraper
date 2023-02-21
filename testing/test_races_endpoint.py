@@ -19,7 +19,7 @@ class TestRacesEndpoints(TestApiEndpointsV1):
         expected_data = read_json_file("data/races.json")
         expected_response = generate_200_response(expected_data)
         client = self.app.test_client()
-        response = client.get("/data/races")
+        response = client.get("/results/races")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, expected_response)
 
@@ -28,7 +28,7 @@ class TestRacesEndpoints(TestApiEndpointsV1):
         uninstall_lyzer_data_files()
         expected = generate_500_response_missing_file()
         client = self.app.test_client()
-        response = client.get("/data/races")
+        response = client.get("/results/races")
         install_lyzer_data_files()
         self.assertEqual(response.status_code, 500)
         self.assertEqual(response.json, expected)
@@ -38,7 +38,7 @@ class TestRacesEndpoints(TestApiEndpointsV1):
         expected = generate_500_response_missing_file()
         uninstall_lyzer_data_files()
         client = self.app.test_client()
-        response = client.get("/data/races/2022")
+        response = client.get("/results/races/2022")
         install_lyzer_data_files()
         self.assertEqual(response.status_code, 500)
         self.assertEqual(response.json, expected)
@@ -47,7 +47,7 @@ class TestRacesEndpoints(TestApiEndpointsV1):
         """"Test the get races year endpoint"""
         expected = generate_404_response_missing_year("1949")
         client = self.app.test_client()
-        response = client.get("/data/races/1949")
+        response = client.get("/results/races/1949")
         self.assertEqual(response.status_code, 404)
         self.assertEqual(response.json, expected)
 
@@ -74,7 +74,7 @@ class TestRacesEndpoints(TestApiEndpointsV1):
             }
         }
 
-        response = client.get("/data/races/2022")
+        response = client.get("/results/races/2022")
         self.assertEqual(response.json, expected)
         self.assertEqual(response.status_code, 200)
 
@@ -83,7 +83,7 @@ class TestRacesEndpoints(TestApiEndpointsV1):
         uninstall_lyzer_data_files()
         expected = generate_500_response_missing_file()
         client = self.app.test_client()
-        response = client.get("/data/races/2022/australia")
+        response = client.get("/results/races/2022/australia")
         install_lyzer_data_files()
         self.assertEqual(response.status_code, 500)
         self.assertEqual(response.json, expected)
@@ -101,7 +101,7 @@ class TestRacesEndpoints(TestApiEndpointsV1):
         expected = generate_404_response_missing_year("1949")
 
         client = self.app.test_client()
-        response = client.get("/data/races/1949/bahrain")
+        response = client.get("/results/races/1949/bahrain")
         self.assertEqual(response.status_code, 404)
         self.assertEqual(response.json, expected)
 
@@ -118,7 +118,7 @@ class TestRacesEndpoints(TestApiEndpointsV1):
         expected = generate_404_response_missing_location("australia")
 
         client = self.app.test_client()
-        response = client.get("/data/races/2022/australia")
+        response = client.get("/results/races/2022/australia")
         self.assertEqual(response.status_code, 404)
         self.assertEqual(response.json, expected)
 
@@ -145,6 +145,6 @@ class TestRacesEndpoints(TestApiEndpointsV1):
         }
 
         client = self.app.test_client()
-        response = client.get("/data/races/2022/bahrain")
+        response = client.get("/results/races/2022/bahrain")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, expected)

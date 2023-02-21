@@ -24,7 +24,7 @@ class TestQualifyingEndpoints(TestApiEndpointsV1):
         """
         expected = generate_500_response_missing_file()
         uninstall_lyzer_data_files()
-        response = self.client.get("/data/qualifying")
+        response = self.client.get("/results/qualifying")
         install_lyzer_data_files()
         self.assertEqual(response.status_code, 500)
         self.assertEqual(response.json, expected)
@@ -35,7 +35,7 @@ class TestQualifyingEndpoints(TestApiEndpointsV1):
         """
         write_json_file("data/qualifying.json", {"Testing": "Testing"})
         expected = generate_200_response({"Testing": "Testing"})
-        response = self.client.get("/data/qualifying")
+        response = self.client.get("/results/qualifying")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, expected)
 
@@ -45,7 +45,7 @@ class TestQualifyingEndpoints(TestApiEndpointsV1):
         """
         write_json_file("data/qualifying.json", {"2022": {"Testing":"Testing"}})
         expected = generate_404_response_missing_year("1949")
-        response = self.client.get("/data/qualifying/1949")
+        response = self.client.get("/results/qualifying/1949")
         self.assertEqual(response.status_code, 404)
         self.assertEqual(response.json, expected)
 
@@ -55,7 +55,7 @@ class TestQualifyingEndpoints(TestApiEndpointsV1):
         """
         write_json_file("data/qualifying.json", {"2022": {"Testing":"Testing"}})
         expected = generate_200_response({"Testing":"Testing"})
-        response = self.client.get("/data/qualifying/2022")
+        response = self.client.get("/results/qualifying/2022")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, expected)
 
@@ -65,7 +65,7 @@ class TestQualifyingEndpoints(TestApiEndpointsV1):
         """
         write_json_file("data/qualifying.json", {"2022": {"Testing":"Testing"}})
         expected = generate_404_response_missing_year("1949")
-        response = self.client.get("/data/qualifying/1949/Testing")
+        response = self.client.get("/results/qualifying/1949/Testing")
         self.assertEqual(response.status_code, 404)
         self.assertEqual(response.json, expected)
 
@@ -75,7 +75,7 @@ class TestQualifyingEndpoints(TestApiEndpointsV1):
         """
         write_json_file("data/qualifying.json", {"2022": {"Bahrain":"Testing"}})
         expected = generate_404_response_missing_location("Testing")
-        response = self.client.get("/data/qualifying/2022/Testing")
+        response = self.client.get("/results/qualifying/2022/Testing")
         self.assertEqual(response.status_code, 404)
         self.assertEqual(response.json, expected)
 
@@ -85,6 +85,6 @@ class TestQualifyingEndpoints(TestApiEndpointsV1):
         """
         write_json_file("data/qualifying.json", {"2022": {"Testing":{"Testing": "Testing"}}})
         expected = generate_200_response({"Testing":"Testing"})
-        response = self.client.get("/data/qualifying/2022/Testing")
+        response = self.client.get("/results/qualifying/2022/Testing")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, expected)
