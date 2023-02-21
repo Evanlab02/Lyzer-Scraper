@@ -17,7 +17,7 @@ clean:
 	@rm -rf data/
 test:
 	@echo "<TEST> Running Tests"
-	@pipenv run pytest testing --cov
+	@pipenv run pytest -v testing --cov
 	@echo "<TEST> Tests Complete"
 build:
 	@pipenv run pyinstaller --name Lyzer-Scraper --add-data backup/:data/ lyzer_scraper.py
