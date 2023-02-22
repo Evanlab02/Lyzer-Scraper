@@ -21,6 +21,8 @@ test:
 	@echo "<TEST> Tests Complete"
 build:
 	@pipenv run pyinstaller --name Lyzer-Scraper --add-data backup/:data/ lyzer_scraper.py
+build-windows:
+	@pipenv run pyinstaller --name Lyzer-Scraper --add-data "backup/;data/" lyzer_scraper.py 
 run:
 	@pipenv run python3 lyzer_scraper.py
 run-ubuntu: build
