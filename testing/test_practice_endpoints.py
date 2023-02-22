@@ -20,7 +20,7 @@ class TestPracticeEndpoints(TestApiEndpointsV1):
         uninstall_lyzer_data_files()
         expected = generate_500_response_missing_file()
 
-        response = self.client.get("/scraper/firstPractice")
+        response = self.client.get("/data/firstPractice")
         install_lyzer_data_files()
         self.assertEqual(response.status_code, 500)
         self.assertEqual(response.json, expected)
@@ -30,7 +30,7 @@ class TestPracticeEndpoints(TestApiEndpointsV1):
         write_json_file("data/practice1.json", {"Testing": "Testing"})
         expected = generate_200_response({"Testing": "Testing"})
 
-        response = self.client.get("/scraper/firstPractice")
+        response = self.client.get("/data/firstPractice")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, expected)
 
@@ -39,7 +39,7 @@ class TestPracticeEndpoints(TestApiEndpointsV1):
         write_json_file("data/practice1.json", {"2022": {"Testing": "Testing"}})
         expected = generate_404_response_missing_year("2021")
 
-        response = self.client.get("/scraper/firstPractice/2021")
+        response = self.client.get("/data/firstPractice/2021")
         self.assertEqual(response.status_code, 404)
         self.assertEqual(response.json, expected)
 
@@ -48,7 +48,7 @@ class TestPracticeEndpoints(TestApiEndpointsV1):
         write_json_file("data/practice1.json", {"2022": {"Testing": "Testing"}})
         expected = generate_200_response({"Testing": "Testing"})
 
-        response = self.client.get("/scraper/firstPractice/2022")
+        response = self.client.get("/data/firstPractice/2022")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, expected)
 
@@ -57,7 +57,7 @@ class TestPracticeEndpoints(TestApiEndpointsV1):
         write_json_file("data/practice1.json", {"2022": {"Testing": "Testing"}})
         expected = generate_404_response_missing_location("Invalid")
 
-        response = self.client.get("/scraper/firstPractice/2022/Invalid")
+        response = self.client.get("/data/firstPractice/2022/Invalid")
         self.assertEqual(response.status_code, 404)
         self.assertEqual(response.json, expected)
 
@@ -66,7 +66,7 @@ class TestPracticeEndpoints(TestApiEndpointsV1):
         write_json_file("data/practice1.json", {"2022": {"Testing": "Testing"}})
         expected = generate_200_response("Testing")
 
-        response = self.client.get("/scraper/firstPractice/2022/Testing")
+        response = self.client.get("/data/firstPractice/2022/Testing")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, expected)
 
@@ -75,7 +75,7 @@ class TestPracticeEndpoints(TestApiEndpointsV1):
         expected = generate_500_response_missing_file()
         uninstall_lyzer_data_files()
 
-        response = self.client.get("/scraper/firstPractice")
+        response = self.client.get("/data/firstPractice")
         install_lyzer_data_files()
         self.assertEqual(response.status_code, 500)
         self.assertEqual(response.json, expected)
@@ -85,7 +85,7 @@ class TestPracticeEndpoints(TestApiEndpointsV1):
         write_json_file("data/practice1.json", {"Testing": "Testing"})
         expected = generate_200_response({"Testing": "Testing"})
 
-        response = self.client.get("/scraper/firstPractice")
+        response = self.client.get("/data/firstPractice")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, expected)
 
@@ -94,7 +94,7 @@ class TestPracticeEndpoints(TestApiEndpointsV1):
         expected = generate_404_response_missing_year("2021")
         write_json_file("data/practice1.json", {"2022": {"Testing": "Testing"}})
 
-        response = self.client.get("/scraper/firstPractice/2021")
+        response = self.client.get("/data/firstPractice/2021")
         self.assertEqual(response.status_code, 404)
         self.assertEqual(response.json, expected)
 
@@ -103,7 +103,7 @@ class TestPracticeEndpoints(TestApiEndpointsV1):
         write_json_file("data/practice1.json", {"2022": {"Testing": "Testing"}})
         expected = generate_200_response({"Testing": "Testing"})
 
-        response = self.client.get("/scraper/firstPractice/2022")
+        response = self.client.get("/data/firstPractice/2022")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, expected)
 
@@ -112,7 +112,7 @@ class TestPracticeEndpoints(TestApiEndpointsV1):
         write_json_file("data/practice1.json", {"2022": {"Testing": "Testing"}})
         expected = generate_404_response_missing_location("Invalid")
 
-        response = self.client.get("/scraper/firstPractice/2022/Invalid")
+        response = self.client.get("/data/firstPractice/2022/Invalid")
         self.assertEqual(response.status_code, 404)
         self.assertEqual(response.json, expected)
 
@@ -121,7 +121,7 @@ class TestPracticeEndpoints(TestApiEndpointsV1):
         write_json_file("data/practice1.json", {"2022": {"Testing": "Testing"}})
         expected = generate_200_response("Testing")
 
-        response = self.client.get("/scraper/firstPractice/2022/Testing")
+        response = self.client.get("/data/firstPractice/2022/Testing")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, expected)
 
@@ -130,7 +130,7 @@ class TestPracticeEndpoints(TestApiEndpointsV1):
         uninstall_lyzer_data_files()
         expected = generate_500_response_missing_file()
 
-        response = self.client.get("/scraper/firstPractice")
+        response = self.client.get("/data/firstPractice")
         install_lyzer_data_files()
         self.assertEqual(response.status_code, 500)
         self.assertEqual(response.json, expected)
@@ -140,7 +140,7 @@ class TestPracticeEndpoints(TestApiEndpointsV1):
         write_json_file("data/practice1.json", {"Testing": "Testing"})
         expected = generate_200_response({"Testing": "Testing"})
 
-        response = self.client.get("/scraper/firstPractice")
+        response = self.client.get("/data/firstPractice")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, expected)
 
@@ -149,7 +149,7 @@ class TestPracticeEndpoints(TestApiEndpointsV1):
         write_json_file("data/practice1.json", {"2022": {"Testing": "Testing"}})
         expected = generate_404_response_missing_year("2021")
 
-        response = self.client.get("/scraper/firstPractice/2021")
+        response = self.client.get("/data/firstPractice/2021")
         self.assertEqual(response.status_code, 404)
         self.assertEqual(response.json, expected)
 
@@ -158,7 +158,7 @@ class TestPracticeEndpoints(TestApiEndpointsV1):
         write_json_file("data/practice1.json", {"2022": {"Testing": "Testing"}})
         expected = generate_200_response({"Testing": "Testing"})
 
-        response = self.client.get("/scraper/firstPractice/2022")
+        response = self.client.get("/data/firstPractice/2022")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, expected)
 
@@ -167,7 +167,7 @@ class TestPracticeEndpoints(TestApiEndpointsV1):
         write_json_file("data/practice1.json", {"2022": {"Testing": "Testing"}})
         expected = generate_404_response_missing_location("Invalid")
 
-        response = self.client.get("/scraper/firstPractice/2022/Invalid")
+        response = self.client.get("/data/firstPractice/2022/Invalid")
         self.assertEqual(response.status_code, 404)
         self.assertEqual(response.json, expected)
 
@@ -176,6 +176,6 @@ class TestPracticeEndpoints(TestApiEndpointsV1):
         write_json_file("data/practice1.json", {"2022": {"Testing": "Testing"}})
         expected = generate_200_response("Testing")
 
-        response = self.client.get("/scraper/firstPractice/2022/Testing")
+        response = self.client.get("/data/firstPractice/2022/Testing")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, expected)

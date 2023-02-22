@@ -24,7 +24,7 @@ class TestPitstopsEndpoints(TestApiEndpointsV1):
         expected = generate_500_response_missing_file()
         client = self.app.test_client()
         uninstall_lyzer_data_files()
-        response = client.get("/scraper/pitstops")
+        response = client.get("/data/pitstops")
         install_lyzer_data_files()
         self.assertEqual(response.status_code, 500)
         self.assertEqual(response.json, expected)
@@ -36,7 +36,7 @@ class TestPitstopsEndpoints(TestApiEndpointsV1):
         write_json_file("data/pit_stop_data.json", {"Testing": "Testing"})
         expected = generate_200_response({"Testing": "Testing"})
         client = self.app.test_client()
-        response = client.get("/scraper/pitstops")
+        response = client.get("/data/pitstops")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, expected)
 
@@ -47,7 +47,7 @@ class TestPitstopsEndpoints(TestApiEndpointsV1):
         write_json_file("data/pit_stop_data.json", {"2022": {"Testing":"Testing"}})
         expected = generate_404_response_missing_year("1949")
         client = self.app.test_client()
-        response = client.get("/scraper/pitstops/1949")
+        response = client.get("/data/pitstops/1949")
         self.assertEqual(response.status_code, 404)
         self.assertEqual(response.json, expected)
 
@@ -58,7 +58,7 @@ class TestPitstopsEndpoints(TestApiEndpointsV1):
         write_json_file("data/pit_stop_data.json", {"2022": {"Testing":"Testing"}})
         expected = generate_200_response({"Testing":"Testing"})
         client = self.app.test_client()
-        response = client.get("/scraper/pitstops/2022")
+        response = client.get("/data/pitstops/2022")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, expected)
 
@@ -68,7 +68,7 @@ class TestPitstopsEndpoints(TestApiEndpointsV1):
         """
         write_json_file("data/pit_stop_data.json", {"2022": {"Testing":"Testing"}})
         expected = generate_404_response_missing_location("Bahrain")
-        response = self.client.get("/scraper/pitstops/2022/Bahrain")
+        response = self.client.get("/data/pitstops/2022/Bahrain")
         self.assertEqual(response.status_code, 404)
         self.assertEqual(response.json, expected)
 
@@ -78,6 +78,6 @@ class TestPitstopsEndpoints(TestApiEndpointsV1):
         """
         write_json_file("data/pit_stop_data.json", {"2022": {"Testing":{"Testing":"Testing"}}})
         expected = generate_200_response({"Testing":"Testing"})
-        response = self.client.get("/scraper/pitstops/2022/Testing")
+        response = self.client.get("/data/pitstops/2022/Testing")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, expected)
