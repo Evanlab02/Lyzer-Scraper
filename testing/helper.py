@@ -35,7 +35,7 @@ def generate_404_response_missing_location(location: str):
     return {
         "status": 404,
         "result": "failure",
-        "message": f"Location not found {location}."
+        "message": f"Location/Driver/Team not found {location}."
     }
 
 def generate_200_response(data: dict):

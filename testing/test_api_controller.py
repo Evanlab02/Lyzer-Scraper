@@ -132,3 +132,11 @@ class TestApiController(unittest.TestCase):
         expected = "qualifying.json"
         actual = get_file_name("qualifying")
         self.assertEqual(actual, expected)
+
+    def test_get_file_name_drivers(self):
+        """
+        This function will test the get_file_name function with the driver file.
+        """
+        expected = "drivers.json"
+        actual = get_file_name("drivers")
+        self.assertEqual(actual, expected)

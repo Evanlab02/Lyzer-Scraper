@@ -7,21 +7,22 @@ from logs.console_logger import log_to_console
 from logs.file_logger import create_log
 from source.file_parser import read_json_file
 
-def get_data(file: str, year: str = "", location: str = ""):
+def get_data(file: str, year: str = "", location_driver_team: str = ""):
     """
-    This function will return the data from the file based on the year and location.
+    This function will return the data from the file based on the year and location_driver_team.
     If no year is given, it will return all the data.
-    If no location is given, it will return all the data for the year.
+    If no location_driver_team is given, it will return all the data for the year.
 
     Args:
         file (str): The file to read the data from.
         year (str, optional): The year to get the data for. Defaults to "".
-        location (str, optional): The location to get the data for. Defaults to "".
+        location_driver_team (str, optional): The location to get the data for. Defaults to "".
+        This can also be a driver or team for the drivers and teams endpoints.
 
     Returns:
         (ScraperResponse): A ScraperResponse object with error data or data.
     """
-    location = location.replace("_", " ")
+    location_driver_team = location_driver_team.replace("_", " ")
 
     if file == "data/":
         return ScraperResponse("failure", 404, "Data type not found.")
@@ -37,31 +38,36 @@ def get_data(file: str, year: str = "", location: str = ""):
         except KeyError:
             return ScraperResponse("failure", 404, f"Year not found {year}.")
 
-    if year and location:
+    if year and location_driver_team:
         try:
-            data = data[location]
+            data = data[location_driver_team]
         except KeyError:
-            return ScraperResponse("failure", 404, f"Location not found {location}.")
+            return ScraperResponse(
+                "failure",
+                404,
+                f"Location/Driver/Team not found {location_driver_team}."
+            )
 
     return ScraperResponse("success", 200, "Data retrieved successfully.", data)
 
-def data_endpoint(data_type: str, year: str = "", location: str = ""):
+def data_endpoint(data_type: str, year: str = "", location_driver_team: str = ""):
     """
-    This function will return the data from the file based on the year and location.
+    This function will return the data from the file based on the year and location_driver_team.
 
     Args:
         data_type (str): The data type to get the data for.
         year (str, optional): The year to get the data for. Defaults to "".
-        location (str, optional): The location to get the data for. Defaults to "".
+        location_driver_team (str, optional): The location to get the data for. Defaults to "".
+        This can also be a driver or team for the drivers and teams endpoints.
 
     Returns:
         (str): The data in json format.
     """
-    log_to_console(f"Getting {data_type} data: {year} {location}")
-    create_log(f"Getting {data_type} data: {year} {location}")
+    log_to_console(f"Getting {data_type} data: {year} {location_driver_team}")
+    create_log(f"Getting {data_type} data: {year} {location_driver_team}")
     file_name = get_file_name(data_type)
     file_name = f"data/{file_name}"
-    result = get_data(file_name, year, location)
+    result = get_data(file_name, year, location_driver_team)
     display_response(result.convert_to_json())
     return result.convert_to_json(), result.status
 
@@ -95,6 +101,8 @@ def get_file_name(data_type: str) -> str:
             file_name = "practice2.json"
         case "thirdPractice":
             file_name = "practice3.json"
+        case "drivers":
+            file_name = "drivers.json"
         case _:
             file_name = ""
     return file_name
