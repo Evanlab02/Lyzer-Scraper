@@ -103,6 +103,8 @@ def get_file_name(data_type: str) -> str:
             file_name = "practice3.json"
         case "drivers":
             file_name = "drivers.json"
+        case "sprints":
+            file_name = "sprints.json"
         case _:
             file_name = ""
     return file_name
