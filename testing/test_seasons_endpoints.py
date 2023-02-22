@@ -18,7 +18,7 @@ class TestSeasonsEndpointsV1(TestApiEndpointsV1):
         uninstall_lyzer_data_files()
         expected = generate_500_response_missing_file()
         client = self.app.test_client()
-        response = client.get("/results/seasons")
+        response = client.get("/scraper/seasons")
         install_lyzer_data_files()
         self.assertEqual(response.status_code, 500)
         self.assertEqual(response.json, expected)
@@ -33,7 +33,7 @@ class TestSeasonsEndpointsV1(TestApiEndpointsV1):
             "data": {"2022": {"url": "test"}}
         }
         client = self.app.test_client()
-        response = client.get("/results/seasons")
+        response = client.get("/scraper/seasons")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, expected)
 
@@ -42,7 +42,7 @@ class TestSeasonsEndpointsV1(TestApiEndpointsV1):
         uninstall_lyzer_data_files()
         expected = generate_500_response_missing_file()
         client = self.app.test_client()
-        response = client.get("/results/seasons/2022")
+        response = client.get("/scraper/seasons/2022")
         install_lyzer_data_files()
         self.assertEqual(response.status_code, 500)
         self.assertEqual(response.json, expected)
@@ -52,7 +52,7 @@ class TestSeasonsEndpointsV1(TestApiEndpointsV1):
         write_json_file("data/season_summaries.json", {"2022": {"url": "test"}})
         expected = generate_404_response_missing_year("2023")
         client = self.app.test_client()
-        response = client.get("/results/seasons/2023")
+        response = client.get("/scraper/seasons/2023")
         self.assertEqual(response.status_code, 404)
         self.assertEqual(response.json, expected)
 
@@ -62,6 +62,6 @@ class TestSeasonsEndpointsV1(TestApiEndpointsV1):
         expected = generate_200_response({"url": "test"})
         season_year = "2022"
         client = self.app.test_client()
-        response = client.get(f"/results/seasons/{season_year}")
+        response = client.get(f"/scraper/seasons/{season_year}")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, expected)
