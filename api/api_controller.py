@@ -105,6 +105,8 @@ def get_file_name(data_type: str) -> str:
             file_name = "drivers.json"
         case "sprints":
             file_name = "sprints.json"
+        case "sprint_grids":
+            file_name = "sprint_grids.json"
         case _:
             file_name = ""
     return file_name
