@@ -132,3 +132,27 @@ class TestApiController(unittest.TestCase):
         expected = "qualifying.json"
         actual = get_file_name("qualifying")
         self.assertEqual(actual, expected)
+
+    def test_get_file_name_drivers(self):
+        """
+        This function will test the get_file_name function with the driver file.
+        """
+        expected = "drivers.json"
+        actual = get_file_name("drivers")
+        self.assertEqual(actual, expected)
+
+    def test_get_file_name_sprints(self):
+        """
+        This function will test the get_file_name function with the sprint file.
+        """
+        expected = "sprints.json"
+        actual = get_file_name("sprints")
+        self.assertEqual(actual, expected)
+
+    def test_get_file_name_sprint_grids(self):
+        """
+        This function will test the get_file_name function with the sprint grid file.
+        """
+        expected = "sprint_grids.json"
+        actual = get_file_name("sprint_grids")
+        self.assertEqual(actual, expected)

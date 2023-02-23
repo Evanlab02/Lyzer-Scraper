@@ -15,7 +15,7 @@ def assign_endpoints(app: Flask):
 
     app.route("/data/<data_type>", methods=["GET"])(data_endpoint)
     app.route("/data/<data_type>/<year>", methods=["GET"])(data_endpoint)
-    app.route("/data/<data_type>/<year>/<location>", methods=["GET"])(data_endpoint)
+    app.route("/data/<data_type>/<year>/<location_driver_team>", methods=["GET"])(data_endpoint)
 
 def get_version():
     """Return the version of the lyzer scraper program."""
@@ -23,5 +23,5 @@ def get_version():
         "status": 200,
         "result": "success",
         "message": "Data retrieved successfully.",
-        "data": "0.7.0"
+        "data": "0.8.0"
         }, 200
