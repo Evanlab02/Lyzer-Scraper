@@ -156,3 +156,11 @@ class TestApiController(unittest.TestCase):
         expected = "sprint_grids.json"
         actual = get_file_name("sprint_grids")
         self.assertEqual(actual, expected)
+
+    def test_get_file_name_teams(self):
+        """
+        This function will test the get_file_name function with the team file.
+        """
+        expected = "teams.json"
+        actual = get_file_name("constructors")
+        self.assertEqual(actual, expected)

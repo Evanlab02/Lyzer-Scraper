@@ -1,1 +1,1264 @@
-{}
+{
+    "2022": {
+        "All": {
+            "url": "https://www.formula1.com/en/results.html/2022/team.html",
+            "headers": [
+                "Pos",
+                "Team",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "Red Bull Racing RBPT",
+                    "759"
+                ],
+                [
+                    "2",
+                    "Ferrari",
+                    "554"
+                ],
+                [
+                    "3",
+                    "Mercedes",
+                    "515"
+                ],
+                [
+                    "4",
+                    "Alpine Renault",
+                    "173"
+                ],
+                [
+                    "5",
+                    "McLaren Mercedes",
+                    "159"
+                ],
+                [
+                    "6",
+                    "Alfa Romeo Ferrari",
+                    "55"
+                ],
+                [
+                    "7",
+                    "Aston Martin Aramco Mercedes",
+                    "55"
+                ],
+                [
+                    "8",
+                    "Haas Ferrari",
+                    "37"
+                ],
+                [
+                    "9",
+                    "AlphaTauri RBPT",
+                    "35"
+                ],
+                [
+                    "10",
+                    "Williams Mercedes",
+                    "8"
+                ]
+            ]
+        },
+        "Alfa Romeo Ferrari": {
+            "url": "https://www.formula1.com/en/results.html/2022/team/alfa_romeo_ferrari.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "20 Mar 2022",
+                    "9"
+                ],
+                [
+                    "Saudi Arabia",
+                    "27 Mar 2022",
+                    "0"
+                ],
+                [
+                    "Australia",
+                    "10 Apr 2022",
+                    "4"
+                ],
+                [
+                    "Emilia Romagna",
+                    "24 Apr 2022",
+                    "12"
+                ],
+                [
+                    "Miami",
+                    "08 May 2022",
+                    "6"
+                ],
+                [
+                    "Spain",
+                    "22 May 2022",
+                    "8"
+                ],
+                [
+                    "Monaco",
+                    "29 May 2022",
+                    "2"
+                ],
+                [
+                    "Azerbaijan",
+                    "12 Jun 2022",
+                    "0"
+                ],
+                [
+                    "Canada",
+                    "19 Jun 2022",
+                    "10"
+                ],
+                [
+                    "Great Britain",
+                    "03 Jul 2022",
+                    "0"
+                ],
+                [
+                    "Austria",
+                    "10 Jul 2022",
+                    "0"
+                ],
+                [
+                    "France",
+                    "24 Jul 2022",
+                    "0"
+                ],
+                [
+                    "Hungary",
+                    "31 Jul 2022",
+                    "0"
+                ],
+                [
+                    "Belgium",
+                    "28 Aug 2022",
+                    "0"
+                ],
+                [
+                    "Netherlands",
+                    "04 Sep 2022",
+                    "0"
+                ],
+                [
+                    "Italy",
+                    "11 Sep 2022",
+                    "1"
+                ],
+                [
+                    "Singapore",
+                    "02 Oct 2022",
+                    "0"
+                ],
+                [
+                    "Japan",
+                    "09 Oct 2022",
+                    "0"
+                ],
+                [
+                    "United States",
+                    "23 Oct 2022",
+                    "0"
+                ],
+                [
+                    "Mexico",
+                    "30 Oct 2022",
+                    "1"
+                ],
+                [
+                    "Brazil",
+                    "13 Nov 2022",
+                    "2"
+                ],
+                [
+                    "Abu Dhabi",
+                    "20 Nov 2022",
+                    "0"
+                ]
+            ]
+        },
+        "AlphaTauri RBPT": {
+            "url": "https://www.formula1.com/en/results.html/2022/team/alphatauri_rbpt.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "20 Mar 2022",
+                    "4"
+                ],
+                [
+                    "Saudi Arabia",
+                    "27 Mar 2022",
+                    "4"
+                ],
+                [
+                    "Australia",
+                    "10 Apr 2022",
+                    "2"
+                ],
+                [
+                    "Emilia Romagna",
+                    "24 Apr 2022",
+                    "6"
+                ],
+                [
+                    "Miami",
+                    "08 May 2022",
+                    "0"
+                ],
+                [
+                    "Spain",
+                    "22 May 2022",
+                    "1"
+                ],
+                [
+                    "Monaco",
+                    "29 May 2022",
+                    "0"
+                ],
+                [
+                    "Azerbaijan",
+                    "12 Jun 2022",
+                    "10"
+                ],
+                [
+                    "Canada",
+                    "19 Jun 2022",
+                    "0"
+                ],
+                [
+                    "Great Britain",
+                    "03 Jul 2022",
+                    "0"
+                ],
+                [
+                    "Austria",
+                    "10 Jul 2022",
+                    "0"
+                ],
+                [
+                    "France",
+                    "24 Jul 2022",
+                    "0"
+                ],
+                [
+                    "Hungary",
+                    "31 Jul 2022",
+                    "0"
+                ],
+                [
+                    "Belgium",
+                    "28 Aug 2022",
+                    "2"
+                ],
+                [
+                    "Netherlands",
+                    "04 Sep 2022",
+                    "0"
+                ],
+                [
+                    "Italy",
+                    "11 Sep 2022",
+                    "4"
+                ],
+                [
+                    "Singapore",
+                    "02 Oct 2022",
+                    "1"
+                ],
+                [
+                    "Japan",
+                    "09 Oct 2022",
+                    "0"
+                ],
+                [
+                    "United States",
+                    "23 Oct 2022",
+                    "1"
+                ],
+                [
+                    "Mexico",
+                    "30 Oct 2022",
+                    "0"
+                ],
+                [
+                    "Brazil",
+                    "13 Nov 2022",
+                    "0"
+                ],
+                [
+                    "Abu Dhabi",
+                    "20 Nov 2022",
+                    "0"
+                ]
+            ]
+        },
+        "Alpine Renault": {
+            "url": "https://www.formula1.com/en/results.html/2022/team/alpine_renault.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "20 Mar 2022",
+                    "8"
+                ],
+                [
+                    "Saudi Arabia",
+                    "27 Mar 2022",
+                    "8"
+                ],
+                [
+                    "Australia",
+                    "10 Apr 2022",
+                    "6"
+                ],
+                [
+                    "Emilia Romagna",
+                    "24 Apr 2022",
+                    "0"
+                ],
+                [
+                    "Miami",
+                    "08 May 2022",
+                    "4"
+                ],
+                [
+                    "Spain",
+                    "22 May 2022",
+                    "8"
+                ],
+                [
+                    "Monaco",
+                    "29 May 2022",
+                    "6"
+                ],
+                [
+                    "Azerbaijan",
+                    "12 Jun 2022",
+                    "7"
+                ],
+                [
+                    "Canada",
+                    "19 Jun 2022",
+                    "10"
+                ],
+                [
+                    "Great Britain",
+                    "03 Jul 2022",
+                    "10"
+                ],
+                [
+                    "Austria",
+                    "10 Jul 2022",
+                    "14"
+                ],
+                [
+                    "France",
+                    "24 Jul 2022",
+                    "12"
+                ],
+                [
+                    "Hungary",
+                    "31 Jul 2022",
+                    "6"
+                ],
+                [
+                    "Belgium",
+                    "28 Aug 2022",
+                    "16"
+                ],
+                [
+                    "Netherlands",
+                    "04 Sep 2022",
+                    "10"
+                ],
+                [
+                    "Italy",
+                    "11 Sep 2022",
+                    "0"
+                ],
+                [
+                    "Singapore",
+                    "02 Oct 2022",
+                    "0"
+                ],
+                [
+                    "Japan",
+                    "09 Oct 2022",
+                    "18"
+                ],
+                [
+                    "United States",
+                    "23 Oct 2022",
+                    "6"
+                ],
+                [
+                    "Mexico",
+                    "30 Oct 2022",
+                    "4"
+                ],
+                [
+                    "Brazil",
+                    "13 Nov 2022",
+                    "14"
+                ],
+                [
+                    "Abu Dhabi",
+                    "20 Nov 2022",
+                    "6"
+                ]
+            ]
+        },
+        "Aston Martin Aramco Mercedes": {
+            "url": "https://www.formula1.com/en/results.html/2022/team/aston_martin_aramco_mercedes.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "20 Mar 2022",
+                    "0"
+                ],
+                [
+                    "Saudi Arabia",
+                    "27 Mar 2022",
+                    "0"
+                ],
+                [
+                    "Australia",
+                    "10 Apr 2022",
+                    "0"
+                ],
+                [
+                    "Emilia Romagna",
+                    "24 Apr 2022",
+                    "5"
+                ],
+                [
+                    "Miami",
+                    "08 May 2022",
+                    "1"
+                ],
+                [
+                    "Spain",
+                    "22 May 2022",
+                    "0"
+                ],
+                [
+                    "Monaco",
+                    "29 May 2022",
+                    "1"
+                ],
+                [
+                    "Azerbaijan",
+                    "12 Jun 2022",
+                    "8"
+                ],
+                [
+                    "Canada",
+                    "19 Jun 2022",
+                    "1"
+                ],
+                [
+                    "Great Britain",
+                    "03 Jul 2022",
+                    "2"
+                ],
+                [
+                    "Austria",
+                    "10 Jul 2022",
+                    "0"
+                ],
+                [
+                    "France",
+                    "24 Jul 2022",
+                    "1"
+                ],
+                [
+                    "Hungary",
+                    "31 Jul 2022",
+                    "1"
+                ],
+                [
+                    "Belgium",
+                    "28 Aug 2022",
+                    "4"
+                ],
+                [
+                    "Netherlands",
+                    "04 Sep 2022",
+                    "1"
+                ],
+                [
+                    "Italy",
+                    "11 Sep 2022",
+                    "0"
+                ],
+                [
+                    "Singapore",
+                    "02 Oct 2022",
+                    "12"
+                ],
+                [
+                    "Japan",
+                    "09 Oct 2022",
+                    "8"
+                ],
+                [
+                    "United States",
+                    "23 Oct 2022",
+                    "4"
+                ],
+                [
+                    "Mexico",
+                    "30 Oct 2022",
+                    "0"
+                ],
+                [
+                    "Brazil",
+                    "13 Nov 2022",
+                    "1"
+                ],
+                [
+                    "Abu Dhabi",
+                    "20 Nov 2022",
+                    "5"
+                ]
+            ]
+        },
+        "Ferrari": {
+            "url": "https://www.formula1.com/en/results.html/2022/team/ferrari.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "20 Mar 2022",
+                    "44"
+                ],
+                [
+                    "Saudi Arabia",
+                    "27 Mar 2022",
+                    "34"
+                ],
+                [
+                    "Australia",
+                    "10 Apr 2022",
+                    "26"
+                ],
+                [
+                    "Emilia Romagna",
+                    "24 Apr 2022",
+                    "20"
+                ],
+                [
+                    "Miami",
+                    "08 May 2022",
+                    "33"
+                ],
+                [
+                    "Spain",
+                    "22 May 2022",
+                    "12"
+                ],
+                [
+                    "Monaco",
+                    "29 May 2022",
+                    "30"
+                ],
+                [
+                    "Azerbaijan",
+                    "12 Jun 2022",
+                    "0"
+                ],
+                [
+                    "Canada",
+                    "19 Jun 2022",
+                    "29"
+                ],
+                [
+                    "Great Britain",
+                    "03 Jul 2022",
+                    "37"
+                ],
+                [
+                    "Austria",
+                    "10 Jul 2022",
+                    "38"
+                ],
+                [
+                    "France",
+                    "24 Jul 2022",
+                    "11"
+                ],
+                [
+                    "Hungary",
+                    "31 Jul 2022",
+                    "20"
+                ],
+                [
+                    "Belgium",
+                    "28 Aug 2022",
+                    "23"
+                ],
+                [
+                    "Netherlands",
+                    "04 Sep 2022",
+                    "19"
+                ],
+                [
+                    "Italy",
+                    "11 Sep 2022",
+                    "30"
+                ],
+                [
+                    "Singapore",
+                    "02 Oct 2022",
+                    "33"
+                ],
+                [
+                    "Japan",
+                    "09 Oct 2022",
+                    "15"
+                ],
+                [
+                    "United States",
+                    "23 Oct 2022",
+                    "15"
+                ],
+                [
+                    "Mexico",
+                    "30 Oct 2022",
+                    "18"
+                ],
+                [
+                    "Brazil",
+                    "13 Nov 2022",
+                    "37"
+                ],
+                [
+                    "Abu Dhabi",
+                    "20 Nov 2022",
+                    "30"
+                ]
+            ]
+        },
+        "Haas Ferrari": {
+            "url": "https://www.formula1.com/en/results.html/2022/team/haas_ferrari.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "20 Mar 2022",
+                    "10"
+                ],
+                [
+                    "Saudi Arabia",
+                    "27 Mar 2022",
+                    "2"
+                ],
+                [
+                    "Australia",
+                    "10 Apr 2022",
+                    "0"
+                ],
+                [
+                    "Emilia Romagna",
+                    "24 Apr 2022",
+                    "3"
+                ],
+                [
+                    "Miami",
+                    "08 May 2022",
+                    "0"
+                ],
+                [
+                    "Spain",
+                    "22 May 2022",
+                    "0"
+                ],
+                [
+                    "Monaco",
+                    "29 May 2022",
+                    "0"
+                ],
+                [
+                    "Azerbaijan",
+                    "12 Jun 2022",
+                    "0"
+                ],
+                [
+                    "Canada",
+                    "19 Jun 2022",
+                    "0"
+                ],
+                [
+                    "Great Britain",
+                    "03 Jul 2022",
+                    "5"
+                ],
+                [
+                    "Austria",
+                    "10 Jul 2022",
+                    "14"
+                ],
+                [
+                    "France",
+                    "24 Jul 2022",
+                    "0"
+                ],
+                [
+                    "Hungary",
+                    "31 Jul 2022",
+                    "0"
+                ],
+                [
+                    "Belgium",
+                    "28 Aug 2022",
+                    "0"
+                ],
+                [
+                    "Netherlands",
+                    "04 Sep 2022",
+                    "0"
+                ],
+                [
+                    "Italy",
+                    "11 Sep 2022",
+                    "0"
+                ],
+                [
+                    "Singapore",
+                    "02 Oct 2022",
+                    "0"
+                ],
+                [
+                    "Japan",
+                    "09 Oct 2022",
+                    "0"
+                ],
+                [
+                    "United States",
+                    "23 Oct 2022",
+                    "2"
+                ],
+                [
+                    "Mexico",
+                    "30 Oct 2022",
+                    "0"
+                ],
+                [
+                    "Brazil",
+                    "13 Nov 2022",
+                    "1"
+                ],
+                [
+                    "Abu Dhabi",
+                    "20 Nov 2022",
+                    "0"
+                ]
+            ]
+        },
+        "McLaren Mercedes": {
+            "url": "https://www.formula1.com/en/results.html/2022/team/mclaren_mercedes.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "20 Mar 2022",
+                    "0"
+                ],
+                [
+                    "Saudi Arabia",
+                    "27 Mar 2022",
+                    "6"
+                ],
+                [
+                    "Australia",
+                    "10 Apr 2022",
+                    "18"
+                ],
+                [
+                    "Emilia Romagna",
+                    "24 Apr 2022",
+                    "22"
+                ],
+                [
+                    "Miami",
+                    "08 May 2022",
+                    "0"
+                ],
+                [
+                    "Spain",
+                    "22 May 2022",
+                    "4"
+                ],
+                [
+                    "Monaco",
+                    "29 May 2022",
+                    "9"
+                ],
+                [
+                    "Azerbaijan",
+                    "12 Jun 2022",
+                    "6"
+                ],
+                [
+                    "Canada",
+                    "19 Jun 2022",
+                    "0"
+                ],
+                [
+                    "Great Britain",
+                    "03 Jul 2022",
+                    "8"
+                ],
+                [
+                    "Austria",
+                    "10 Jul 2022",
+                    "8"
+                ],
+                [
+                    "France",
+                    "24 Jul 2022",
+                    "8"
+                ],
+                [
+                    "Hungary",
+                    "31 Jul 2022",
+                    "6"
+                ],
+                [
+                    "Belgium",
+                    "28 Aug 2022",
+                    "0"
+                ],
+                [
+                    "Netherlands",
+                    "04 Sep 2022",
+                    "6"
+                ],
+                [
+                    "Italy",
+                    "11 Sep 2022",
+                    "6"
+                ],
+                [
+                    "Singapore",
+                    "02 Oct 2022",
+                    "22"
+                ],
+                [
+                    "Japan",
+                    "09 Oct 2022",
+                    "1"
+                ],
+                [
+                    "United States",
+                    "23 Oct 2022",
+                    "8"
+                ],
+                [
+                    "Mexico",
+                    "30 Oct 2022",
+                    "8"
+                ],
+                [
+                    "Brazil",
+                    "13 Nov 2022",
+                    "2"
+                ],
+                [
+                    "Abu Dhabi",
+                    "20 Nov 2022",
+                    "11"
+                ]
+            ]
+        },
+        "Mercedes": {
+            "url": "https://www.formula1.com/en/results.html/2022/team/mercedes.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "20 Mar 2022",
+                    "27"
+                ],
+                [
+                    "Saudi Arabia",
+                    "27 Mar 2022",
+                    "11"
+                ],
+                [
+                    "Australia",
+                    "10 Apr 2022",
+                    "27"
+                ],
+                [
+                    "Emilia Romagna",
+                    "24 Apr 2022",
+                    "12"
+                ],
+                [
+                    "Miami",
+                    "08 May 2022",
+                    "18"
+                ],
+                [
+                    "Spain",
+                    "22 May 2022",
+                    "25"
+                ],
+                [
+                    "Monaco",
+                    "29 May 2022",
+                    "14"
+                ],
+                [
+                    "Azerbaijan",
+                    "12 Jun 2022",
+                    "27"
+                ],
+                [
+                    "Canada",
+                    "19 Jun 2022",
+                    "27"
+                ],
+                [
+                    "Great Britain",
+                    "03 Jul 2022",
+                    "16"
+                ],
+                [
+                    "Austria",
+                    "10 Jul 2022",
+                    "33"
+                ],
+                [
+                    "France",
+                    "24 Jul 2022",
+                    "33"
+                ],
+                [
+                    "Hungary",
+                    "31 Jul 2022",
+                    "34"
+                ],
+                [
+                    "Belgium",
+                    "28 Aug 2022",
+                    "12"
+                ],
+                [
+                    "Netherlands",
+                    "04 Sep 2022",
+                    "30"
+                ],
+                [
+                    "Italy",
+                    "11 Sep 2022",
+                    "25"
+                ],
+                [
+                    "Singapore",
+                    "02 Oct 2022",
+                    "2"
+                ],
+                [
+                    "Japan",
+                    "09 Oct 2022",
+                    "14"
+                ],
+                [
+                    "United States",
+                    "23 Oct 2022",
+                    "29"
+                ],
+                [
+                    "Mexico",
+                    "30 Oct 2022",
+                    "31"
+                ],
+                [
+                    "Brazil",
+                    "13 Nov 2022",
+                    "58"
+                ],
+                [
+                    "Abu Dhabi",
+                    "20 Nov 2022",
+                    "10"
+                ]
+            ]
+        },
+        "Red Bull Racing RBPT": {
+            "url": "https://www.formula1.com/en/results.html/2022/team/red_bull_racing_rbpt.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "20 Mar 2022",
+                    "0"
+                ],
+                [
+                    "Saudi Arabia",
+                    "27 Mar 2022",
+                    "37"
+                ],
+                [
+                    "Australia",
+                    "10 Apr 2022",
+                    "18"
+                ],
+                [
+                    "Emilia Romagna",
+                    "24 Apr 2022",
+                    "58"
+                ],
+                [
+                    "Miami",
+                    "08 May 2022",
+                    "38"
+                ],
+                [
+                    "Spain",
+                    "22 May 2022",
+                    "44"
+                ],
+                [
+                    "Monaco",
+                    "29 May 2022",
+                    "40"
+                ],
+                [
+                    "Azerbaijan",
+                    "12 Jun 2022",
+                    "44"
+                ],
+                [
+                    "Canada",
+                    "19 Jun 2022",
+                    "25"
+                ],
+                [
+                    "Great Britain",
+                    "03 Jul 2022",
+                    "24"
+                ],
+                [
+                    "Austria",
+                    "10 Jul 2022",
+                    "31"
+                ],
+                [
+                    "France",
+                    "24 Jul 2022",
+                    "37"
+                ],
+                [
+                    "Hungary",
+                    "31 Jul 2022",
+                    "35"
+                ],
+                [
+                    "Belgium",
+                    "28 Aug 2022",
+                    "44"
+                ],
+                [
+                    "Netherlands",
+                    "04 Sep 2022",
+                    "36"
+                ],
+                [
+                    "Italy",
+                    "11 Sep 2022",
+                    "34"
+                ],
+                [
+                    "Singapore",
+                    "02 Oct 2022",
+                    "31"
+                ],
+                [
+                    "Japan",
+                    "09 Oct 2022",
+                    "43"
+                ],
+                [
+                    "United States",
+                    "23 Oct 2022",
+                    "37"
+                ],
+                [
+                    "Mexico",
+                    "30 Oct 2022",
+                    "40"
+                ],
+                [
+                    "Brazil",
+                    "13 Nov 2022",
+                    "23"
+                ],
+                [
+                    "Abu Dhabi",
+                    "20 Nov 2022",
+                    "40"
+                ]
+            ]
+        },
+        "Williams Mercedes": {
+            "url": "https://www.formula1.com/en/results.html/2022/team/williams_mercedes.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "20 Mar 2022",
+                    "0"
+                ],
+                [
+                    "Saudi Arabia",
+                    "27 Mar 2022",
+                    "0"
+                ],
+                [
+                    "Australia",
+                    "10 Apr 2022",
+                    "1"
+                ],
+                [
+                    "Emilia Romagna",
+                    "24 Apr 2022",
+                    "0"
+                ],
+                [
+                    "Miami",
+                    "08 May 2022",
+                    "2"
+                ],
+                [
+                    "Spain",
+                    "22 May 2022",
+                    "0"
+                ],
+                [
+                    "Monaco",
+                    "29 May 2022",
+                    "0"
+                ],
+                [
+                    "Azerbaijan",
+                    "12 Jun 2022",
+                    "0"
+                ],
+                [
+                    "Canada",
+                    "19 Jun 2022",
+                    "0"
+                ],
+                [
+                    "Great Britain",
+                    "03 Jul 2022",
+                    "0"
+                ],
+                [
+                    "Austria",
+                    "10 Jul 2022",
+                    "0"
+                ],
+                [
+                    "France",
+                    "24 Jul 2022",
+                    "0"
+                ],
+                [
+                    "Hungary",
+                    "31 Jul 2022",
+                    "0"
+                ],
+                [
+                    "Belgium",
+                    "28 Aug 2022",
+                    "1"
+                ],
+                [
+                    "Netherlands",
+                    "04 Sep 2022",
+                    "0"
+                ],
+                [
+                    "Italy",
+                    "11 Sep 2022",
+                    "2"
+                ],
+                [
+                    "Singapore",
+                    "02 Oct 2022",
+                    "0"
+                ],
+                [
+                    "Japan",
+                    "09 Oct 2022",
+                    "2"
+                ],
+                [
+                    "United States",
+                    "23 Oct 2022",
+                    "0"
+                ],
+                [
+                    "Mexico",
+                    "30 Oct 2022",
+                    "0"
+                ],
+                [
+                    "Brazil",
+                    "13 Nov 2022",
+                    "0"
+                ],
+                [
+                    "Abu Dhabi",
+                    "20 Nov 2022",
+                    "0"
+                ]
+            ]
+        }
+    }
+}
