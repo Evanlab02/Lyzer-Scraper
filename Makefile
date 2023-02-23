@@ -1,5 +1,3 @@
-install:
-	@pipenv install
 clean:
 	@echo "<CLEAN> Unused Dependencies"
 	@pipenv clean
@@ -15,28 +13,33 @@ clean:
 	@rm -rf .pytest_cache
 	@echo "<CLEAN> Data Folder"
 	@rm -rf data/
+
+install:
+	@pipenv install
+
+refresh:
+	@pipenv sync
+
+update:
+	@pipenv update
+	@pipenv requirements > requirements.txt
+
 test:
 	@echo "<TEST> Running Tests"
 	@pipenv run pytest -v testing --cov
 	@echo "<TEST> Tests Complete"
+
 build:
 	@pipenv run pyinstaller --name Lyzer-Scraper --add-data backup/:data/ lyzer_scraper.py
-build-windows:
-	@pipenv run pyinstaller --name Lyzer-Scraper --add-data "backup/;data/" lyzer_scraper.py 
+
 run:
 	@pipenv run python3 lyzer_scraper.py
-run-ubuntu: build
+
+run-bin: build
 	@cd dist/Lyzer-Scraper/ && ./Lyzer-Scraper
-refresh:
-	@pipenv sync
-update:
-	@pipenv update
-	@pipenv requirements > requirements.txt
-security-check:
-	@pipenv check
-pipeline:
-	pip install --upgrade pip
-	pip install pipenv
-	make install
-	make test
-	make build
+
+run-bin-backlog:
+	@cd dist/Lyzer-Scraper/ && ./Lyzer-Scraper --clear-backlog
+
+build-windows:
+	@pipenv run pyinstaller --name Lyzer-Scraper --add-data "backup/;data/" lyzer_scraper.py 
