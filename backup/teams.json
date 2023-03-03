@@ -1260,5 +1260,1267 @@
                 ]
             ]
         }
+    },
+    "2021": {
+        "All": {
+            "url": "https://www.formula1.com/en/results.html/2021/team.html",
+            "headers": [
+                "Pos",
+                "Team",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "Mercedes",
+                    "613.5"
+                ],
+                [
+                    "2",
+                    "Red Bull Racing Honda",
+                    "585.5"
+                ],
+                [
+                    "3",
+                    "Ferrari",
+                    "323.5"
+                ],
+                [
+                    "4",
+                    "McLaren Mercedes",
+                    "275"
+                ],
+                [
+                    "5",
+                    "Alpine Renault",
+                    "155"
+                ],
+                [
+                    "6",
+                    "AlphaTauri Honda",
+                    "142"
+                ],
+                [
+                    "7",
+                    "Aston Martin Mercedes",
+                    "77"
+                ],
+                [
+                    "8",
+                    "Williams Mercedes",
+                    "23"
+                ],
+                [
+                    "9",
+                    "Alfa Romeo Racing Ferrari",
+                    "13"
+                ],
+                [
+                    "10",
+                    "Haas Ferrari",
+                    "0"
+                ]
+            ]
+        },
+        "Alfa Romeo Racing Ferrari": {
+            "url": "https://www.formula1.com/en/results.html/2021/team/alfa_romeo_racing_ferrari.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "28 Mar 2021",
+                    "0"
+                ],
+                [
+                    "Emilia Romagna",
+                    "18 Apr 2021",
+                    "0"
+                ],
+                [
+                    "Portugal",
+                    "02 May 2021",
+                    "0"
+                ],
+                [
+                    "Spain",
+                    "09 May 2021",
+                    "0"
+                ],
+                [
+                    "Monaco",
+                    "23 May 2021",
+                    "1"
+                ],
+                [
+                    "Azerbaijan",
+                    "06 Jun 2021",
+                    "1"
+                ],
+                [
+                    "France",
+                    "20 Jun 2021",
+                    "0"
+                ],
+                [
+                    "Styria",
+                    "27 Jun 2021",
+                    "0"
+                ],
+                [
+                    "Austria",
+                    "04 Jul 2021",
+                    "0"
+                ],
+                [
+                    "Great Britain",
+                    "18 Jul 2021",
+                    "0"
+                ],
+                [
+                    "Hungary",
+                    "01 Aug 2021",
+                    "1"
+                ],
+                [
+                    "Belgium",
+                    "29 Aug 2021",
+                    "0"
+                ],
+                [
+                    "Netherlands",
+                    "05 Sep 2021",
+                    "0"
+                ],
+                [
+                    "Italy",
+                    "12 Sep 2021",
+                    "0"
+                ],
+                [
+                    "Russia",
+                    "26 Sep 2021",
+                    "4"
+                ],
+                [
+                    "Turkey",
+                    "10 Oct 2021",
+                    "0"
+                ],
+                [
+                    "United States",
+                    "24 Oct 2021",
+                    "0"
+                ],
+                [
+                    "Mexico",
+                    "07 Nov 2021",
+                    "4"
+                ],
+                [
+                    "Brazil",
+                    "14 Nov 2021",
+                    "0"
+                ],
+                [
+                    "Qatar",
+                    "21 Nov 2021",
+                    "0"
+                ],
+                [
+                    "Saudi Arabia",
+                    "05 Dec 2021",
+                    "2"
+                ],
+                [
+                    "Abu Dhabi",
+                    "12 Dec 2021",
+                    "0"
+                ]
+            ]
+        },
+        "AlphaTauri Honda": {
+            "url": "https://www.formula1.com/en/results.html/2021/team/alphatauri_honda.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "28 Mar 2021",
+                    "2"
+                ],
+                [
+                    "Emilia Romagna",
+                    "18 Apr 2021",
+                    "6"
+                ],
+                [
+                    "Portugal",
+                    "02 May 2021",
+                    "1"
+                ],
+                [
+                    "Spain",
+                    "09 May 2021",
+                    "1"
+                ],
+                [
+                    "Monaco",
+                    "23 May 2021",
+                    "8"
+                ],
+                [
+                    "Azerbaijan",
+                    "06 Jun 2021",
+                    "21"
+                ],
+                [
+                    "France",
+                    "20 Jun 2021",
+                    "6"
+                ],
+                [
+                    "Styria",
+                    "27 Jun 2021",
+                    "1"
+                ],
+                [
+                    "Austria",
+                    "04 Jul 2021",
+                    "2"
+                ],
+                [
+                    "Great Britain",
+                    "18 Jul 2021",
+                    "1"
+                ],
+                [
+                    "Hungary",
+                    "01 Aug 2021",
+                    "19"
+                ],
+                [
+                    "Belgium",
+                    "29 Aug 2021",
+                    "4"
+                ],
+                [
+                    "Netherlands",
+                    "05 Sep 2021",
+                    "12"
+                ],
+                [
+                    "Italy",
+                    "12 Sep 2021",
+                    "0"
+                ],
+                [
+                    "Russia",
+                    "26 Sep 2021",
+                    "0"
+                ],
+                [
+                    "Turkey",
+                    "10 Oct 2021",
+                    "8"
+                ],
+                [
+                    "United States",
+                    "24 Oct 2021",
+                    "2"
+                ],
+                [
+                    "Mexico",
+                    "07 Nov 2021",
+                    "12"
+                ],
+                [
+                    "Brazil",
+                    "14 Nov 2021",
+                    "6"
+                ],
+                [
+                    "Qatar",
+                    "21 Nov 2021",
+                    "0"
+                ],
+                [
+                    "Saudi Arabia",
+                    "05 Dec 2021",
+                    "8"
+                ],
+                [
+                    "Abu Dhabi",
+                    "12 Dec 2021",
+                    "22"
+                ]
+            ]
+        },
+        "Alpine Renault": {
+            "url": "https://www.formula1.com/en/results.html/2021/team/alpine_renault.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "28 Mar 2021",
+                    "0"
+                ],
+                [
+                    "Emilia Romagna",
+                    "18 Apr 2021",
+                    "3"
+                ],
+                [
+                    "Portugal",
+                    "02 May 2021",
+                    "10"
+                ],
+                [
+                    "Spain",
+                    "09 May 2021",
+                    "2"
+                ],
+                [
+                    "Monaco",
+                    "23 May 2021",
+                    "2"
+                ],
+                [
+                    "Azerbaijan",
+                    "06 Jun 2021",
+                    "8"
+                ],
+                [
+                    "France",
+                    "20 Jun 2021",
+                    "4"
+                ],
+                [
+                    "Styria",
+                    "27 Jun 2021",
+                    "2"
+                ],
+                [
+                    "Austria",
+                    "04 Jul 2021",
+                    "1"
+                ],
+                [
+                    "Great Britain",
+                    "18 Jul 2021",
+                    "8"
+                ],
+                [
+                    "Hungary",
+                    "01 Aug 2021",
+                    "37"
+                ],
+                [
+                    "Belgium",
+                    "29 Aug 2021",
+                    "3"
+                ],
+                [
+                    "Netherlands",
+                    "05 Sep 2021",
+                    "10"
+                ],
+                [
+                    "Italy",
+                    "12 Sep 2021",
+                    "5"
+                ],
+                [
+                    "Russia",
+                    "26 Sep 2021",
+                    "8"
+                ],
+                [
+                    "Turkey",
+                    "10 Oct 2021",
+                    "1"
+                ],
+                [
+                    "United States",
+                    "24 Oct 2021",
+                    "0"
+                ],
+                [
+                    "Mexico",
+                    "07 Nov 2021",
+                    "2"
+                ],
+                [
+                    "Brazil",
+                    "14 Nov 2021",
+                    "6"
+                ],
+                [
+                    "Qatar",
+                    "21 Nov 2021",
+                    "25"
+                ],
+                [
+                    "Saudi Arabia",
+                    "05 Dec 2021",
+                    "12"
+                ],
+                [
+                    "Abu Dhabi",
+                    "12 Dec 2021",
+                    "6"
+                ]
+            ]
+        },
+        "Aston Martin Mercedes": {
+            "url": "https://www.formula1.com/en/results.html/2021/team/aston_martin_mercedes.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "28 Mar 2021",
+                    "1"
+                ],
+                [
+                    "Emilia Romagna",
+                    "18 Apr 2021",
+                    "4"
+                ],
+                [
+                    "Portugal",
+                    "02 May 2021",
+                    "0"
+                ],
+                [
+                    "Spain",
+                    "09 May 2021",
+                    "0"
+                ],
+                [
+                    "Monaco",
+                    "23 May 2021",
+                    "14"
+                ],
+                [
+                    "Azerbaijan",
+                    "06 Jun 2021",
+                    "18"
+                ],
+                [
+                    "France",
+                    "20 Jun 2021",
+                    "3"
+                ],
+                [
+                    "Styria",
+                    "27 Jun 2021",
+                    "4"
+                ],
+                [
+                    "Austria",
+                    "04 Jul 2021",
+                    "0"
+                ],
+                [
+                    "Great Britain",
+                    "18 Jul 2021",
+                    "4"
+                ],
+                [
+                    "Hungary",
+                    "01 Aug 2021",
+                    "0"
+                ],
+                [
+                    "Belgium",
+                    "29 Aug 2021",
+                    "5"
+                ],
+                [
+                    "Netherlands",
+                    "05 Sep 2021",
+                    "0"
+                ],
+                [
+                    "Italy",
+                    "12 Sep 2021",
+                    "6"
+                ],
+                [
+                    "Russia",
+                    "26 Sep 2021",
+                    "0"
+                ],
+                [
+                    "Turkey",
+                    "10 Oct 2021",
+                    "2"
+                ],
+                [
+                    "United States",
+                    "24 Oct 2021",
+                    "1"
+                ],
+                [
+                    "Mexico",
+                    "07 Nov 2021",
+                    "6"
+                ],
+                [
+                    "Brazil",
+                    "14 Nov 2021",
+                    "0"
+                ],
+                [
+                    "Qatar",
+                    "21 Nov 2021",
+                    "9"
+                ],
+                [
+                    "Saudi Arabia",
+                    "05 Dec 2021",
+                    "0"
+                ],
+                [
+                    "Abu Dhabi",
+                    "12 Dec 2021",
+                    "0"
+                ]
+            ]
+        },
+        "Ferrari": {
+            "url": "https://www.formula1.com/en/results.html/2021/team/ferrari.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "28 Mar 2021",
+                    "12"
+                ],
+                [
+                    "Emilia Romagna",
+                    "18 Apr 2021",
+                    "22"
+                ],
+                [
+                    "Portugal",
+                    "02 May 2021",
+                    "8"
+                ],
+                [
+                    "Spain",
+                    "09 May 2021",
+                    "18"
+                ],
+                [
+                    "Monaco",
+                    "23 May 2021",
+                    "18"
+                ],
+                [
+                    "Azerbaijan",
+                    "06 Jun 2021",
+                    "16"
+                ],
+                [
+                    "France",
+                    "20 Jun 2021",
+                    "0"
+                ],
+                [
+                    "Styria",
+                    "27 Jun 2021",
+                    "14"
+                ],
+                [
+                    "Austria",
+                    "04 Jul 2021",
+                    "14"
+                ],
+                [
+                    "Great Britain",
+                    "18 Jul 2021",
+                    "26"
+                ],
+                [
+                    "Hungary",
+                    "01 Aug 2021",
+                    "15"
+                ],
+                [
+                    "Belgium",
+                    "29 Aug 2021",
+                    "2.5"
+                ],
+                [
+                    "Netherlands",
+                    "05 Sep 2021",
+                    "16"
+                ],
+                [
+                    "Italy",
+                    "12 Sep 2021",
+                    "20"
+                ],
+                [
+                    "Russia",
+                    "26 Sep 2021",
+                    "15"
+                ],
+                [
+                    "Turkey",
+                    "10 Oct 2021",
+                    "16"
+                ],
+                [
+                    "United States",
+                    "24 Oct 2021",
+                    "18"
+                ],
+                [
+                    "Mexico",
+                    "07 Nov 2021",
+                    "18"
+                ],
+                [
+                    "Brazil",
+                    "14 Nov 2021",
+                    "19"
+                ],
+                [
+                    "Qatar",
+                    "21 Nov 2021",
+                    "10"
+                ],
+                [
+                    "Saudi Arabia",
+                    "05 Dec 2021",
+                    "10"
+                ],
+                [
+                    "Abu Dhabi",
+                    "12 Dec 2021",
+                    "16"
+                ]
+            ]
+        },
+        "Haas Ferrari": {
+            "url": "https://www.formula1.com/en/results.html/2021/team/haas_ferrari.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "28 Mar 2021",
+                    "0"
+                ],
+                [
+                    "Emilia Romagna",
+                    "18 Apr 2021",
+                    "0"
+                ],
+                [
+                    "Portugal",
+                    "02 May 2021",
+                    "0"
+                ],
+                [
+                    "Spain",
+                    "09 May 2021",
+                    "0"
+                ],
+                [
+                    "Monaco",
+                    "23 May 2021",
+                    "0"
+                ],
+                [
+                    "Azerbaijan",
+                    "06 Jun 2021",
+                    "0"
+                ],
+                [
+                    "France",
+                    "20 Jun 2021",
+                    "0"
+                ],
+                [
+                    "Styria",
+                    "27 Jun 2021",
+                    "0"
+                ],
+                [
+                    "Austria",
+                    "04 Jul 2021",
+                    "0"
+                ],
+                [
+                    "Great Britain",
+                    "18 Jul 2021",
+                    "0"
+                ],
+                [
+                    "Hungary",
+                    "01 Aug 2021",
+                    "0"
+                ],
+                [
+                    "Belgium",
+                    "29 Aug 2021",
+                    "0"
+                ],
+                [
+                    "Netherlands",
+                    "05 Sep 2021",
+                    "0"
+                ],
+                [
+                    "Italy",
+                    "12 Sep 2021",
+                    "0"
+                ],
+                [
+                    "Russia",
+                    "26 Sep 2021",
+                    "0"
+                ],
+                [
+                    "Turkey",
+                    "10 Oct 2021",
+                    "0"
+                ],
+                [
+                    "United States",
+                    "24 Oct 2021",
+                    "0"
+                ],
+                [
+                    "Mexico",
+                    "07 Nov 2021",
+                    "0"
+                ],
+                [
+                    "Brazil",
+                    "14 Nov 2021",
+                    "0"
+                ],
+                [
+                    "Qatar",
+                    "21 Nov 2021",
+                    "0"
+                ],
+                [
+                    "Saudi Arabia",
+                    "05 Dec 2021",
+                    "0"
+                ],
+                [
+                    "Abu Dhabi",
+                    "12 Dec 2021",
+                    "0"
+                ]
+            ]
+        },
+        "McLaren Mercedes": {
+            "url": "https://www.formula1.com/en/results.html/2021/team/mclaren_mercedes.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "28 Mar 2021",
+                    "18"
+                ],
+                [
+                    "Emilia Romagna",
+                    "18 Apr 2021",
+                    "23"
+                ],
+                [
+                    "Portugal",
+                    "02 May 2021",
+                    "12"
+                ],
+                [
+                    "Spain",
+                    "09 May 2021",
+                    "12"
+                ],
+                [
+                    "Monaco",
+                    "23 May 2021",
+                    "15"
+                ],
+                [
+                    "Azerbaijan",
+                    "06 Jun 2021",
+                    "12"
+                ],
+                [
+                    "France",
+                    "20 Jun 2021",
+                    "18"
+                ],
+                [
+                    "Styria",
+                    "27 Jun 2021",
+                    "10"
+                ],
+                [
+                    "Austria",
+                    "04 Jul 2021",
+                    "21"
+                ],
+                [
+                    "Great Britain",
+                    "18 Jul 2021",
+                    "22"
+                ],
+                [
+                    "Hungary",
+                    "01 Aug 2021",
+                    "0"
+                ],
+                [
+                    "Belgium",
+                    "29 Aug 2021",
+                    "6"
+                ],
+                [
+                    "Netherlands",
+                    "05 Sep 2021",
+                    "1"
+                ],
+                [
+                    "Italy",
+                    "12 Sep 2021",
+                    "45"
+                ],
+                [
+                    "Russia",
+                    "26 Sep 2021",
+                    "19"
+                ],
+                [
+                    "Turkey",
+                    "10 Oct 2021",
+                    "6"
+                ],
+                [
+                    "United States",
+                    "24 Oct 2021",
+                    "14"
+                ],
+                [
+                    "Mexico",
+                    "07 Nov 2021",
+                    "1"
+                ],
+                [
+                    "Brazil",
+                    "14 Nov 2021",
+                    "1"
+                ],
+                [
+                    "Qatar",
+                    "21 Nov 2021",
+                    "2"
+                ],
+                [
+                    "Saudi Arabia",
+                    "05 Dec 2021",
+                    "11"
+                ],
+                [
+                    "Abu Dhabi",
+                    "12 Dec 2021",
+                    "6"
+                ]
+            ]
+        },
+        "Mercedes": {
+            "url": "https://www.formula1.com/en/results.html/2021/team/mercedes.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "28 Mar 2021",
+                    "41"
+                ],
+                [
+                    "Emilia Romagna",
+                    "18 Apr 2021",
+                    "19"
+                ],
+                [
+                    "Portugal",
+                    "02 May 2021",
+                    "41"
+                ],
+                [
+                    "Spain",
+                    "09 May 2021",
+                    "40"
+                ],
+                [
+                    "Monaco",
+                    "23 May 2021",
+                    "7"
+                ],
+                [
+                    "Azerbaijan",
+                    "06 Jun 2021",
+                    "0"
+                ],
+                [
+                    "France",
+                    "20 Jun 2021",
+                    "30"
+                ],
+                [
+                    "Styria",
+                    "27 Jun 2021",
+                    "34"
+                ],
+                [
+                    "Austria",
+                    "04 Jul 2021",
+                    "30"
+                ],
+                [
+                    "Great Britain",
+                    "18 Jul 2021",
+                    "43"
+                ],
+                [
+                    "Hungary",
+                    "01 Aug 2021",
+                    "18"
+                ],
+                [
+                    "Belgium",
+                    "29 Aug 2021",
+                    "7.5"
+                ],
+                [
+                    "Netherlands",
+                    "05 Sep 2021",
+                    "34"
+                ],
+                [
+                    "Italy",
+                    "12 Sep 2021",
+                    "18"
+                ],
+                [
+                    "Russia",
+                    "26 Sep 2021",
+                    "35"
+                ],
+                [
+                    "Turkey",
+                    "10 Oct 2021",
+                    "36"
+                ],
+                [
+                    "United States",
+                    "24 Oct 2021",
+                    "27"
+                ],
+                [
+                    "Mexico",
+                    "07 Nov 2021",
+                    "18"
+                ],
+                [
+                    "Brazil",
+                    "14 Nov 2021",
+                    "43"
+                ],
+                [
+                    "Qatar",
+                    "21 Nov 2021",
+                    "25"
+                ],
+                [
+                    "Saudi Arabia",
+                    "05 Dec 2021",
+                    "41"
+                ],
+                [
+                    "Abu Dhabi",
+                    "12 Dec 2021",
+                    "26"
+                ]
+            ]
+        },
+        "Red Bull Racing Honda": {
+            "url": "https://www.formula1.com/en/results.html/2021/team/red_bull_racing_honda.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "28 Mar 2021",
+                    "28"
+                ],
+                [
+                    "Emilia Romagna",
+                    "18 Apr 2021",
+                    "25"
+                ],
+                [
+                    "Portugal",
+                    "02 May 2021",
+                    "30"
+                ],
+                [
+                    "Spain",
+                    "09 May 2021",
+                    "29"
+                ],
+                [
+                    "Monaco",
+                    "23 May 2021",
+                    "37"
+                ],
+                [
+                    "Azerbaijan",
+                    "06 Jun 2021",
+                    "25"
+                ],
+                [
+                    "France",
+                    "20 Jun 2021",
+                    "41"
+                ],
+                [
+                    "Styria",
+                    "27 Jun 2021",
+                    "37"
+                ],
+                [
+                    "Austria",
+                    "04 Jul 2021",
+                    "34"
+                ],
+                [
+                    "Great Britain",
+                    "18 Jul 2021",
+                    "3"
+                ],
+                [
+                    "Hungary",
+                    "01 Aug 2021",
+                    "2"
+                ],
+                [
+                    "Belgium",
+                    "29 Aug 2021",
+                    "12.5"
+                ],
+                [
+                    "Netherlands",
+                    "05 Sep 2021",
+                    "29"
+                ],
+                [
+                    "Italy",
+                    "12 Sep 2021",
+                    "12"
+                ],
+                [
+                    "Russia",
+                    "26 Sep 2021",
+                    "20"
+                ],
+                [
+                    "Turkey",
+                    "10 Oct 2021",
+                    "33"
+                ],
+                [
+                    "United States",
+                    "24 Oct 2021",
+                    "40"
+                ],
+                [
+                    "Mexico",
+                    "07 Nov 2021",
+                    "40"
+                ],
+                [
+                    "Brazil",
+                    "14 Nov 2021",
+                    "33"
+                ],
+                [
+                    "Qatar",
+                    "21 Nov 2021",
+                    "31"
+                ],
+                [
+                    "Saudi Arabia",
+                    "05 Dec 2021",
+                    "18"
+                ],
+                [
+                    "Abu Dhabi",
+                    "12 Dec 2021",
+                    "26"
+                ]
+            ]
+        },
+        "Williams Mercedes": {
+            "url": "https://www.formula1.com/en/results.html/2021/team/williams_mercedes.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "28 Mar 2021",
+                    "0"
+                ],
+                [
+                    "Emilia Romagna",
+                    "18 Apr 2021",
+                    "0"
+                ],
+                [
+                    "Portugal",
+                    "02 May 2021",
+                    "0"
+                ],
+                [
+                    "Spain",
+                    "09 May 2021",
+                    "0"
+                ],
+                [
+                    "Monaco",
+                    "23 May 2021",
+                    "0"
+                ],
+                [
+                    "Azerbaijan",
+                    "06 Jun 2021",
+                    "0"
+                ],
+                [
+                    "France",
+                    "20 Jun 2021",
+                    "0"
+                ],
+                [
+                    "Styria",
+                    "27 Jun 2021",
+                    "0"
+                ],
+                [
+                    "Austria",
+                    "04 Jul 2021",
+                    "0"
+                ],
+                [
+                    "Great Britain",
+                    "18 Jul 2021",
+                    "0"
+                ],
+                [
+                    "Hungary",
+                    "01 Aug 2021",
+                    "10"
+                ],
+                [
+                    "Belgium",
+                    "29 Aug 2021",
+                    "10"
+                ],
+                [
+                    "Netherlands",
+                    "05 Sep 2021",
+                    "0"
+                ],
+                [
+                    "Italy",
+                    "12 Sep 2021",
+                    "2"
+                ],
+                [
+                    "Russia",
+                    "26 Sep 2021",
+                    "1"
+                ],
+                [
+                    "Turkey",
+                    "10 Oct 2021",
+                    "0"
+                ],
+                [
+                    "United States",
+                    "24 Oct 2021",
+                    "0"
+                ],
+                [
+                    "Mexico",
+                    "07 Nov 2021",
+                    "0"
+                ],
+                [
+                    "Brazil",
+                    "14 Nov 2021",
+                    "0"
+                ],
+                [
+                    "Qatar",
+                    "21 Nov 2021",
+                    "0"
+                ],
+                [
+                    "Saudi Arabia",
+                    "05 Dec 2021",
+                    "0"
+                ],
+                [
+                    "Abu Dhabi",
+                    "12 Dec 2021",
+                    "0"
+                ]
+            ]
+        }
     }
 }

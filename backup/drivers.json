@@ -3510,5 +3510,3498 @@
                 ]
             ]
         }
+    },
+    "2021": {
+        "All": {
+            "url": "https://www.formula1.com/en/results.html/2021/drivers.html",
+            "headers": [
+                "Pos",
+                "Driver",
+                "Nationality",
+                "Car",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "Max Verstappen",
+                    "NED",
+                    "Red Bull Racing Honda",
+                    "395.5"
+                ],
+                [
+                    "2",
+                    "Lewis Hamilton",
+                    "GBR",
+                    "Mercedes",
+                    "387.5"
+                ],
+                [
+                    "3",
+                    "Valtteri Bottas",
+                    "FIN",
+                    "Mercedes",
+                    "226"
+                ],
+                [
+                    "4",
+                    "Sergio Perez",
+                    "MEX",
+                    "Red Bull Racing Honda",
+                    "190"
+                ],
+                [
+                    "5",
+                    "Carlos Sainz",
+                    "ESP",
+                    "Ferrari",
+                    "164.5"
+                ],
+                [
+                    "6",
+                    "Lando Norris",
+                    "GBR",
+                    "McLaren Mercedes",
+                    "160"
+                ],
+                [
+                    "7",
+                    "Charles Leclerc",
+                    "MON",
+                    "Ferrari",
+                    "159"
+                ],
+                [
+                    "8",
+                    "Daniel Ricciardo",
+                    "AUS",
+                    "McLaren Mercedes",
+                    "115"
+                ],
+                [
+                    "9",
+                    "Pierre Gasly",
+                    "FRA",
+                    "AlphaTauri Honda",
+                    "110"
+                ],
+                [
+                    "10",
+                    "Fernando Alonso",
+                    "ESP",
+                    "Alpine Renault",
+                    "81"
+                ],
+                [
+                    "11",
+                    "Esteban Ocon",
+                    "FRA",
+                    "Alpine Renault",
+                    "74"
+                ],
+                [
+                    "12",
+                    "Sebastian Vettel",
+                    "GER",
+                    "Aston Martin Mercedes",
+                    "43"
+                ],
+                [
+                    "13",
+                    "Lance Stroll",
+                    "CAN",
+                    "Aston Martin Mercedes",
+                    "34"
+                ],
+                [
+                    "14",
+                    "Yuki Tsunoda",
+                    "JPN",
+                    "AlphaTauri Honda",
+                    "32"
+                ],
+                [
+                    "15",
+                    "George Russell",
+                    "GBR",
+                    "Williams Mercedes",
+                    "16"
+                ],
+                [
+                    "16",
+                    "Kimi R\u00e4ikk\u00f6nen",
+                    "FIN",
+                    "Alfa Romeo Racing Ferrari",
+                    "10"
+                ],
+                [
+                    "17",
+                    "Nicholas Latifi",
+                    "CAN",
+                    "Williams Mercedes",
+                    "7"
+                ],
+                [
+                    "18",
+                    "Antonio Giovinazzi",
+                    "ITA",
+                    "Alfa Romeo Racing Ferrari",
+                    "3"
+                ],
+                [
+                    "19",
+                    "Mick Schumacher",
+                    "GER",
+                    "Haas Ferrari",
+                    "0"
+                ],
+                [
+                    "20",
+                    "Robert Kubica",
+                    "POL",
+                    "Alfa Romeo Racing Ferrari",
+                    "0"
+                ],
+                [
+                    "21",
+                    "Nikita Mazepin",
+                    "RAF",
+                    "Haas Ferrari",
+                    "0"
+                ]
+            ]
+        },
+        "Alonso, Fernando": {
+            "url": "https://www.formula1.com/en/results.html/2021/drivers/FERALO01/fernando-alonso.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "Car",
+                "Race Position",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "28 Mar 2021",
+                    "Alpine Renault",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Emilia Romagna",
+                    "18 Apr 2021",
+                    "Alpine Renault",
+                    "10",
+                    "1"
+                ],
+                [
+                    "Portugal",
+                    "02 May 2021",
+                    "Alpine Renault",
+                    "8",
+                    "4"
+                ],
+                [
+                    "Spain",
+                    "09 May 2021",
+                    "Alpine Renault",
+                    "17",
+                    "0"
+                ],
+                [
+                    "Monaco",
+                    "23 May 2021",
+                    "Alpine Renault",
+                    "13",
+                    "0"
+                ],
+                [
+                    "Azerbaijan",
+                    "06 Jun 2021",
+                    "Alpine Renault",
+                    "6",
+                    "8"
+                ],
+                [
+                    "France",
+                    "20 Jun 2021",
+                    "Alpine Renault",
+                    "8",
+                    "4"
+                ],
+                [
+                    "Styria",
+                    "27 Jun 2021",
+                    "Alpine Renault",
+                    "9",
+                    "2"
+                ],
+                [
+                    "Austria",
+                    "04 Jul 2021",
+                    "Alpine Renault",
+                    "10",
+                    "1"
+                ],
+                [
+                    "Great Britain",
+                    "18 Jul 2021",
+                    "Alpine Renault",
+                    "7",
+                    "6"
+                ],
+                [
+                    "Hungary",
+                    "01 Aug 2021",
+                    "Alpine Renault",
+                    "4",
+                    "12"
+                ],
+                [
+                    "Belgium",
+                    "29 Aug 2021",
+                    "Alpine Renault",
+                    "11",
+                    "0"
+                ],
+                [
+                    "Netherlands",
+                    "05 Sep 2021",
+                    "Alpine Renault",
+                    "6",
+                    "8"
+                ],
+                [
+                    "Italy",
+                    "12 Sep 2021",
+                    "Alpine Renault",
+                    "8",
+                    "4"
+                ],
+                [
+                    "Russia",
+                    "26 Sep 2021",
+                    "Alpine Renault",
+                    "6",
+                    "8"
+                ],
+                [
+                    "Turkey",
+                    "10 Oct 2021",
+                    "Alpine Renault",
+                    "16",
+                    "0"
+                ],
+                [
+                    "United States",
+                    "24 Oct 2021",
+                    "Alpine Renault",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Mexico",
+                    "07 Nov 2021",
+                    "Alpine Renault",
+                    "9",
+                    "2"
+                ],
+                [
+                    "Brazil",
+                    "14 Nov 2021",
+                    "Alpine Renault",
+                    "9",
+                    "2"
+                ],
+                [
+                    "Qatar",
+                    "21 Nov 2021",
+                    "Alpine Renault",
+                    "3",
+                    "15"
+                ],
+                [
+                    "Saudi Arabia",
+                    "05 Dec 2021",
+                    "Alpine Renault",
+                    "13",
+                    "0"
+                ],
+                [
+                    "Abu Dhabi",
+                    "12 Dec 2021",
+                    "Alpine Renault",
+                    "8",
+                    "4"
+                ]
+            ]
+        },
+        "Bottas, Valtteri": {
+            "url": "https://www.formula1.com/en/results.html/2021/drivers/VALBOT01/valtteri-bottas.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "Car",
+                "Race Position",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "28 Mar 2021",
+                    "Mercedes",
+                    "3",
+                    "16"
+                ],
+                [
+                    "Emilia Romagna",
+                    "18 Apr 2021",
+                    "Mercedes",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Portugal",
+                    "02 May 2021",
+                    "Mercedes",
+                    "3",
+                    "16"
+                ],
+                [
+                    "Spain",
+                    "09 May 2021",
+                    "Mercedes",
+                    "3",
+                    "15"
+                ],
+                [
+                    "Monaco",
+                    "23 May 2021",
+                    "Mercedes",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Azerbaijan",
+                    "06 Jun 2021",
+                    "Mercedes",
+                    "12",
+                    "0"
+                ],
+                [
+                    "France",
+                    "20 Jun 2021",
+                    "Mercedes",
+                    "4",
+                    "12"
+                ],
+                [
+                    "Styria",
+                    "27 Jun 2021",
+                    "Mercedes",
+                    "3",
+                    "15"
+                ],
+                [
+                    "Austria",
+                    "04 Jul 2021",
+                    "Mercedes",
+                    "2",
+                    "18"
+                ],
+                [
+                    "Great Britain",
+                    "18 Jul 2021",
+                    "Mercedes",
+                    "3",
+                    "16"
+                ],
+                [
+                    "Hungary",
+                    "01 Aug 2021",
+                    "Mercedes",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Belgium",
+                    "29 Aug 2021",
+                    "Mercedes",
+                    "12",
+                    "0"
+                ],
+                [
+                    "Netherlands",
+                    "05 Sep 2021",
+                    "Mercedes",
+                    "3",
+                    "15"
+                ],
+                [
+                    "Italy",
+                    "12 Sep 2021",
+                    "Mercedes",
+                    "3",
+                    "18"
+                ],
+                [
+                    "Russia",
+                    "26 Sep 2021",
+                    "Mercedes",
+                    "5",
+                    "10"
+                ],
+                [
+                    "Turkey",
+                    "10 Oct 2021",
+                    "Mercedes",
+                    "1",
+                    "26"
+                ],
+                [
+                    "United States",
+                    "24 Oct 2021",
+                    "Mercedes",
+                    "6",
+                    "8"
+                ],
+                [
+                    "Mexico",
+                    "07 Nov 2021",
+                    "Mercedes",
+                    "15",
+                    "0"
+                ],
+                [
+                    "Brazil",
+                    "14 Nov 2021",
+                    "Mercedes",
+                    "3",
+                    "18"
+                ],
+                [
+                    "Qatar",
+                    "21 Nov 2021",
+                    "Mercedes",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Saudi Arabia",
+                    "05 Dec 2021",
+                    "Mercedes",
+                    "3",
+                    "15"
+                ],
+                [
+                    "Abu Dhabi",
+                    "12 Dec 2021",
+                    "Mercedes",
+                    "6",
+                    "8"
+                ]
+            ]
+        },
+        "Gasly, Pierre": {
+            "url": "https://www.formula1.com/en/results.html/2021/drivers/PIEGAS01/pierre-gasly.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "Car",
+                "Race Position",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "28 Mar 2021",
+                    "AlphaTauri Honda",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Emilia Romagna",
+                    "18 Apr 2021",
+                    "AlphaTauri Honda",
+                    "7",
+                    "6"
+                ],
+                [
+                    "Portugal",
+                    "02 May 2021",
+                    "AlphaTauri Honda",
+                    "10",
+                    "1"
+                ],
+                [
+                    "Spain",
+                    "09 May 2021",
+                    "AlphaTauri Honda",
+                    "10",
+                    "1"
+                ],
+                [
+                    "Monaco",
+                    "23 May 2021",
+                    "AlphaTauri Honda",
+                    "6",
+                    "8"
+                ],
+                [
+                    "Azerbaijan",
+                    "06 Jun 2021",
+                    "AlphaTauri Honda",
+                    "3",
+                    "15"
+                ],
+                [
+                    "France",
+                    "20 Jun 2021",
+                    "AlphaTauri Honda",
+                    "7",
+                    "6"
+                ],
+                [
+                    "Styria",
+                    "27 Jun 2021",
+                    "AlphaTauri Honda",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Austria",
+                    "04 Jul 2021",
+                    "AlphaTauri Honda",
+                    "9",
+                    "2"
+                ],
+                [
+                    "Great Britain",
+                    "18 Jul 2021",
+                    "AlphaTauri Honda",
+                    "11",
+                    "0"
+                ],
+                [
+                    "Hungary",
+                    "01 Aug 2021",
+                    "AlphaTauri Honda",
+                    "5",
+                    "11"
+                ],
+                [
+                    "Belgium",
+                    "29 Aug 2021",
+                    "AlphaTauri Honda",
+                    "6",
+                    "4"
+                ],
+                [
+                    "Netherlands",
+                    "05 Sep 2021",
+                    "AlphaTauri Honda",
+                    "4",
+                    "12"
+                ],
+                [
+                    "Italy",
+                    "12 Sep 2021",
+                    "AlphaTauri Honda",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Russia",
+                    "26 Sep 2021",
+                    "AlphaTauri Honda",
+                    "13",
+                    "0"
+                ],
+                [
+                    "Turkey",
+                    "10 Oct 2021",
+                    "AlphaTauri Honda",
+                    "6",
+                    "8"
+                ],
+                [
+                    "United States",
+                    "24 Oct 2021",
+                    "AlphaTauri Honda",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Mexico",
+                    "07 Nov 2021",
+                    "AlphaTauri Honda",
+                    "4",
+                    "12"
+                ],
+                [
+                    "Brazil",
+                    "14 Nov 2021",
+                    "AlphaTauri Honda",
+                    "7",
+                    "6"
+                ],
+                [
+                    "Qatar",
+                    "21 Nov 2021",
+                    "AlphaTauri Honda",
+                    "11",
+                    "0"
+                ],
+                [
+                    "Saudi Arabia",
+                    "05 Dec 2021",
+                    "AlphaTauri Honda",
+                    "6",
+                    "8"
+                ],
+                [
+                    "Abu Dhabi",
+                    "12 Dec 2021",
+                    "AlphaTauri Honda",
+                    "5",
+                    "10"
+                ]
+            ]
+        },
+        "Giovinazzi, Antonio": {
+            "url": "https://www.formula1.com/en/results.html/2021/drivers/ANTGIO01/antonio-giovinazzi.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "Car",
+                "Race Position",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "28 Mar 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "12",
+                    "0"
+                ],
+                [
+                    "Emilia Romagna",
+                    "18 Apr 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "14",
+                    "0"
+                ],
+                [
+                    "Portugal",
+                    "02 May 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "12",
+                    "0"
+                ],
+                [
+                    "Spain",
+                    "09 May 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "15",
+                    "0"
+                ],
+                [
+                    "Monaco",
+                    "23 May 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "10",
+                    "1"
+                ],
+                [
+                    "Azerbaijan",
+                    "06 Jun 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "11",
+                    "0"
+                ],
+                [
+                    "France",
+                    "20 Jun 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "15",
+                    "0"
+                ],
+                [
+                    "Styria",
+                    "27 Jun 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "15",
+                    "0"
+                ],
+                [
+                    "Austria",
+                    "04 Jul 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "14",
+                    "0"
+                ],
+                [
+                    "Great Britain",
+                    "18 Jul 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "13",
+                    "0"
+                ],
+                [
+                    "Hungary",
+                    "01 Aug 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "13",
+                    "0"
+                ],
+                [
+                    "Belgium",
+                    "29 Aug 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "13",
+                    "0"
+                ],
+                [
+                    "Netherlands",
+                    "05 Sep 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "14",
+                    "0"
+                ],
+                [
+                    "Italy",
+                    "12 Sep 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "13",
+                    "0"
+                ],
+                [
+                    "Russia",
+                    "26 Sep 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "16",
+                    "0"
+                ],
+                [
+                    "Turkey",
+                    "10 Oct 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "11",
+                    "0"
+                ],
+                [
+                    "United States",
+                    "24 Oct 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "11",
+                    "0"
+                ],
+                [
+                    "Mexico",
+                    "07 Nov 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "11",
+                    "0"
+                ],
+                [
+                    "Brazil",
+                    "14 Nov 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "14",
+                    "0"
+                ],
+                [
+                    "Qatar",
+                    "21 Nov 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "15",
+                    "0"
+                ],
+                [
+                    "Saudi Arabia",
+                    "05 Dec 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "9",
+                    "2"
+                ],
+                [
+                    "Abu Dhabi",
+                    "12 Dec 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "Hamilton, Lewis": {
+            "url": "https://www.formula1.com/en/results.html/2021/drivers/LEWHAM01/lewis-hamilton.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "Car",
+                "Race Position",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "28 Mar 2021",
+                    "Mercedes",
+                    "1",
+                    "25"
+                ],
+                [
+                    "Emilia Romagna",
+                    "18 Apr 2021",
+                    "Mercedes",
+                    "2",
+                    "19"
+                ],
+                [
+                    "Portugal",
+                    "02 May 2021",
+                    "Mercedes",
+                    "1",
+                    "25"
+                ],
+                [
+                    "Spain",
+                    "09 May 2021",
+                    "Mercedes",
+                    "1",
+                    "25"
+                ],
+                [
+                    "Monaco",
+                    "23 May 2021",
+                    "Mercedes",
+                    "7",
+                    "7"
+                ],
+                [
+                    "Azerbaijan",
+                    "06 Jun 2021",
+                    "Mercedes",
+                    "15",
+                    "0"
+                ],
+                [
+                    "France",
+                    "20 Jun 2021",
+                    "Mercedes",
+                    "2",
+                    "18"
+                ],
+                [
+                    "Styria",
+                    "27 Jun 2021",
+                    "Mercedes",
+                    "2",
+                    "19"
+                ],
+                [
+                    "Austria",
+                    "04 Jul 2021",
+                    "Mercedes",
+                    "4",
+                    "12"
+                ],
+                [
+                    "Great Britain",
+                    "18 Jul 2021",
+                    "Mercedes",
+                    "1",
+                    "27"
+                ],
+                [
+                    "Hungary",
+                    "01 Aug 2021",
+                    "Mercedes",
+                    "2",
+                    "18"
+                ],
+                [
+                    "Belgium",
+                    "29 Aug 2021",
+                    "Mercedes",
+                    "3",
+                    "7.5"
+                ],
+                [
+                    "Netherlands",
+                    "05 Sep 2021",
+                    "Mercedes",
+                    "2",
+                    "19"
+                ],
+                [
+                    "Italy",
+                    "12 Sep 2021",
+                    "Mercedes",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Russia",
+                    "26 Sep 2021",
+                    "Mercedes",
+                    "1",
+                    "25"
+                ],
+                [
+                    "Turkey",
+                    "10 Oct 2021",
+                    "Mercedes",
+                    "5",
+                    "10"
+                ],
+                [
+                    "United States",
+                    "24 Oct 2021",
+                    "Mercedes",
+                    "2",
+                    "19"
+                ],
+                [
+                    "Mexico",
+                    "07 Nov 2021",
+                    "Mercedes",
+                    "2",
+                    "18"
+                ],
+                [
+                    "Brazil",
+                    "14 Nov 2021",
+                    "Mercedes",
+                    "1",
+                    "25"
+                ],
+                [
+                    "Qatar",
+                    "21 Nov 2021",
+                    "Mercedes",
+                    "1",
+                    "25"
+                ],
+                [
+                    "Saudi Arabia",
+                    "05 Dec 2021",
+                    "Mercedes",
+                    "1",
+                    "26"
+                ],
+                [
+                    "Abu Dhabi",
+                    "12 Dec 2021",
+                    "Mercedes",
+                    "2",
+                    "18"
+                ]
+            ]
+        },
+        "Kubica, Robert": {
+            "url": "https://www.formula1.com/en/results.html/2021/drivers/ROBKUB01/robert-kubica.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "Car",
+                "Race Position",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Netherlands",
+                    "05 Sep 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "15",
+                    "0"
+                ],
+                [
+                    "Italy",
+                    "12 Sep 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "14",
+                    "0"
+                ]
+            ]
+        },
+        "Latifi, Nicholas": {
+            "url": "https://www.formula1.com/en/results.html/2021/drivers/NICLAF01/nicholas-latifi.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "Car",
+                "Race Position",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "28 Mar 2021",
+                    "Williams Mercedes",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Emilia Romagna",
+                    "18 Apr 2021",
+                    "Williams Mercedes",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Portugal",
+                    "02 May 2021",
+                    "Williams Mercedes",
+                    "18",
+                    "0"
+                ],
+                [
+                    "Spain",
+                    "09 May 2021",
+                    "Williams Mercedes",
+                    "16",
+                    "0"
+                ],
+                [
+                    "Monaco",
+                    "23 May 2021",
+                    "Williams Mercedes",
+                    "15",
+                    "0"
+                ],
+                [
+                    "Azerbaijan",
+                    "06 Jun 2021",
+                    "Williams Mercedes",
+                    "16",
+                    "0"
+                ],
+                [
+                    "France",
+                    "20 Jun 2021",
+                    "Williams Mercedes",
+                    "18",
+                    "0"
+                ],
+                [
+                    "Styria",
+                    "27 Jun 2021",
+                    "Williams Mercedes",
+                    "17",
+                    "0"
+                ],
+                [
+                    "Austria",
+                    "04 Jul 2021",
+                    "Williams Mercedes",
+                    "16",
+                    "0"
+                ],
+                [
+                    "Great Britain",
+                    "18 Jul 2021",
+                    "Williams Mercedes",
+                    "14",
+                    "0"
+                ],
+                [
+                    "Hungary",
+                    "01 Aug 2021",
+                    "Williams Mercedes",
+                    "7",
+                    "6"
+                ],
+                [
+                    "Belgium",
+                    "29 Aug 2021",
+                    "Williams Mercedes",
+                    "9",
+                    "1"
+                ],
+                [
+                    "Netherlands",
+                    "05 Sep 2021",
+                    "Williams Mercedes",
+                    "16",
+                    "0"
+                ],
+                [
+                    "Italy",
+                    "12 Sep 2021",
+                    "Williams Mercedes",
+                    "11",
+                    "0"
+                ],
+                [
+                    "Russia",
+                    "26 Sep 2021",
+                    "Williams Mercedes",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Turkey",
+                    "10 Oct 2021",
+                    "Williams Mercedes",
+                    "17",
+                    "0"
+                ],
+                [
+                    "United States",
+                    "24 Oct 2021",
+                    "Williams Mercedes",
+                    "15",
+                    "0"
+                ],
+                [
+                    "Mexico",
+                    "07 Nov 2021",
+                    "Williams Mercedes",
+                    "17",
+                    "0"
+                ],
+                [
+                    "Brazil",
+                    "14 Nov 2021",
+                    "Williams Mercedes",
+                    "16",
+                    "0"
+                ],
+                [
+                    "Qatar",
+                    "21 Nov 2021",
+                    "Williams Mercedes",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Saudi Arabia",
+                    "05 Dec 2021",
+                    "Williams Mercedes",
+                    "12",
+                    "0"
+                ],
+                [
+                    "Abu Dhabi",
+                    "12 Dec 2021",
+                    "Williams Mercedes",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "Leclerc, Charles": {
+            "url": "https://www.formula1.com/en/results.html/2021/drivers/CHALEC01/charles-leclerc.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "Car",
+                "Race Position",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "28 Mar 2021",
+                    "Ferrari",
+                    "6",
+                    "8"
+                ],
+                [
+                    "Emilia Romagna",
+                    "18 Apr 2021",
+                    "Ferrari",
+                    "4",
+                    "12"
+                ],
+                [
+                    "Portugal",
+                    "02 May 2021",
+                    "Ferrari",
+                    "6",
+                    "8"
+                ],
+                [
+                    "Spain",
+                    "09 May 2021",
+                    "Ferrari",
+                    "4",
+                    "12"
+                ],
+                [
+                    "Monaco",
+                    "23 May 2021",
+                    "Ferrari",
+                    "DNS",
+                    "0"
+                ],
+                [
+                    "Azerbaijan",
+                    "06 Jun 2021",
+                    "Ferrari",
+                    "4",
+                    "12"
+                ],
+                [
+                    "France",
+                    "20 Jun 2021",
+                    "Ferrari",
+                    "16",
+                    "0"
+                ],
+                [
+                    "Styria",
+                    "27 Jun 2021",
+                    "Ferrari",
+                    "7",
+                    "6"
+                ],
+                [
+                    "Austria",
+                    "04 Jul 2021",
+                    "Ferrari",
+                    "8",
+                    "4"
+                ],
+                [
+                    "Great Britain",
+                    "18 Jul 2021",
+                    "Ferrari",
+                    "2",
+                    "18"
+                ],
+                [
+                    "Hungary",
+                    "01 Aug 2021",
+                    "Ferrari",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Belgium",
+                    "29 Aug 2021",
+                    "Ferrari",
+                    "8",
+                    "2"
+                ],
+                [
+                    "Netherlands",
+                    "05 Sep 2021",
+                    "Ferrari",
+                    "5",
+                    "10"
+                ],
+                [
+                    "Italy",
+                    "12 Sep 2021",
+                    "Ferrari",
+                    "4",
+                    "12"
+                ],
+                [
+                    "Russia",
+                    "26 Sep 2021",
+                    "Ferrari",
+                    "15",
+                    "0"
+                ],
+                [
+                    "Turkey",
+                    "10 Oct 2021",
+                    "Ferrari",
+                    "4",
+                    "12"
+                ],
+                [
+                    "United States",
+                    "24 Oct 2021",
+                    "Ferrari",
+                    "4",
+                    "12"
+                ],
+                [
+                    "Mexico",
+                    "07 Nov 2021",
+                    "Ferrari",
+                    "5",
+                    "10"
+                ],
+                [
+                    "Brazil",
+                    "14 Nov 2021",
+                    "Ferrari",
+                    "5",
+                    "10"
+                ],
+                [
+                    "Qatar",
+                    "21 Nov 2021",
+                    "Ferrari",
+                    "8",
+                    "4"
+                ],
+                [
+                    "Saudi Arabia",
+                    "05 Dec 2021",
+                    "Ferrari",
+                    "7",
+                    "6"
+                ],
+                [
+                    "Abu Dhabi",
+                    "12 Dec 2021",
+                    "Ferrari",
+                    "10",
+                    "1"
+                ]
+            ]
+        },
+        "Mazepin, Nikita": {
+            "url": "https://www.formula1.com/en/results.html/2021/drivers/NIKMAZ01/nikita-mazepin.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "Car",
+                "Race Position",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "28 Mar 2021",
+                    "Haas Ferrari",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Emilia Romagna",
+                    "18 Apr 2021",
+                    "Haas Ferrari",
+                    "17",
+                    "0"
+                ],
+                [
+                    "Portugal",
+                    "02 May 2021",
+                    "Haas Ferrari",
+                    "19",
+                    "0"
+                ],
+                [
+                    "Spain",
+                    "09 May 2021",
+                    "Haas Ferrari",
+                    "19",
+                    "0"
+                ],
+                [
+                    "Monaco",
+                    "23 May 2021",
+                    "Haas Ferrari",
+                    "17",
+                    "0"
+                ],
+                [
+                    "Azerbaijan",
+                    "06 Jun 2021",
+                    "Haas Ferrari",
+                    "14",
+                    "0"
+                ],
+                [
+                    "France",
+                    "20 Jun 2021",
+                    "Haas Ferrari",
+                    "20",
+                    "0"
+                ],
+                [
+                    "Styria",
+                    "27 Jun 2021",
+                    "Haas Ferrari",
+                    "18",
+                    "0"
+                ],
+                [
+                    "Austria",
+                    "04 Jul 2021",
+                    "Haas Ferrari",
+                    "19",
+                    "0"
+                ],
+                [
+                    "Great Britain",
+                    "18 Jul 2021",
+                    "Haas Ferrari",
+                    "17",
+                    "0"
+                ],
+                [
+                    "Hungary",
+                    "01 Aug 2021",
+                    "Haas Ferrari",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Belgium",
+                    "29 Aug 2021",
+                    "Haas Ferrari",
+                    "17",
+                    "0"
+                ],
+                [
+                    "Netherlands",
+                    "05 Sep 2021",
+                    "Haas Ferrari",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Italy",
+                    "12 Sep 2021",
+                    "Haas Ferrari",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Russia",
+                    "26 Sep 2021",
+                    "Haas Ferrari",
+                    "18",
+                    "0"
+                ],
+                [
+                    "Turkey",
+                    "10 Oct 2021",
+                    "Haas Ferrari",
+                    "20",
+                    "0"
+                ],
+                [
+                    "United States",
+                    "24 Oct 2021",
+                    "Haas Ferrari",
+                    "17",
+                    "0"
+                ],
+                [
+                    "Mexico",
+                    "07 Nov 2021",
+                    "Haas Ferrari",
+                    "18",
+                    "0"
+                ],
+                [
+                    "Brazil",
+                    "14 Nov 2021",
+                    "Haas Ferrari",
+                    "17",
+                    "0"
+                ],
+                [
+                    "Qatar",
+                    "21 Nov 2021",
+                    "Haas Ferrari",
+                    "18",
+                    "0"
+                ],
+                [
+                    "Saudi Arabia",
+                    "05 Dec 2021",
+                    "Haas Ferrari",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Abu Dhabi",
+                    "12 Dec 2021",
+                    "Haas Ferrari",
+                    "DNS",
+                    "0"
+                ]
+            ]
+        },
+        "Norris, Lando": {
+            "url": "https://www.formula1.com/en/results.html/2021/drivers/LANNOR01/lando-norris.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "Car",
+                "Race Position",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "28 Mar 2021",
+                    "McLaren Mercedes",
+                    "4",
+                    "12"
+                ],
+                [
+                    "Emilia Romagna",
+                    "18 Apr 2021",
+                    "McLaren Mercedes",
+                    "3",
+                    "15"
+                ],
+                [
+                    "Portugal",
+                    "02 May 2021",
+                    "McLaren Mercedes",
+                    "5",
+                    "10"
+                ],
+                [
+                    "Spain",
+                    "09 May 2021",
+                    "McLaren Mercedes",
+                    "8",
+                    "4"
+                ],
+                [
+                    "Monaco",
+                    "23 May 2021",
+                    "McLaren Mercedes",
+                    "3",
+                    "15"
+                ],
+                [
+                    "Azerbaijan",
+                    "06 Jun 2021",
+                    "McLaren Mercedes",
+                    "5",
+                    "10"
+                ],
+                [
+                    "France",
+                    "20 Jun 2021",
+                    "McLaren Mercedes",
+                    "5",
+                    "10"
+                ],
+                [
+                    "Styria",
+                    "27 Jun 2021",
+                    "McLaren Mercedes",
+                    "5",
+                    "10"
+                ],
+                [
+                    "Austria",
+                    "04 Jul 2021",
+                    "McLaren Mercedes",
+                    "3",
+                    "15"
+                ],
+                [
+                    "Great Britain",
+                    "18 Jul 2021",
+                    "McLaren Mercedes",
+                    "4",
+                    "12"
+                ],
+                [
+                    "Hungary",
+                    "01 Aug 2021",
+                    "McLaren Mercedes",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Belgium",
+                    "29 Aug 2021",
+                    "McLaren Mercedes",
+                    "14",
+                    "0"
+                ],
+                [
+                    "Netherlands",
+                    "05 Sep 2021",
+                    "McLaren Mercedes",
+                    "10",
+                    "1"
+                ],
+                [
+                    "Italy",
+                    "12 Sep 2021",
+                    "McLaren Mercedes",
+                    "2",
+                    "18"
+                ],
+                [
+                    "Russia",
+                    "26 Sep 2021",
+                    "McLaren Mercedes",
+                    "7",
+                    "7"
+                ],
+                [
+                    "Turkey",
+                    "10 Oct 2021",
+                    "McLaren Mercedes",
+                    "7",
+                    "6"
+                ],
+                [
+                    "United States",
+                    "24 Oct 2021",
+                    "McLaren Mercedes",
+                    "8",
+                    "4"
+                ],
+                [
+                    "Mexico",
+                    "07 Nov 2021",
+                    "McLaren Mercedes",
+                    "10",
+                    "1"
+                ],
+                [
+                    "Brazil",
+                    "14 Nov 2021",
+                    "McLaren Mercedes",
+                    "10",
+                    "1"
+                ],
+                [
+                    "Qatar",
+                    "21 Nov 2021",
+                    "McLaren Mercedes",
+                    "9",
+                    "2"
+                ],
+                [
+                    "Saudi Arabia",
+                    "05 Dec 2021",
+                    "McLaren Mercedes",
+                    "10",
+                    "1"
+                ],
+                [
+                    "Abu Dhabi",
+                    "12 Dec 2021",
+                    "McLaren Mercedes",
+                    "7",
+                    "6"
+                ]
+            ]
+        },
+        "Ocon, Esteban": {
+            "url": "https://www.formula1.com/en/results.html/2021/drivers/ESTOCO01/esteban-ocon.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "Car",
+                "Race Position",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "28 Mar 2021",
+                    "Alpine Renault",
+                    "13",
+                    "0"
+                ],
+                [
+                    "Emilia Romagna",
+                    "18 Apr 2021",
+                    "Alpine Renault",
+                    "9",
+                    "2"
+                ],
+                [
+                    "Portugal",
+                    "02 May 2021",
+                    "Alpine Renault",
+                    "7",
+                    "6"
+                ],
+                [
+                    "Spain",
+                    "09 May 2021",
+                    "Alpine Renault",
+                    "9",
+                    "2"
+                ],
+                [
+                    "Monaco",
+                    "23 May 2021",
+                    "Alpine Renault",
+                    "9",
+                    "2"
+                ],
+                [
+                    "Azerbaijan",
+                    "06 Jun 2021",
+                    "Alpine Renault",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "France",
+                    "20 Jun 2021",
+                    "Alpine Renault",
+                    "14",
+                    "0"
+                ],
+                [
+                    "Styria",
+                    "27 Jun 2021",
+                    "Alpine Renault",
+                    "14",
+                    "0"
+                ],
+                [
+                    "Austria",
+                    "04 Jul 2021",
+                    "Alpine Renault",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Great Britain",
+                    "18 Jul 2021",
+                    "Alpine Renault",
+                    "9",
+                    "2"
+                ],
+                [
+                    "Hungary",
+                    "01 Aug 2021",
+                    "Alpine Renault",
+                    "1",
+                    "25"
+                ],
+                [
+                    "Belgium",
+                    "29 Aug 2021",
+                    "Alpine Renault",
+                    "7",
+                    "3"
+                ],
+                [
+                    "Netherlands",
+                    "05 Sep 2021",
+                    "Alpine Renault",
+                    "9",
+                    "2"
+                ],
+                [
+                    "Italy",
+                    "12 Sep 2021",
+                    "Alpine Renault",
+                    "10",
+                    "1"
+                ],
+                [
+                    "Russia",
+                    "26 Sep 2021",
+                    "Alpine Renault",
+                    "14",
+                    "0"
+                ],
+                [
+                    "Turkey",
+                    "10 Oct 2021",
+                    "Alpine Renault",
+                    "10",
+                    "1"
+                ],
+                [
+                    "United States",
+                    "24 Oct 2021",
+                    "Alpine Renault",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Mexico",
+                    "07 Nov 2021",
+                    "Alpine Renault",
+                    "13",
+                    "0"
+                ],
+                [
+                    "Brazil",
+                    "14 Nov 2021",
+                    "Alpine Renault",
+                    "8",
+                    "4"
+                ],
+                [
+                    "Qatar",
+                    "21 Nov 2021",
+                    "Alpine Renault",
+                    "5",
+                    "10"
+                ],
+                [
+                    "Saudi Arabia",
+                    "05 Dec 2021",
+                    "Alpine Renault",
+                    "4",
+                    "12"
+                ],
+                [
+                    "Abu Dhabi",
+                    "12 Dec 2021",
+                    "Alpine Renault",
+                    "9",
+                    "2"
+                ]
+            ]
+        },
+        "Perez, Sergio": {
+            "url": "https://www.formula1.com/en/results.html/2021/drivers/SERPER01/sergio-perez.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "Car",
+                "Race Position",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "28 Mar 2021",
+                    "Red Bull Racing Honda",
+                    "5",
+                    "10"
+                ],
+                [
+                    "Emilia Romagna",
+                    "18 Apr 2021",
+                    "Red Bull Racing Honda",
+                    "11",
+                    "0"
+                ],
+                [
+                    "Portugal",
+                    "02 May 2021",
+                    "Red Bull Racing Honda",
+                    "4",
+                    "12"
+                ],
+                [
+                    "Spain",
+                    "09 May 2021",
+                    "Red Bull Racing Honda",
+                    "5",
+                    "10"
+                ],
+                [
+                    "Monaco",
+                    "23 May 2021",
+                    "Red Bull Racing Honda",
+                    "4",
+                    "12"
+                ],
+                [
+                    "Azerbaijan",
+                    "06 Jun 2021",
+                    "Red Bull Racing Honda",
+                    "1",
+                    "25"
+                ],
+                [
+                    "France",
+                    "20 Jun 2021",
+                    "Red Bull Racing Honda",
+                    "3",
+                    "15"
+                ],
+                [
+                    "Styria",
+                    "27 Jun 2021",
+                    "Red Bull Racing Honda",
+                    "4",
+                    "12"
+                ],
+                [
+                    "Austria",
+                    "04 Jul 2021",
+                    "Red Bull Racing Honda",
+                    "6",
+                    "8"
+                ],
+                [
+                    "Great Britain",
+                    "18 Jul 2021",
+                    "Red Bull Racing Honda",
+                    "16",
+                    "0"
+                ],
+                [
+                    "Hungary",
+                    "01 Aug 2021",
+                    "Red Bull Racing Honda",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Belgium",
+                    "29 Aug 2021",
+                    "Red Bull Racing Honda",
+                    "19",
+                    "0"
+                ],
+                [
+                    "Netherlands",
+                    "05 Sep 2021",
+                    "Red Bull Racing Honda",
+                    "8",
+                    "4"
+                ],
+                [
+                    "Italy",
+                    "12 Sep 2021",
+                    "Red Bull Racing Honda",
+                    "5",
+                    "10"
+                ],
+                [
+                    "Russia",
+                    "26 Sep 2021",
+                    "Red Bull Racing Honda",
+                    "9",
+                    "2"
+                ],
+                [
+                    "Turkey",
+                    "10 Oct 2021",
+                    "Red Bull Racing Honda",
+                    "3",
+                    "15"
+                ],
+                [
+                    "United States",
+                    "24 Oct 2021",
+                    "Red Bull Racing Honda",
+                    "3",
+                    "15"
+                ],
+                [
+                    "Mexico",
+                    "07 Nov 2021",
+                    "Red Bull Racing Honda",
+                    "3",
+                    "15"
+                ],
+                [
+                    "Brazil",
+                    "14 Nov 2021",
+                    "Red Bull Racing Honda",
+                    "4",
+                    "13"
+                ],
+                [
+                    "Qatar",
+                    "21 Nov 2021",
+                    "Red Bull Racing Honda",
+                    "4",
+                    "12"
+                ],
+                [
+                    "Saudi Arabia",
+                    "05 Dec 2021",
+                    "Red Bull Racing Honda",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Abu Dhabi",
+                    "12 Dec 2021",
+                    "Red Bull Racing Honda",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "Ricciardo, Daniel": {
+            "url": "https://www.formula1.com/en/results.html/2021/drivers/DANRIC01/daniel-ricciardo.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "Car",
+                "Race Position",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "28 Mar 2021",
+                    "McLaren Mercedes",
+                    "7",
+                    "6"
+                ],
+                [
+                    "Emilia Romagna",
+                    "18 Apr 2021",
+                    "McLaren Mercedes",
+                    "6",
+                    "8"
+                ],
+                [
+                    "Portugal",
+                    "02 May 2021",
+                    "McLaren Mercedes",
+                    "9",
+                    "2"
+                ],
+                [
+                    "Spain",
+                    "09 May 2021",
+                    "McLaren Mercedes",
+                    "6",
+                    "8"
+                ],
+                [
+                    "Monaco",
+                    "23 May 2021",
+                    "McLaren Mercedes",
+                    "12",
+                    "0"
+                ],
+                [
+                    "Azerbaijan",
+                    "06 Jun 2021",
+                    "McLaren Mercedes",
+                    "9",
+                    "2"
+                ],
+                [
+                    "France",
+                    "20 Jun 2021",
+                    "McLaren Mercedes",
+                    "6",
+                    "8"
+                ],
+                [
+                    "Styria",
+                    "27 Jun 2021",
+                    "McLaren Mercedes",
+                    "13",
+                    "0"
+                ],
+                [
+                    "Austria",
+                    "04 Jul 2021",
+                    "McLaren Mercedes",
+                    "7",
+                    "6"
+                ],
+                [
+                    "Great Britain",
+                    "18 Jul 2021",
+                    "McLaren Mercedes",
+                    "5",
+                    "10"
+                ],
+                [
+                    "Hungary",
+                    "01 Aug 2021",
+                    "McLaren Mercedes",
+                    "11",
+                    "0"
+                ],
+                [
+                    "Belgium",
+                    "29 Aug 2021",
+                    "McLaren Mercedes",
+                    "4",
+                    "6"
+                ],
+                [
+                    "Netherlands",
+                    "05 Sep 2021",
+                    "McLaren Mercedes",
+                    "11",
+                    "0"
+                ],
+                [
+                    "Italy",
+                    "12 Sep 2021",
+                    "McLaren Mercedes",
+                    "1",
+                    "27"
+                ],
+                [
+                    "Russia",
+                    "26 Sep 2021",
+                    "McLaren Mercedes",
+                    "4",
+                    "12"
+                ],
+                [
+                    "Turkey",
+                    "10 Oct 2021",
+                    "McLaren Mercedes",
+                    "13",
+                    "0"
+                ],
+                [
+                    "United States",
+                    "24 Oct 2021",
+                    "McLaren Mercedes",
+                    "5",
+                    "10"
+                ],
+                [
+                    "Mexico",
+                    "07 Nov 2021",
+                    "McLaren Mercedes",
+                    "12",
+                    "0"
+                ],
+                [
+                    "Brazil",
+                    "14 Nov 2021",
+                    "McLaren Mercedes",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Qatar",
+                    "21 Nov 2021",
+                    "McLaren Mercedes",
+                    "12",
+                    "0"
+                ],
+                [
+                    "Saudi Arabia",
+                    "05 Dec 2021",
+                    "McLaren Mercedes",
+                    "5",
+                    "10"
+                ],
+                [
+                    "Abu Dhabi",
+                    "12 Dec 2021",
+                    "McLaren Mercedes",
+                    "12",
+                    "0"
+                ]
+            ]
+        },
+        "Russell, George": {
+            "url": "https://www.formula1.com/en/results.html/2021/drivers/GEORUS01/george-russell.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "Car",
+                "Race Position",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "28 Mar 2021",
+                    "Williams Mercedes",
+                    "14",
+                    "0"
+                ],
+                [
+                    "Emilia Romagna",
+                    "18 Apr 2021",
+                    "Williams Mercedes",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Portugal",
+                    "02 May 2021",
+                    "Williams Mercedes",
+                    "16",
+                    "0"
+                ],
+                [
+                    "Spain",
+                    "09 May 2021",
+                    "Williams Mercedes",
+                    "14",
+                    "0"
+                ],
+                [
+                    "Monaco",
+                    "23 May 2021",
+                    "Williams Mercedes",
+                    "14",
+                    "0"
+                ],
+                [
+                    "Azerbaijan",
+                    "06 Jun 2021",
+                    "Williams Mercedes",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "France",
+                    "20 Jun 2021",
+                    "Williams Mercedes",
+                    "12",
+                    "0"
+                ],
+                [
+                    "Styria",
+                    "27 Jun 2021",
+                    "Williams Mercedes",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Austria",
+                    "04 Jul 2021",
+                    "Williams Mercedes",
+                    "11",
+                    "0"
+                ],
+                [
+                    "Great Britain",
+                    "18 Jul 2021",
+                    "Williams Mercedes",
+                    "12",
+                    "0"
+                ],
+                [
+                    "Hungary",
+                    "01 Aug 2021",
+                    "Williams Mercedes",
+                    "8",
+                    "4"
+                ],
+                [
+                    "Belgium",
+                    "29 Aug 2021",
+                    "Williams Mercedes",
+                    "2",
+                    "9"
+                ],
+                [
+                    "Netherlands",
+                    "05 Sep 2021",
+                    "Williams Mercedes",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Italy",
+                    "12 Sep 2021",
+                    "Williams Mercedes",
+                    "9",
+                    "2"
+                ],
+                [
+                    "Russia",
+                    "26 Sep 2021",
+                    "Williams Mercedes",
+                    "10",
+                    "1"
+                ],
+                [
+                    "Turkey",
+                    "10 Oct 2021",
+                    "Williams Mercedes",
+                    "15",
+                    "0"
+                ],
+                [
+                    "United States",
+                    "24 Oct 2021",
+                    "Williams Mercedes",
+                    "14",
+                    "0"
+                ],
+                [
+                    "Mexico",
+                    "07 Nov 2021",
+                    "Williams Mercedes",
+                    "16",
+                    "0"
+                ],
+                [
+                    "Brazil",
+                    "14 Nov 2021",
+                    "Williams Mercedes",
+                    "13",
+                    "0"
+                ],
+                [
+                    "Qatar",
+                    "21 Nov 2021",
+                    "Williams Mercedes",
+                    "17",
+                    "0"
+                ],
+                [
+                    "Saudi Arabia",
+                    "05 Dec 2021",
+                    "Williams Mercedes",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Abu Dhabi",
+                    "12 Dec 2021",
+                    "Williams Mercedes",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "R\u00e4ikk\u00f6nen, Kimi": {
+            "url": "https://www.formula1.com/en/results.html/2021/drivers/KIMRAI01/kimi-raikkonen.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "Car",
+                "Race Position",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "28 Mar 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "11",
+                    "0"
+                ],
+                [
+                    "Emilia Romagna",
+                    "18 Apr 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "13",
+                    "0"
+                ],
+                [
+                    "Portugal",
+                    "02 May 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Spain",
+                    "09 May 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "12",
+                    "0"
+                ],
+                [
+                    "Monaco",
+                    "23 May 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "11",
+                    "0"
+                ],
+                [
+                    "Azerbaijan",
+                    "06 Jun 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "10",
+                    "1"
+                ],
+                [
+                    "France",
+                    "20 Jun 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "17",
+                    "0"
+                ],
+                [
+                    "Styria",
+                    "27 Jun 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "11",
+                    "0"
+                ],
+                [
+                    "Austria",
+                    "04 Jul 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "15",
+                    "0"
+                ],
+                [
+                    "Great Britain",
+                    "18 Jul 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "15",
+                    "0"
+                ],
+                [
+                    "Hungary",
+                    "01 Aug 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "10",
+                    "1"
+                ],
+                [
+                    "Belgium",
+                    "29 Aug 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "18",
+                    "0"
+                ],
+                [
+                    "Russia",
+                    "26 Sep 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "8",
+                    "4"
+                ],
+                [
+                    "Turkey",
+                    "10 Oct 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "12",
+                    "0"
+                ],
+                [
+                    "United States",
+                    "24 Oct 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "13",
+                    "0"
+                ],
+                [
+                    "Mexico",
+                    "07 Nov 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "8",
+                    "4"
+                ],
+                [
+                    "Brazil",
+                    "14 Nov 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "12",
+                    "0"
+                ],
+                [
+                    "Qatar",
+                    "21 Nov 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "14",
+                    "0"
+                ],
+                [
+                    "Saudi Arabia",
+                    "05 Dec 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "15",
+                    "0"
+                ],
+                [
+                    "Abu Dhabi",
+                    "12 Dec 2021",
+                    "Alfa Romeo Racing Ferrari",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "Sainz, Carlos": {
+            "url": "https://www.formula1.com/en/results.html/2021/drivers/CARSAI01/carlos-sainz.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "Car",
+                "Race Position",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "28 Mar 2021",
+                    "Ferrari",
+                    "8",
+                    "4"
+                ],
+                [
+                    "Emilia Romagna",
+                    "18 Apr 2021",
+                    "Ferrari",
+                    "5",
+                    "10"
+                ],
+                [
+                    "Portugal",
+                    "02 May 2021",
+                    "Ferrari",
+                    "11",
+                    "0"
+                ],
+                [
+                    "Spain",
+                    "09 May 2021",
+                    "Ferrari",
+                    "7",
+                    "6"
+                ],
+                [
+                    "Monaco",
+                    "23 May 2021",
+                    "Ferrari",
+                    "2",
+                    "18"
+                ],
+                [
+                    "Azerbaijan",
+                    "06 Jun 2021",
+                    "Ferrari",
+                    "8",
+                    "4"
+                ],
+                [
+                    "France",
+                    "20 Jun 2021",
+                    "Ferrari",
+                    "11",
+                    "0"
+                ],
+                [
+                    "Styria",
+                    "27 Jun 2021",
+                    "Ferrari",
+                    "6",
+                    "8"
+                ],
+                [
+                    "Austria",
+                    "04 Jul 2021",
+                    "Ferrari",
+                    "5",
+                    "10"
+                ],
+                [
+                    "Great Britain",
+                    "18 Jul 2021",
+                    "Ferrari",
+                    "6",
+                    "8"
+                ],
+                [
+                    "Hungary",
+                    "01 Aug 2021",
+                    "Ferrari",
+                    "3",
+                    "15"
+                ],
+                [
+                    "Belgium",
+                    "29 Aug 2021",
+                    "Ferrari",
+                    "10",
+                    "0.5"
+                ],
+                [
+                    "Netherlands",
+                    "05 Sep 2021",
+                    "Ferrari",
+                    "7",
+                    "6"
+                ],
+                [
+                    "Italy",
+                    "12 Sep 2021",
+                    "Ferrari",
+                    "6",
+                    "8"
+                ],
+                [
+                    "Russia",
+                    "26 Sep 2021",
+                    "Ferrari",
+                    "3",
+                    "15"
+                ],
+                [
+                    "Turkey",
+                    "10 Oct 2021",
+                    "Ferrari",
+                    "8",
+                    "4"
+                ],
+                [
+                    "United States",
+                    "24 Oct 2021",
+                    "Ferrari",
+                    "7",
+                    "6"
+                ],
+                [
+                    "Mexico",
+                    "07 Nov 2021",
+                    "Ferrari",
+                    "6",
+                    "8"
+                ],
+                [
+                    "Brazil",
+                    "14 Nov 2021",
+                    "Ferrari",
+                    "6",
+                    "9"
+                ],
+                [
+                    "Qatar",
+                    "21 Nov 2021",
+                    "Ferrari",
+                    "7",
+                    "6"
+                ],
+                [
+                    "Saudi Arabia",
+                    "05 Dec 2021",
+                    "Ferrari",
+                    "8",
+                    "4"
+                ],
+                [
+                    "Abu Dhabi",
+                    "12 Dec 2021",
+                    "Ferrari",
+                    "3",
+                    "15"
+                ]
+            ]
+        },
+        "Schumacher, Mick": {
+            "url": "https://www.formula1.com/en/results.html/2021/drivers/MICSCH02/mick-schumacher.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "Car",
+                "Race Position",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "28 Mar 2021",
+                    "Haas Ferrari",
+                    "16",
+                    "0"
+                ],
+                [
+                    "Emilia Romagna",
+                    "18 Apr 2021",
+                    "Haas Ferrari",
+                    "16",
+                    "0"
+                ],
+                [
+                    "Portugal",
+                    "02 May 2021",
+                    "Haas Ferrari",
+                    "17",
+                    "0"
+                ],
+                [
+                    "Spain",
+                    "09 May 2021",
+                    "Haas Ferrari",
+                    "18",
+                    "0"
+                ],
+                [
+                    "Monaco",
+                    "23 May 2021",
+                    "Haas Ferrari",
+                    "18",
+                    "0"
+                ],
+                [
+                    "Azerbaijan",
+                    "06 Jun 2021",
+                    "Haas Ferrari",
+                    "13",
+                    "0"
+                ],
+                [
+                    "France",
+                    "20 Jun 2021",
+                    "Haas Ferrari",
+                    "19",
+                    "0"
+                ],
+                [
+                    "Styria",
+                    "27 Jun 2021",
+                    "Haas Ferrari",
+                    "16",
+                    "0"
+                ],
+                [
+                    "Austria",
+                    "04 Jul 2021",
+                    "Haas Ferrari",
+                    "18",
+                    "0"
+                ],
+                [
+                    "Great Britain",
+                    "18 Jul 2021",
+                    "Haas Ferrari",
+                    "18",
+                    "0"
+                ],
+                [
+                    "Hungary",
+                    "01 Aug 2021",
+                    "Haas Ferrari",
+                    "12",
+                    "0"
+                ],
+                [
+                    "Belgium",
+                    "29 Aug 2021",
+                    "Haas Ferrari",
+                    "16",
+                    "0"
+                ],
+                [
+                    "Netherlands",
+                    "05 Sep 2021",
+                    "Haas Ferrari",
+                    "18",
+                    "0"
+                ],
+                [
+                    "Italy",
+                    "12 Sep 2021",
+                    "Haas Ferrari",
+                    "15",
+                    "0"
+                ],
+                [
+                    "Russia",
+                    "26 Sep 2021",
+                    "Haas Ferrari",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Turkey",
+                    "10 Oct 2021",
+                    "Haas Ferrari",
+                    "19",
+                    "0"
+                ],
+                [
+                    "United States",
+                    "24 Oct 2021",
+                    "Haas Ferrari",
+                    "16",
+                    "0"
+                ],
+                [
+                    "Mexico",
+                    "07 Nov 2021",
+                    "Haas Ferrari",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Brazil",
+                    "14 Nov 2021",
+                    "Haas Ferrari",
+                    "18",
+                    "0"
+                ],
+                [
+                    "Qatar",
+                    "21 Nov 2021",
+                    "Haas Ferrari",
+                    "16",
+                    "0"
+                ],
+                [
+                    "Saudi Arabia",
+                    "05 Dec 2021",
+                    "Haas Ferrari",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Abu Dhabi",
+                    "12 Dec 2021",
+                    "Haas Ferrari",
+                    "14",
+                    "0"
+                ]
+            ]
+        },
+        "Stroll, Lance": {
+            "url": "https://www.formula1.com/en/results.html/2021/drivers/LANSTR01/lance-stroll.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "Car",
+                "Race Position",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "28 Mar 2021",
+                    "Aston Martin Mercedes",
+                    "10",
+                    "1"
+                ],
+                [
+                    "Emilia Romagna",
+                    "18 Apr 2021",
+                    "Aston Martin Mercedes",
+                    "8",
+                    "4"
+                ],
+                [
+                    "Portugal",
+                    "02 May 2021",
+                    "Aston Martin Mercedes",
+                    "14",
+                    "0"
+                ],
+                [
+                    "Spain",
+                    "09 May 2021",
+                    "Aston Martin Mercedes",
+                    "11",
+                    "0"
+                ],
+                [
+                    "Monaco",
+                    "23 May 2021",
+                    "Aston Martin Mercedes",
+                    "8",
+                    "4"
+                ],
+                [
+                    "Azerbaijan",
+                    "06 Jun 2021",
+                    "Aston Martin Mercedes",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "France",
+                    "20 Jun 2021",
+                    "Aston Martin Mercedes",
+                    "10",
+                    "1"
+                ],
+                [
+                    "Styria",
+                    "27 Jun 2021",
+                    "Aston Martin Mercedes",
+                    "8",
+                    "4"
+                ],
+                [
+                    "Austria",
+                    "04 Jul 2021",
+                    "Aston Martin Mercedes",
+                    "13",
+                    "0"
+                ],
+                [
+                    "Great Britain",
+                    "18 Jul 2021",
+                    "Aston Martin Mercedes",
+                    "8",
+                    "4"
+                ],
+                [
+                    "Hungary",
+                    "01 Aug 2021",
+                    "Aston Martin Mercedes",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Belgium",
+                    "29 Aug 2021",
+                    "Aston Martin Mercedes",
+                    "20",
+                    "0"
+                ],
+                [
+                    "Netherlands",
+                    "05 Sep 2021",
+                    "Aston Martin Mercedes",
+                    "12",
+                    "0"
+                ],
+                [
+                    "Italy",
+                    "12 Sep 2021",
+                    "Aston Martin Mercedes",
+                    "7",
+                    "6"
+                ],
+                [
+                    "Russia",
+                    "26 Sep 2021",
+                    "Aston Martin Mercedes",
+                    "11",
+                    "0"
+                ],
+                [
+                    "Turkey",
+                    "10 Oct 2021",
+                    "Aston Martin Mercedes",
+                    "9",
+                    "2"
+                ],
+                [
+                    "United States",
+                    "24 Oct 2021",
+                    "Aston Martin Mercedes",
+                    "12",
+                    "0"
+                ],
+                [
+                    "Mexico",
+                    "07 Nov 2021",
+                    "Aston Martin Mercedes",
+                    "14",
+                    "0"
+                ],
+                [
+                    "Brazil",
+                    "14 Nov 2021",
+                    "Aston Martin Mercedes",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Qatar",
+                    "21 Nov 2021",
+                    "Aston Martin Mercedes",
+                    "6",
+                    "8"
+                ],
+                [
+                    "Saudi Arabia",
+                    "05 Dec 2021",
+                    "Aston Martin Mercedes",
+                    "11",
+                    "0"
+                ],
+                [
+                    "Abu Dhabi",
+                    "12 Dec 2021",
+                    "Aston Martin Mercedes",
+                    "13",
+                    "0"
+                ]
+            ]
+        },
+        "Tsunoda, Yuki": {
+            "url": "https://www.formula1.com/en/results.html/2021/drivers/YUKTSU01/yuki-tsunoda.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "Car",
+                "Race Position",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "28 Mar 2021",
+                    "AlphaTauri Honda",
+                    "9",
+                    "2"
+                ],
+                [
+                    "Emilia Romagna",
+                    "18 Apr 2021",
+                    "AlphaTauri Honda",
+                    "12",
+                    "0"
+                ],
+                [
+                    "Portugal",
+                    "02 May 2021",
+                    "AlphaTauri Honda",
+                    "15",
+                    "0"
+                ],
+                [
+                    "Spain",
+                    "09 May 2021",
+                    "AlphaTauri Honda",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Monaco",
+                    "23 May 2021",
+                    "AlphaTauri Honda",
+                    "16",
+                    "0"
+                ],
+                [
+                    "Azerbaijan",
+                    "06 Jun 2021",
+                    "AlphaTauri Honda",
+                    "7",
+                    "6"
+                ],
+                [
+                    "France",
+                    "20 Jun 2021",
+                    "AlphaTauri Honda",
+                    "13",
+                    "0"
+                ],
+                [
+                    "Styria",
+                    "27 Jun 2021",
+                    "AlphaTauri Honda",
+                    "10",
+                    "1"
+                ],
+                [
+                    "Austria",
+                    "04 Jul 2021",
+                    "AlphaTauri Honda",
+                    "12",
+                    "0"
+                ],
+                [
+                    "Great Britain",
+                    "18 Jul 2021",
+                    "AlphaTauri Honda",
+                    "10",
+                    "1"
+                ],
+                [
+                    "Hungary",
+                    "01 Aug 2021",
+                    "AlphaTauri Honda",
+                    "6",
+                    "8"
+                ],
+                [
+                    "Belgium",
+                    "29 Aug 2021",
+                    "AlphaTauri Honda",
+                    "15",
+                    "0"
+                ],
+                [
+                    "Netherlands",
+                    "05 Sep 2021",
+                    "AlphaTauri Honda",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Italy",
+                    "12 Sep 2021",
+                    "AlphaTauri Honda",
+                    "DNS",
+                    "0"
+                ],
+                [
+                    "Russia",
+                    "26 Sep 2021",
+                    "AlphaTauri Honda",
+                    "17",
+                    "0"
+                ],
+                [
+                    "Turkey",
+                    "10 Oct 2021",
+                    "AlphaTauri Honda",
+                    "14",
+                    "0"
+                ],
+                [
+                    "United States",
+                    "24 Oct 2021",
+                    "AlphaTauri Honda",
+                    "9",
+                    "2"
+                ],
+                [
+                    "Mexico",
+                    "07 Nov 2021",
+                    "AlphaTauri Honda",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Brazil",
+                    "14 Nov 2021",
+                    "AlphaTauri Honda",
+                    "15",
+                    "0"
+                ],
+                [
+                    "Qatar",
+                    "21 Nov 2021",
+                    "AlphaTauri Honda",
+                    "13",
+                    "0"
+                ],
+                [
+                    "Saudi Arabia",
+                    "05 Dec 2021",
+                    "AlphaTauri Honda",
+                    "14",
+                    "0"
+                ],
+                [
+                    "Abu Dhabi",
+                    "12 Dec 2021",
+                    "AlphaTauri Honda",
+                    "4",
+                    "12"
+                ]
+            ]
+        },
+        "Verstappen, Max": {
+            "url": "https://www.formula1.com/en/results.html/2021/drivers/MAXVER01/max-verstappen.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "Car",
+                "Race Position",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "28 Mar 2021",
+                    "Red Bull Racing Honda",
+                    "2",
+                    "18"
+                ],
+                [
+                    "Emilia Romagna",
+                    "18 Apr 2021",
+                    "Red Bull Racing Honda",
+                    "1",
+                    "25"
+                ],
+                [
+                    "Portugal",
+                    "02 May 2021",
+                    "Red Bull Racing Honda",
+                    "2",
+                    "18"
+                ],
+                [
+                    "Spain",
+                    "09 May 2021",
+                    "Red Bull Racing Honda",
+                    "2",
+                    "19"
+                ],
+                [
+                    "Monaco",
+                    "23 May 2021",
+                    "Red Bull Racing Honda",
+                    "1",
+                    "25"
+                ],
+                [
+                    "Azerbaijan",
+                    "06 Jun 2021",
+                    "Red Bull Racing Honda",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "France",
+                    "20 Jun 2021",
+                    "Red Bull Racing Honda",
+                    "1",
+                    "26"
+                ],
+                [
+                    "Styria",
+                    "27 Jun 2021",
+                    "Red Bull Racing Honda",
+                    "1",
+                    "25"
+                ],
+                [
+                    "Austria",
+                    "04 Jul 2021",
+                    "Red Bull Racing Honda",
+                    "1",
+                    "26"
+                ],
+                [
+                    "Great Britain",
+                    "18 Jul 2021",
+                    "Red Bull Racing Honda",
+                    "DNF",
+                    "3"
+                ],
+                [
+                    "Hungary",
+                    "01 Aug 2021",
+                    "Red Bull Racing Honda",
+                    "9",
+                    "2"
+                ],
+                [
+                    "Belgium",
+                    "29 Aug 2021",
+                    "Red Bull Racing Honda",
+                    "1",
+                    "12.5"
+                ],
+                [
+                    "Netherlands",
+                    "05 Sep 2021",
+                    "Red Bull Racing Honda",
+                    "1",
+                    "25"
+                ],
+                [
+                    "Italy",
+                    "12 Sep 2021",
+                    "Red Bull Racing Honda",
+                    "DNF",
+                    "2"
+                ],
+                [
+                    "Russia",
+                    "26 Sep 2021",
+                    "Red Bull Racing Honda",
+                    "2",
+                    "18"
+                ],
+                [
+                    "Turkey",
+                    "10 Oct 2021",
+                    "Red Bull Racing Honda",
+                    "2",
+                    "18"
+                ],
+                [
+                    "United States",
+                    "24 Oct 2021",
+                    "Red Bull Racing Honda",
+                    "1",
+                    "25"
+                ],
+                [
+                    "Mexico",
+                    "07 Nov 2021",
+                    "Red Bull Racing Honda",
+                    "1",
+                    "25"
+                ],
+                [
+                    "Brazil",
+                    "14 Nov 2021",
+                    "Red Bull Racing Honda",
+                    "2",
+                    "20"
+                ],
+                [
+                    "Qatar",
+                    "21 Nov 2021",
+                    "Red Bull Racing Honda",
+                    "2",
+                    "19"
+                ],
+                [
+                    "Saudi Arabia",
+                    "05 Dec 2021",
+                    "Red Bull Racing Honda",
+                    "2",
+                    "18"
+                ],
+                [
+                    "Abu Dhabi",
+                    "12 Dec 2021",
+                    "Red Bull Racing Honda",
+                    "1",
+                    "26"
+                ]
+            ]
+        },
+        "Vettel, Sebastian": {
+            "url": "https://www.formula1.com/en/results.html/2021/drivers/SEBVET01/sebastian-vettel.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "Car",
+                "Race Position",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "28 Mar 2021",
+                    "Aston Martin Mercedes",
+                    "15",
+                    "0"
+                ],
+                [
+                    "Emilia Romagna",
+                    "18 Apr 2021",
+                    "Aston Martin Mercedes",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Portugal",
+                    "02 May 2021",
+                    "Aston Martin Mercedes",
+                    "13",
+                    "0"
+                ],
+                [
+                    "Spain",
+                    "09 May 2021",
+                    "Aston Martin Mercedes",
+                    "13",
+                    "0"
+                ],
+                [
+                    "Monaco",
+                    "23 May 2021",
+                    "Aston Martin Mercedes",
+                    "5",
+                    "10"
+                ],
+                [
+                    "Azerbaijan",
+                    "06 Jun 2021",
+                    "Aston Martin Mercedes",
+                    "2",
+                    "18"
+                ],
+                [
+                    "France",
+                    "20 Jun 2021",
+                    "Aston Martin Mercedes",
+                    "9",
+                    "2"
+                ],
+                [
+                    "Styria",
+                    "27 Jun 2021",
+                    "Aston Martin Mercedes",
+                    "12",
+                    "0"
+                ],
+                [
+                    "Austria",
+                    "04 Jul 2021",
+                    "Aston Martin Mercedes",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Great Britain",
+                    "18 Jul 2021",
+                    "Aston Martin Mercedes",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Hungary",
+                    "01 Aug 2021",
+                    "Aston Martin Mercedes",
+                    "DSQ",
+                    "0"
+                ],
+                [
+                    "Belgium",
+                    "29 Aug 2021",
+                    "Aston Martin Mercedes",
+                    "5",
+                    "5"
+                ],
+                [
+                    "Netherlands",
+                    "05 Sep 2021",
+                    "Aston Martin Mercedes",
+                    "13",
+                    "0"
+                ],
+                [
+                    "Italy",
+                    "12 Sep 2021",
+                    "Aston Martin Mercedes",
+                    "12",
+                    "0"
+                ],
+                [
+                    "Russia",
+                    "26 Sep 2021",
+                    "Aston Martin Mercedes",
+                    "12",
+                    "0"
+                ],
+                [
+                    "Turkey",
+                    "10 Oct 2021",
+                    "Aston Martin Mercedes",
+                    "18",
+                    "0"
+                ],
+                [
+                    "United States",
+                    "24 Oct 2021",
+                    "Aston Martin Mercedes",
+                    "10",
+                    "1"
+                ],
+                [
+                    "Mexico",
+                    "07 Nov 2021",
+                    "Aston Martin Mercedes",
+                    "7",
+                    "6"
+                ],
+                [
+                    "Brazil",
+                    "14 Nov 2021",
+                    "Aston Martin Mercedes",
+                    "11",
+                    "0"
+                ],
+                [
+                    "Qatar",
+                    "21 Nov 2021",
+                    "Aston Martin Mercedes",
+                    "10",
+                    "1"
+                ],
+                [
+                    "Saudi Arabia",
+                    "05 Dec 2021",
+                    "Aston Martin Mercedes",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "Abu Dhabi",
+                    "12 Dec 2021",
+                    "Aston Martin Mercedes",
+                    "11",
+                    "0"
+                ]
+            ]
+        }
     }
 }

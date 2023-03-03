@@ -453,5 +453,462 @@
                 ]
             ]
         }
+    },
+    "2021": {
+        "Great Britain": {
+            "url": "https://www.formula1.com/en/results.html/2021/races/1072/great-britain/sprint-grid.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Time"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "1:26.134"
+                ],
+                [
+                    "2",
+                    "33",
+                    "Max Verstappen",
+                    "Red Bull Racing Honda",
+                    "1:26.209"
+                ],
+                [
+                    "3",
+                    "77",
+                    "Valtteri Bottas",
+                    "Mercedes",
+                    "1:26.328"
+                ],
+                [
+                    "4",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "1:26.828"
+                ],
+                [
+                    "5",
+                    "11",
+                    "Sergio Perez",
+                    "Red Bull Racing Honda",
+                    "1:26.844"
+                ],
+                [
+                    "6",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Mercedes",
+                    "1:26.897"
+                ],
+                [
+                    "7",
+                    "3",
+                    "Daniel Ricciardo",
+                    "McLaren Mercedes",
+                    "1:26.899"
+                ],
+                [
+                    "8",
+                    "63",
+                    "George Russell",
+                    "Williams Mercedes",
+                    "1:26.971"
+                ],
+                [
+                    "9",
+                    "55",
+                    "Carlos Sainz",
+                    "Ferrari",
+                    "1:27.007"
+                ],
+                [
+                    "10",
+                    "5",
+                    "Sebastian Vettel",
+                    "Aston Martin Mercedes",
+                    "1:27.179"
+                ],
+                [
+                    "11",
+                    "14",
+                    "Fernando Alonso",
+                    "Alpine Renault",
+                    "1:27.245"
+                ],
+                [
+                    "12",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri Honda",
+                    "1:27.273"
+                ],
+                [
+                    "13",
+                    "31",
+                    "Esteban Ocon",
+                    "Alpine Renault",
+                    "1:27.340"
+                ],
+                [
+                    "14",
+                    "99",
+                    "Antonio Giovinazzi",
+                    "Alfa Romeo Racing Ferrari",
+                    "1:27.617"
+                ],
+                [
+                    "15",
+                    "18",
+                    "Lance Stroll",
+                    "Aston Martin Mercedes",
+                    "1:27.665"
+                ],
+                [
+                    "16",
+                    "22",
+                    "Yuki Tsunoda",
+                    "AlphaTauri Honda",
+                    "1:28.043"
+                ],
+                [
+                    "17",
+                    "7",
+                    "Kimi R\u00e4ikk\u00f6nen",
+                    "Alfa Romeo Racing Ferrari",
+                    "1:28.062"
+                ],
+                [
+                    "18",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "1:28.254"
+                ],
+                [
+                    "19",
+                    "47",
+                    "Mick Schumacher",
+                    "Haas Ferrari",
+                    "1:28.738"
+                ],
+                [
+                    "20",
+                    "9",
+                    "Nikita Mazepin",
+                    "Haas Ferrari",
+                    "1:29.051"
+                ]
+            ]
+        },
+        "Italy": {
+            "url": "https://www.formula1.com/en/results.html/2021/races/1076/italy/sprint-grid.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Time"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "77",
+                    "Valtteri Bottas",
+                    "Mercedes",
+                    "1:19.555"
+                ],
+                [
+                    "2",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "1:19.651"
+                ],
+                [
+                    "3",
+                    "33",
+                    "Max Verstappen",
+                    "Red Bull Racing Honda",
+                    "1:19.966"
+                ],
+                [
+                    "4",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Mercedes",
+                    "1:19.989"
+                ],
+                [
+                    "5",
+                    "3",
+                    "Daniel Ricciardo",
+                    "McLaren Mercedes",
+                    "1:19.995"
+                ],
+                [
+                    "6",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri Honda",
+                    "1:20.260"
+                ],
+                [
+                    "7",
+                    "55",
+                    "Carlos Sainz",
+                    "Ferrari",
+                    "1:20.462"
+                ],
+                [
+                    "8",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "1:20.510"
+                ],
+                [
+                    "9",
+                    "11",
+                    "Sergio Perez",
+                    "Red Bull Racing Honda",
+                    "1:20.611"
+                ],
+                [
+                    "10",
+                    "99",
+                    "Antonio Giovinazzi",
+                    "Alfa Romeo Racing Ferrari",
+                    "1:20.808"
+                ],
+                [
+                    "11",
+                    "5",
+                    "Sebastian Vettel",
+                    "Aston Martin Mercedes",
+                    "1:20.913"
+                ],
+                [
+                    "12",
+                    "18",
+                    "Lance Stroll",
+                    "Aston Martin Mercedes",
+                    "1:21.020"
+                ],
+                [
+                    "13",
+                    "14",
+                    "Fernando Alonso",
+                    "Alpine Renault",
+                    "1:21.069"
+                ],
+                [
+                    "14",
+                    "31",
+                    "Esteban Ocon",
+                    "Alpine Renault",
+                    "1:21.103"
+                ],
+                [
+                    "15",
+                    "63",
+                    "George Russell",
+                    "Williams Mercedes",
+                    "1:21.392"
+                ],
+                [
+                    "16",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "1:21.925"
+                ],
+                [
+                    "17",
+                    "22",
+                    "Yuki Tsunoda",
+                    "AlphaTauri Honda",
+                    "1:21.973"
+                ],
+                [
+                    "18",
+                    "47",
+                    "Mick Schumacher",
+                    "Haas Ferrari",
+                    "1:22.248"
+                ],
+                [
+                    "19",
+                    "88",
+                    "Robert Kubica",
+                    "Alfa Romeo Racing Ferrari",
+                    "1:22.530"
+                ],
+                [
+                    "20",
+                    "9",
+                    "Nikita Mazepin",
+                    "Haas Ferrari",
+                    "1:22.716"
+                ]
+            ]
+        },
+        "Brazil": {
+            "url": "https://www.formula1.com/en/results.html/2021/races/1104/brazil/sprint-grid.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Time"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "33",
+                    "Max Verstappen",
+                    "Red Bull Racing Honda",
+                    "1:08.372"
+                ],
+                [
+                    "2",
+                    "77",
+                    "Valtteri Bottas",
+                    "Mercedes",
+                    "1:08.469"
+                ],
+                [
+                    "3",
+                    "11",
+                    "Sergio Perez",
+                    "Red Bull Racing Honda",
+                    "1:08.483"
+                ],
+                [
+                    "4",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri Honda",
+                    "1:08.777"
+                ],
+                [
+                    "5",
+                    "55",
+                    "Carlos Sainz",
+                    "Ferrari",
+                    "1:08.826"
+                ],
+                [
+                    "6",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "1:08.960"
+                ],
+                [
+                    "7",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Mercedes",
+                    "1:08.980"
+                ],
+                [
+                    "8",
+                    "3",
+                    "Daniel Ricciardo",
+                    "McLaren Mercedes",
+                    "1:09.039"
+                ],
+                [
+                    "9",
+                    "14",
+                    "Fernando Alonso",
+                    "Alpine Renault",
+                    "1:09.113"
+                ],
+                [
+                    "10",
+                    "31",
+                    "Esteban Ocon",
+                    "Alpine Renault",
+                    "1:09.189"
+                ],
+                [
+                    "11",
+                    "5",
+                    "Sebastian Vettel",
+                    "Aston Martin Mercedes",
+                    "1:09.399"
+                ],
+                [
+                    "12",
+                    "22",
+                    "Yuki Tsunoda",
+                    "AlphaTauri Honda",
+                    "1:09.483"
+                ],
+                [
+                    "13",
+                    "7",
+                    "Kimi R\u00e4ikk\u00f6nen",
+                    "Alfa Romeo Racing Ferrari",
+                    "1:09.503"
+                ],
+                [
+                    "14",
+                    "99",
+                    "Antonio Giovinazzi",
+                    "Alfa Romeo Racing Ferrari",
+                    "1:10.227"
+                ],
+                [
+                    "15",
+                    "18",
+                    "Lance Stroll",
+                    "Aston Martin Mercedes",
+                    "1:09.663"
+                ],
+                [
+                    "16",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "1:09.897"
+                ],
+                [
+                    "17",
+                    "63",
+                    "George Russell",
+                    "Williams Mercedes",
+                    "1:09.953"
+                ],
+                [
+                    "18",
+                    "47",
+                    "Mick Schumacher",
+                    "Haas Ferrari",
+                    "1:10.329"
+                ],
+                [
+                    "19",
+                    "9",
+                    "Nikita Mazepin",
+                    "Haas Ferrari",
+                    "1:10.589"
+                ],
+                [
+                    "20",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes"
+                ]
+            ]
+        }
     }
 }
