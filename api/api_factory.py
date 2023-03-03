@@ -23,5 +23,5 @@ def get_version():
         "status": 200,
         "result": "success",
         "message": "Data retrieved successfully.",
-        "data": "0.9.1"
+        "data": "0.9.2"
         }, 200
