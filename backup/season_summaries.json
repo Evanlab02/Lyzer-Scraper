@@ -9600,5 +9600,26 @@
                 "1:27:45.914"
             ]
         ]
+    },
+    "2023": {
+        "url": "https://www.formula1.com/en/results.html/2023/races.html",
+        "headers": [
+            "Grand Prix",
+            "Date",
+            "Winner",
+            "Car",
+            "Laps",
+            "Time"
+        ],
+        "rows": [
+            [
+                "Bahrain",
+                "05 Mar 2023",
+                "Max Verstappen",
+                "Red Bull Racing Honda RBPT",
+                "57",
+                "1:33:56.736"
+            ]
+        ]
     }
 }

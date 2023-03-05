@@ -8538,5 +8538,201 @@
                 ]
             ]
         }
+    },
+    "2023": {
+        "Bahrain": {
+            "url": "https://www.formula1.com/en/results.html/2023/races/1141/bahrain/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "1",
+                    "Max Verstappen",
+                    "Red Bull Racing Honda RBPT",
+                    "57",
+                    "1:33:56.736",
+                    "25"
+                ],
+                [
+                    "2",
+                    "11",
+                    "Sergio Perez",
+                    "Red Bull Racing Honda RBPT",
+                    "57",
+                    "+11.987s",
+                    "18"
+                ],
+                [
+                    "3",
+                    "14",
+                    "Fernando Alonso",
+                    "Aston Martin Aramco Mercedes",
+                    "57",
+                    "+38.637s",
+                    "15"
+                ],
+                [
+                    "4",
+                    "55",
+                    "Carlos Sainz",
+                    "Ferrari",
+                    "57",
+                    "+48.052s",
+                    "12"
+                ],
+                [
+                    "5",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "57",
+                    "+50.977s",
+                    "10"
+                ],
+                [
+                    "6",
+                    "18",
+                    "Lance Stroll",
+                    "Aston Martin Aramco Mercedes",
+                    "57",
+                    "+54.502s",
+                    "8"
+                ],
+                [
+                    "7",
+                    "63",
+                    "George Russell",
+                    "Mercedes",
+                    "57",
+                    "+55.873s",
+                    "6"
+                ],
+                [
+                    "8",
+                    "77",
+                    "Valtteri Bottas",
+                    "Alfa Romeo Ferrari",
+                    "57",
+                    "+72.647s",
+                    "4"
+                ],
+                [
+                    "9",
+                    "10",
+                    "Pierre Gasly",
+                    "Alpine Renault",
+                    "57",
+                    "+73.753s",
+                    "2"
+                ],
+                [
+                    "10",
+                    "23",
+                    "Alexander Albon",
+                    "Williams Mercedes",
+                    "57",
+                    "+89.774s",
+                    "1"
+                ],
+                [
+                    "11",
+                    "22",
+                    "Yuki Tsunoda",
+                    "AlphaTauri Honda RBPT",
+                    "57",
+                    "+90.870s",
+                    "0"
+                ],
+                [
+                    "12",
+                    "2",
+                    "Logan Sargeant",
+                    "Williams Mercedes",
+                    "56",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "13",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "56",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "14",
+                    "21",
+                    "Nyck De Vries",
+                    "AlphaTauri Honda RBPT",
+                    "56",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "15",
+                    "27",
+                    "Nico Hulkenberg",
+                    "Haas Ferrari",
+                    "56",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "16",
+                    "24",
+                    "Zhou Guanyu",
+                    "Alfa Romeo Ferrari",
+                    "56",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "17",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Mercedes",
+                    "55",
+                    "+2 laps",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "31",
+                    "Esteban Ocon",
+                    "Alpine Renault",
+                    "41",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "39",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "81",
+                    "Oscar Piastri",
+                    "McLaren Mercedes",
+                    "13",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        }
     }
 }

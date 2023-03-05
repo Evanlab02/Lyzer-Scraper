@@ -23,6 +23,9 @@ refresh:
 update:
 	@pipenv update
 	@pipenv requirements > requirements.txt
+	@rm -rf backup/
+	@mkdir backup/
+	@cp -r dist/Lyzer-Scraper/data/. backup/ 
 
 test:
 	@echo "<TEST> Running Tests"
@@ -38,8 +41,11 @@ run:
 run-bin: build
 	@cd dist/Lyzer-Scraper/ && ./Lyzer-Scraper
 
-run-bin-backlog:
+run-bin-backlog: build
 	@cd dist/Lyzer-Scraper/ && ./Lyzer-Scraper --clear-backlog
+
+run-bin-update: build
+	@cd dist/Lyzer-Scraper/ && ./Lyzer-Scraper --update
 
 build-windows:
 	@pipenv run pyinstaller --name Lyzer-Scraper --add-data "backup/;data/" lyzer_scraper.py 

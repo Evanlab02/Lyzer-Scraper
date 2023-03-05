@@ -3,9 +3,15 @@ This module is the entry point for the lyzer scraper program.
 """
 import sys
 
+from datetime import datetime
+
 from api.api_factory import get_version, assign_endpoints
 from logs.console_logger import log_to_console
-from source.installer import install_lyzer_data_files, uninstall_lyzer_data_files
+from source.installer import (
+    install_lyzer_data_files,
+    uninstall_lyzer_data_files,
+    update_season_data
+)
 from source.queue_processor import clear_queue
 from web.flask_web_app import create_app, host_app
 
@@ -31,6 +37,12 @@ def main():
         log_to_console(f"localhost:{sys.argv[2]}", "LINK")
         log_to_console("Ctrl-C to Shutdown")
         host_app(app, int(sys.argv[2]))
+    elif len(sys.argv) == 2 and sys.argv[1] == "--update":
+        log_to_console("Updating Lyzer Scraper.", "WARNING")
+        log_to_console("This may take a while.", "WARNING")
+        log_to_console("Please wait...", "WARNING")
+        current_year = datetime.now().year
+        update_season_data(current_year)
     else:
         app = create_app()
         assign_endpoints(app)

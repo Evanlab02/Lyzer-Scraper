@@ -7003,5 +7003,461 @@
                 ]
             ]
         }
+    },
+    "2023": {
+        "All": {
+            "url": "https://www.formula1.com/en/results.html/2023/drivers.html",
+            "headers": [
+                "Pos",
+                "Driver",
+                "Nationality",
+                "Car",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "Max Verstappen",
+                    "NED",
+                    "Red Bull Racing Honda RBPT",
+                    "25"
+                ],
+                [
+                    "2",
+                    "Sergio Perez",
+                    "MEX",
+                    "Red Bull Racing Honda RBPT",
+                    "18"
+                ],
+                [
+                    "3",
+                    "Fernando Alonso",
+                    "ESP",
+                    "Aston Martin Aramco Mercedes",
+                    "15"
+                ],
+                [
+                    "4",
+                    "Carlos Sainz",
+                    "ESP",
+                    "Ferrari",
+                    "12"
+                ],
+                [
+                    "5",
+                    "Lewis Hamilton",
+                    "GBR",
+                    "Mercedes",
+                    "10"
+                ],
+                [
+                    "6",
+                    "Lance Stroll",
+                    "CAN",
+                    "Aston Martin Aramco Mercedes",
+                    "8"
+                ],
+                [
+                    "7",
+                    "George Russell",
+                    "GBR",
+                    "Mercedes",
+                    "6"
+                ],
+                [
+                    "8",
+                    "Valtteri Bottas",
+                    "FIN",
+                    "Alfa Romeo Ferrari",
+                    "4"
+                ],
+                [
+                    "9",
+                    "Pierre Gasly",
+                    "FRA",
+                    "Alpine Renault",
+                    "2"
+                ],
+                [
+                    "10",
+                    "Alexander Albon",
+                    "THA",
+                    "Williams Mercedes",
+                    "1"
+                ],
+                [
+                    "11",
+                    "Yuki Tsunoda",
+                    "JPN",
+                    "AlphaTauri Honda RBPT",
+                    "0"
+                ],
+                [
+                    "12",
+                    "Logan Sargeant",
+                    "USA",
+                    "Williams Mercedes",
+                    "0"
+                ],
+                [
+                    "13",
+                    "Kevin Magnussen",
+                    "DEN",
+                    "Haas Ferrari",
+                    "0"
+                ],
+                [
+                    "14",
+                    "Nyck De Vries",
+                    "NED",
+                    "AlphaTauri Honda RBPT",
+                    "0"
+                ],
+                [
+                    "15",
+                    "Nico Hulkenberg",
+                    "GER",
+                    "Haas Ferrari",
+                    "0"
+                ],
+                [
+                    "16",
+                    "Zhou Guanyu",
+                    "CHN",
+                    "Alfa Romeo Ferrari",
+                    "0"
+                ],
+                [
+                    "17",
+                    "Lando Norris",
+                    "GBR",
+                    "McLaren Mercedes",
+                    "0"
+                ]
+            ]
+        },
+        "Albon, Alexander": {
+            "url": "https://www.formula1.com/en/results.html/2023/drivers/ALEALB01/alexander-albon.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "Car",
+                "Race Position",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "05 Mar 2023",
+                    "Williams Mercedes",
+                    "10",
+                    "1"
+                ]
+            ]
+        },
+        "Alonso, Fernando": {
+            "url": "https://www.formula1.com/en/results.html/2023/drivers/FERALO01/fernando-alonso.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "Car",
+                "Race Position",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "05 Mar 2023",
+                    "Aston Martin Aramco Mercedes",
+                    "3",
+                    "15"
+                ]
+            ]
+        },
+        "Bottas, Valtteri": {
+            "url": "https://www.formula1.com/en/results.html/2023/drivers/VALBOT01/valtteri-bottas.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "Car",
+                "Race Position",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "05 Mar 2023",
+                    "Alfa Romeo Ferrari",
+                    "8",
+                    "4"
+                ]
+            ]
+        },
+        "De Vries, Nyck": {
+            "url": "https://www.formula1.com/en/results.html/2023/drivers/NYCDEV01/nyck-de-vries.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "Car",
+                "Race Position",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "05 Mar 2023",
+                    "AlphaTauri Honda RBPT",
+                    "14",
+                    "0"
+                ]
+            ]
+        },
+        "Gasly, Pierre": {
+            "url": "https://www.formula1.com/en/results.html/2023/drivers/PIEGAS01/pierre-gasly.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "Car",
+                "Race Position",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "05 Mar 2023",
+                    "Alpine Renault",
+                    "9",
+                    "2"
+                ]
+            ]
+        },
+        "Hamilton, Lewis": {
+            "url": "https://www.formula1.com/en/results.html/2023/drivers/LEWHAM01/lewis-hamilton.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "Car",
+                "Race Position",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "05 Mar 2023",
+                    "Mercedes",
+                    "5",
+                    "10"
+                ]
+            ]
+        },
+        "Hulkenberg, Nico": {
+            "url": "https://www.formula1.com/en/results.html/2023/drivers/NICHUL01/nico-hulkenberg.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "Car",
+                "Race Position",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "05 Mar 2023",
+                    "Haas Ferrari",
+                    "15",
+                    "0"
+                ]
+            ]
+        },
+        "Magnussen, Kevin": {
+            "url": "https://www.formula1.com/en/results.html/2023/drivers/KEVMAG01/kevin-magnussen.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "Car",
+                "Race Position",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "05 Mar 2023",
+                    "Haas Ferrari",
+                    "13",
+                    "0"
+                ]
+            ]
+        },
+        "Norris, Lando": {
+            "url": "https://www.formula1.com/en/results.html/2023/drivers/LANNOR01/lando-norris.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "Car",
+                "Race Position",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "05 Mar 2023",
+                    "McLaren Mercedes",
+                    "17",
+                    "0"
+                ]
+            ]
+        },
+        "Perez, Sergio": {
+            "url": "https://www.formula1.com/en/results.html/2023/drivers/SERPER01/sergio-perez.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "Car",
+                "Race Position",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "05 Mar 2023",
+                    "Red Bull Racing Honda RBPT",
+                    "2",
+                    "18"
+                ]
+            ]
+        },
+        "Russell, George": {
+            "url": "https://www.formula1.com/en/results.html/2023/drivers/GEORUS01/george-russell.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "Car",
+                "Race Position",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "05 Mar 2023",
+                    "Mercedes",
+                    "7",
+                    "6"
+                ]
+            ]
+        },
+        "Sainz, Carlos": {
+            "url": "https://www.formula1.com/en/results.html/2023/drivers/CARSAI01/carlos-sainz.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "Car",
+                "Race Position",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "05 Mar 2023",
+                    "Ferrari",
+                    "4",
+                    "12"
+                ]
+            ]
+        },
+        "Sargeant, Logan": {
+            "url": "https://www.formula1.com/en/results.html/2023/drivers/LOGSAR01/logan-sargeant.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "Car",
+                "Race Position",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "05 Mar 2023",
+                    "Williams Mercedes",
+                    "12",
+                    "0"
+                ]
+            ]
+        },
+        "Stroll, Lance": {
+            "url": "https://www.formula1.com/en/results.html/2023/drivers/LANSTR01/lance-stroll.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "Car",
+                "Race Position",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "05 Mar 2023",
+                    "Aston Martin Aramco Mercedes",
+                    "6",
+                    "8"
+                ]
+            ]
+        },
+        "Tsunoda, Yuki": {
+            "url": "https://www.formula1.com/en/results.html/2023/drivers/YUKTSU01/yuki-tsunoda.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "Car",
+                "Race Position",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "05 Mar 2023",
+                    "AlphaTauri Honda RBPT",
+                    "11",
+                    "0"
+                ]
+            ]
+        },
+        "Verstappen, Max": {
+            "url": "https://www.formula1.com/en/results.html/2023/drivers/MAXVER01/max-verstappen.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "Car",
+                "Race Position",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "05 Mar 2023",
+                    "Red Bull Racing Honda RBPT",
+                    "1",
+                    "25"
+                ]
+            ]
+        },
+        "Zhou, Guanyu": {
+            "url": "https://www.formula1.com/en/results.html/2023/drivers/GUAZHO01/guanyu-zhou.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "Car",
+                "Race Position",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "05 Mar 2023",
+                    "Alfa Romeo Ferrari",
+                    "16",
+                    "0"
+                ]
+            ]
+        }
     }
 }

@@ -9131,5 +9131,222 @@
                 ]
             ]
         }
+    },
+    "2023": {
+        "Bahrain": {
+            "url": "https://www.formula1.com/en/results.html/2023/races/1141/bahrain/fastest-laps.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Lap",
+                "Time of day",
+                "Time",
+                "Avg Speed"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "24",
+                    "Zhou Guanyu",
+                    "Alfa Romeo Ferrari",
+                    "56",
+                    "19:38:14",
+                    "1:33.996",
+                    "207.276"
+                ],
+                [
+                    "2",
+                    "10",
+                    "Pierre Gasly",
+                    "Alpine Renault",
+                    "42",
+                    "19:14:37",
+                    "1:35.068",
+                    "204.939"
+                ],
+                [
+                    "3",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Mercedes",
+                    "51",
+                    "19:30:44",
+                    "1:35.822",
+                    "203.327"
+                ],
+                [
+                    "4",
+                    "2",
+                    "Logan Sargeant",
+                    "Williams Mercedes",
+                    "42",
+                    "19:14:48",
+                    "1:36.037",
+                    "202.871"
+                ],
+                [
+                    "5",
+                    "14",
+                    "Fernando Alonso",
+                    "Aston Martin Aramco Mercedes",
+                    "36",
+                    "19:03:44",
+                    "1:36.156",
+                    "202.620"
+                ],
+                [
+                    "6",
+                    "1",
+                    "Max Verstappen",
+                    "Red Bull Racing Honda RBPT",
+                    "44",
+                    "19:16:35",
+                    "1:36.236",
+                    "202.452"
+                ],
+                [
+                    "7",
+                    "11",
+                    "Sergio Perez",
+                    "Red Bull Racing Honda RBPT",
+                    "37",
+                    "19:04:59",
+                    "1:36.344",
+                    "202.225"
+                ],
+                [
+                    "8",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "42",
+                    "19:15:01",
+                    "1:36.471",
+                    "201.959"
+                ],
+                [
+                    "9",
+                    "18",
+                    "Lance Stroll",
+                    "Aston Martin Aramco Mercedes",
+                    "32",
+                    "18:57:21",
+                    "1:36.546",
+                    "201.802"
+                ],
+                [
+                    "10",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "36",
+                    "19:03:44",
+                    "1:36.546",
+                    "201.802"
+                ],
+                [
+                    "11",
+                    "27",
+                    "Nico Hulkenberg",
+                    "Haas Ferrari",
+                    "42",
+                    "19:15:10",
+                    "1:36.616",
+                    "201.656"
+                ],
+                [
+                    "12",
+                    "22",
+                    "Yuki Tsunoda",
+                    "AlphaTauri Honda RBPT",
+                    "42",
+                    "19:14:42",
+                    "1:36.637",
+                    "201.612"
+                ],
+                [
+                    "13",
+                    "31",
+                    "Esteban Ocon",
+                    "Alpine Renault",
+                    "34",
+                    "19:02:00",
+                    "1:36.797",
+                    "201.278"
+                ],
+                [
+                    "14",
+                    "55",
+                    "Carlos Sainz",
+                    "Ferrari",
+                    "37",
+                    "19:05:18",
+                    "1:37.130",
+                    "200.588"
+                ],
+                [
+                    "15",
+                    "23",
+                    "Alexander Albon",
+                    "Williams Mercedes",
+                    "43",
+                    "19:16:16",
+                    "1:37.144",
+                    "200.559"
+                ],
+                [
+                    "16",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "37",
+                    "19:05:10",
+                    "1:37.170",
+                    "200.506"
+                ],
+                [
+                    "17",
+                    "63",
+                    "George Russell",
+                    "Mercedes",
+                    "33",
+                    "18:58:59",
+                    "1:37.221",
+                    "200.401"
+                ],
+                [
+                    "18",
+                    "77",
+                    "Valtteri Bottas",
+                    "Alfa Romeo Ferrari",
+                    "31",
+                    "18:55:54",
+                    "1:37.379",
+                    "200.075"
+                ],
+                [
+                    "19",
+                    "21",
+                    "Nyck De Vries",
+                    "AlphaTauri Honda RBPT",
+                    "30",
+                    "18:54:34",
+                    "1:37.709",
+                    "199.400"
+                ],
+                [
+                    "20",
+                    "81",
+                    "Oscar Piastri",
+                    "McLaren Mercedes",
+                    "3",
+                    "18:08:48",
+                    "1:40.691",
+                    "193.494"
+                ]
+            ]
+        }
     }
 }
