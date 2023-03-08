@@ -2734,5 +2734,1017 @@
                 ]
             ]
         }
+    },
+    "2020": {
+        "All": {
+            "url": "https://www.formula1.com/en/results.html/2020/team.html",
+            "headers": [
+                "Pos",
+                "Team",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "Mercedes",
+                    "573"
+                ],
+                [
+                    "2",
+                    "Red Bull Racing Honda",
+                    "319"
+                ],
+                [
+                    "3",
+                    "McLaren Renault",
+                    "202"
+                ],
+                [
+                    "4",
+                    "Racing Point BWT Mercedes",
+                    "195"
+                ],
+                [
+                    "5",
+                    "Renault",
+                    "181"
+                ],
+                [
+                    "6",
+                    "Ferrari",
+                    "131"
+                ],
+                [
+                    "7",
+                    "AlphaTauri Honda",
+                    "107"
+                ],
+                [
+                    "8",
+                    "Alfa Romeo Racing Ferrari",
+                    "8"
+                ],
+                [
+                    "9",
+                    "Haas Ferrari",
+                    "3"
+                ],
+                [
+                    "10",
+                    "Williams Mercedes",
+                    "0"
+                ]
+            ]
+        },
+        "Alfa Romeo Racing Ferrari": {
+            "url": "https://www.formula1.com/en/results.html/2020/team/alfa_romeo_racing_ferrari.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Austria",
+                    "05 Jul 2020",
+                    "2"
+                ],
+                [
+                    "Styria",
+                    "12 Jul 2020",
+                    "0"
+                ],
+                [
+                    "Hungary",
+                    "19 Jul 2020",
+                    "0"
+                ],
+                [
+                    "Great Britain",
+                    "02 Aug 2020",
+                    "0"
+                ],
+                [
+                    "70th Anniversary",
+                    "09 Aug 2020",
+                    "0"
+                ],
+                [
+                    "Spain",
+                    "16 Aug 2020",
+                    "0"
+                ],
+                [
+                    "Belgium",
+                    "30 Aug 2020",
+                    "0"
+                ],
+                [
+                    "Italy",
+                    "06 Sep 2020",
+                    "0"
+                ],
+                [
+                    "Tuscany",
+                    "13 Sep 2020",
+                    "2"
+                ],
+                [
+                    "Russia",
+                    "27 Sep 2020",
+                    "0"
+                ],
+                [
+                    "Eifel",
+                    "11 Oct 2020",
+                    "1"
+                ],
+                [
+                    "Portugal",
+                    "25 Oct 2020",
+                    "0"
+                ],
+                [
+                    "Emilia Romagna",
+                    "01 Nov 2020",
+                    "3"
+                ],
+                [
+                    "Turkey",
+                    "15 Nov 2020",
+                    "0"
+                ],
+                [
+                    "Bahrain",
+                    "29 Nov 2020",
+                    "0"
+                ],
+                [
+                    "Sakhir",
+                    "06 Dec 2020",
+                    "0"
+                ],
+                [
+                    "Abu Dhabi",
+                    "13 Dec 2020",
+                    "0"
+                ]
+            ]
+        },
+        "AlphaTauri Honda": {
+            "url": "https://www.formula1.com/en/results.html/2020/team/alphatauri_honda.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Austria",
+                    "05 Jul 2020",
+                    "6"
+                ],
+                [
+                    "Styria",
+                    "12 Jul 2020",
+                    "1"
+                ],
+                [
+                    "Hungary",
+                    "19 Jul 2020",
+                    "0"
+                ],
+                [
+                    "Great Britain",
+                    "02 Aug 2020",
+                    "6"
+                ],
+                [
+                    "70th Anniversary",
+                    "09 Aug 2020",
+                    "1"
+                ],
+                [
+                    "Spain",
+                    "16 Aug 2020",
+                    "2"
+                ],
+                [
+                    "Belgium",
+                    "30 Aug 2020",
+                    "4"
+                ],
+                [
+                    "Italy",
+                    "06 Sep 2020",
+                    "27"
+                ],
+                [
+                    "Tuscany",
+                    "13 Sep 2020",
+                    "6"
+                ],
+                [
+                    "Russia",
+                    "27 Sep 2020",
+                    "6"
+                ],
+                [
+                    "Eifel",
+                    "11 Oct 2020",
+                    "8"
+                ],
+                [
+                    "Portugal",
+                    "25 Oct 2020",
+                    "10"
+                ],
+                [
+                    "Emilia Romagna",
+                    "01 Nov 2020",
+                    "12"
+                ],
+                [
+                    "Turkey",
+                    "15 Nov 2020",
+                    "0"
+                ],
+                [
+                    "Bahrain",
+                    "29 Nov 2020",
+                    "8"
+                ],
+                [
+                    "Sakhir",
+                    "06 Dec 2020",
+                    "6"
+                ],
+                [
+                    "Abu Dhabi",
+                    "13 Dec 2020",
+                    "4"
+                ]
+            ]
+        },
+        "Ferrari": {
+            "url": "https://www.formula1.com/en/results.html/2020/team/ferrari.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Austria",
+                    "05 Jul 2020",
+                    "19"
+                ],
+                [
+                    "Styria",
+                    "12 Jul 2020",
+                    "0"
+                ],
+                [
+                    "Hungary",
+                    "19 Jul 2020",
+                    "8"
+                ],
+                [
+                    "Great Britain",
+                    "02 Aug 2020",
+                    "16"
+                ],
+                [
+                    "70th Anniversary",
+                    "09 Aug 2020",
+                    "12"
+                ],
+                [
+                    "Spain",
+                    "16 Aug 2020",
+                    "6"
+                ],
+                [
+                    "Belgium",
+                    "30 Aug 2020",
+                    "0"
+                ],
+                [
+                    "Italy",
+                    "06 Sep 2020",
+                    "0"
+                ],
+                [
+                    "Tuscany",
+                    "13 Sep 2020",
+                    "5"
+                ],
+                [
+                    "Russia",
+                    "27 Sep 2020",
+                    "8"
+                ],
+                [
+                    "Eifel",
+                    "11 Oct 2020",
+                    "6"
+                ],
+                [
+                    "Portugal",
+                    "25 Oct 2020",
+                    "13"
+                ],
+                [
+                    "Emilia Romagna",
+                    "01 Nov 2020",
+                    "10"
+                ],
+                [
+                    "Turkey",
+                    "15 Nov 2020",
+                    "27"
+                ],
+                [
+                    "Bahrain",
+                    "29 Nov 2020",
+                    "1"
+                ],
+                [
+                    "Sakhir",
+                    "06 Dec 2020",
+                    "0"
+                ],
+                [
+                    "Abu Dhabi",
+                    "13 Dec 2020",
+                    "0"
+                ]
+            ]
+        },
+        "Haas Ferrari": {
+            "url": "https://www.formula1.com/en/results.html/2020/team/haas_ferrari.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Austria",
+                    "05 Jul 2020",
+                    "0"
+                ],
+                [
+                    "Styria",
+                    "12 Jul 2020",
+                    "0"
+                ],
+                [
+                    "Hungary",
+                    "19 Jul 2020",
+                    "1"
+                ],
+                [
+                    "Great Britain",
+                    "02 Aug 2020",
+                    "0"
+                ],
+                [
+                    "70th Anniversary",
+                    "09 Aug 2020",
+                    "0"
+                ],
+                [
+                    "Spain",
+                    "16 Aug 2020",
+                    "0"
+                ],
+                [
+                    "Belgium",
+                    "30 Aug 2020",
+                    "0"
+                ],
+                [
+                    "Italy",
+                    "06 Sep 2020",
+                    "0"
+                ],
+                [
+                    "Tuscany",
+                    "13 Sep 2020",
+                    "0"
+                ],
+                [
+                    "Russia",
+                    "27 Sep 2020",
+                    "0"
+                ],
+                [
+                    "Eifel",
+                    "11 Oct 2020",
+                    "2"
+                ],
+                [
+                    "Portugal",
+                    "25 Oct 2020",
+                    "0"
+                ],
+                [
+                    "Emilia Romagna",
+                    "01 Nov 2020",
+                    "0"
+                ],
+                [
+                    "Turkey",
+                    "15 Nov 2020",
+                    "0"
+                ],
+                [
+                    "Bahrain",
+                    "29 Nov 2020",
+                    "0"
+                ],
+                [
+                    "Sakhir",
+                    "06 Dec 2020",
+                    "0"
+                ],
+                [
+                    "Abu Dhabi",
+                    "13 Dec 2020",
+                    "0"
+                ]
+            ]
+        },
+        "McLaren Renault": {
+            "url": "https://www.formula1.com/en/results.html/2020/team/mclaren_renault.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Austria",
+                    "05 Jul 2020",
+                    "26"
+                ],
+                [
+                    "Styria",
+                    "12 Jul 2020",
+                    "13"
+                ],
+                [
+                    "Hungary",
+                    "19 Jul 2020",
+                    "2"
+                ],
+                [
+                    "Great Britain",
+                    "02 Aug 2020",
+                    "10"
+                ],
+                [
+                    "70th Anniversary",
+                    "09 Aug 2020",
+                    "2"
+                ],
+                [
+                    "Spain",
+                    "16 Aug 2020",
+                    "9"
+                ],
+                [
+                    "Belgium",
+                    "30 Aug 2020",
+                    "6"
+                ],
+                [
+                    "Italy",
+                    "06 Sep 2020",
+                    "30"
+                ],
+                [
+                    "Tuscany",
+                    "13 Sep 2020",
+                    "8"
+                ],
+                [
+                    "Russia",
+                    "27 Sep 2020",
+                    "0"
+                ],
+                [
+                    "Eifel",
+                    "11 Oct 2020",
+                    "10"
+                ],
+                [
+                    "Portugal",
+                    "25 Oct 2020",
+                    "8"
+                ],
+                [
+                    "Emilia Romagna",
+                    "01 Nov 2020",
+                    "10"
+                ],
+                [
+                    "Turkey",
+                    "15 Nov 2020",
+                    "15"
+                ],
+                [
+                    "Bahrain",
+                    "29 Nov 2020",
+                    "22"
+                ],
+                [
+                    "Sakhir",
+                    "06 Dec 2020",
+                    "13"
+                ],
+                [
+                    "Abu Dhabi",
+                    "13 Dec 2020",
+                    "18"
+                ]
+            ]
+        },
+        "Mercedes": {
+            "url": "https://www.formula1.com/en/results.html/2020/team/mercedes.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Austria",
+                    "05 Jul 2020",
+                    "37"
+                ],
+                [
+                    "Styria",
+                    "12 Jul 2020",
+                    "43"
+                ],
+                [
+                    "Hungary",
+                    "19 Jul 2020",
+                    "41"
+                ],
+                [
+                    "Great Britain",
+                    "02 Aug 2020",
+                    "25"
+                ],
+                [
+                    "70th Anniversary",
+                    "09 Aug 2020",
+                    "34"
+                ],
+                [
+                    "Spain",
+                    "16 Aug 2020",
+                    "41"
+                ],
+                [
+                    "Belgium",
+                    "30 Aug 2020",
+                    "43"
+                ],
+                [
+                    "Italy",
+                    "06 Sep 2020",
+                    "17"
+                ],
+                [
+                    "Tuscany",
+                    "13 Sep 2020",
+                    "44"
+                ],
+                [
+                    "Russia",
+                    "27 Sep 2020",
+                    "41"
+                ],
+                [
+                    "Eifel",
+                    "11 Oct 2020",
+                    "25"
+                ],
+                [
+                    "Portugal",
+                    "25 Oct 2020",
+                    "44"
+                ],
+                [
+                    "Emilia Romagna",
+                    "01 Nov 2020",
+                    "44"
+                ],
+                [
+                    "Turkey",
+                    "15 Nov 2020",
+                    "25"
+                ],
+                [
+                    "Bahrain",
+                    "29 Nov 2020",
+                    "29"
+                ],
+                [
+                    "Sakhir",
+                    "06 Dec 2020",
+                    "7"
+                ],
+                [
+                    "Abu Dhabi",
+                    "13 Dec 2020",
+                    "33"
+                ]
+            ]
+        },
+        "Racing Point BWT Mercedes": {
+            "url": "https://www.formula1.com/en/results.html/2020/team/racing_point_bwt_mercedes.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Austria",
+                    "05 Jul 2020",
+                    "8"
+                ],
+                [
+                    "Styria",
+                    "12 Jul 2020",
+                    "-1"
+                ],
+                [
+                    "Hungary",
+                    "19 Jul 2020",
+                    "18"
+                ],
+                [
+                    "Great Britain",
+                    "02 Aug 2020",
+                    "2"
+                ],
+                [
+                    "70th Anniversary",
+                    "09 Aug 2020",
+                    "14"
+                ],
+                [
+                    "Spain",
+                    "16 Aug 2020",
+                    "22"
+                ],
+                [
+                    "Belgium",
+                    "30 Aug 2020",
+                    "3"
+                ],
+                [
+                    "Italy",
+                    "06 Sep 2020",
+                    "16"
+                ],
+                [
+                    "Tuscany",
+                    "13 Sep 2020",
+                    "10"
+                ],
+                [
+                    "Russia",
+                    "27 Sep 2020",
+                    "12"
+                ],
+                [
+                    "Eifel",
+                    "11 Oct 2020",
+                    "16"
+                ],
+                [
+                    "Portugal",
+                    "25 Oct 2020",
+                    "6"
+                ],
+                [
+                    "Emilia Romagna",
+                    "01 Nov 2020",
+                    "8"
+                ],
+                [
+                    "Turkey",
+                    "15 Nov 2020",
+                    "20"
+                ],
+                [
+                    "Bahrain",
+                    "29 Nov 2020",
+                    "0"
+                ],
+                [
+                    "Sakhir",
+                    "06 Dec 2020",
+                    "40"
+                ],
+                [
+                    "Abu Dhabi",
+                    "13 Dec 2020",
+                    "1"
+                ]
+            ]
+        },
+        "Red Bull Racing Honda": {
+            "url": "https://www.formula1.com/en/results.html/2020/team/red_bull_racing_honda.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Austria",
+                    "05 Jul 2020",
+                    "0"
+                ],
+                [
+                    "Styria",
+                    "12 Jul 2020",
+                    "27"
+                ],
+                [
+                    "Hungary",
+                    "19 Jul 2020",
+                    "28"
+                ],
+                [
+                    "Great Britain",
+                    "02 Aug 2020",
+                    "23"
+                ],
+                [
+                    "70th Anniversary",
+                    "09 Aug 2020",
+                    "35"
+                ],
+                [
+                    "Spain",
+                    "16 Aug 2020",
+                    "22"
+                ],
+                [
+                    "Belgium",
+                    "30 Aug 2020",
+                    "23"
+                ],
+                [
+                    "Italy",
+                    "06 Sep 2020",
+                    "0"
+                ],
+                [
+                    "Tuscany",
+                    "13 Sep 2020",
+                    "15"
+                ],
+                [
+                    "Russia",
+                    "27 Sep 2020",
+                    "19"
+                ],
+                [
+                    "Eifel",
+                    "11 Oct 2020",
+                    "19"
+                ],
+                [
+                    "Portugal",
+                    "25 Oct 2020",
+                    "15"
+                ],
+                [
+                    "Emilia Romagna",
+                    "01 Nov 2020",
+                    "0"
+                ],
+                [
+                    "Turkey",
+                    "15 Nov 2020",
+                    "14"
+                ],
+                [
+                    "Bahrain",
+                    "29 Nov 2020",
+                    "34"
+                ],
+                [
+                    "Sakhir",
+                    "06 Dec 2020",
+                    "8"
+                ],
+                [
+                    "Abu Dhabi",
+                    "13 Dec 2020",
+                    "37"
+                ]
+            ]
+        },
+        "Renault": {
+            "url": "https://www.formula1.com/en/results.html/2020/team/renault.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Austria",
+                    "05 Jul 2020",
+                    "4"
+                ],
+                [
+                    "Styria",
+                    "12 Jul 2020",
+                    "4"
+                ],
+                [
+                    "Hungary",
+                    "19 Jul 2020",
+                    "4"
+                ],
+                [
+                    "Great Britain",
+                    "02 Aug 2020",
+                    "20"
+                ],
+                [
+                    "70th Anniversary",
+                    "09 Aug 2020",
+                    "4"
+                ],
+                [
+                    "Spain",
+                    "16 Aug 2020",
+                    "0"
+                ],
+                [
+                    "Belgium",
+                    "30 Aug 2020",
+                    "23"
+                ],
+                [
+                    "Italy",
+                    "06 Sep 2020",
+                    "12"
+                ],
+                [
+                    "Tuscany",
+                    "13 Sep 2020",
+                    "12"
+                ],
+                [
+                    "Russia",
+                    "27 Sep 2020",
+                    "16"
+                ],
+                [
+                    "Eifel",
+                    "11 Oct 2020",
+                    "15"
+                ],
+                [
+                    "Portugal",
+                    "25 Oct 2020",
+                    "6"
+                ],
+                [
+                    "Emilia Romagna",
+                    "01 Nov 2020",
+                    "15"
+                ],
+                [
+                    "Turkey",
+                    "15 Nov 2020",
+                    "1"
+                ],
+                [
+                    "Bahrain",
+                    "29 Nov 2020",
+                    "8"
+                ],
+                [
+                    "Sakhir",
+                    "06 Dec 2020",
+                    "28"
+                ],
+                [
+                    "Abu Dhabi",
+                    "13 Dec 2020",
+                    "9"
+                ]
+            ]
+        },
+        "Williams Mercedes": {
+            "url": "https://www.formula1.com/en/results.html/2020/team/williams_mercedes.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Austria",
+                    "05 Jul 2020",
+                    "0"
+                ],
+                [
+                    "Styria",
+                    "12 Jul 2020",
+                    "0"
+                ],
+                [
+                    "Hungary",
+                    "19 Jul 2020",
+                    "0"
+                ],
+                [
+                    "Great Britain",
+                    "02 Aug 2020",
+                    "0"
+                ],
+                [
+                    "70th Anniversary",
+                    "09 Aug 2020",
+                    "0"
+                ],
+                [
+                    "Spain",
+                    "16 Aug 2020",
+                    "0"
+                ],
+                [
+                    "Belgium",
+                    "30 Aug 2020",
+                    "0"
+                ],
+                [
+                    "Italy",
+                    "06 Sep 2020",
+                    "0"
+                ],
+                [
+                    "Tuscany",
+                    "13 Sep 2020",
+                    "0"
+                ],
+                [
+                    "Russia",
+                    "27 Sep 2020",
+                    "0"
+                ],
+                [
+                    "Eifel",
+                    "11 Oct 2020",
+                    "0"
+                ],
+                [
+                    "Portugal",
+                    "25 Oct 2020",
+                    "0"
+                ],
+                [
+                    "Emilia Romagna",
+                    "01 Nov 2020",
+                    "0"
+                ],
+                [
+                    "Turkey",
+                    "15 Nov 2020",
+                    "0"
+                ],
+                [
+                    "Bahrain",
+                    "29 Nov 2020",
+                    "0"
+                ],
+                [
+                    "Sakhir",
+                    "06 Dec 2020",
+                    "0"
+                ],
+                [
+                    "Abu Dhabi",
+                    "13 Dec 2020",
+                    "0"
+                ]
+            ]
+        }
     }
 }

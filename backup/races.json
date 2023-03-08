@@ -8734,5 +8734,3305 @@
                 ]
             ]
         }
+    },
+    "2020": {
+        "Austria": {
+            "url": "https://www.formula1.com/en/results.html/2020/races/1045/austria/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "77",
+                    "Valtteri Bottas",
+                    "Mercedes",
+                    "71",
+                    "1:30:55.739",
+                    "25"
+                ],
+                [
+                    "2",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "71",
+                    "+2.700s",
+                    "18"
+                ],
+                [
+                    "3",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Renault",
+                    "71",
+                    "+5.491s",
+                    "16"
+                ],
+                [
+                    "4",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "71",
+                    "+5.689s",
+                    "12"
+                ],
+                [
+                    "5",
+                    "55",
+                    "Carlos Sainz",
+                    "McLaren Renault",
+                    "71",
+                    "+8.903s",
+                    "10"
+                ],
+                [
+                    "6",
+                    "11",
+                    "Sergio Perez",
+                    "Racing Point BWT Mercedes",
+                    "71",
+                    "+15.092s",
+                    "8"
+                ],
+                [
+                    "7",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri Honda",
+                    "71",
+                    "+16.682s",
+                    "6"
+                ],
+                [
+                    "8",
+                    "31",
+                    "Esteban Ocon",
+                    "Renault",
+                    "71",
+                    "+17.456s",
+                    "4"
+                ],
+                [
+                    "9",
+                    "99",
+                    "Antonio Giovinazzi",
+                    "Alfa Romeo Racing Ferrari",
+                    "71",
+                    "+21.146s",
+                    "2"
+                ],
+                [
+                    "10",
+                    "5",
+                    "Sebastian Vettel",
+                    "Ferrari",
+                    "71",
+                    "+24.545s",
+                    "1"
+                ],
+                [
+                    "11",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "71",
+                    "+31.650s",
+                    "0"
+                ],
+                [
+                    "12",
+                    "26",
+                    "Daniil Kvyat",
+                    "AlphaTauri Honda",
+                    "69",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "13",
+                    "23",
+                    "Alexander Albon",
+                    "Red Bull Racing Honda",
+                    "67",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "7",
+                    "Kimi R\u00e4ikk\u00f6nen",
+                    "Alfa Romeo Racing Ferrari",
+                    "53",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "63",
+                    "George Russell",
+                    "Williams Mercedes",
+                    "49",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "8",
+                    "Romain Grosjean",
+                    "Haas Ferrari",
+                    "49",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "24",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "18",
+                    "Lance Stroll",
+                    "Racing Point BWT Mercedes",
+                    "20",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "3",
+                    "Daniel Ricciardo",
+                    "Renault",
+                    "17",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "33",
+                    "Max Verstappen",
+                    "Red Bull Racing Honda",
+                    "11",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "Styria": {
+            "url": "https://www.formula1.com/en/results.html/2020/races/1046/austria/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "71",
+                    "1:22:50.683",
+                    "25"
+                ],
+                [
+                    "2",
+                    "77",
+                    "Valtteri Bottas",
+                    "Mercedes",
+                    "71",
+                    "+13.719s",
+                    "18"
+                ],
+                [
+                    "3",
+                    "33",
+                    "Max Verstappen",
+                    "Red Bull Racing Honda",
+                    "71",
+                    "+33.698s",
+                    "15"
+                ],
+                [
+                    "4",
+                    "23",
+                    "Alexander Albon",
+                    "Red Bull Racing Honda",
+                    "71",
+                    "+44.400s",
+                    "12"
+                ],
+                [
+                    "5",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Renault",
+                    "71",
+                    "+61.470s",
+                    "10"
+                ],
+                [
+                    "6",
+                    "11",
+                    "Sergio Perez",
+                    "Racing Point BWT Mercedes",
+                    "71",
+                    "+62.387s",
+                    "8"
+                ],
+                [
+                    "7",
+                    "18",
+                    "Lance Stroll",
+                    "Racing Point BWT Mercedes",
+                    "71",
+                    "+62.453s",
+                    "6"
+                ],
+                [
+                    "8",
+                    "3",
+                    "Daniel Ricciardo",
+                    "Renault",
+                    "71",
+                    "+62.591s",
+                    "4"
+                ],
+                [
+                    "9",
+                    "55",
+                    "Carlos Sainz",
+                    "McLaren Renault",
+                    "70",
+                    "+1 lap",
+                    "3"
+                ],
+                [
+                    "10",
+                    "26",
+                    "Daniil Kvyat",
+                    "AlphaTauri Honda",
+                    "70",
+                    "+1 lap",
+                    "1"
+                ],
+                [
+                    "11",
+                    "7",
+                    "Kimi R\u00e4ikk\u00f6nen",
+                    "Alfa Romeo Racing Ferrari",
+                    "70",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "12",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "70",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "13",
+                    "8",
+                    "Romain Grosjean",
+                    "Haas Ferrari",
+                    "70",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "14",
+                    "99",
+                    "Antonio Giovinazzi",
+                    "Alfa Romeo Racing Ferrari",
+                    "70",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "15",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri Honda",
+                    "70",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "16",
+                    "63",
+                    "George Russell",
+                    "Williams Mercedes",
+                    "69",
+                    "+2 laps",
+                    "0"
+                ],
+                [
+                    "17",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "69",
+                    "+2 laps",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "31",
+                    "Esteban Ocon",
+                    "Renault",
+                    "25",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "4",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "5",
+                    "Sebastian Vettel",
+                    "Ferrari",
+                    "1",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "Hungary": {
+            "url": "https://www.formula1.com/en/results.html/2020/races/1047/hungary/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "70",
+                    "1:36:12.473",
+                    "26"
+                ],
+                [
+                    "2",
+                    "33",
+                    "Max Verstappen",
+                    "Red Bull Racing Honda",
+                    "70",
+                    "+8.702s",
+                    "18"
+                ],
+                [
+                    "3",
+                    "77",
+                    "Valtteri Bottas",
+                    "Mercedes",
+                    "70",
+                    "+9.452s",
+                    "15"
+                ],
+                [
+                    "4",
+                    "18",
+                    "Lance Stroll",
+                    "Racing Point BWT Mercedes",
+                    "70",
+                    "+57.579s",
+                    "12"
+                ],
+                [
+                    "5",
+                    "23",
+                    "Alexander Albon",
+                    "Red Bull Racing Honda",
+                    "70",
+                    "+78.316s",
+                    "10"
+                ],
+                [
+                    "6",
+                    "5",
+                    "Sebastian Vettel",
+                    "Ferrari",
+                    "69",
+                    "+1 lap",
+                    "8"
+                ],
+                [
+                    "7",
+                    "11",
+                    "Sergio Perez",
+                    "Racing Point BWT Mercedes",
+                    "69",
+                    "+1 lap",
+                    "6"
+                ],
+                [
+                    "8",
+                    "3",
+                    "Daniel Ricciardo",
+                    "Renault",
+                    "69",
+                    "+1 lap",
+                    "4"
+                ],
+                [
+                    "9",
+                    "55",
+                    "Carlos Sainz",
+                    "McLaren Renault",
+                    "69",
+                    "+1 lap",
+                    "2"
+                ],
+                [
+                    "10",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "69",
+                    "+1 lap",
+                    "1"
+                ],
+                [
+                    "11",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "69",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "12",
+                    "26",
+                    "Daniil Kvyat",
+                    "AlphaTauri Honda",
+                    "69",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "13",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Renault",
+                    "69",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "14",
+                    "31",
+                    "Esteban Ocon",
+                    "Renault",
+                    "69",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "15",
+                    "7",
+                    "Kimi R\u00e4ikk\u00f6nen",
+                    "Alfa Romeo Racing Ferrari",
+                    "69",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "16",
+                    "8",
+                    "Romain Grosjean",
+                    "Haas Ferrari",
+                    "69",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "17",
+                    "99",
+                    "Antonio Giovinazzi",
+                    "Alfa Romeo Racing Ferrari",
+                    "69",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "18",
+                    "63",
+                    "George Russell",
+                    "Williams Mercedes",
+                    "69",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "19",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "65",
+                    "+5 laps",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri Honda",
+                    "15",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "Great Britain": {
+            "url": "https://www.formula1.com/en/results.html/2020/races/1048/great-britain/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "52",
+                    "1:28:01.283",
+                    "25"
+                ],
+                [
+                    "2",
+                    "33",
+                    "Max Verstappen",
+                    "Red Bull Racing Honda",
+                    "52",
+                    "+5.856s",
+                    "19"
+                ],
+                [
+                    "3",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "52",
+                    "+18.474s",
+                    "15"
+                ],
+                [
+                    "4",
+                    "3",
+                    "Daniel Ricciardo",
+                    "Renault",
+                    "52",
+                    "+19.650s",
+                    "12"
+                ],
+                [
+                    "5",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Renault",
+                    "52",
+                    "+22.277s",
+                    "10"
+                ],
+                [
+                    "6",
+                    "31",
+                    "Esteban Ocon",
+                    "Renault",
+                    "52",
+                    "+26.937s",
+                    "8"
+                ],
+                [
+                    "7",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri Honda",
+                    "52",
+                    "+31.188s",
+                    "6"
+                ],
+                [
+                    "8",
+                    "23",
+                    "Alexander Albon",
+                    "Red Bull Racing Honda",
+                    "52",
+                    "+32.670s",
+                    "4"
+                ],
+                [
+                    "9",
+                    "18",
+                    "Lance Stroll",
+                    "Racing Point BWT Mercedes",
+                    "52",
+                    "+37.311s",
+                    "2"
+                ],
+                [
+                    "10",
+                    "5",
+                    "Sebastian Vettel",
+                    "Ferrari",
+                    "52",
+                    "+41.857s",
+                    "1"
+                ],
+                [
+                    "11",
+                    "77",
+                    "Valtteri Bottas",
+                    "Mercedes",
+                    "52",
+                    "+42.167s",
+                    "0"
+                ],
+                [
+                    "12",
+                    "63",
+                    "George Russell",
+                    "Williams Mercedes",
+                    "52",
+                    "+52.004s",
+                    "0"
+                ],
+                [
+                    "13",
+                    "55",
+                    "Carlos Sainz",
+                    "McLaren Renault",
+                    "52",
+                    "+53.370s",
+                    "0"
+                ],
+                [
+                    "14",
+                    "99",
+                    "Antonio Giovinazzi",
+                    "Alfa Romeo Racing Ferrari",
+                    "52",
+                    "+54.205s",
+                    "0"
+                ],
+                [
+                    "15",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "52",
+                    "+54.549s",
+                    "0"
+                ],
+                [
+                    "16",
+                    "8",
+                    "Romain Grosjean",
+                    "Haas Ferrari",
+                    "52",
+                    "+55.050s",
+                    "0"
+                ],
+                [
+                    "17",
+                    "7",
+                    "Kimi R\u00e4ikk\u00f6nen",
+                    "Alfa Romeo Racing Ferrari",
+                    "51",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "26",
+                    "Daniil Kvyat",
+                    "AlphaTauri Honda",
+                    "11",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "1",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "27",
+                    "Nico Hulkenberg",
+                    "Racing Point BWT Mercedes",
+                    "0",
+                    "DNS",
+                    "0"
+                ]
+            ]
+        },
+        "70th Anniversary": {
+            "url": "https://www.formula1.com/en/results.html/2020/races/1049/great-britain/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "33",
+                    "Max Verstappen",
+                    "Red Bull Racing Honda",
+                    "52",
+                    "1:19:41.993",
+                    "25"
+                ],
+                [
+                    "2",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "52",
+                    "+11.326s",
+                    "19"
+                ],
+                [
+                    "3",
+                    "77",
+                    "Valtteri Bottas",
+                    "Mercedes",
+                    "52",
+                    "+19.231s",
+                    "15"
+                ],
+                [
+                    "4",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "52",
+                    "+29.289s",
+                    "12"
+                ],
+                [
+                    "5",
+                    "23",
+                    "Alexander Albon",
+                    "Red Bull Racing Honda",
+                    "52",
+                    "+39.146s",
+                    "10"
+                ],
+                [
+                    "6",
+                    "18",
+                    "Lance Stroll",
+                    "Racing Point BWT Mercedes",
+                    "52",
+                    "+42.538s",
+                    "8"
+                ],
+                [
+                    "7",
+                    "27",
+                    "Nico Hulkenberg",
+                    "Racing Point BWT Mercedes",
+                    "52",
+                    "+55.951s",
+                    "6"
+                ],
+                [
+                    "8",
+                    "31",
+                    "Esteban Ocon",
+                    "Renault",
+                    "52",
+                    "+64.773s",
+                    "4"
+                ],
+                [
+                    "9",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Renault",
+                    "52",
+                    "+65.544s",
+                    "2"
+                ],
+                [
+                    "10",
+                    "26",
+                    "Daniil Kvyat",
+                    "AlphaTauri Honda",
+                    "52",
+                    "+69.669s",
+                    "1"
+                ],
+                [
+                    "11",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri Honda",
+                    "52",
+                    "+70.642s",
+                    "0"
+                ],
+                [
+                    "12",
+                    "5",
+                    "Sebastian Vettel",
+                    "Ferrari",
+                    "52",
+                    "+73.370s",
+                    "0"
+                ],
+                [
+                    "13",
+                    "55",
+                    "Carlos Sainz",
+                    "McLaren Renault",
+                    "52",
+                    "+74.070s",
+                    "0"
+                ],
+                [
+                    "14",
+                    "3",
+                    "Daniel Ricciardo",
+                    "Renault",
+                    "51",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "15",
+                    "7",
+                    "Kimi R\u00e4ikk\u00f6nen",
+                    "Alfa Romeo Racing Ferrari",
+                    "51",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "16",
+                    "8",
+                    "Romain Grosjean",
+                    "Haas Ferrari",
+                    "51",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "17",
+                    "99",
+                    "Antonio Giovinazzi",
+                    "Alfa Romeo Racing Ferrari",
+                    "51",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "18",
+                    "63",
+                    "George Russell",
+                    "Williams Mercedes",
+                    "51",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "19",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "51",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "43",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "Spain": {
+            "url": "https://www.formula1.com/en/results.html/2020/races/1050/spain/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "66",
+                    "1:31:45.279",
+                    "25"
+                ],
+                [
+                    "2",
+                    "33",
+                    "Max Verstappen",
+                    "Red Bull Racing Honda",
+                    "66",
+                    "+24.177s",
+                    "18"
+                ],
+                [
+                    "3",
+                    "77",
+                    "Valtteri Bottas",
+                    "Mercedes",
+                    "66",
+                    "+44.752s",
+                    "16"
+                ],
+                [
+                    "4",
+                    "18",
+                    "Lance Stroll",
+                    "Racing Point BWT Mercedes",
+                    "65",
+                    "+1 lap",
+                    "12"
+                ],
+                [
+                    "5",
+                    "11",
+                    "Sergio Perez",
+                    "Racing Point BWT Mercedes",
+                    "65",
+                    "+1 lap",
+                    "10"
+                ],
+                [
+                    "6",
+                    "55",
+                    "Carlos Sainz",
+                    "McLaren Renault",
+                    "65",
+                    "+1 lap",
+                    "8"
+                ],
+                [
+                    "7",
+                    "5",
+                    "Sebastian Vettel",
+                    "Ferrari",
+                    "65",
+                    "+1 lap",
+                    "6"
+                ],
+                [
+                    "8",
+                    "23",
+                    "Alexander Albon",
+                    "Red Bull Racing Honda",
+                    "65",
+                    "+1 lap",
+                    "4"
+                ],
+                [
+                    "9",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri Honda",
+                    "65",
+                    "+1 lap",
+                    "2"
+                ],
+                [
+                    "10",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Renault",
+                    "65",
+                    "+1 lap",
+                    "1"
+                ],
+                [
+                    "11",
+                    "3",
+                    "Daniel Ricciardo",
+                    "Renault",
+                    "65",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "12",
+                    "26",
+                    "Daniil Kvyat",
+                    "AlphaTauri Honda",
+                    "65",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "13",
+                    "31",
+                    "Esteban Ocon",
+                    "Renault",
+                    "65",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "14",
+                    "7",
+                    "Kimi R\u00e4ikk\u00f6nen",
+                    "Alfa Romeo Racing Ferrari",
+                    "65",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "15",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "65",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "16",
+                    "99",
+                    "Antonio Giovinazzi",
+                    "Alfa Romeo Racing Ferrari",
+                    "65",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "17",
+                    "63",
+                    "George Russell",
+                    "Williams Mercedes",
+                    "65",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "18",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "64",
+                    "+2 laps",
+                    "0"
+                ],
+                [
+                    "19",
+                    "8",
+                    "Romain Grosjean",
+                    "Haas Ferrari",
+                    "64",
+                    "+2 laps",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "38",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "Belgium": {
+            "url": "https://www.formula1.com/en/results.html/2020/races/1051/belgium/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "44",
+                    "1:24:08.761",
+                    "25"
+                ],
+                [
+                    "2",
+                    "77",
+                    "Valtteri Bottas",
+                    "Mercedes",
+                    "44",
+                    "+8.448s",
+                    "18"
+                ],
+                [
+                    "3",
+                    "33",
+                    "Max Verstappen",
+                    "Red Bull Racing Honda",
+                    "44",
+                    "+15.455s",
+                    "15"
+                ],
+                [
+                    "4",
+                    "3",
+                    "Daniel Ricciardo",
+                    "Renault",
+                    "44",
+                    "+18.877s",
+                    "13"
+                ],
+                [
+                    "5",
+                    "31",
+                    "Esteban Ocon",
+                    "Renault",
+                    "44",
+                    "+40.650s",
+                    "10"
+                ],
+                [
+                    "6",
+                    "23",
+                    "Alexander Albon",
+                    "Red Bull Racing Honda",
+                    "44",
+                    "+42.712s",
+                    "8"
+                ],
+                [
+                    "7",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Renault",
+                    "44",
+                    "+43.774s",
+                    "6"
+                ],
+                [
+                    "8",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri Honda",
+                    "44",
+                    "+47.371s",
+                    "4"
+                ],
+                [
+                    "9",
+                    "18",
+                    "Lance Stroll",
+                    "Racing Point BWT Mercedes",
+                    "44",
+                    "+52.603s",
+                    "2"
+                ],
+                [
+                    "10",
+                    "11",
+                    "Sergio Perez",
+                    "Racing Point BWT Mercedes",
+                    "44",
+                    "+53.179s",
+                    "1"
+                ],
+                [
+                    "11",
+                    "26",
+                    "Daniil Kvyat",
+                    "AlphaTauri Honda",
+                    "44",
+                    "+70.200s",
+                    "0"
+                ],
+                [
+                    "12",
+                    "7",
+                    "Kimi R\u00e4ikk\u00f6nen",
+                    "Alfa Romeo Racing Ferrari",
+                    "44",
+                    "+71.504s",
+                    "0"
+                ],
+                [
+                    "13",
+                    "5",
+                    "Sebastian Vettel",
+                    "Ferrari",
+                    "44",
+                    "+72.894s",
+                    "0"
+                ],
+                [
+                    "14",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "44",
+                    "+74.920s",
+                    "0"
+                ],
+                [
+                    "15",
+                    "8",
+                    "Romain Grosjean",
+                    "Haas Ferrari",
+                    "44",
+                    "+76.793s",
+                    "0"
+                ],
+                [
+                    "16",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "44",
+                    "+77.795s",
+                    "0"
+                ],
+                [
+                    "17",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "44",
+                    "+85.540s",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "99",
+                    "Antonio Giovinazzi",
+                    "Alfa Romeo Racing Ferrari",
+                    "9",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "63",
+                    "George Russell",
+                    "Williams Mercedes",
+                    "9",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "55",
+                    "Carlos Sainz",
+                    "McLaren Renault",
+                    "0",
+                    "DNS",
+                    "0"
+                ]
+            ]
+        },
+        "Italy": {
+            "url": "https://www.formula1.com/en/results.html/2020/races/1052/italy/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri Honda",
+                    "53",
+                    "1:47:06.056",
+                    "25"
+                ],
+                [
+                    "2",
+                    "55",
+                    "Carlos Sainz",
+                    "McLaren Renault",
+                    "53",
+                    "+0.415s",
+                    "18"
+                ],
+                [
+                    "3",
+                    "18",
+                    "Lance Stroll",
+                    "Racing Point BWT Mercedes",
+                    "53",
+                    "+3.358s",
+                    "15"
+                ],
+                [
+                    "4",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Renault",
+                    "53",
+                    "+6.000s",
+                    "12"
+                ],
+                [
+                    "5",
+                    "77",
+                    "Valtteri Bottas",
+                    "Mercedes",
+                    "53",
+                    "+7.108s",
+                    "10"
+                ],
+                [
+                    "6",
+                    "3",
+                    "Daniel Ricciardo",
+                    "Renault",
+                    "53",
+                    "+8.391s",
+                    "8"
+                ],
+                [
+                    "7",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "53",
+                    "+17.245s",
+                    "7"
+                ],
+                [
+                    "8",
+                    "31",
+                    "Esteban Ocon",
+                    "Renault",
+                    "53",
+                    "+18.691s",
+                    "4"
+                ],
+                [
+                    "9",
+                    "26",
+                    "Daniil Kvyat",
+                    "AlphaTauri Honda",
+                    "53",
+                    "+22.208s",
+                    "2"
+                ],
+                [
+                    "10",
+                    "11",
+                    "Sergio Perez",
+                    "Racing Point BWT Mercedes",
+                    "53",
+                    "+23.224s",
+                    "1"
+                ],
+                [
+                    "11",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "53",
+                    "+32.876s",
+                    "0"
+                ],
+                [
+                    "12",
+                    "8",
+                    "Romain Grosjean",
+                    "Haas Ferrari",
+                    "53",
+                    "+35.164s",
+                    "0"
+                ],
+                [
+                    "13",
+                    "7",
+                    "Kimi R\u00e4ikk\u00f6nen",
+                    "Alfa Romeo Racing Ferrari",
+                    "53",
+                    "+36.312s",
+                    "0"
+                ],
+                [
+                    "14",
+                    "63",
+                    "George Russell",
+                    "Williams Mercedes",
+                    "53",
+                    "+36.593s",
+                    "0"
+                ],
+                [
+                    "15",
+                    "23",
+                    "Alexander Albon",
+                    "Red Bull Racing Honda",
+                    "53",
+                    "+37.533s",
+                    "0"
+                ],
+                [
+                    "16",
+                    "99",
+                    "Antonio Giovinazzi",
+                    "Alfa Romeo Racing Ferrari",
+                    "53",
+                    "+55.199s",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "33",
+                    "Max Verstappen",
+                    "Red Bull Racing Honda",
+                    "30",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "23",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "17",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "5",
+                    "Sebastian Vettel",
+                    "Ferrari",
+                    "6",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "Tuscany": {
+            "url": "https://www.formula1.com/en/results.html/2020/races/1053/italy/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "59",
+                    "2:19:35.060",
+                    "26"
+                ],
+                [
+                    "2",
+                    "77",
+                    "Valtteri Bottas",
+                    "Mercedes",
+                    "59",
+                    "+4.880s",
+                    "18"
+                ],
+                [
+                    "3",
+                    "23",
+                    "Alexander Albon",
+                    "Red Bull Racing Honda",
+                    "59",
+                    "+8.064s",
+                    "15"
+                ],
+                [
+                    "4",
+                    "3",
+                    "Daniel Ricciardo",
+                    "Renault",
+                    "59",
+                    "+10.417s",
+                    "12"
+                ],
+                [
+                    "5",
+                    "11",
+                    "Sergio Perez",
+                    "Racing Point BWT Mercedes",
+                    "59",
+                    "+15.650s",
+                    "10"
+                ],
+                [
+                    "6",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Renault",
+                    "59",
+                    "+18.883s",
+                    "8"
+                ],
+                [
+                    "7",
+                    "26",
+                    "Daniil Kvyat",
+                    "AlphaTauri Honda",
+                    "59",
+                    "+21.756s",
+                    "6"
+                ],
+                [
+                    "8",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "59",
+                    "+28.345s",
+                    "4"
+                ],
+                [
+                    "9",
+                    "7",
+                    "Kimi R\u00e4ikk\u00f6nen",
+                    "Alfa Romeo Racing Ferrari",
+                    "59",
+                    "+29.770s",
+                    "2"
+                ],
+                [
+                    "10",
+                    "5",
+                    "Sebastian Vettel",
+                    "Ferrari",
+                    "59",
+                    "+29.983s",
+                    "1"
+                ],
+                [
+                    "11",
+                    "63",
+                    "George Russell",
+                    "Williams Mercedes",
+                    "59",
+                    "+32.404s",
+                    "0"
+                ],
+                [
+                    "12",
+                    "8",
+                    "Romain Grosjean",
+                    "Haas Ferrari",
+                    "59",
+                    "+42.036s",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "18",
+                    "Lance Stroll",
+                    "Racing Point BWT Mercedes",
+                    "42",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "31",
+                    "Esteban Ocon",
+                    "Renault",
+                    "7",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "6",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "5",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "99",
+                    "Antonio Giovinazzi",
+                    "Alfa Romeo Racing Ferrari",
+                    "5",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "55",
+                    "Carlos Sainz",
+                    "McLaren Renault",
+                    "5",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "33",
+                    "Max Verstappen",
+                    "Red Bull Racing Honda",
+                    "0",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri Honda",
+                    "0",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "Russia": {
+            "url": "https://www.formula1.com/en/results.html/2020/races/1054/russia/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "77",
+                    "Valtteri Bottas",
+                    "Mercedes",
+                    "53",
+                    "1:34:00.364",
+                    "26"
+                ],
+                [
+                    "2",
+                    "33",
+                    "Max Verstappen",
+                    "Red Bull Racing Honda",
+                    "53",
+                    "+7.729s",
+                    "18"
+                ],
+                [
+                    "3",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "53",
+                    "+22.729s",
+                    "15"
+                ],
+                [
+                    "4",
+                    "11",
+                    "Sergio Perez",
+                    "Racing Point BWT Mercedes",
+                    "53",
+                    "+30.558s",
+                    "12"
+                ],
+                [
+                    "5",
+                    "3",
+                    "Daniel Ricciardo",
+                    "Renault",
+                    "53",
+                    "+52.065s",
+                    "10"
+                ],
+                [
+                    "6",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "53",
+                    "+62.186s",
+                    "8"
+                ],
+                [
+                    "7",
+                    "31",
+                    "Esteban Ocon",
+                    "Renault",
+                    "53",
+                    "+68.006s",
+                    "6"
+                ],
+                [
+                    "8",
+                    "26",
+                    "Daniil Kvyat",
+                    "AlphaTauri Honda",
+                    "53",
+                    "+68.740s",
+                    "4"
+                ],
+                [
+                    "9",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri Honda",
+                    "53",
+                    "+89.766s",
+                    "2"
+                ],
+                [
+                    "10",
+                    "23",
+                    "Alexander Albon",
+                    "Red Bull Racing Honda",
+                    "53",
+                    "+97.860s",
+                    "1"
+                ],
+                [
+                    "11",
+                    "99",
+                    "Antonio Giovinazzi",
+                    "Alfa Romeo Racing Ferrari",
+                    "52",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "12",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "52",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "13",
+                    "5",
+                    "Sebastian Vettel",
+                    "Ferrari",
+                    "52",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "14",
+                    "7",
+                    "Kimi R\u00e4ikk\u00f6nen",
+                    "Alfa Romeo Racing Ferrari",
+                    "52",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "15",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Renault",
+                    "52",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "16",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "52",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "17",
+                    "8",
+                    "Romain Grosjean",
+                    "Haas Ferrari",
+                    "52",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "18",
+                    "63",
+                    "George Russell",
+                    "Williams Mercedes",
+                    "52",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "55",
+                    "Carlos Sainz",
+                    "McLaren Renault",
+                    "0",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "18",
+                    "Lance Stroll",
+                    "Racing Point BWT Mercedes",
+                    "0",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "Eifel": {
+            "url": "https://www.formula1.com/en/results.html/2020/races/1055/germany/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "60",
+                    "1:35:49.641",
+                    "25"
+                ],
+                [
+                    "2",
+                    "33",
+                    "Max Verstappen",
+                    "Red Bull Racing Honda",
+                    "60",
+                    "+4.470s",
+                    "19"
+                ],
+                [
+                    "3",
+                    "3",
+                    "Daniel Ricciardo",
+                    "Renault",
+                    "60",
+                    "+14.613s",
+                    "15"
+                ],
+                [
+                    "4",
+                    "11",
+                    "Sergio Perez",
+                    "Racing Point BWT Mercedes",
+                    "60",
+                    "+16.070s",
+                    "12"
+                ],
+                [
+                    "5",
+                    "55",
+                    "Carlos Sainz",
+                    "McLaren Renault",
+                    "60",
+                    "+21.905s",
+                    "10"
+                ],
+                [
+                    "6",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri Honda",
+                    "60",
+                    "+22.766s",
+                    "8"
+                ],
+                [
+                    "7",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "60",
+                    "+30.814s",
+                    "6"
+                ],
+                [
+                    "8",
+                    "27",
+                    "Nico Hulkenberg",
+                    "Racing Point BWT Mercedes",
+                    "60",
+                    "+32.596s",
+                    "4"
+                ],
+                [
+                    "9",
+                    "8",
+                    "Romain Grosjean",
+                    "Haas Ferrari",
+                    "60",
+                    "+39.081s",
+                    "2"
+                ],
+                [
+                    "10",
+                    "99",
+                    "Antonio Giovinazzi",
+                    "Alfa Romeo Racing Ferrari",
+                    "60",
+                    "+40.035s",
+                    "1"
+                ],
+                [
+                    "11",
+                    "5",
+                    "Sebastian Vettel",
+                    "Ferrari",
+                    "60",
+                    "+40.810s",
+                    "0"
+                ],
+                [
+                    "12",
+                    "7",
+                    "Kimi R\u00e4ikk\u00f6nen",
+                    "Alfa Romeo Racing Ferrari",
+                    "60",
+                    "+41.476s",
+                    "0"
+                ],
+                [
+                    "13",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "60",
+                    "+49.585s",
+                    "0"
+                ],
+                [
+                    "14",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "60",
+                    "+54.449s",
+                    "0"
+                ],
+                [
+                    "15",
+                    "26",
+                    "Daniil Kvyat",
+                    "AlphaTauri Honda",
+                    "60",
+                    "+55.588s",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Renault",
+                    "42",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "23",
+                    "Alexander Albon",
+                    "Red Bull Racing Honda",
+                    "23",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "31",
+                    "Esteban Ocon",
+                    "Renault",
+                    "22",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "77",
+                    "Valtteri Bottas",
+                    "Mercedes",
+                    "18",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "63",
+                    "George Russell",
+                    "Williams Mercedes",
+                    "12",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "Portugal": {
+            "url": "https://www.formula1.com/en/results.html/2020/races/1056/portugal/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "66",
+                    "1:29:56.828",
+                    "26"
+                ],
+                [
+                    "2",
+                    "77",
+                    "Valtteri Bottas",
+                    "Mercedes",
+                    "66",
+                    "+25.592s",
+                    "18"
+                ],
+                [
+                    "3",
+                    "33",
+                    "Max Verstappen",
+                    "Red Bull Racing Honda",
+                    "66",
+                    "+34.508s",
+                    "15"
+                ],
+                [
+                    "4",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "66",
+                    "+65.312s",
+                    "12"
+                ],
+                [
+                    "5",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri Honda",
+                    "65",
+                    "+1 lap",
+                    "10"
+                ],
+                [
+                    "6",
+                    "55",
+                    "Carlos Sainz",
+                    "McLaren Renault",
+                    "65",
+                    "+1 lap",
+                    "8"
+                ],
+                [
+                    "7",
+                    "11",
+                    "Sergio Perez",
+                    "Racing Point BWT Mercedes",
+                    "65",
+                    "+1 lap",
+                    "6"
+                ],
+                [
+                    "8",
+                    "31",
+                    "Esteban Ocon",
+                    "Renault",
+                    "65",
+                    "+1 lap",
+                    "4"
+                ],
+                [
+                    "9",
+                    "3",
+                    "Daniel Ricciardo",
+                    "Renault",
+                    "65",
+                    "+1 lap",
+                    "2"
+                ],
+                [
+                    "10",
+                    "5",
+                    "Sebastian Vettel",
+                    "Ferrari",
+                    "65",
+                    "+1 lap",
+                    "1"
+                ],
+                [
+                    "11",
+                    "7",
+                    "Kimi R\u00e4ikk\u00f6nen",
+                    "Alfa Romeo Racing Ferrari",
+                    "65",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "12",
+                    "23",
+                    "Alexander Albon",
+                    "Red Bull Racing Honda",
+                    "65",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "13",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Renault",
+                    "65",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "14",
+                    "63",
+                    "George Russell",
+                    "Williams Mercedes",
+                    "65",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "15",
+                    "99",
+                    "Antonio Giovinazzi",
+                    "Alfa Romeo Racing Ferrari",
+                    "65",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "16",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "65",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "17",
+                    "8",
+                    "Romain Grosjean",
+                    "Haas Ferrari",
+                    "65",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "18",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "64",
+                    "+2 laps",
+                    "0"
+                ],
+                [
+                    "19",
+                    "26",
+                    "Daniil Kvyat",
+                    "AlphaTauri Honda",
+                    "64",
+                    "+2 laps",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "18",
+                    "Lance Stroll",
+                    "Racing Point BWT Mercedes",
+                    "51",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "Emilia Romagna": {
+            "url": "https://www.formula1.com/en/results.html/2020/races/1057/italy/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "63",
+                    "1:28:32.430",
+                    "26"
+                ],
+                [
+                    "2",
+                    "77",
+                    "Valtteri Bottas",
+                    "Mercedes",
+                    "63",
+                    "+5.783s",
+                    "18"
+                ],
+                [
+                    "3",
+                    "3",
+                    "Daniel Ricciardo",
+                    "Renault",
+                    "63",
+                    "+14.320s",
+                    "15"
+                ],
+                [
+                    "4",
+                    "26",
+                    "Daniil Kvyat",
+                    "AlphaTauri Honda",
+                    "63",
+                    "+15.141s",
+                    "12"
+                ],
+                [
+                    "5",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "63",
+                    "+19.111s",
+                    "10"
+                ],
+                [
+                    "6",
+                    "11",
+                    "Sergio Perez",
+                    "Racing Point BWT Mercedes",
+                    "63",
+                    "+19.652s",
+                    "8"
+                ],
+                [
+                    "7",
+                    "55",
+                    "Carlos Sainz",
+                    "McLaren Renault",
+                    "63",
+                    "+20.230s",
+                    "6"
+                ],
+                [
+                    "8",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Renault",
+                    "63",
+                    "+21.131s",
+                    "4"
+                ],
+                [
+                    "9",
+                    "7",
+                    "Kimi R\u00e4ikk\u00f6nen",
+                    "Alfa Romeo Racing Ferrari",
+                    "63",
+                    "+22.224s",
+                    "2"
+                ],
+                [
+                    "10",
+                    "99",
+                    "Antonio Giovinazzi",
+                    "Alfa Romeo Racing Ferrari",
+                    "63",
+                    "+26.398s",
+                    "1"
+                ],
+                [
+                    "11",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "63",
+                    "+27.135s",
+                    "0"
+                ],
+                [
+                    "12",
+                    "5",
+                    "Sebastian Vettel",
+                    "Ferrari",
+                    "63",
+                    "+28.453s",
+                    "0"
+                ],
+                [
+                    "13",
+                    "18",
+                    "Lance Stroll",
+                    "Racing Point BWT Mercedes",
+                    "63",
+                    "+29.163s",
+                    "0"
+                ],
+                [
+                    "14",
+                    "8",
+                    "Romain Grosjean",
+                    "Haas Ferrari",
+                    "63",
+                    "+32.935s",
+                    "0"
+                ],
+                [
+                    "15",
+                    "23",
+                    "Alexander Albon",
+                    "Red Bull Racing Honda",
+                    "63",
+                    "+57.284s",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "63",
+                    "George Russell",
+                    "Williams Mercedes",
+                    "51",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "33",
+                    "Max Verstappen",
+                    "Red Bull Racing Honda",
+                    "50",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "47",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "31",
+                    "Esteban Ocon",
+                    "Renault",
+                    "27",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri Honda",
+                    "8",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "Turkey": {
+            "url": "https://www.formula1.com/en/results.html/2020/races/1058/turkey/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "58",
+                    "1:42:19.313",
+                    "25"
+                ],
+                [
+                    "2",
+                    "11",
+                    "Sergio Perez",
+                    "Racing Point BWT Mercedes",
+                    "58",
+                    "+31.633s",
+                    "18"
+                ],
+                [
+                    "3",
+                    "5",
+                    "Sebastian Vettel",
+                    "Ferrari",
+                    "58",
+                    "+31.960s",
+                    "15"
+                ],
+                [
+                    "4",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "58",
+                    "+33.858s",
+                    "12"
+                ],
+                [
+                    "5",
+                    "55",
+                    "Carlos Sainz",
+                    "McLaren Renault",
+                    "58",
+                    "+34.363s",
+                    "10"
+                ],
+                [
+                    "6",
+                    "33",
+                    "Max Verstappen",
+                    "Red Bull Racing Honda",
+                    "58",
+                    "+44.873s",
+                    "8"
+                ],
+                [
+                    "7",
+                    "23",
+                    "Alexander Albon",
+                    "Red Bull Racing Honda",
+                    "58",
+                    "+46.484s",
+                    "6"
+                ],
+                [
+                    "8",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Renault",
+                    "58",
+                    "+61.259s",
+                    "5"
+                ],
+                [
+                    "9",
+                    "18",
+                    "Lance Stroll",
+                    "Racing Point BWT Mercedes",
+                    "58",
+                    "+72.353s",
+                    "2"
+                ],
+                [
+                    "10",
+                    "3",
+                    "Daniel Ricciardo",
+                    "Renault",
+                    "58",
+                    "+95.460s",
+                    "1"
+                ],
+                [
+                    "11",
+                    "31",
+                    "Esteban Ocon",
+                    "Renault",
+                    "57",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "12",
+                    "26",
+                    "Daniil Kvyat",
+                    "AlphaTauri Honda",
+                    "57",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "13",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri Honda",
+                    "57",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "14",
+                    "77",
+                    "Valtteri Bottas",
+                    "Mercedes",
+                    "57",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "15",
+                    "7",
+                    "Kimi R\u00e4ikk\u00f6nen",
+                    "Alfa Romeo Racing Ferrari",
+                    "57",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "16",
+                    "63",
+                    "George Russell",
+                    "Williams Mercedes",
+                    "57",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "17",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "55",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "8",
+                    "Romain Grosjean",
+                    "Haas Ferrari",
+                    "49",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "39",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "99",
+                    "Antonio Giovinazzi",
+                    "Alfa Romeo Racing Ferrari",
+                    "11",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "Bahrain": {
+            "url": "https://www.formula1.com/en/results.html/2020/races/1059/bahrain/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "57",
+                    "2:59:47.515",
+                    "25"
+                ],
+                [
+                    "2",
+                    "33",
+                    "Max Verstappen",
+                    "Red Bull Racing Honda",
+                    "57",
+                    "+1.254s",
+                    "19"
+                ],
+                [
+                    "3",
+                    "23",
+                    "Alexander Albon",
+                    "Red Bull Racing Honda",
+                    "57",
+                    "+8.005s",
+                    "15"
+                ],
+                [
+                    "4",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Renault",
+                    "57",
+                    "+11.337s",
+                    "12"
+                ],
+                [
+                    "5",
+                    "55",
+                    "Carlos Sainz",
+                    "McLaren Renault",
+                    "57",
+                    "+11.787s",
+                    "10"
+                ],
+                [
+                    "6",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri Honda",
+                    "57",
+                    "+11.942s",
+                    "8"
+                ],
+                [
+                    "7",
+                    "3",
+                    "Daniel Ricciardo",
+                    "Renault",
+                    "57",
+                    "+19.368s",
+                    "6"
+                ],
+                [
+                    "8",
+                    "77",
+                    "Valtteri Bottas",
+                    "Mercedes",
+                    "57",
+                    "+19.680s",
+                    "4"
+                ],
+                [
+                    "9",
+                    "31",
+                    "Esteban Ocon",
+                    "Renault",
+                    "57",
+                    "+22.803s",
+                    "2"
+                ],
+                [
+                    "10",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "56",
+                    "+1 lap",
+                    "1"
+                ],
+                [
+                    "11",
+                    "26",
+                    "Daniil Kvyat",
+                    "AlphaTauri Honda",
+                    "56",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "12",
+                    "63",
+                    "George Russell",
+                    "Williams Mercedes",
+                    "56",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "13",
+                    "5",
+                    "Sebastian Vettel",
+                    "Ferrari",
+                    "56",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "14",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "56",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "15",
+                    "7",
+                    "Kimi R\u00e4ikk\u00f6nen",
+                    "Alfa Romeo Racing Ferrari",
+                    "56",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "16",
+                    "99",
+                    "Antonio Giovinazzi",
+                    "Alfa Romeo Racing Ferrari",
+                    "56",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "17",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "56",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "18",
+                    "11",
+                    "Sergio Perez",
+                    "Racing Point BWT Mercedes",
+                    "53",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "18",
+                    "Lance Stroll",
+                    "Racing Point BWT Mercedes",
+                    "2",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "8",
+                    "Romain Grosjean",
+                    "Haas Ferrari",
+                    "0",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "Sakhir": {
+            "url": "https://www.formula1.com/en/results.html/2020/races/1060/bahrain/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "11",
+                    "Sergio Perez",
+                    "Racing Point BWT Mercedes",
+                    "87",
+                    "1:31:15.114",
+                    "25"
+                ],
+                [
+                    "2",
+                    "31",
+                    "Esteban Ocon",
+                    "Renault",
+                    "87",
+                    "+10.518s",
+                    "18"
+                ],
+                [
+                    "3",
+                    "18",
+                    "Lance Stroll",
+                    "Racing Point BWT Mercedes",
+                    "87",
+                    "+11.869s",
+                    "15"
+                ],
+                [
+                    "4",
+                    "55",
+                    "Carlos Sainz",
+                    "McLaren Renault",
+                    "87",
+                    "+12.580s",
+                    "12"
+                ],
+                [
+                    "5",
+                    "3",
+                    "Daniel Ricciardo",
+                    "Renault",
+                    "87",
+                    "+13.330s",
+                    "10"
+                ],
+                [
+                    "6",
+                    "23",
+                    "Alexander Albon",
+                    "Red Bull Racing Honda",
+                    "87",
+                    "+13.842s",
+                    "8"
+                ],
+                [
+                    "7",
+                    "26",
+                    "Daniil Kvyat",
+                    "AlphaTauri Honda",
+                    "87",
+                    "+14.534s",
+                    "6"
+                ],
+                [
+                    "8",
+                    "77",
+                    "Valtteri Bottas",
+                    "Mercedes",
+                    "87",
+                    "+15.389s",
+                    "4"
+                ],
+                [
+                    "9",
+                    "63",
+                    "George Russell",
+                    "Mercedes",
+                    "87",
+                    "+18.556s",
+                    "3"
+                ],
+                [
+                    "10",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Renault",
+                    "87",
+                    "+19.541s",
+                    "1"
+                ],
+                [
+                    "11",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri Honda",
+                    "87",
+                    "+20.527s",
+                    "0"
+                ],
+                [
+                    "12",
+                    "5",
+                    "Sebastian Vettel",
+                    "Ferrari",
+                    "87",
+                    "+22.611s",
+                    "0"
+                ],
+                [
+                    "13",
+                    "99",
+                    "Antonio Giovinazzi",
+                    "Alfa Romeo Racing Ferrari",
+                    "87",
+                    "+24.111s",
+                    "0"
+                ],
+                [
+                    "14",
+                    "7",
+                    "Kimi R\u00e4ikk\u00f6nen",
+                    "Alfa Romeo Racing Ferrari",
+                    "87",
+                    "+26.153s",
+                    "0"
+                ],
+                [
+                    "15",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "87",
+                    "+32.370s",
+                    "0"
+                ],
+                [
+                    "16",
+                    "89",
+                    "Jack Aitken",
+                    "Williams Mercedes",
+                    "87",
+                    "+33.674s",
+                    "0"
+                ],
+                [
+                    "17",
+                    "51",
+                    "Pietro Fittipaldi",
+                    "Haas Ferrari",
+                    "87",
+                    "+36.858s",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "52",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "33",
+                    "Max Verstappen",
+                    "Red Bull Racing Honda",
+                    "0",
+                    "DNF",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "0",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        },
+        "Abu Dhabi": {
+            "url": "https://www.formula1.com/en/results.html/2020/races/1061/abu-dhabi/race-result.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Laps",
+                "Time/Retired",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "33",
+                    "Max Verstappen",
+                    "Red Bull Racing Honda",
+                    "55",
+                    "1:36:28.645",
+                    "25"
+                ],
+                [
+                    "2",
+                    "77",
+                    "Valtteri Bottas",
+                    "Mercedes",
+                    "55",
+                    "+15.976s",
+                    "18"
+                ],
+                [
+                    "3",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "55",
+                    "+18.415s",
+                    "15"
+                ],
+                [
+                    "4",
+                    "23",
+                    "Alexander Albon",
+                    "Red Bull Racing Honda",
+                    "55",
+                    "+19.987s",
+                    "12"
+                ],
+                [
+                    "5",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Renault",
+                    "55",
+                    "+60.729s",
+                    "10"
+                ],
+                [
+                    "6",
+                    "55",
+                    "Carlos Sainz",
+                    "McLaren Renault",
+                    "55",
+                    "+65.662s",
+                    "8"
+                ],
+                [
+                    "7",
+                    "3",
+                    "Daniel Ricciardo",
+                    "Renault",
+                    "55",
+                    "+73.748s",
+                    "7"
+                ],
+                [
+                    "8",
+                    "10",
+                    "Pierre Gasly",
+                    "AlphaTauri Honda",
+                    "55",
+                    "+89.718s",
+                    "4"
+                ],
+                [
+                    "9",
+                    "31",
+                    "Esteban Ocon",
+                    "Renault",
+                    "55",
+                    "+101.069s",
+                    "2"
+                ],
+                [
+                    "10",
+                    "18",
+                    "Lance Stroll",
+                    "Racing Point BWT Mercedes",
+                    "55",
+                    "+102.738s",
+                    "1"
+                ],
+                [
+                    "11",
+                    "26",
+                    "Daniil Kvyat",
+                    "AlphaTauri Honda",
+                    "54",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "12",
+                    "7",
+                    "Kimi R\u00e4ikk\u00f6nen",
+                    "Alfa Romeo Racing Ferrari",
+                    "54",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "13",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "54",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "14",
+                    "5",
+                    "Sebastian Vettel",
+                    "Ferrari",
+                    "54",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "15",
+                    "63",
+                    "George Russell",
+                    "Williams Mercedes",
+                    "54",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "16",
+                    "99",
+                    "Antonio Giovinazzi",
+                    "Alfa Romeo Racing Ferrari",
+                    "54",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "17",
+                    "6",
+                    "Nicholas Latifi",
+                    "Williams Mercedes",
+                    "54",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "18",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "54",
+                    "+1 lap",
+                    "0"
+                ],
+                [
+                    "19",
+                    "51",
+                    "Pietro Fittipaldi",
+                    "Haas Ferrari",
+                    "53",
+                    "+2 laps",
+                    "0"
+                ],
+                [
+                    "NC",
+                    "11",
+                    "Sergio Perez",
+                    "Racing Point BWT Mercedes",
+                    "8",
+                    "DNF",
+                    "0"
+                ]
+            ]
+        }
     }
 }
