@@ -152,7 +152,7 @@ def get_all_links_for_urls(urls: list[str]):
     for url in urls:
         get_all_links_for_url(links, url)
     return filter_links(links)
-        
+
 
 def get_all_links_for_url(links: list[str], url: str):
     """
@@ -166,7 +166,7 @@ def get_all_links_for_url(links: list[str], url: str):
     url_data = parse_url(url)
     driver, soup = start_driver(url_data)
     create_log("Started Driver.")
-    
+
     selected_items = soup.findAll("a",
         {"class": "resultsarchive-filter-item-link FilterTrigger"}
     )
