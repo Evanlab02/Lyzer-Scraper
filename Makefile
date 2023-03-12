@@ -53,3 +53,8 @@ run-bin-update: build
 
 build-windows:
 	@pipenv run pyinstaller --name Lyzer-Scraper --add-data "backup/;data/" lyzer_scraper.py 
+
+package: build
+	@echo "<PACKAGE> Creating Package"
+	@cd dist/Lyzer-Scraper/ && zip -r Lyzer-Scraper.zip .
+	@echo "<PACKAGE> Package Complete"
