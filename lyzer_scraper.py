@@ -13,6 +13,7 @@ from source.installer import (
     update_season_data
 )
 from source.queue_processor import clear_queue
+from source.site_scraper import get_all_links_for_urls
 from web.flask_web_app import create_app, host_app
 
 def main():
@@ -43,6 +44,12 @@ def main():
         log_to_console("Please wait...", "WARNING")
         current_year = datetime.now().year
         update_season_data(current_year)
+    elif len(sys.argv) >= 3 and sys.argv[1] == "--generate":
+        urls = []
+        for url in sys.argv[2:]:
+            log_to_console(f"Getting links for {url}.")
+            urls.append(url)
+        log_to_console(get_all_links_for_urls(urls))
     else:
         app = create_app()
         assign_endpoints(app)

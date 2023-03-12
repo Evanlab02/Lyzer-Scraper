@@ -2,8 +2,9 @@
 This module will contain the logic to parse the site and return the data.
 """
 from bs4 import BeautifulSoup
-
 from logs.file_logger import create_log
+from source.file_parser import read_json_file, write_json_file
+from source.url_parser import parse_url
 from web.web_driver import start_driver, stop_driver
 
 def parse_site(site_data: dict):
@@ -136,3 +137,64 @@ def process_data_row(data_rows):
             row_data.append(data_entry)
 
     return row_data
+
+def get_all_links_for_urls(urls: list[str]):
+    """
+    This will get all links related to a array of urls.
+
+    Args:
+        urls (list[str]): Urls to give context to the driver.
+
+    Returns:
+        list: The links for the years.
+    """
+    links = []
+    for url in urls:
+        get_all_links_for_url(links, url)
+    return filter_links(links)
+
+
+def get_all_links_for_url(links: list[str], url: str):
+    """
+    This will get all links related to a specific url.
+
+    Args:
+        links (list[str]): The urls gathered so far.
+        url: The url to check for relation.
+    """
+
+    url_data = parse_url(url)
+    driver, soup = start_driver(url_data)
+    create_log("Started Driver.")
+
+    selected_items = soup.findAll("a",
+        {"class": "resultsarchive-filter-item-link FilterTrigger"}
+    )
+
+    for value in selected_items:
+        links.append(value.get("href"))
+
+    selected_items = soup.findAll("a",
+        {"class": "side-nav-item-link ArchiveLink"}
+    )
+
+    for value in selected_items:
+        links.append(value.get("href"))
+
+    stop_driver(driver)
+    create_log("Stopped Driver.")
+
+def filter_links(links: list[str]):
+    """
+    This will filter out any duplicates and links that have already
+    been scraped by the service.
+    """
+    filtered_links = []
+    data_links = read_json_file("data/links.json")
+    for link in links:
+        link = f"https://www.formula1.com{link}"
+        if not link in data_links:
+            filtered_links.append(link)
+    filtered_links = list(set(filtered_links))
+    write_json_file("temp.json", filtered_links)
+    return filtered_links

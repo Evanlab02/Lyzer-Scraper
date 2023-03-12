@@ -36,15 +36,19 @@ build:
 	@pipenv run pyinstaller --name Lyzer-Scraper --add-data backup/:data/ lyzer_scraper.py
 
 run:
+	@clear
 	@pipenv run python3 lyzer_scraper.py
 
 run-bin: build
+	@clear
 	@cd dist/Lyzer-Scraper/ && ./Lyzer-Scraper
 
 run-bin-backlog: build
+	@clear
 	@cd dist/Lyzer-Scraper/ && ./Lyzer-Scraper --clear-backlog
 
 run-bin-update: build
+	@clear
 	@cd dist/Lyzer-Scraper/ && ./Lyzer-Scraper --update
 
 build-windows:
