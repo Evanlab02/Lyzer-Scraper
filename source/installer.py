@@ -1,7 +1,7 @@
 """Module will contain the logic to install the data files for the lyzer scraper program."""
 import os
 
-from api.backlog_controller import scrape
+from api.backlog_controller import flex_scrape
 from logs.console_logger import log_to_console
 from logs.file_logger import create_log
 from source.file_parser import (
@@ -11,6 +11,7 @@ from source.file_parser import (
     read_json_file,
     write_json_file
 )
+from web.web_driver import start_flex_driver, stop_driver
 
 def install_lyzer_data_files():
     """Install the data files for the lyzer scraper program."""
@@ -101,11 +102,12 @@ def update_season_data(current_year: int):
             del file_data[str(current_year)]
         write_json_file(file, file_data)
 
-
+    driver = start_flex_driver()
     for link in update_links:
         try:
-            log_to_console(f"Updating data with {link}", "WARNING")
-            scrape(link)
+            log_to_console("Updating data...", "WARNING")
+            flex_scrape(link, driver)
         except AttributeError as exception:
             log_to_console(exception, "ERROR")
             log_to_console(f"Skipping Link {link}.", "WARNING")
+    stop_driver(driver)

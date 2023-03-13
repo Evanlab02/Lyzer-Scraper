@@ -20,12 +20,14 @@ install:
 refresh:
 	@pipenv sync
 
-update:
-	@pipenv update
-	@pipenv requirements > requirements.txt
+backup: build
 	@rm -rf backup/
 	@mkdir backup/
 	@cp -r dist/Lyzer-Scraper/data/. backup/ 
+
+update:
+	@pipenv update
+	@pipenv requirements > requirements.txt
 
 test:
 	@echo "<TEST> Running Tests"

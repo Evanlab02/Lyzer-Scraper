@@ -8,7 +8,7 @@ from logs.console_logger import log_to_console
 from logs.file_logger import create_log
 from source.data_compiler import compile_data
 from source.file_parser import read_json_file, write_json_file
-from source.site_scraper import parse_site
+from source.site_scraper import parse_site, flex_parse_site
 from source.url_parser import parse_url
 
 def invalid_method():
@@ -80,6 +80,40 @@ def priority_queue():
     request_data = request.json
     url = request_data["url"]
     return scrape(url)
+
+def flex_scrape(url: str, driver):
+    """Scrape the url given."""
+    links = read_json_file("data/links.json")
+    if url in links:
+        create_log("Url already scraped.")
+        log_to_console("Url already scraped, ignoring link.", "WARNING")
+        log_to_console("Skipped.")
+        return {
+            "status": 200,
+            "result": "ignored",
+            "message": "Url already scraped."
+        }, 200
+
+    log_to_console("Processing following url immediately.", "WARNING")
+    create_log(f"Processing following url immediately: {url}")
+    site_data = parse_url(url)
+
+    if not site_data["file"]:
+        create_log("Invalid url received.")
+        return {
+            "status": 400,
+            "result": "failure",
+            "message": "Invalid url: url is not supported."
+        }, 400
+
+    flex_parse_site(site_data, driver)
+    compile_data(site_data)
+    log_to_console("Processed url.", "SUCCESS")
+    return {
+            "status": 200,
+            "result": "success",
+            "message": "Url processed successfully."
+        } , 200
 
 def scrape(url: str):
     """Scrape the url given."""
