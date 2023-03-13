@@ -26,4 +26,6 @@ It is possible to run this project using windows, you can also create executable
 ## 2. Command Line Arguments
 ### 2.1 Clearing the backlog
 
-`./Lyzer-Scraper --clear-backlog`
+```
+./Lyzer-Scraper --clear-backlog
+```
