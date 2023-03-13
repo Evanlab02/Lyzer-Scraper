@@ -7,6 +7,22 @@ from source.file_parser import read_json_file, write_json_file
 from source.url_parser import parse_url
 from web.web_driver import start_driver, stop_driver
 
+def flex_parse_site(site_data: dict, driver):
+    """
+    Parse the site and return the data.
+
+    Args:
+        site_data (dict): The site data.
+        driver (WebDriver): The web driver.
+    """
+    driver.get(site_data["url"])
+    content = driver.page_source
+    soup = BeautifulSoup(content, features="html.parser")
+    get_selected_items(site_data, soup)
+    get_table_head_and_body(site_data, soup)
+    get_headers(site_data)
+    get_rows(site_data)
+
 def parse_site(site_data: dict):
     """
     Parse the site and return the data.

@@ -1,13 +1,5 @@
 [
     "https://www.formula1.com/en/results.html/2023/races.html",
-    "https://www.formula1.com/en/results.html/2023/races/1141/bahrain/race-result.html",
-    "https://www.formula1.com/en/results.html/2023/races/1141/bahrain/fastest-laps.html",
-    "https://www.formula1.com/en/results.html/2023/races/1141/bahrain/pit-stop-summary.html",
-    "https://www.formula1.com/en/results.html/2023/races/1141/bahrain/starting-grid.html",
-    "https://www.formula1.com/en/results.html/2023/races/1141/bahrain/qualifying.html",
-    "https://www.formula1.com/en/results.html/2023/races/1141/bahrain/practice-3.html",
-    "https://www.formula1.com/en/results.html/2023/races/1141/bahrain/practice-2.html",
-    "https://www.formula1.com/en/results.html/2023/races/1141/bahrain/practice-1.html",
     "https://www.formula1.com/en/results.html/2023/drivers.html",
     "https://www.formula1.com/en/results.html/2023/drivers/ALEALB01/alexander-albon.html",
     "https://www.formula1.com/en/results.html/2023/drivers/FERALO01/fernando-alonso.html",
@@ -36,5 +28,13 @@
     "https://www.formula1.com/en/results.html/2023/team/mclaren_mercedes.html",
     "https://www.formula1.com/en/results.html/2023/team/mercedes.html",
     "https://www.formula1.com/en/results.html/2023/team/red_bull_racing_honda_rbpt.html",
-    "https://www.formula1.com/en/results.html/2023/team/williams_mercedes.html"
+    "https://www.formula1.com/en/results.html/2023/team/williams_mercedes.html",
+    "https://www.formula1.com/en/results.html/2023/races/1141/bahrain/race-result.html",
+    "https://www.formula1.com/en/results.html/2023/races/1141/bahrain/fastest-laps.html",
+    "https://www.formula1.com/en/results.html/2023/races/1141/bahrain/pit-stop-summary.html",
+    "https://www.formula1.com/en/results.html/2023/races/1141/bahrain/starting-grid.html",
+    "https://www.formula1.com/en/results.html/2023/races/1141/bahrain/qualifying.html",
+    "https://www.formula1.com/en/results.html/2023/races/1141/bahrain/practice-3.html",
+    "https://www.formula1.com/en/results.html/2023/races/1141/bahrain/practice-2.html",
+    "https://www.formula1.com/en/results.html/2023/races/1141/bahrain/practice-1.html"
 ]

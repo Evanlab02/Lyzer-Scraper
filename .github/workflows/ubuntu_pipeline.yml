@@ -24,15 +24,15 @@ jobs:
         pip install --upgrade pip
         pip install pipenv
         pipenv install
+        apt-get update &&
+        wget "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb" -P /tmp &&
+        apt-get install -y "/tmp/google-chrome-stable_current_amd64.deb" -f
     - name: Testing
       run: |
         pipenv run pytest -v testing
     - name: Lint
       run: |
         pipenv run pylint $(git ls-files '*.py')
-    - name: Create Executable
-      run: |
-        pipenv run pyinstaller --name Lyzer-Scraper --add-data backup/:data/ lyzer_scraper.py
     - name: Security Check
       run: |
         pipenv check

@@ -2523,218 +2523,6 @@
             ]
         }
     },
-    "2023": {
-        "All": {
-            "url": "https://www.formula1.com/en/results.html/2023/team.html",
-            "headers": [
-                "Pos",
-                "Team",
-                "PTS"
-            ],
-            "rows": [
-                [
-                    "1",
-                    "Red Bull Racing Honda RBPT",
-                    "43"
-                ],
-                [
-                    "2",
-                    "Aston Martin Aramco Mercedes",
-                    "23"
-                ],
-                [
-                    "3",
-                    "Mercedes",
-                    "16"
-                ],
-                [
-                    "4",
-                    "Ferrari",
-                    "12"
-                ],
-                [
-                    "5",
-                    "Alfa Romeo Ferrari",
-                    "4"
-                ],
-                [
-                    "6",
-                    "Alpine Renault",
-                    "2"
-                ],
-                [
-                    "7",
-                    "Williams Mercedes",
-                    "1"
-                ],
-                [
-                    "8",
-                    "AlphaTauri Honda RBPT",
-                    "0"
-                ],
-                [
-                    "9",
-                    "Haas Ferrari",
-                    "0"
-                ],
-                [
-                    "10",
-                    "McLaren Mercedes",
-                    "0"
-                ]
-            ]
-        },
-        "Alfa Romeo Ferrari": {
-            "url": "https://www.formula1.com/en/results.html/2023/team/alfa_romeo_ferrari.html",
-            "headers": [
-                "Grand Prix",
-                "Date",
-                "PTS"
-            ],
-            "rows": [
-                [
-                    "Bahrain",
-                    "05 Mar 2023",
-                    "4"
-                ]
-            ]
-        },
-        "AlphaTauri Honda RBPT": {
-            "url": "https://www.formula1.com/en/results.html/2023/team/alphatauri_honda_rbpt.html",
-            "headers": [
-                "Grand Prix",
-                "Date",
-                "PTS"
-            ],
-            "rows": [
-                [
-                    "Bahrain",
-                    "05 Mar 2023",
-                    "0"
-                ]
-            ]
-        },
-        "Alpine Renault": {
-            "url": "https://www.formula1.com/en/results.html/2023/team/alpine_renault.html",
-            "headers": [
-                "Grand Prix",
-                "Date",
-                "PTS"
-            ],
-            "rows": [
-                [
-                    "Bahrain",
-                    "05 Mar 2023",
-                    "2"
-                ]
-            ]
-        },
-        "Aston Martin Aramco Mercedes": {
-            "url": "https://www.formula1.com/en/results.html/2023/team/aston_martin_aramco_mercedes.html",
-            "headers": [
-                "Grand Prix",
-                "Date",
-                "PTS"
-            ],
-            "rows": [
-                [
-                    "Bahrain",
-                    "05 Mar 2023",
-                    "23"
-                ]
-            ]
-        },
-        "Ferrari": {
-            "url": "https://www.formula1.com/en/results.html/2023/team/ferrari.html",
-            "headers": [
-                "Grand Prix",
-                "Date",
-                "PTS"
-            ],
-            "rows": [
-                [
-                    "Bahrain",
-                    "05 Mar 2023",
-                    "12"
-                ]
-            ]
-        },
-        "Haas Ferrari": {
-            "url": "https://www.formula1.com/en/results.html/2023/team/haas_ferrari.html",
-            "headers": [
-                "Grand Prix",
-                "Date",
-                "PTS"
-            ],
-            "rows": [
-                [
-                    "Bahrain",
-                    "05 Mar 2023",
-                    "0"
-                ]
-            ]
-        },
-        "McLaren Mercedes": {
-            "url": "https://www.formula1.com/en/results.html/2023/team/mclaren_mercedes.html",
-            "headers": [
-                "Grand Prix",
-                "Date",
-                "PTS"
-            ],
-            "rows": [
-                [
-                    "Bahrain",
-                    "05 Mar 2023",
-                    "0"
-                ]
-            ]
-        },
-        "Mercedes": {
-            "url": "https://www.formula1.com/en/results.html/2023/team/mercedes.html",
-            "headers": [
-                "Grand Prix",
-                "Date",
-                "PTS"
-            ],
-            "rows": [
-                [
-                    "Bahrain",
-                    "05 Mar 2023",
-                    "16"
-                ]
-            ]
-        },
-        "Red Bull Racing Honda RBPT": {
-            "url": "https://www.formula1.com/en/results.html/2023/team/red_bull_racing_honda_rbpt.html",
-            "headers": [
-                "Grand Prix",
-                "Date",
-                "PTS"
-            ],
-            "rows": [
-                [
-                    "Bahrain",
-                    "05 Mar 2023",
-                    "43"
-                ]
-            ]
-        },
-        "Williams Mercedes": {
-            "url": "https://www.formula1.com/en/results.html/2023/team/williams_mercedes.html",
-            "headers": [
-                "Grand Prix",
-                "Date",
-                "PTS"
-            ],
-            "rows": [
-                [
-                    "Bahrain",
-                    "05 Mar 2023",
-                    "1"
-                ]
-            ]
-        }
-    },
     "2020": {
         "All": {
             "url": "https://www.formula1.com/en/results.html/2020/team.html",
@@ -62838,6 +62626,218 @@
                     "USA East",
                     "05 Oct 1980",
                     "6"
+                ]
+            ]
+        }
+    },
+    "2023": {
+        "All": {
+            "url": "https://www.formula1.com/en/results.html/2023/team.html",
+            "headers": [
+                "Pos",
+                "Team",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "Red Bull Racing Honda RBPT",
+                    "43"
+                ],
+                [
+                    "2",
+                    "Aston Martin Aramco Mercedes",
+                    "23"
+                ],
+                [
+                    "3",
+                    "Mercedes",
+                    "16"
+                ],
+                [
+                    "4",
+                    "Ferrari",
+                    "12"
+                ],
+                [
+                    "5",
+                    "Alfa Romeo Ferrari",
+                    "4"
+                ],
+                [
+                    "6",
+                    "Alpine Renault",
+                    "2"
+                ],
+                [
+                    "7",
+                    "Williams Mercedes",
+                    "1"
+                ],
+                [
+                    "8",
+                    "AlphaTauri Honda RBPT",
+                    "0"
+                ],
+                [
+                    "9",
+                    "Haas Ferrari",
+                    "0"
+                ],
+                [
+                    "10",
+                    "McLaren Mercedes",
+                    "0"
+                ]
+            ]
+        },
+        "Alfa Romeo Ferrari": {
+            "url": "https://www.formula1.com/en/results.html/2023/team/alfa_romeo_ferrari.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "05 Mar 2023",
+                    "4"
+                ]
+            ]
+        },
+        "AlphaTauri Honda RBPT": {
+            "url": "https://www.formula1.com/en/results.html/2023/team/alphatauri_honda_rbpt.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "05 Mar 2023",
+                    "0"
+                ]
+            ]
+        },
+        "Alpine Renault": {
+            "url": "https://www.formula1.com/en/results.html/2023/team/alpine_renault.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "05 Mar 2023",
+                    "2"
+                ]
+            ]
+        },
+        "Aston Martin Aramco Mercedes": {
+            "url": "https://www.formula1.com/en/results.html/2023/team/aston_martin_aramco_mercedes.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "05 Mar 2023",
+                    "23"
+                ]
+            ]
+        },
+        "Ferrari": {
+            "url": "https://www.formula1.com/en/results.html/2023/team/ferrari.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "05 Mar 2023",
+                    "12"
+                ]
+            ]
+        },
+        "Haas Ferrari": {
+            "url": "https://www.formula1.com/en/results.html/2023/team/haas_ferrari.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "05 Mar 2023",
+                    "0"
+                ]
+            ]
+        },
+        "McLaren Mercedes": {
+            "url": "https://www.formula1.com/en/results.html/2023/team/mclaren_mercedes.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "05 Mar 2023",
+                    "0"
+                ]
+            ]
+        },
+        "Mercedes": {
+            "url": "https://www.formula1.com/en/results.html/2023/team/mercedes.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "05 Mar 2023",
+                    "16"
+                ]
+            ]
+        },
+        "Red Bull Racing Honda RBPT": {
+            "url": "https://www.formula1.com/en/results.html/2023/team/red_bull_racing_honda_rbpt.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "05 Mar 2023",
+                    "43"
+                ]
+            ]
+        },
+        "Williams Mercedes": {
+            "url": "https://www.formula1.com/en/results.html/2023/team/williams_mercedes.html",
+            "headers": [
+                "Grand Prix",
+                "Date",
+                "PTS"
+            ],
+            "rows": [
+                [
+                    "Bahrain",
+                    "05 Mar 2023",
+                    "1"
                 ]
             ]
         }

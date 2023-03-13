@@ -8231,311 +8231,6 @@
             ]
         }
     },
-    "2023": {
-        "Bahrain": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1141/bahrain/practice-2.html",
-            "headers": [
-                "Pos",
-                "No",
-                "Driver",
-                "Car",
-                "Time",
-                "Gap",
-                "Laps"
-            ],
-            "rows": [
-                [
-                    "1",
-                    "14",
-                    "Fernando Alonso",
-                    "Aston Martin Aramco Mercedes",
-                    "1:30.907",
-                    "25"
-                ],
-                [
-                    "2",
-                    "1",
-                    "Max Verstappen",
-                    "Red Bull Racing Honda RBPT",
-                    "1:31.076",
-                    "+0.169s",
-                    "24"
-                ],
-                [
-                    "3",
-                    "11",
-                    "Sergio Perez",
-                    "Red Bull Racing Honda RBPT",
-                    "1:31.078",
-                    "+0.171s",
-                    "26"
-                ],
-                [
-                    "4",
-                    "16",
-                    "Charles Leclerc",
-                    "Ferrari",
-                    "1:31.367",
-                    "+0.460s",
-                    "26"
-                ],
-                [
-                    "5",
-                    "27",
-                    "Nico Hulkenberg",
-                    "Haas Ferrari",
-                    "1:31.376",
-                    "+0.469s",
-                    "25"
-                ],
-                [
-                    "6",
-                    "18",
-                    "Lance Stroll",
-                    "Aston Martin Aramco Mercedes",
-                    "1:31.450",
-                    "+0.543s",
-                    "28"
-                ],
-                [
-                    "7",
-                    "10",
-                    "Pierre Gasly",
-                    "Alpine Renault",
-                    "1:31.475",
-                    "+0.568s",
-                    "24"
-                ],
-                [
-                    "8",
-                    "44",
-                    "Lewis Hamilton",
-                    "Mercedes",
-                    "1:31.543",
-                    "+0.636s",
-                    "27"
-                ],
-                [
-                    "9",
-                    "4",
-                    "Lando Norris",
-                    "McLaren Mercedes",
-                    "1:31.570",
-                    "+0.663s",
-                    "27"
-                ],
-                [
-                    "10",
-                    "24",
-                    "Zhou Guanyu",
-                    "Alfa Romeo Ferrari",
-                    "1:31.586",
-                    "+0.679s",
-                    "27"
-                ],
-                [
-                    "11",
-                    "31",
-                    "Esteban Ocon",
-                    "Alpine Renault",
-                    "1:31.608",
-                    "+0.701s",
-                    "25"
-                ],
-                [
-                    "12",
-                    "77",
-                    "Valtteri Bottas",
-                    "Alfa Romeo Ferrari",
-                    "1:31.793",
-                    "+0.886s",
-                    "28"
-                ],
-                [
-                    "13",
-                    "63",
-                    "George Russell",
-                    "Mercedes",
-                    "1:31.882",
-                    "+0.975s",
-                    "25"
-                ],
-                [
-                    "14",
-                    "55",
-                    "Carlos Sainz",
-                    "Ferrari",
-                    "1:31.956",
-                    "+1.049s",
-                    "28"
-                ],
-                [
-                    "15",
-                    "81",
-                    "Oscar Piastri",
-                    "McLaren Mercedes",
-                    "1:32.024",
-                    "+1.117s",
-                    "27"
-                ],
-                [
-                    "16",
-                    "20",
-                    "Kevin Magnussen",
-                    "Haas Ferrari",
-                    "1:32.110",
-                    "+1.203s",
-                    "18"
-                ],
-                [
-                    "17",
-                    "23",
-                    "Alexander Albon",
-                    "Williams Mercedes",
-                    "1:32.440",
-                    "+1.533s",
-                    "28"
-                ],
-                [
-                    "18",
-                    "22",
-                    "Yuki Tsunoda",
-                    "AlphaTauri Honda RBPT",
-                    "1:32.525",
-                    "+1.618s",
-                    "27"
-                ],
-                [
-                    "19",
-                    "21",
-                    "Nyck De Vries",
-                    "AlphaTauri Honda RBPT",
-                    "1:32.605",
-                    "+1.698s",
-                    "28"
-                ],
-                [
-                    "20",
-                    "2",
-                    "Logan Sargeant",
-                    "Williams Mercedes",
-                    "1:32.749",
-                    "+1.842s",
-                    "29"
-                ]
-            ]
-        },
-        "Netherlands": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1217/netherlands/practice-2.html",
-            "headers": [],
-            "rows": []
-        },
-        "Azerbaijan": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1207/azerbaijan/practice-2.html",
-            "headers": [],
-            "rows": []
-        },
-        "Great Britain": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1214/great-britain/practice-2.html",
-            "headers": [],
-            "rows": []
-        },
-        "Belgium": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1216/belgium/practice-2.html",
-            "headers": [],
-            "rows": []
-        },
-        "Monaco": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1210/monaco/practice-2.html",
-            "headers": [],
-            "rows": []
-        },
-        "Canada": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1212/canada/practice-2.html",
-            "headers": [],
-            "rows": []
-        },
-        "Abu Dhabi": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1226/abu-dhabi/practice-2.html",
-            "headers": [],
-            "rows": []
-        },
-        "United States ": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1222/united-states/practice-2.html",
-            "headers": [],
-            "rows": []
-        },
-        "Las Vegas ": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1225/las-vegas/practice-2.html",
-            "headers": [],
-            "rows": []
-        },
-        "Japan": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1220/japan/practice-2.html",
-            "headers": [],
-            "rows": []
-        },
-        "Hungary": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1215/hungary/practice-2.html",
-            "headers": [],
-            "rows": []
-        },
-        "Brazil": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1224/brazil/practice-2.html",
-            "headers": [],
-            "rows": []
-        },
-        "Emilia Romagna": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1209/italy/practice-2.html",
-            "headers": [],
-            "rows": []
-        },
-        "Miami ": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1208/miami/practice-2.html",
-            "headers": [],
-            "rows": []
-        },
-        "Singapore": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1219/singapore/practice-2.html",
-            "headers": [],
-            "rows": []
-        },
-        "Spain": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1211/spain/practice-2.html",
-            "headers": [],
-            "rows": []
-        },
-        "Mexico": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1223/mexico/practice-2.html",
-            "headers": [],
-            "rows": []
-        },
-        "Saudi Arabia": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1142/saudi-arabia/practice-2.html",
-            "headers": [],
-            "rows": []
-        },
-        "Qatar": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1221/qatar/practice-2.html",
-            "headers": [],
-            "rows": []
-        },
-        "Austria": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1213/austria/practice-2.html",
-            "headers": [],
-            "rows": []
-        },
-        "Italy": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1218/italy/practice-2.html",
-            "headers": [],
-            "rows": []
-        },
-        "Australia": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1143/australia/practice-2.html",
-            "headers": [],
-            "rows": []
-        }
-    },
     "2020": {
         "Austria": {
             "url": "https://www.formula1.com/en/results.html/2020/races/1045/austria/practice-2.html",
@@ -134570,6 +134265,201 @@
                     "Euro Brun Ford",
                     "1:50.418",
                     "+6.128s"
+                ]
+            ]
+        }
+    },
+    "2023": {
+        "Bahrain": {
+            "url": "https://www.formula1.com/en/results.html/2023/races/1141/bahrain/practice-2.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Time",
+                "Gap",
+                "Laps"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "14",
+                    "Fernando Alonso",
+                    "Aston Martin Aramco Mercedes",
+                    "1:30.907",
+                    "25"
+                ],
+                [
+                    "2",
+                    "1",
+                    "Max Verstappen",
+                    "Red Bull Racing Honda RBPT",
+                    "1:31.076",
+                    "+0.169s",
+                    "24"
+                ],
+                [
+                    "3",
+                    "11",
+                    "Sergio Perez",
+                    "Red Bull Racing Honda RBPT",
+                    "1:31.078",
+                    "+0.171s",
+                    "26"
+                ],
+                [
+                    "4",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "1:31.367",
+                    "+0.460s",
+                    "26"
+                ],
+                [
+                    "5",
+                    "27",
+                    "Nico Hulkenberg",
+                    "Haas Ferrari",
+                    "1:31.376",
+                    "+0.469s",
+                    "25"
+                ],
+                [
+                    "6",
+                    "18",
+                    "Lance Stroll",
+                    "Aston Martin Aramco Mercedes",
+                    "1:31.450",
+                    "+0.543s",
+                    "28"
+                ],
+                [
+                    "7",
+                    "10",
+                    "Pierre Gasly",
+                    "Alpine Renault",
+                    "1:31.475",
+                    "+0.568s",
+                    "24"
+                ],
+                [
+                    "8",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "1:31.543",
+                    "+0.636s",
+                    "27"
+                ],
+                [
+                    "9",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Mercedes",
+                    "1:31.570",
+                    "+0.663s",
+                    "27"
+                ],
+                [
+                    "10",
+                    "24",
+                    "Zhou Guanyu",
+                    "Alfa Romeo Ferrari",
+                    "1:31.586",
+                    "+0.679s",
+                    "27"
+                ],
+                [
+                    "11",
+                    "31",
+                    "Esteban Ocon",
+                    "Alpine Renault",
+                    "1:31.608",
+                    "+0.701s",
+                    "25"
+                ],
+                [
+                    "12",
+                    "77",
+                    "Valtteri Bottas",
+                    "Alfa Romeo Ferrari",
+                    "1:31.793",
+                    "+0.886s",
+                    "28"
+                ],
+                [
+                    "13",
+                    "63",
+                    "George Russell",
+                    "Mercedes",
+                    "1:31.882",
+                    "+0.975s",
+                    "25"
+                ],
+                [
+                    "14",
+                    "55",
+                    "Carlos Sainz",
+                    "Ferrari",
+                    "1:31.956",
+                    "+1.049s",
+                    "28"
+                ],
+                [
+                    "15",
+                    "81",
+                    "Oscar Piastri",
+                    "McLaren Mercedes",
+                    "1:32.024",
+                    "+1.117s",
+                    "27"
+                ],
+                [
+                    "16",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "1:32.110",
+                    "+1.203s",
+                    "18"
+                ],
+                [
+                    "17",
+                    "23",
+                    "Alexander Albon",
+                    "Williams Mercedes",
+                    "1:32.440",
+                    "+1.533s",
+                    "28"
+                ],
+                [
+                    "18",
+                    "22",
+                    "Yuki Tsunoda",
+                    "AlphaTauri Honda RBPT",
+                    "1:32.525",
+                    "+1.618s",
+                    "27"
+                ],
+                [
+                    "19",
+                    "21",
+                    "Nyck De Vries",
+                    "AlphaTauri Honda RBPT",
+                    "1:32.605",
+                    "+1.698s",
+                    "28"
+                ],
+                [
+                    "20",
+                    "2",
+                    "Logan Sargeant",
+                    "Williams Mercedes",
+                    "1:32.749",
+                    "+1.842s",
+                    "29"
                 ]
             ]
         }

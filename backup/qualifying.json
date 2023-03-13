@@ -8770,318 +8770,6 @@
             ]
         }
     },
-    "2023": {
-        "Bahrain": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1141/bahrain/qualifying.html",
-            "headers": [
-                "Pos",
-                "No",
-                "Driver",
-                "Car",
-                "Q1",
-                "Q2",
-                "Q3",
-                "Laps"
-            ],
-            "rows": [
-                [
-                    "1",
-                    "1",
-                    "Max Verstappen",
-                    "Red Bull Racing Honda RBPT",
-                    "1:31.295",
-                    "1:30.503",
-                    "1:29.708",
-                    "15"
-                ],
-                [
-                    "2",
-                    "11",
-                    "Sergio Perez",
-                    "Red Bull Racing Honda RBPT",
-                    "1:31.479",
-                    "1:30.746",
-                    "1:29.846",
-                    "15"
-                ],
-                [
-                    "3",
-                    "16",
-                    "Charles Leclerc",
-                    "Ferrari",
-                    "1:31.094",
-                    "1:30.282",
-                    "1:30.000",
-                    "17"
-                ],
-                [
-                    "4",
-                    "55",
-                    "Carlos Sainz",
-                    "Ferrari",
-                    "1:30.993",
-                    "1:30.515",
-                    "1:30.154",
-                    "18"
-                ],
-                [
-                    "5",
-                    "14",
-                    "Fernando Alonso",
-                    "Aston Martin Aramco Mercedes",
-                    "1:31.158",
-                    "1:30.645",
-                    "1:30.336",
-                    "15"
-                ],
-                [
-                    "6",
-                    "63",
-                    "George Russell",
-                    "Mercedes",
-                    "1:31.057",
-                    "1:30.507",
-                    "1:30.340",
-                    "15"
-                ],
-                [
-                    "7",
-                    "44",
-                    "Lewis Hamilton",
-                    "Mercedes",
-                    "1:31.543",
-                    "1:30.513",
-                    "1:30.384",
-                    "15"
-                ],
-                [
-                    "8",
-                    "18",
-                    "Lance Stroll",
-                    "Aston Martin Aramco Mercedes",
-                    "1:31.184",
-                    "1:31.127",
-                    "1:30.836",
-                    "18"
-                ],
-                [
-                    "9",
-                    "31",
-                    "Esteban Ocon",
-                    "Alpine Renault",
-                    "1:31.508",
-                    "1:30.914",
-                    "1:30.984",
-                    "15"
-                ],
-                [
-                    "10",
-                    "27",
-                    "Nico Hulkenberg",
-                    "Haas Ferrari",
-                    "1:31.204",
-                    "1:30.809",
-                    "DNF",
-                    "17"
-                ],
-                [
-                    "11",
-                    "4",
-                    "Lando Norris",
-                    "McLaren Mercedes",
-                    "1:31.652",
-                    "1:31.381",
-                    "13"
-                ],
-                [
-                    "12",
-                    "77",
-                    "Valtteri Bottas",
-                    "Alfa Romeo Ferrari",
-                    "1:31.504",
-                    "1:31.443",
-                    "12"
-                ],
-                [
-                    "13",
-                    "24",
-                    "Zhou Guanyu",
-                    "Alfa Romeo Ferrari",
-                    "1:31.615",
-                    "1:31.473",
-                    "12"
-                ],
-                [
-                    "14",
-                    "22",
-                    "Yuki Tsunoda",
-                    "AlphaTauri Honda RBPT",
-                    "1:31.400",
-                    "1:32.510",
-                    "15"
-                ],
-                [
-                    "15",
-                    "23",
-                    "Alexander Albon",
-                    "Williams Mercedes",
-                    "1:31.461",
-                    "DNF",
-                    "8"
-                ],
-                [
-                    "16",
-                    "2",
-                    "Logan Sargeant",
-                    "Williams Mercedes",
-                    "1:31.652",
-                    "6"
-                ],
-                [
-                    "17",
-                    "20",
-                    "Kevin Magnussen",
-                    "Haas Ferrari",
-                    "1:31.892",
-                    "6"
-                ],
-                [
-                    "18",
-                    "81",
-                    "Oscar Piastri",
-                    "McLaren Mercedes",
-                    "1:32.101",
-                    "7"
-                ],
-                [
-                    "19",
-                    "21",
-                    "Nyck De Vries",
-                    "AlphaTauri Honda RBPT",
-                    "1:32.121",
-                    "9"
-                ],
-                [
-                    "20",
-                    "10",
-                    "Pierre Gasly",
-                    "Alpine Renault",
-                    "1:32.181",
-                    "6"
-                ]
-            ]
-        },
-        "Las Vegas ": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1225/las-vegas/qualifying.html",
-            "headers": [],
-            "rows": []
-        },
-        "Japan": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1220/japan/qualifying.html",
-            "headers": [],
-            "rows": []
-        },
-        "Netherlands": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1217/netherlands/qualifying.html",
-            "headers": [],
-            "rows": []
-        },
-        "United States ": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1222/united-states/qualifying.html",
-            "headers": [],
-            "rows": []
-        },
-        "Abu Dhabi": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1226/abu-dhabi/qualifying.html",
-            "headers": [],
-            "rows": []
-        },
-        "Great Britain": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1214/great-britain/qualifying.html",
-            "headers": [],
-            "rows": []
-        },
-        "Mexico": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1223/mexico/qualifying.html",
-            "headers": [],
-            "rows": []
-        },
-        "Brazil": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1224/brazil/qualifying.html",
-            "headers": [],
-            "rows": []
-        },
-        "Canada": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1212/canada/qualifying.html",
-            "headers": [],
-            "rows": []
-        },
-        "Qatar": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1221/qatar/qualifying.html",
-            "headers": [],
-            "rows": []
-        },
-        "Miami ": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1208/miami/qualifying.html",
-            "headers": [],
-            "rows": []
-        },
-        "Australia": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1143/australia/qualifying.html",
-            "headers": [],
-            "rows": []
-        },
-        "Spain": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1211/spain/qualifying.html",
-            "headers": [],
-            "rows": []
-        },
-        "Singapore": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1219/singapore/qualifying.html",
-            "headers": [],
-            "rows": []
-        },
-        "Emilia Romagna": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1209/italy/qualifying.html",
-            "headers": [],
-            "rows": []
-        },
-        "Monaco": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1210/monaco/qualifying.html",
-            "headers": [],
-            "rows": []
-        },
-        "Austria": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1213/austria/qualifying.html",
-            "headers": [],
-            "rows": []
-        },
-        "Saudi Arabia": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1142/saudi-arabia/qualifying.html",
-            "headers": [],
-            "rows": []
-        },
-        "Belgium": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1216/belgium/qualifying.html",
-            "headers": [],
-            "rows": []
-        },
-        "Italy": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1218/italy/qualifying.html",
-            "headers": [],
-            "rows": []
-        },
-        "Hungary": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1215/hungary/qualifying.html",
-            "headers": [],
-            "rows": []
-        },
-        "Azerbaijan": {
-            "url": "https://www.formula1.com/en/results.html/2023/races/1207/azerbaijan/qualifying.html",
-            "headers": [],
-            "rows": []
-        }
-    },
     "2020": {
         "Austria": {
             "url": "https://www.formula1.com/en/results.html/2020/races/1045/austria/qualifying.html",
@@ -69341,6 +69029,208 @@
                     "Stoffel Vandoorne",
                     "McLaren Renault",
                     "1:35.735",
+                    "6"
+                ]
+            ]
+        }
+    },
+    "2023": {
+        "Bahrain": {
+            "url": "https://www.formula1.com/en/results.html/2023/races/1141/bahrain/qualifying.html",
+            "headers": [
+                "Pos",
+                "No",
+                "Driver",
+                "Car",
+                "Q1",
+                "Q2",
+                "Q3",
+                "Laps"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "1",
+                    "Max Verstappen",
+                    "Red Bull Racing Honda RBPT",
+                    "1:31.295",
+                    "1:30.503",
+                    "1:29.708",
+                    "15"
+                ],
+                [
+                    "2",
+                    "11",
+                    "Sergio Perez",
+                    "Red Bull Racing Honda RBPT",
+                    "1:31.479",
+                    "1:30.746",
+                    "1:29.846",
+                    "15"
+                ],
+                [
+                    "3",
+                    "16",
+                    "Charles Leclerc",
+                    "Ferrari",
+                    "1:31.094",
+                    "1:30.282",
+                    "1:30.000",
+                    "17"
+                ],
+                [
+                    "4",
+                    "55",
+                    "Carlos Sainz",
+                    "Ferrari",
+                    "1:30.993",
+                    "1:30.515",
+                    "1:30.154",
+                    "18"
+                ],
+                [
+                    "5",
+                    "14",
+                    "Fernando Alonso",
+                    "Aston Martin Aramco Mercedes",
+                    "1:31.158",
+                    "1:30.645",
+                    "1:30.336",
+                    "15"
+                ],
+                [
+                    "6",
+                    "63",
+                    "George Russell",
+                    "Mercedes",
+                    "1:31.057",
+                    "1:30.507",
+                    "1:30.340",
+                    "15"
+                ],
+                [
+                    "7",
+                    "44",
+                    "Lewis Hamilton",
+                    "Mercedes",
+                    "1:31.543",
+                    "1:30.513",
+                    "1:30.384",
+                    "15"
+                ],
+                [
+                    "8",
+                    "18",
+                    "Lance Stroll",
+                    "Aston Martin Aramco Mercedes",
+                    "1:31.184",
+                    "1:31.127",
+                    "1:30.836",
+                    "18"
+                ],
+                [
+                    "9",
+                    "31",
+                    "Esteban Ocon",
+                    "Alpine Renault",
+                    "1:31.508",
+                    "1:30.914",
+                    "1:30.984",
+                    "15"
+                ],
+                [
+                    "10",
+                    "27",
+                    "Nico Hulkenberg",
+                    "Haas Ferrari",
+                    "1:31.204",
+                    "1:30.809",
+                    "DNF",
+                    "17"
+                ],
+                [
+                    "11",
+                    "4",
+                    "Lando Norris",
+                    "McLaren Mercedes",
+                    "1:31.652",
+                    "1:31.381",
+                    "13"
+                ],
+                [
+                    "12",
+                    "77",
+                    "Valtteri Bottas",
+                    "Alfa Romeo Ferrari",
+                    "1:31.504",
+                    "1:31.443",
+                    "12"
+                ],
+                [
+                    "13",
+                    "24",
+                    "Zhou Guanyu",
+                    "Alfa Romeo Ferrari",
+                    "1:31.615",
+                    "1:31.473",
+                    "12"
+                ],
+                [
+                    "14",
+                    "22",
+                    "Yuki Tsunoda",
+                    "AlphaTauri Honda RBPT",
+                    "1:31.400",
+                    "1:32.510",
+                    "15"
+                ],
+                [
+                    "15",
+                    "23",
+                    "Alexander Albon",
+                    "Williams Mercedes",
+                    "1:31.461",
+                    "DNF",
+                    "8"
+                ],
+                [
+                    "16",
+                    "2",
+                    "Logan Sargeant",
+                    "Williams Mercedes",
+                    "1:31.652",
+                    "6"
+                ],
+                [
+                    "17",
+                    "20",
+                    "Kevin Magnussen",
+                    "Haas Ferrari",
+                    "1:31.892",
+                    "6"
+                ],
+                [
+                    "18",
+                    "81",
+                    "Oscar Piastri",
+                    "McLaren Mercedes",
+                    "1:32.101",
+                    "7"
+                ],
+                [
+                    "19",
+                    "21",
+                    "Nyck De Vries",
+                    "AlphaTauri Honda RBPT",
+                    "1:32.121",
+                    "9"
+                ],
+                [
+                    "20",
+                    "10",
+                    "Pierre Gasly",
+                    "Alpine Renault",
+                    "1:32.181",
                     "6"
                 ]
             ]
