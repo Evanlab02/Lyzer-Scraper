@@ -41,7 +41,7 @@ cp dist/Lyzer-Scraper/Lyzer-Scraper.zip release/Windows_10/
 clear
 echo "Cleaning Up..."
 pipenv clean
-# rm -fo .coverage
+rm -fo .coverage
 echo "Press enter for all the following prompts to delete the build, dist and cache folders"
 echo "It is recommended to delete these folders to prevent any issues with future builds and installations"
 rm -fo build/*.*
