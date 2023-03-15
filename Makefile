@@ -20,11 +20,6 @@ install:
 refresh:
 	@pipenv sync
 
-backup: build
-	@rm -rf backup/
-	@mkdir backup/
-	@cp -r dist/Lyzer-Scraper/data/. backup/ 
-
 update:
 	@pipenv update
 	@pipenv requirements > requirements.txt
@@ -36,6 +31,14 @@ test:
 
 build:
 	@pipenv run pyinstaller --name Lyzer-Scraper --add-data backup/:data/ lyzer_scraper.py
+
+build-windows:
+	@pipenv run pyinstaller --name Lyzer-Scraper --add-data "backup/;data/" lyzer_scraper.py 
+
+backup: build
+	@rm -rf backup/
+	@mkdir backup/
+	@cp -r dist/Lyzer-Scraper/data/. backup/ 
 
 run:
 	@clear
@@ -53,10 +56,26 @@ run-bin-update: build
 	@clear
 	@cd dist/Lyzer-Scraper/ && ./Lyzer-Scraper --update
 
-build-windows:
-	@pipenv run pyinstaller --name Lyzer-Scraper --add-data "backup/;data/" lyzer_scraper.py 
-
-package: build
+package:
 	@echo "<PACKAGE> Creating Package"
 	@cd dist/Lyzer-Scraper/ && zip -r Lyzer-Scraper.zip .
+	@rm -rf release/CURRENT
+	@mkdir release/CURRENT
+	@cp -r dist/Lyzer-Scraper/ release/CURRENT/
+	@echo "<PACKAGE> Package Complete"
+
+package-ubuntu: build
+	@echo "<PACKAGE> Creating Package"
+	@cd dist/Lyzer-Scraper/ && zip -r Lyzer-Scraper.zip .
+	@rm -rf release/Ubuntu-22.10
+	@mkdir release/Ubuntu-22.10
+	@cp -r dist/Lyzer-Scraper/ release/Ubuntu-22.10/
+	@echo "<PACKAGE> Package Complete"
+
+package-ubuntu-lts: build
+	@echo "<PACKAGE> Creating Package"
+	@cd dist/Lyzer-Scraper/ && zip -r Lyzer-Scraper.zip .
+	@rm -rf release/Ubuntu-22.04
+	@mkdir release/Ubuntu-22.04
+	@cp -r dist/Lyzer-Scraper/ release/Ubuntu-22.04/
 	@echo "<PACKAGE> Package Complete"
