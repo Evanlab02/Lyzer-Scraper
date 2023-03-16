@@ -1,31 +1,80 @@
 # Lyzer-Scraper
+## 1. Installation
+### 1.1 Ubuntu
+#### 1.1.1 Ubuntu LTS
 
-## 1. Running the web server
-### 1.1 Linux - Releases
-
-After downloading the latest release from the releases tab, and unzipping the folder. You can do the following to run the web server.
+Download Ubuntu-22.04-Lyzer-Scraper.zip from the latest releases.
+Unzip this file and there should be folder called Lyzer-Scraper - Inside this folder you can run the following.
 
 ```
-cd Lyzer-Scraper/
 ./Lyzer-Scraper
 ```
 
-### 1.2 Linux - Source Code
+#### 1.1.2 Ubuntu 22.10
 
-After cloning the repo, you can run the web server with the source code by doing the following.
-
-```
-cd Lyzer-Scraper/
-python3 lyzer_scraper.py
-```
-
-### 1.3 Windows
-
-It is possible to run this project using windows, you can also create executable using PyInstaller, you can find a command for this in the Makefile under `build-windows:`.
-
-## 2. Command Line Arguments
-### 2.1 Clearing the backlog
+Download Ubuntu-22.10-Lyzer-Scraper.zip from the latest releases.
+Unzip this file and there should be folder called Lyzer-Scraper - Inside this folder you can run the following.
 
 ```
-./Lyzer-Scraper --clear-backlog
+./Lyzer-Scraper
+```
+
+#### 1.1.3 One of the above methods did not work.
+
+Use the install script in the repository.
+Download/clone the source code along with the install script (install.sh).
+In the source code directory, run the following:
+
+```
+./install.sh
+```
+
+If this command works, you will find a zip file under release/CURRENT.
+Unzip this file and there should be folder called Lyzer-Scraper - Inside this folder you can run the following.
+
+```
+./Lyzer-Scraper
+```
+
+#### 1.1.4 The above method did not work
+
+As a last attempt, download/clone the source code along with the Makefile.
+In the source code directory, run the following:
+
+```
+make clean install test build package
+```
+
+If this command works, you will find a zip file under release/CURRENT.
+Unzip this file and there should be folder called Lyzer-Scraper - Inside this folder you can run the following.
+
+```
+./Lyzer-Scraper
+```
+
+### 1.2 Windows 10
+#### 1.2.1 Downloading latest release
+
+Download Windows-10-Lyzer-Scraper.zip from the latest releases.
+Unzip this file and there should be folder called Lyzer-Scraper - Inside this folder you can run the following.
+
+```
+./Lyzer-Scraper.exe
+```
+
+#### 1.2.2 Installing using install script.
+
+Use the install script in the repository.
+Download/clone the source code along with the install script (install.ps1).
+In the source code directory, run the following:
+
+```
+./install.ps1
+```
+
+If this command works, you will find a zip file under release/Windows_10.
+Unzip this file and there should be folder called Lyzer-Scraper - Inside this folder you can run the following.
+
+```
+./Lyzer-Scraper.exe
 ```
