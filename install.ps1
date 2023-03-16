@@ -49,7 +49,6 @@ rm -fo release/Windows_10/
 mkdir release/Windows_10/
 cp dist/Lyzer-Scraper/Lyzer-Scraper.zip release/Windows_10/
 
-clear
 echo "Cleaning Up..."
 pipenv clean
 rm -fo .coverage
