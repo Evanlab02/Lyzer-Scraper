@@ -72,7 +72,8 @@ def determine_file(url: str) -> str:
         "drivers.html": "drivers.json",
         "team.html": "teams.json",
         "team": "teams.json",
-        "drivers": "drivers.json"
+        "drivers": "drivers.json",
+        "qualifying-0.html": "qualifying.json",
     }
 
     # Split the URL into elements
