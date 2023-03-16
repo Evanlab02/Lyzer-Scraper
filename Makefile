@@ -13,6 +13,7 @@ clean:
 	@rm -rf .pytest_cache
 	@echo "<CLEAN> Data Folder"
 	@rm -rf data/
+	@rm -rf release/CURRENT/
 
 install:
 	@pipenv install
