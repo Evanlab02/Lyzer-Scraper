@@ -58,6 +58,7 @@ wsproto = "*"
 pillow = "*"
 pyinstaller = "*"
 pywin32-ctypes = "*"
+pefile = "*"
 
 [dev-packages]
 
