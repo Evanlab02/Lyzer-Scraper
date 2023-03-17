@@ -4,8 +4,7 @@ on:
   push:
     branches: [ release ]
 
-permissions:
-  contents: read
+permissions: write-all
 
 jobs:
   release-ubuntu-latest:
