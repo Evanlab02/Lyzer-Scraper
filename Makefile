@@ -65,18 +65,10 @@ package:
 	@cp -r dist/Lyzer-Scraper/Lyzer-Scraper.zip release/CURRENT/
 	@echo "<PACKAGE> Package Complete"
 
-package-ubuntu: build
-	@echo "<PACKAGE> Creating Package"
-	@cd dist/Lyzer-Scraper/ && zip -r Lyzer-Scraper.zip .
-	@rm -rf release/Ubuntu-22.10
-	@mkdir release/Ubuntu-22.10
-	@cp -r dist/Lyzer-Scraper/Lyzer-Scraper.zip release/Ubuntu-22.10/
-	@echo "<PACKAGE> Package Complete"
-
 package-ubuntu-lts: build
 	@echo "<PACKAGE> Creating Package"
 	@cd dist/Lyzer-Scraper/ && zip -r Lyzer-Scraper.zip .
 	@rm -rf release/Ubuntu-22.04
 	@mkdir release/Ubuntu-22.04
-	@cp -r dist/Lyzer-Scraper/Lyzer-Scraper.zip release/Ubuntu-22.04/
+	@mv dist/Lyzer-Scraper/Lyzer-Scraper.zip release/Ubuntu-22.04/Ubuntu-22.04-Lyzer-Scraper.zip
 	@echo "<PACKAGE> Package Complete"

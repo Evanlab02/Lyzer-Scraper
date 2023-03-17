@@ -1,8 +1,6 @@
 name: Ubuntu Scraper Testing
 
 on:
-  push:
-    branches: [ release ]
   pull_request:
     branches: [ dev,release ]
 
