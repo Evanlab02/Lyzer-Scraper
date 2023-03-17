@@ -23,23 +23,6 @@ def flex_parse_site(site_data: dict, driver):
     get_headers(site_data)
     get_rows(site_data)
 
-def parse_site(site_data: dict):
-    """
-    Parse the site and return the data.
-
-    Args:
-        url (str): The url to parse.
-    """
-    driver, soup = start_driver(site_data)
-    create_log("Started Driver.")
-    get_selected_items(site_data, soup)
-    get_table_head_and_body(site_data, soup)
-    get_headers(site_data)
-    get_rows(site_data)
-    stop_driver(driver)
-    create_log("Stopped Driver.")
-
-
 def get_selected_items(site_data: dict, soup: BeautifulSoup):
     """
     Get the selected year from the site.

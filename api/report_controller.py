@@ -16,10 +16,6 @@ def incident_endpoint():
     """
     try:
         response_json = request.get_json()
-        response_keys = response_json.keys()
-        for key in response_keys:
-            if key not in ["id", "timestamp", "message"]:
-                raise ValueError("Invalid request body.")
         all_incidents = read_json_file("data/incidents.json")
         all_incidents[response_json["id"]] = {
             "timestamp": response_json["timestamp"],
@@ -31,12 +27,11 @@ def incident_endpoint():
             "result": "success",
             "message": "Incident reported successfully."
         }, 200
-    except ValueError as value_error:
+    except KeyError:
         return {
             "status": 400,
             "result": "failure",
-            "message": value_error.args[0],
-            "data": None
+            "message": "Invalid request body."
         }, 400
 
 def request_endpoint():
@@ -48,10 +43,6 @@ def request_endpoint():
     """
     try:
         response_json = request.get_json()
-        response_keys = response_json.keys()
-        for key in response_keys:
-            if key not in ["id", "timestamp", "message"]:
-                raise ValueError("Invalid request body.")
         all_requests = read_json_file("data/requests.json")
         all_requests[response_json["id"]] = {
             "timestamp": response_json["timestamp"],
@@ -63,10 +54,9 @@ def request_endpoint():
             "result": "success",
             "message": "Request submitted successfully."
         }, 200
-    except ValueError as value_error:
+    except KeyError:
         return {
             "status": 400,
             "result": "failure",
-            "message": value_error.args[0],
-            "data": None
+            "message": "Invalid request body."
         }, 400
