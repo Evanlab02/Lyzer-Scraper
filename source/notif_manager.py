@@ -14,8 +14,8 @@ def start_notif_manager():
     Start the notification manager.
     """
     config = read_json_file("config.json")
-    lyzer_web_address = config["lyzer_web_address"]
-    notif_address = config["notif_address"]
+    lyzer_web_address = config["lyzerWebAddress"]
+    notif_address = config["notifAddress"]
     log_to_console("Starting Notification Manager.")
     while True:
         try:
