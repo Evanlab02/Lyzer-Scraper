@@ -46,3 +46,5 @@ jobs:
     - name: Release Latest Version
       run: |
         gh release create v1.2.2 release/Ubuntu-22.04/Ubuntu-22.04-Lyzer-Scraper.zip --draft
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
