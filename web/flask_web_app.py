@@ -20,4 +20,4 @@ def debug_app(app: Flask):
     """
     Debug the flask app.
     """
-    app.run(debug=True)
+    app.run(debug=True, port=8000)
