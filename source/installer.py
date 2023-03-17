@@ -13,6 +13,18 @@ from source.file_parser import (
 )
 from web.web_driver import start_flex_driver, stop_driver
 
+def install_config_file():
+    """
+    Install config file for project to keep local secrets safe.
+    """
+    if not os.path.exists("config.json"):
+        config = {
+            "lyzerWebAddress": input("Enter the Lyzer-Web Address: "),
+            "notifAddress": input("Enter the Notif-Web Address: ")
+        }
+        create_json_file("config.json", config)
+
+
 def install_lyzer_data_files():
     """Install the data files for the lyzer scraper program."""
     create_data_directory("logs")
