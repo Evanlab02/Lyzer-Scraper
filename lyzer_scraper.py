@@ -13,7 +13,8 @@ from logs.console_logger import log_to_console
 from source.installer import (
     install_lyzer_data_files,
     uninstall_lyzer_data_files,
-    update_season_data
+    update_season_data,
+    install_config_file
 )
 from source.notif_manager import start_notif_manager
 from source.queue_processor import clear_queue
@@ -65,6 +66,7 @@ def main():
 
 
 if __name__ == "__main__":
+    install_config_file()
     if (len(sys.argv) == 1 or (len(sys.argv) == 3 and sys.argv[1] == "--port")):
         web_process = Process(target=main)
         notif_process = Process(target=start_notif_manager)

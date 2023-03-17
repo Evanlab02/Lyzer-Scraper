@@ -7,18 +7,22 @@ from time import sleep
 import requests
 
 from logs.console_logger import log_to_console
+from source.file_parser import read_json_file
 
 def start_notif_manager():
     """
     Start the notification manager.
     """
+    config = read_json_file("config.json")
+    lyzer_web_address = config["lyzer_web_address"]
+    notif_address = config["notif_address"]
     log_to_console("Starting Notification Manager.")
     while True:
         try:
-            response = requests.get("http://localhost:80/version", timeout=5)
+            response = requests.get(lyzer_web_address, timeout=5)
             if response.status_code == 200:
                 log_to_console("Lyzer Web is online.")
-                requests.post("https://ntfy.sh/lyzer-tech",
+                requests.post(notif_address,
                             data="Lyzer Web is online and responding.",
                             headers={
                                 "Title": "Lyzer Web is online!",
@@ -28,7 +32,7 @@ def start_notif_manager():
                                 timeout=5)
             else:
                 log_to_console("Lyzer Web is offline.", "ERROR")
-                requests.post("https://ntfy.sh/lyzer-tech",
+                requests.post(notif_address,
                             data="Lyzer Web is offline!",
                             headers={
                                 "Title": "Lyzer Web is offline!",
@@ -38,7 +42,7 @@ def start_notif_manager():
                             timeout=5)
         except requests.exceptions.ConnectionError:
             log_to_console("Lyzer Web is offline.", "ERROR")
-            requests.post("https://ntfy.sh/lyzer-tech",
+            requests.post(notif_address,
                         data="Lyzer Web is offline!",
                         headers={
                             "Title": "Lyzer Web is offline!",
