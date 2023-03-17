@@ -6,12 +6,16 @@ from flask import Flask
 
 from api.api_controller import data_endpoint
 from api.backlog_controller import queue_endpoint, priority_queue
+from api.report_controller import incident_endpoint, request_endpoint
 
 def assign_endpoints(app: Flask):
     """Assign endpoints to the flask app."""
     app.route("/")(get_version)
     app.route("/queue", methods=["GET", "POST"])(queue_endpoint)
     app.route("/queue/priority", methods=["POST"])(priority_queue)
+
+    app.route("/incident", methods=["POST"])(incident_endpoint)
+    app.route("/request", methods=["POST"])(request_endpoint)
 
     app.route("/data/<data_type>", methods=["GET"])(data_endpoint)
     app.route("/data/<data_type>/<year>", methods=["GET"])(data_endpoint)
@@ -23,5 +27,5 @@ def get_version():
         "status": 200,
         "result": "success",
         "message": "Data retrieved successfully.",
-        "data": "1.1.1"
+        "data": "1.2.0"
         }, 200

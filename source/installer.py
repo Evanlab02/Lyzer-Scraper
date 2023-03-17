@@ -37,6 +37,9 @@ def install_lyzer_data_files():
     create_json_file("data/sprint_grids.json", {})
     create_json_file("data/drivers.json", {})
     create_json_file("data/teams.json", {})
+    create_json_file("data/2023.json", [])
+    create_json_file("data/incidents.json", {})
+    create_json_file("data/requests.json", {})
 
 def uninstall_lyzer_data_files():
     """Uninstall the data files for the lyzer scraper program."""
