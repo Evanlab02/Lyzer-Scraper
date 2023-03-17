@@ -43,11 +43,11 @@ backup: build
 
 run:
 	@clear
-	@pipenv run python3 lyzer_scraper.py
+	@pipenv run python3 lyzer_scraper.py --dev
 
 run-bin: build
 	@clear
-	@cd dist/Lyzer-Scraper/ && ./Lyzer-Scraper
+	@cd dist/Lyzer-Scraper/ && ./Lyzer-Scraper --dev
 
 run-bin-backlog: build
 	@clear

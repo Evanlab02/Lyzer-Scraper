@@ -3,7 +3,10 @@ This module is the entry point for the lyzer scraper program.
 """
 import sys
 
+
 from datetime import datetime
+from multiprocessing import Process
+from time import sleep
 
 from api.api_factory import get_version, assign_endpoints
 from logs.console_logger import log_to_console
@@ -12,6 +15,7 @@ from source.installer import (
     uninstall_lyzer_data_files,
     update_season_data
 )
+from source.notif_manager import start_notif_manager
 from source.queue_processor import clear_queue
 from source.site_scraper import get_all_links_for_urls
 from web.flask_web_app import create_app, host_app
@@ -59,5 +63,15 @@ def main():
         host_app(app)
 
 
+
 if __name__ == "__main__":
-    main()
+    if (len(sys.argv) == 1 or (len(sys.argv) == 3 and sys.argv[1] == "--port")):
+        web_process = Process(target=main)
+        notif_process = Process(target=start_notif_manager)
+        web_process.start()
+        sleep(60)
+        notif_process.start()
+        web_process.join()
+        notif_process.join()
+    else:
+        main()
