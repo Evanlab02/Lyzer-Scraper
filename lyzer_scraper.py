@@ -67,7 +67,8 @@ def main():
 
 if __name__ == "__main__":
     install_config_file()
-    if (len(sys.argv) == 1 or (len(sys.argv) == 3 and sys.argv[1] == "--port")):
+    if sys.argv[1] == "-n":
+        del sys.argv[1]
         web_process = Process(target=main)
         notif_process = Process(target=start_notif_manager)
         web_process.start()

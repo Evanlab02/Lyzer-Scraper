@@ -1,0 +1,48 @@
+name: Release Pipeline
+
+on:
+  push:
+    branches: [ release ]
+
+permissions: write-all
+
+jobs:
+  release-ubuntu-latest:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.10"
+    - name: Setup
+      run: |
+        pip install --upgrade pip
+        pip install pipenv
+        pipenv install
+    - name: Testing
+      run: |
+        pipenv run pytest -v testing
+    - name: Lint
+      run: |
+        pipenv run pylint $(git ls-files '*.py')
+    - name: Create Executable
+      run: |
+        pipenv run pyinstaller --name Lyzer-Scraper --add-data backup/:data/ lyzer_scraper.py
+    - name: Security Check
+      run: |
+        pipenv check
+    - name: Package Ubuntu-LTS
+      run: |
+        make clean refresh build package-ubuntu-lts
+        make clean
+        date > generated.txt
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git add .
+        git commit -m "Packaged Ubuntu LTS"
+        git push
+    - name: Release Latest Version
+      run: |
+        gh release create v1.2.2 release/Ubuntu-22.04/Ubuntu-22.04-Lyzer-Scraper.zip --draft
