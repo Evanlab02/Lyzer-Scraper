@@ -41,8 +41,18 @@ backup: build
 	@mkdir backup/
 	@cp -r dist/Lyzer-Scraper/data/. backup/ 
 
+dev:
+	@clear
+	@rm -rf data/
+	@mkdir data/
+	@cp -r backup/* data/
+	@pipenv run python3 lyzer_scraper.py --debug
+
 run:
 	@clear
+	@rm -rf data/
+	@mkdir data/
+	@cp -r backup/ data/
 	@pipenv run python3 lyzer_scraper.py
 
 run-bin: build

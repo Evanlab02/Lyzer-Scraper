@@ -19,7 +19,7 @@ from source.installer import (
 from source.notif_manager import start_notif_manager
 from source.queue_processor import clear_queue
 from source.site_scraper import get_all_links_for_urls
-from web.flask_web_app import create_app, host_app
+from web.flask_web_app import create_app, host_app, debug_app
 
 def main():
     """The main function of the lyzer scraper program."""
@@ -55,6 +55,10 @@ def main():
             log_to_console(f"Getting links for {url}.")
             urls.append(url)
         log_to_console(get_all_links_for_urls(urls))
+    elif len(sys.argv) == 2 and sys.argv[1] == "--debug":
+        app = create_app()
+        assign_endpoints(app)
+        debug_app(app)
     else:
         app = create_app()
         assign_endpoints(app)
