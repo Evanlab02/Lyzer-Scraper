@@ -124,3 +124,101 @@ def display_response(response):
             value = f"{len(value)} characters"
         log_to_console(f"{key} -> {value}", "MESSAGE")
     return response
+
+def get_files():
+    """Get all data file names."""
+    return [
+        "data/drivers.json",
+        "data/fastest_laps.json",
+        "data/pit_stop_data.json",
+        "data/practice1.json",
+        "data/practice2.json",
+        "data/practice3.json",
+        "data/qualifying.json",
+        "data/races.json",
+        "data/season_summaries.json",
+        "data/starting_grids.json",
+        "data/sprint_grids.json",
+        "data/sprints.json",
+        "data/teams.json"
+    ]
+
+def get_years():
+    """Get all the years that have data."""
+    files = get_files()
+
+    years = []
+    for file in files:
+        data = read_json_file(file)
+        for year in data.keys():
+            if year not in years:
+                years.append(year)
+
+    years.sort()
+    return ScraperResponse(
+        "success",
+        200,
+        "Data retrieved successfully.",
+        [years]
+    ).convert_to_json(), 200
+
+def get_categories(year: str):
+    """Get all the categories for a year."""
+    files = [
+        ["seasons", "Season Summary"],
+        ["races", "Race Result"],
+        ["pitstops", "Pit Stop"],
+        ["fastest_laps", "Fastest Lap"],
+        ["starting_grids", "Starting Grid"],
+        ["qualifying", "Qualifying"],
+        ["firstPractice", "First Practice"],
+        ["secondPractice", "Second Practice"],
+        ["thirdPractice", "Third Practice"],
+        ["drivers", "Drivers"],
+        ["sprints", "Sprint Result"],
+        ["sprint_grids", "Sprint Grid"],
+        ["constructors", "Constructors"]
+    ]
+
+    categories = []
+    for file in files:
+        data = read_json_file(f"data/{get_file_name(file[0])}")
+        if year in data.keys():
+            categories.append(file)
+
+    return ScraperResponse(
+        "success",
+        200,
+        "Data retrieved successfully.",
+        categories
+    ).convert_to_json(), 200
+
+def get_locations(year: str, category: str):
+    """Get all the locations for a year and category."""
+    file = get_file_name(category)
+    file = f"data/{file}"
+    data = read_json_file(file)
+
+    if year in data.keys():
+        data = data[year]
+    else:
+        return ScraperResponse(
+            "failure",
+            404,
+            f"Year not found {year}."
+        ).convert_to_json(), 404
+
+    if category == "seasons":
+        locations = ["Overall"]
+    else:
+        locations = []
+        for location in data.keys():
+            locations.append(location)
+
+    locations.sort()
+    return ScraperResponse(
+        "success",
+        200,
+        "Data retrieved successfully.",
+        [locations]
+    ).convert_to_json(), 200
