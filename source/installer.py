@@ -1,6 +1,7 @@
 """Module will contain the logic to install the data files for the lyzer scraper program."""
 import os
 
+from api.api_controller import get_files
 from api.backlog_controller import flex_scrape
 from logs.console_logger import log_to_console
 from logs.file_logger import create_log
@@ -94,21 +95,7 @@ def update_season_data(current_year: int):
             links.remove(link)
     write_json_file("data/links.json", links)
 
-    files = [
-        "data/drivers.json",
-        "data/fastest_laps.json",
-        "data/pit_stop_data.json",
-        "data/practice1.json",
-        "data/practice2.json",
-        "data/practice3.json",
-        "data/qualifying.json",
-        "data/races.json",
-        "data/season_summaries.json",
-        "data/starting_grids.json",
-        "data/sprint_grids.json",
-        "data/sprints.json",
-        "data/teams.json"
-    ]
+    files = get_files()
 
     for file in files:
         file_data = read_json_file(file)
