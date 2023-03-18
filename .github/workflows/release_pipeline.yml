@@ -41,10 +41,10 @@ jobs:
         git config user.name github-actions
         git config user.email github-actions@github.com
         git add .
-        git commit -m "Packaged Ubuntu LTS"
+        git commit -m "Packaged Ubuntu LTS 1.3.0"
         git push
     - name: Release Latest Version
       run: |
-        gh release create v1.2.2 release/Ubuntu-22.04/Ubuntu-22.04-Lyzer-Scraper.zip --draft
+        gh release create v1.3.0 release/Ubuntu-22.04/Ubuntu-22.04-Lyzer-Scraper.zip --draft
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
