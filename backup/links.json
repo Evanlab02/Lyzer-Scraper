@@ -6320,7 +6320,6 @@
     "https://www.formula1.com/en/results.html/1983/drivers/EDDCHE01/eddie-cheever.html",
     "https://www.formula1.com/en/results.html/2015/team/mclaren_honda.html",
     "https://www.formula1.com/en/results.html/1991/drivers/AYRSEN01/ayrton-senna.html",
-    "https://www.formula1.com/en/results.html/2023/races/1142/saudi-arabia/fastest-laps.html",
     "https://www.formula1.com/en/results.html/2001/races/717/italy/practice-2.html",
     "https://www.formula1.com/en/results.html/2012/races/27/brazil/fastest-laps.html",
     "https://www.formula1.com/en/results.html/2009/races/847/spain/qualifying.html",
@@ -6807,7 +6806,6 @@
     "https://www.formula1.com/en/results.html/1989/races/558/australia/starting-grid.html",
     "https://www.formula1.com/en/results.html/1967/races/246/netherlands/starting-grid.html",
     "https://www.formula1.com/en/results.html/2006/races/790/bahrain/practice-1.html",
-    "https://www.formula1.com/en/results.html/2023/races/1142/saudi-arabia/pit-stop-summary.html",
     "https://www.formula1.com/en/results.html/2014/team/williams_mercedes.html",
     "https://www.formula1.com/en/results.html/1989/team/benetton_ford.html",
     "https://www.formula1.com/en/results.html/1993/races/591/brazil/starting-grid.html",
@@ -9207,5 +9205,8 @@
     "https://www.formula1.com/en/results.html/2023/races/1142/saudi-arabia/qualifying.html",
     "https://www.formula1.com/en/results.html/2023/races/1142/saudi-arabia/practice-3.html",
     "https://www.formula1.com/en/results.html/2023/races/1142/saudi-arabia/practice-2.html",
-    "https://www.formula1.com/en/results.html/2023/races/1142/saudi-arabia/practice-1.html"
+    "https://www.formula1.com/en/results.html/2023/races/1142/saudi-arabia/practice-1.html",
+    "https://www.formula1.com/en/results.html/2023/races/1142/saudi-arabia/race-result.html",
+    "https://www.formula1.com/en/results.html/2023/races/1142/saudi-arabia/fastest-laps.html",
+    "https://www.formula1.com/en/results.html/2023/races/1142/saudi-arabia/pit-stop-summary.html"
 ]
