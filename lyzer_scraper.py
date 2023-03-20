@@ -62,6 +62,7 @@ def main():
         log_to_console("Downloading Data Files.", "WARNING")
         log_to_console("This may take a while.", "WARNING")
         for file in get_files():
+            file = file.replace("data/", "")
             wget.download(
                 f"https://raw.githubusercontent.com/Evanlab02/Lyzer-Scraper/release/backup/{file}")
             os.remove(f"data/{file}")
