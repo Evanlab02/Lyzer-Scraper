@@ -2,13 +2,13 @@
 This module is the entry point for the lyzer scraper program.
 """
 import os
-import wget
 import sys
-
 
 from datetime import datetime
 from multiprocessing import Process
 from time import sleep
+
+import wget
 
 from api.api_controller import get_files
 from api.api_factory import get_version, assign_endpoints
