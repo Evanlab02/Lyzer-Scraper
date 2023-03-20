@@ -59,6 +59,7 @@ pillow = "*"
 pyinstaller = "*"
 pywin32-ctypes = "*"
 pefile = "*"
+wget = "*"
 
 [dev-packages]
 

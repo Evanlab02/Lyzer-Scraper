@@ -1,6 +1,8 @@
 """
 This module is the entry point for the lyzer scraper program.
 """
+import os
+import wget
 import sys
 
 
@@ -8,6 +10,7 @@ from datetime import datetime
 from multiprocessing import Process
 from time import sleep
 
+from api.api_controller import get_files
 from api.api_factory import get_version, assign_endpoints
 from logs.console_logger import log_to_console
 from source.installer import (
@@ -55,6 +58,14 @@ def main():
             log_to_console(f"Getting links for {url}.")
             urls.append(url)
         log_to_console(get_all_links_for_urls(urls))
+    elif len(sys.argv) == 2 and sys.argv[1] == "--download":
+        log_to_console("Downloading Data Files.", "WARNING")
+        log_to_console("This may take a while.", "WARNING")
+        for file in get_files():
+            wget.download(
+                f"https://raw.githubusercontent.com/Evanlab02/Lyzer-Scraper/release/backup/{file}")
+            os.remove(f"data/{file}")
+            os.rename(f"{file}", f"data/{file}")
     elif len(sys.argv) == 2 and sys.argv[1] == "--debug":
         app = create_app()
         assign_endpoints(app)
